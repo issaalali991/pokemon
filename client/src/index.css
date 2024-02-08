@@ -13,25 +13,31 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
+  margin: 0 10%;
 }
 
 .Pokemon {
   display: flex;
-  width: 30rem;
-  height: 60rem;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  height: 33rem;
   border: 2px solid black;
   border-radius: 10px;
 }
 
 .PokeImage {
-  width: 20em;
-  height: 20em;
+  width: 21em;
+  height: 40em;
   background-size: cover;
   background-repeat: none;
   background-image: url("../public/pokeball.svg");
+  cursor: pointer;
 }
 
 .PokeData {
+  width: 20em;
+  height: 20em;
 }
 
 h1 {
