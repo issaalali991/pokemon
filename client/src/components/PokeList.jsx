@@ -1,21 +1,47 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Axios from "axios";
-
+import PokemonContext from "../contexts/PokemonContext.jsx";
+import Pokemon from "../components/Pokemon.jsx";
 
 function PokeList() {
-  const [pokeList, setPokeList] = useState([]);
-  useEffect(() => {
-    try {
-      const result = Axios.get("http://localhost:3000/pokemon").then((res) => {
-        console.log(res.data);
-        setPokeList(res.data);
-      });
-    } catch (error) {
-      console.log("Error: " + error);
-    }
-  }, []);
+  const { pokeList } = useContext(PokemonContext);
+  return (
+    <div>
+      <h1>Pokefight</h1>
+      <div className="container">
+        <Pokemon />
 
-  return <div></div>;
+        <div className="centerDiv">
+          <button>
+            <h3>Fight!</h3>
+          </button>
+          <img src="" alt="" />
+        </div>
+
+        <Pokemon />
+      </div>
+      <hr />
+      <ul>
+        {pokeList.forEach((pokemon) => {
+          <li>{pokemon.name.english}</li>;
+          //  <li>type</li>
+          //  {pok}
+          // type: [
+          //     "Grass",
+          //     "Poison"
+          // ],
+          // "base": {
+          //     "HP": 45,
+          //     "Attack": 49,
+          //     "Defense": 49,
+          //     "Sp. Attack": 65,
+          //     "Sp. Defense": 65,
+          //     "Speed": 45
+          // }
+        })}
+      </ul>
+    </div>
+  );
 }
 
 export default PokeList;
