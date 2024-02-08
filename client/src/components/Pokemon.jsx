@@ -15,9 +15,5 @@ function PokeData() {
 }
 
 function PokeImage() {
-  return (
-    <div className="PokeImage">
-      <img src="" alt="" />
-    </div>
-  );
+  return <div className="PokeImage"></div>;
 }

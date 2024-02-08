@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import Axios from "axios";
 export const DataContext = createContext();
 
-export default function PokemonContext({ children }) {
+export default function PokemonContextProvider({ children }) {
   // Setze gemeinsame useStates
   const [pokeList, setPokeList] = useState(null);
   const [loading, setIsLoading] = useState(true);
