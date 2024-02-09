@@ -12,7 +12,8 @@ export default function PokemonContextProvider({ children }) {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        await // Axios.get("https://pokemon-9pzm.onrender.com/pokemon").then((res) => {
+        await 
+        // Axios.get("https://pokemon-9pzm.onrender.com/pokemon").then((res) => {
         Axios.get("http://localhost:3000/pokemon").then((res) => {
           console.log(res.data);
           setPokeList(res.data);

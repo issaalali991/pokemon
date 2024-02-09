@@ -16,4 +16,4 @@ app.use(express.json());
 // Routs
 app.use("/pokemon", pokemonRouter);
 
-app.listen(PORT, () => { console.log(`Server is runing on port ${PORT} http://localhost:3000/pokemon`) })
+app.listen(PORT, () => { console.log(`Server is runing:  http://localhost:${PORT}/pokemon`); })

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+#App {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -31,7 +37,7 @@
   height: 40em;
   background-size: cover;
   background-repeat: none;
-  background-image: url("../public/pokeball.svg");
+  background-image: url("/pokeball.svg");
   cursor: pointer;
 }
 
