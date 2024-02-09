@@ -1,4 +1,5 @@
-import pokemon from "../db/pokemon.json" with {type: "json"};
+// import pokemon from "../db/pokemon.json" with {type: "json"};
+import pokemon from "../db/pokemon.js";
 
 export const getAllPokemon = (req, res) => {
 
