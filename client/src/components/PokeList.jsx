@@ -6,17 +6,17 @@ import { DataContext } from ".././contexts/PokemonContext.jsx";
 import Pokemon from "../components/Pokemon.jsx";
 
 function PokeList() {
-  const { pokeList, loading } = useContext(DataContext);
+  const { pokeList, setPokeList, loading, setIsLoading } =
+    useContext(DataContext);
   console.log("loading", loading);
   return (
     <>
-      {loading ? (
-        <p>Loading</p>
-      ) : (
+      {loading && <p>Loading...</p>}
+      {!loading && (
         <div>
           <h1>Pokefight</h1>
           <div className="container">
-            // Left Side Pokemon
+            {/* // Left Side Pokemon */}
             <Pokemon />
 
             <div className="centerDiv">
@@ -25,32 +25,52 @@ function PokeList() {
               </button>
               <img src="" alt="" />
               <ul>
-            {pokeList.map((pokemon) => {
-              <li>{pokemon.name.english}</li>;
-              //  <li>type</li>
-              //  {pok}
-              // type: [
-              //     "Grass",
-              //     "Poison"
-              // ],
-              // "base": {
-              //     "HP": 45,
-              //     "Attack": 49,
-              //     "Defense": 49,
-              //     "Sp. Attack": 65,
-              //     "Sp. Defense": 65,
-              //     "Speed": 45
-              // }
-            })}
-          </ul>
+                {pokeList.map((pokemon) => (
+                  <li key={pokemon.id}>
+                    <h2>
+                      <a href={`/pokemon/${pokemon.id}`}>
+                        {pokemon.name.english}
+                      </a>
+                    </h2>
+                  </li>
+                ))}
+              </ul>
             </div>
-            // Right Side Pokemon
+            {/* // Right Side Pokemon */}
             <Pokemon />
           </div>
+
           <hr />
-         
         </div>
       )}
+
+      {/* <Pokemon />
+    
+
+    {loading && <p>Loading...</p>
+    }
+    {!loading && (
+      <div className="PokeList">
+        <h2>PokeList</h2>
+        <ul>
+          {pokeList.map((pokemon) => (
+            <li key={pokemon.id}>
+           
+
+           <h2>
+              <a href={`/pokemon/${pokemon.id}`}>{pokemon.name.english}</a>
+           </h2>
+
+
+            </li>
+          ))}
+        </ul>
+        
+      </div>
+    )
+
+    }
+        */}
     </>
   );
 }
