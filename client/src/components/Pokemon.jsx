@@ -23,7 +23,7 @@ export default function Pokemon() {
       
       <div className="flex justify-center items-center flex-col "
       >
-      <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  
+      <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full
       ">{
         pokeList[pokemon].name.english      
       }</h3>
@@ -35,8 +35,8 @@ export default function Pokemon() {
 }
 
 function PokeData({ pokemon }) {
-  const gradientColor = `bg-gradient-to-r from-green-500 to-green-${pokemon.base.HP > 75 ? 500 : 200}`;
-  return (
+  const gradientColor = `bg-gradient-to-r from-green-500 to-green-${pokemon.base.HP > 120 ? 500 : pokemon.base.HP >100 && pokemon.base.HP <120 ? 200 : pokemon.base.HP > 80 && pokemon.base.HP <120 ? 150 : 50}`;
+  return (         
     <div className="PokeData mt-4">
       <div className={`bg-green-500 text-white  font-bold rounded-full h-12 flex items-center justify-center mb-4 ${gradientColor}
       } `}>
