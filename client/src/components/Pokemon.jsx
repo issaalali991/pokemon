@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../contexts/PokemonContext";
 import PokemonDefault from "./PokemonDefault";
+import BeatLoader from "react-spinners/BeatLoader";
 
 export default function Pokemon() {
   const { pokeList } = useContext(DataContext);
@@ -8,7 +9,8 @@ export default function Pokemon() {
   const [selected, setSelected] = useState(false);
 
   return !selected ? (
-    <div className="Pokemon">
+    <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex justify-center items-center w-48 h-48 cursor-pointer" >
+    
       <PokemonDefault
         selectHandler={() => {
           setSelected(true);
@@ -17,8 +19,15 @@ export default function Pokemon() {
       />
     </div>
   ) : (
-    <div className="Pokemon">
-      <h3>Pokemon</h3>
+    <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center w-48 h-48 " >
+      
+      <div className="flex justify-center items-center flex-col "
+      >
+      <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  
+      ">{
+        pokeList[pokemon].name.english      
+      }</h3>
+      </div>
       <PokeImage pokemon={pokeList[pokemon]} />
       <PokeData pokemon={pokeList[pokemon]} />
     </div>
@@ -26,20 +35,20 @@ export default function Pokemon() {
 }
 
 function PokeData({ pokemon }) {
+  const gradientColor = `bg-gradient-to-r from-green-500 to-green-${pokemon.base.HP > 75 ? 500 : 200}`;
   return (
-    <div className="PokeData">
-      <div className="bg-green-500 text-white font-bold rounded-full h-12  flex items-center justify-center">
+    <div className="PokeData mt-4">
+      <div className={`bg-green-500 text-white  font-bold rounded-full h-12 flex items-center justify-center mb-4 ${gradientColor}
+      } `}>
         HP: {pokemon.base.HP}
       </div>
       <div>
-        <h2 className="text-2xl font-bold text-gray-800 mb-2 mt-2 text-center ">
-          {pokemon.name.english}
-        </h2>
-        <ul className="grid grid-cols-2 gap-2 text-gray-800 ">
+       
+        <ul className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200
+        ">
           <li>Type: {pokemon.type.join(", ")}</li>
           <li>S-Attack: {pokemon.base["Sp. Attack"]}</li>
           <li>S-Defense: {pokemon.base["Sp. Defense"]}</li>
-
           <li>Attack: {pokemon.base.Attack}</li>
           <li>Defense: {pokemon.base.Defense}</li>
           <li>Speed: {pokemon.base.Speed}</li>
@@ -51,6 +60,7 @@ function PokeData({ pokemon }) {
 
 function PokeImage({ pokemon }) {
   const [pokeImg, setPokeImg] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getApiData = async () => {
@@ -60,16 +70,19 @@ function PokeImage({ pokemon }) {
       const data = await response.json();
       console.log(data);
       setPokeImg(data.sprites.front_default);
+      setLoading(false);
     };
     getApiData();
-  });
+  }, [pokemon.id]);
+
   return (
-    <div className="PokeImage">
+    <div className="PokeImage flex justify-center items-center flex-col">
+      {loading && <BeatLoader color="#22C55E" className="my-4" />}
       <img
         src={pokeImg}
         alt={pokemon.name.english}
-        className="w-48 h-48 mx-auto object-cover rounded-full border-4 border-green-500 w-48 h-48 mx-auto object-cover rounded-full border-4 border-green-500
-    "
+        className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500 
+        "
       />
     </div>
   );
