@@ -18,8 +18,10 @@
 .centerDiv {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
-  margin: 0 10%;
+  margin: 0;
+  width: 30em;
 }
 
 .Pokemon {
@@ -37,6 +39,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 22em;
 }
 .DefaultImage {
   width: 15em;

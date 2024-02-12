@@ -1,21 +1,22 @@
 import { useState, useEffect, useContext } from "react";
 import Axios from "axios";
 import BeatLoader from "react-spinners/BeatLoader";
-
 import { DataContext } from ".././contexts/PokemonContext.jsx";
-
 import Pokemon from "../components/Pokemon.jsx";
-
-
+import FightButton from "./FightButton.jsx";
 
 function PokeList() {
-  const { pokeList, setPokeList, loading, setIsLoading } = useContext(
-    DataContext
-  );
+  const {
+    pokeList,
+    setPokeList,
+    loading,
+    setIsLoading,
+    selectedPokemon1,
+    selectedPokemon2,
+  } = useContext(DataContext);
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-     
       {loading && (
         <div className="my-4">
           <BeatLoader color="#36d7b7" />
@@ -23,24 +24,25 @@ function PokeList() {
       )}
       {!loading && (
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-8 text-white  shadow
-          ">Pokefight</h1>      
+          <h1
+            className="text-4xl font-bold mb-8 text-white  shadow
+          "
+          >
+            Pokefight
+          </h1>
           <div className="flex justify-around items-center mb-8">
             {/* Left Side Pokemon */}
-            <Pokemon />
+            <Pokemon number={"one"} />
 
             <div className="centerDiv">
-              <button className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4">
-                <h3 className="text-2xl font-bold
-                ">Fight!</h3>
-               
-              </button>
-              <img src="./vs.png" alt=""  className="mb-4 w-20 h-20"/>
-             
+              {selectedPokemon1 && selectedPokemon2 ? (
+                <FightButton />
+              ) : (
+                <img src="./vs.png" alt="" className="mb-4 w-20 h-20" />
+              )}
             </div>
-
             {/* Right Side Pokemon */}
-            <Pokemon />
+            <Pokemon number={"two"} />
           </div>
 
           <hr className="my-8" />
@@ -51,7 +53,6 @@ function PokeList() {
 }
 
 export default PokeList;
-
 
 // import { useState, useEffect, useContext } from "react";
 // import Axios from "axios";
@@ -103,7 +104,6 @@ export default PokeList;
 //       )}
 
 //       {/* <Pokemon />
-    
 
 //     {loading && <p>Loading...</p>
 //     }
@@ -113,17 +113,15 @@ export default PokeList;
 //         <ul>
 //           {pokeList.map((pokemon) => (
 //             <li key={pokemon.id}>
-           
 
 //            <h2>
 //               <a href={`/pokemon/${pokemon.id}`}>{pokemon.name.english}</a>
 //            </h2>
 
-
 //             </li>
 //           ))}
 //         </ul>
-        
+
 //       </div>
 //     )
 
