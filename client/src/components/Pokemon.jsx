@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { DataContext } from "../contexts/PokemonContext";
 import PokemonDefault from "./PokemonDefault";
 import BeatLoader from "react-spinners/BeatLoader";
+import Search from "./Search";
 
 export default function Pokemon({ number , index}) {
   const {
@@ -10,6 +11,8 @@ export default function Pokemon({ number , index}) {
     setSelectedPokemon1,
     selectedPokemon2,
     setSelectedPokemon2,
+    searched,
+    setSearched,
     indexPok1,
     indexPok2,
     setIndexPok1,
@@ -17,6 +20,7 @@ export default function Pokemon({ number , index}) {
    
  
   } = useContext(DataContext);
+  const pokemon = Math.floor(Math.random() * pokeList.length);
   const [selected, setSelected] = useState(false);
   let pokemon =
    Math.floor(Math.random() * pokeList.length);
@@ -59,8 +63,8 @@ export default function Pokemon({ number , index}) {
   ) : (
     // Selected Pokemon
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center w-48 h-48 ">
-      
-      <div className="flex justify-center items-center flex-col ">
+        <div className="flex justify-center items-center flex-col ">
+          <Search />
         <h3
           className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full
       "

@@ -6,6 +6,7 @@ export default function PokemonContextProvider({ children }) {
   // Setze gemeinsame useStates
   const [pokeList, setPokeList] = useState(null);
   const [loading, setIsLoading] = useState(true);
+  const [searched, setSearched] = useState("");
   // State to check if pokemons are selected
   const [selectedPokemon1, setSelectedPokemon1] = useState(false);
   const [selectedPokemon2, setSelectedPokemon2] = useState(false);
@@ -47,6 +48,8 @@ export default function PokemonContextProvider({ children }) {
         setSelectedPokemon1,
         selectedPokemon2,
         setSelectedPokemon2,
+        searched,
+        setSearched,
         indexPok1,
         setIndexPok1,
         indexPok2,
