@@ -13,8 +13,7 @@ export default function PokemonContextProvider({ children }) {
 //  ------ set index for selected pokemon ----
   const [indexPok1, setIndexPok1] = useState(null);
   const [indexPok2, setIndexPok2] = useState(null);
-  const [selected1, setSelected1] = useState(false);
-  const [selected2, setSelected2] = useState(false);
+
 
 
   // Lade Daten via API in entries
@@ -54,8 +53,7 @@ export default function PokemonContextProvider({ children }) {
         setIndexPok1,
         indexPok2,
         setIndexPok2,
-        selected1, setSelected1,
-        selected2, setSelected2
+      
       
       }}
     >

@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../contexts/PokemonContext";
 import PokemonDefault from "./PokemonDefault";
 import BeatLoader from "react-spinners/BeatLoader";
 import Search from "./Search";
 
-export default function Pokemon({ number , index}) {
+export default function Pokemon({ number,selectedPokemon,index }) {
   const {
     pokeList,
     selectedPokemon1,
@@ -14,48 +14,40 @@ export default function Pokemon({ number , index}) {
     searched,
     setSearched,
     indexPok1,
-    indexPok2,
     setIndexPok1,
+    indexPok2,
     setIndexPok2,
-   
- 
   } = useContext(DataContext);
   const pokemon = Math.floor(Math.random() * pokeList.length);
+  // const pokemon = searched.id;
   const [selected, setSelected] = useState(false);
-  let pokemon =
-   Math.floor(Math.random() * pokeList.length);
   
-  
-  console.log(indexPok1, indexPok2, "in Pokemon");
-  return !selected ? (
-    
+  return !selectedPokemon? (
     // Unselected State
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex justify-center items-center w-48 h-48 cursor-pointer">
-      
       <PokemonDefault
         selectHandler={() => {
-          setSelected(true);
+          // setSelected(true);
           if (number === "one") {
-            // console.log(selectedPokemon1);
+            console.log(selectedPokemon1);
             setSelectedPokemon1(true);
             setIndexPok1(pokemon);
-            // console.log(
-            //   "in Pokemon",
-            //   "@ selectHandler",
-            //   number,
-            //   selectedPokemon1
-            // );
+            console.log(
+              "in Pokemon",
+              "@ selectHandler",
+              number,
+              selectedPokemon1
+            );
           } else {
             console.log(selectedPokemon2);
             setSelectedPokemon2(true);
             setIndexPok2(pokemon);
-            
-            // console.log(
-            //   "in Pokemon",
-            //   "@ selectHandler",
-            //   number,
-            //   selectedPokemon2
-            // );
+            console.log(
+              "in Pokemon",
+              "@ selectHandler",
+              number,
+              selectedPokemon2
+            );
           }
         }}
       />
@@ -70,14 +62,12 @@ export default function Pokemon({ number , index}) {
       "
         >
           {pokeList[index==null?pokemon:index].name.english}
+          {pokeList[index==null?pokemon:index].name.english}
         </h3>
       </div>
       <PokeImage pokemon={pokeList[index==null?pokemon:index]} />
       <PokeData pokemon={pokeList[index==null?pokemon:index]} />
-      {() => {setSelected(false);
-      }}
     </div>
-    
   );
 }
 
@@ -99,6 +89,7 @@ export default function Pokemon({ number , index}) {
 // Pokémon-Typ: Unlicht
 // Pokémon-Typ: Stahl
 // Pokémon-Typ: Fee
+
 
 function PokeData({ pokemon }) {
   const gradientColor = `bg-gradient-to-r from-green-500 to-green-${

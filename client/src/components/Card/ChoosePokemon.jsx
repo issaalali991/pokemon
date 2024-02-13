@@ -13,7 +13,7 @@ function ChoosePokemon() {
     selectedPokemon2,
     setSelectedPokemon2,
     setIndexPok1,
-    setIndexPok2,indexPok1,indexPok2
+    setIndexPok2
    } = useContext(DataContext);
   const [currentPage, setCurrentPage] = useState(1);
   const [pokselected, setPokselected] = useState(1);

@@ -1,11 +1,11 @@
-import { useState, useEffect, useContext } from "react";
-import Axios from "axios";
+import React, { useState, useEffect, useContext } from "react";
+
 import BeatLoader from "react-spinners/BeatLoader";
 import { DataContext } from ".././contexts/PokemonContext.jsx";
 import Pokemon from "../components/Pokemon.jsx";
 import FightButton from "./FightButton.jsx";
 import { useNavigate } from "react-router-dom";
-import ChoosePokemon from "./Card/ChoosePokemon.jsx";
+
 
 function PokeList() {
   const {
@@ -23,10 +23,10 @@ function PokeList() {
   const navigate = useNavigate();
   
   useEffect(() => {
-    window.localStorage.getItem("indexPok1")!==null
+    window.localStorage.getItem("indexPok1")!=null
       ? setIndexPok1(window.localStorage.getItem("indexPok1"))
       : setIndexPok1(null);
-    window.localStorage.getItem("indexPok2")!==null
+    window.localStorage.getItem("indexPok2")!=null
       ? setIndexPok2(window.localStorage.getItem("indexPok2"))
       : setIndexPok2(null);
   }, [selectedPokemon1, selectedPokemon2]);
@@ -48,6 +48,18 @@ function PokeList() {
           >
             Pokefight
           </h1>
+          <button
+              className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+            onClick={() => {
+              window.localStorage.clear();
+              setIndexPok1(null);
+              setIndexPok2(null);
+
+            }
+            }
+            >
+              Restart
+            </button>
           <div className="flex justify-around items-center mb-8">
             {/* Left Side Pokemon */}
 
@@ -61,8 +73,10 @@ function PokeList() {
             </button>
 
             <Pokemon
+            key={selectedPokemon1} 
               number={"one"}
               index={indexPok1 == null ? null : indexPok1}
+              selectedPokemon={selectedPokemon1}
             />
 
             <div className="centerDiv">
@@ -74,8 +88,10 @@ function PokeList() {
             </div>
             {/* Right Side Pokemon */}
             <Pokemon
+            key={selectedPokemon2} 
               number={"two"}
               index={indexPok2 == null ? null : indexPok2}
+              selectedPokemon={selectedPokemon2}
             />
             <button
               className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
