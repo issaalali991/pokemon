@@ -1,43 +1,57 @@
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { DataContext } from "../contexts/PokemonContext";
 import PokemonDefault from "./PokemonDefault";
 import BeatLoader from "react-spinners/BeatLoader";
 
-export default function Pokemon({ number }) {
+export default function Pokemon({ number , index}) {
   const {
     pokeList,
     selectedPokemon1,
     setSelectedPokemon1,
     selectedPokemon2,
     setSelectedPokemon2,
+    indexPok1,
+    indexPok2,
+    setIndexPok1,
+    setIndexPok2,
+   
+ 
   } = useContext(DataContext);
-  const pokemon = Math.floor(Math.random() * pokeList.length);
   const [selected, setSelected] = useState(false);
-
+  let pokemon =
+   Math.floor(Math.random() * pokeList.length);
+  
+  
+  console.log(indexPok1, indexPok2, "in Pokemon");
   return !selected ? (
+    
     // Unselected State
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex justify-center items-center w-48 h-48 cursor-pointer">
+      
       <PokemonDefault
         selectHandler={() => {
           setSelected(true);
           if (number === "one") {
-            console.log(selectedPokemon1);
+            // console.log(selectedPokemon1);
             setSelectedPokemon1(true);
-            console.log(
-              "in Pokemon",
-              "@ selectHandler",
-              number,
-              selectedPokemon1
-            );
+            setIndexPok1(pokemon);
+            // console.log(
+            //   "in Pokemon",
+            //   "@ selectHandler",
+            //   number,
+            //   selectedPokemon1
+            // );
           } else {
             console.log(selectedPokemon2);
             setSelectedPokemon2(true);
-            console.log(
-              "in Pokemon",
-              "@ selectHandler",
-              number,
-              selectedPokemon2
-            );
+            setIndexPok2(pokemon);
+            
+            // console.log(
+            //   "in Pokemon",
+            //   "@ selectHandler",
+            //   number,
+            //   selectedPokemon2
+            // );
           }
         }}
       />
@@ -45,17 +59,21 @@ export default function Pokemon({ number }) {
   ) : (
     // Selected Pokemon
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center w-48 h-48 ">
+      
       <div className="flex justify-center items-center flex-col ">
         <h3
           className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full
       "
         >
-          {pokeList[pokemon].name.english}
+          {pokeList[index==null?pokemon:index].name.english}
         </h3>
       </div>
-      <PokeImage pokemon={pokeList[pokemon]} />
-      <PokeData pokemon={pokeList[pokemon]} />
+      <PokeImage pokemon={pokeList[index==null?pokemon:index]} />
+      <PokeData pokemon={pokeList[index==null?pokemon:index]} />
+      {() => {setSelected(false);
+      }}
     </div>
+    
   );
 }
 
@@ -77,7 +95,6 @@ export default function Pokemon({ number }) {
 // Pokémon-Typ: Unlicht
 // Pokémon-Typ: Stahl
 // Pokémon-Typ: Fee
-
 
 function PokeData({ pokemon }) {
   const gradientColor = `bg-gradient-to-r from-green-500 to-green-${
@@ -129,7 +146,7 @@ function PokeImage({ pokemon }) {
       setLoading(false);
     };
     getApiData();
-  }, [pokemon.id]);
+  }, []);
 
   return (
     <div className="PokeImage flex justify-center items-center flex-col">

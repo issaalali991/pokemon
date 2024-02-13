@@ -3,14 +3,24 @@ import { DataContext } from "../../contexts/PokemonContext";
 import ResponsivePagination from "react-responsive-pagination";
 import "react-responsive-pagination/themes/classic.css";
 import { useNavigate } from "react-router-dom";
+import {useParams} from "react-router-dom";
 import PokemonCard from "./PokemonCard";
 
 
 function ChoosePokemon() {
-  const { pokeList } = useContext(DataContext);
+  const { pokeList,selectedPokemon1,
+    setSelectedPokemon1,
+    selectedPokemon2,
+    setSelectedPokemon2,
+    setIndexPok1,
+    setIndexPok2,indexPok1,indexPok2
+   } = useContext(DataContext);
   const [currentPage, setCurrentPage] = useState(1);
   const [pokselected, setPokselected] = useState(1);
   const navigate = useNavigate();
+
+  // ------get id from url -----
+  const { id } = useParams();
 
 
   const itemsPerPage = 13;
@@ -27,13 +37,29 @@ function ChoosePokemon() {
   />
   
   }
-  {
-    console.log(pokselected)
-  }
+ 
  
 
     <div>
       <button className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+      onClick={() => {
+        // setIndex(pokselected);
+        if (id === "1") {
+          setSelectedPokemon1(pokselected);
+          setIndexPok1(pokselected);
+          console.log(pokselected);
+          window.localStorage.setItem("indexPok1", pokselected);
+          
+        } else {
+          setSelectedPokemon2(pokselected);
+          setIndexPok2(pokselected);
+          console.log(pokselected);
+          window.localStorage.setItem("indexPok2", pokselected);
+        }
+        
+        navigate("/");
+        
+      }}
       >
         Choose
       </button>
@@ -70,4 +96,4 @@ function ChoosePokemon() {
   );
 }
 
-export default ChoosePokemon;
+export default  ChoosePokemon;

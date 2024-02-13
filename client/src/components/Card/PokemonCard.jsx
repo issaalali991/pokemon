@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function PokemonCard({ pokemon }) {
+function PokemonCard({ pokemon}) {
   const [pokeImg, setPokeImg] = useState("");
   const [loading, setLoading] = useState(true);
   useEffect(() => {

@@ -4,6 +4,8 @@ import BeatLoader from "react-spinners/BeatLoader";
 import { DataContext } from ".././contexts/PokemonContext.jsx";
 import Pokemon from "../components/Pokemon.jsx";
 import FightButton from "./FightButton.jsx";
+import { useNavigate } from "react-router-dom";
+import ChoosePokemon from "./Card/ChoosePokemon.jsx";
 
 function PokeList() {
   const {
@@ -13,7 +15,23 @@ function PokeList() {
     setIsLoading,
     selectedPokemon1,
     selectedPokemon2,
+    indexPok1,
+    indexPok2,
+    setIndexPok1,
+    setIndexPok2,
   } = useContext(DataContext);
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    window.localStorage.getItem("indexPok1")!==null
+      ? setIndexPok1(window.localStorage.getItem("indexPok1"))
+      : setIndexPok1(null);
+    window.localStorage.getItem("indexPok2")!==null
+      ? setIndexPok2(window.localStorage.getItem("indexPok2"))
+      : setIndexPok2(null);
+  }, [selectedPokemon1, selectedPokemon2]);
+  console.log("indexPok1", indexPok1);
+  console.log("indexPok2", indexPok2);
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
@@ -32,7 +50,20 @@ function PokeList() {
           </h1>
           <div className="flex justify-around items-center mb-8">
             {/* Left Side Pokemon */}
-            <Pokemon number={"one"} />
+
+            <button
+              className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+              onClick={() => {
+                navigate("/pokemon/1");
+              }}
+            >
+              Choose Player 1
+            </button>
+
+            <Pokemon
+              number={"one"}
+              index={indexPok1 == null ? null : indexPok1}
+            />
 
             <div className="centerDiv">
               {selectedPokemon1 && selectedPokemon2 ? (
@@ -42,7 +73,18 @@ function PokeList() {
               )}
             </div>
             {/* Right Side Pokemon */}
-            <Pokemon number={"two"} />
+            <Pokemon
+              number={"two"}
+              index={indexPok2 == null ? null : indexPok2}
+            />
+            <button
+              className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+              onClick={() => {
+                navigate("/pokemon/2");
+              }}
+            >
+              Choose Player 2
+            </button>
           </div>
 
           <hr className="my-8" />
