@@ -79,7 +79,7 @@ export default function Pokemon({ number, selectedPokemon, index }) {
     img[0].src = pokeImg[counter];
   } catch (error) {}
 
-  counter != 3 ? counter++ : (counter = 0);
+  counter < 3 ? counter++ : (counter = 0);
 }
 
 //  --------------------------------------------------- component PokeImage
