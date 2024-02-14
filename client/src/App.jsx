@@ -22,16 +22,25 @@ export default function App() {
   return (
     <div
       id="App"
-      className={`App bg-gray-200 p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center ${bgImage} bg-cover bg-center bg-no-repeat`}
+      className={`App bg-gray-200 p-4 flex flex-col justify-center ${bgImage} bg-cover bg-center bg-no-repeat`}
     >
+      <img
+        src="../../public/Pokefight.svg"
+        alt="Pokefight"
+        className="w-3/6 m-8"
+      />
+
       <Routes>
         <Route path="/" element={<PokeList />} />
         <Route path="/pokemon/" element={<ChoosePokemon />} />
         <Route path="/pokemon/:id" element={<ChoosePokemon />} />
       </Routes>
-      {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
-
-      {/* <p>Footer</p> */}
+      <button
+        className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+        onClick={() => {
+          window.localStorage.clear();
+        }}
+      >Restart</button>
     </div>
   );
 }

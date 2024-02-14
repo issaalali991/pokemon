@@ -1,7 +1,6 @@
-
-export default function PokemonDefault({selectHandler}) {
+export default function PokemonDefault({ selectHandler }) {
   return (
-    <div className="pcontainter">
+    <div className="PokemonDefault">
       <div className="DefaultImage" onClick={selectHandler}></div>
     </div>
   );

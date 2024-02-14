@@ -7,31 +7,28 @@ import Search from "./Search";
 export default function Pokemon({ number, selectedPokemon, index }) {
   const {
     pokeList,
-    selectedPokemon1,
     setSelectedPokemon1,
-    selectedPokemon2,
     setSelectedPokemon2,
-    searched,
-    setSearched,
-    indexPok1,
     setIndexPok1,
-    indexPok2,
     setIndexPok2,
     pokemon,
     setPokemon,
+    searched
   } = useContext(DataContext);
+
   const [selected, setSelected] = useState(false);
   const [, forceUpdate] = useState();
+
   useEffect(() => {
     // forceUpdate(Math.random());
     setPokemon(searched);
     index = pokemon;
 }, []);
-
   
   return !selectedPokemon ? (
     // Unselected State
-    <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex justify-center items-center w-48 h-48 cursor-pointer">
+    // cursor-pointer flex justify-center items-center flex-col
+    <div className="Pokemon bg-gray-100">
       <Search />
       <PokemonDefault
         selectHandler={() => {
@@ -49,13 +46,11 @@ export default function Pokemon({ number, selectedPokemon, index }) {
     </div>
   ) : (
     // Selected Pokemon
-    <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center w-48 h-48 ">
-      <div className="flex justify-center items-center flex-col ">
-        
-        <h3
-          className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full
-      "
-        >
+    //  flex flex-col justify-center items-center
+    <div className="Pokemon bg-gray-100">
+      <div className="">
+        <Search />
+        <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white rounded-lg p-2  w-full">
           {pokeList[index == null ? pokemon : index].name.english}
         </h3>
       </div>
@@ -63,11 +58,13 @@ export default function Pokemon({ number, selectedPokemon, index }) {
         pokemon={pokeList[index == null ? pokemon : index]}
         number={number}
       />
+      <PokeHealth pokemon={pokeList[index == null ? pokemon : index]} />
       <PokeData pokemon={pokeList[index == null ? pokemon : index]} />
     </div>
   );
 }
 
+//  ---------------------------------------------------function for Imagechange
 
  let counter = 0;
 
@@ -116,18 +113,27 @@ function PokeImage({ pokemon, number }) {
 
   return searched !== 0 ? (
     <div className="PokeImage flex justify-center items-center flex-col">
-      {loading && <BeatLoader color="#22C55E" className="my-4" />}
-      <img
-        name={`img-${number}`}
-        src={pokeImg[counter]}
-        alt={pokemon.name.english}
-        className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
-      />
+      {loading && (
+        <BeatLoader
+          color="#22C55E"
+          className="my-4 flex w-60 h-52 flex-row justify-center items-center"
+        />
+      )}
+      {!loading && (
+        <img
+          name={`img-${number}`}
+          src={pokeImg[counter]}
+          alt={pokemon.name.english}
+          className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
+        />
+      )}
     </div>
   ) : null;
  }
 
- function PokeData({ pokemon }) {
+//  --------------------------------------------------- component PokeHealth
+
+function PokeHealth({ pokemon }) {
   const gradientColor = `bg-gradient-to-r from-green-500 to-green-${
     pokemon.base.HP > 120
       ? 500
@@ -136,29 +142,33 @@ function PokeImage({ pokemon, number }) {
       : pokemon.base.HP > 80 && pokemon.base.HP < 120
       ? 150
       : 50
-     }`;
-     const { searched } = useContext(DataContext);
-  return searched !== 0 ? (
-    <div className="PokeData mt-4">
+  }`;
+  return (
+    <div className="PokeHealth">
       <div
-        className={`bg-green-500 text-white  font-bold rounded-full h-12 flex items-center justify-center mb-4 ${gradientColor}
-      } `}
+        className={`bg-green-500 text-white font-bold rounded-full h-12 flex items-center justify-center ${gradientColor}} `}
       >
         HP: {pokemon.base.HP}
       </div>
-      <div>
-        <ul
-          className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200
-        "
-        >
-          <li>Type: {pokemon.type.join(", ")}</li>
-          <li>S-Attack: {pokemon.base["Sp. Attack"]}</li>
-          <li>S-Defense: {pokemon.base["Sp. Defense"]}</li>
-          <li>Attack: {pokemon.base.Attack}</li>
-          <li>Defense: {pokemon.base.Defense}</li>
-          <li>Speed: {pokemon.base.Speed}</li>
-        </ul>
-      </div>
+    </div>
+  );
+}
+
+//  --------------------------------------------------- component PokeData
+
+function PokeData({ pokemon }) {
+
+  const { searched } = useContext(DataContext);
+  return searched !== 0 ? (
+    <div className="PokeData">
+      <ul className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200 p-2">
+        <li><span>Type: </span>{pokemon.type.join(", ")}</li>
+        <li><span>S-Attack:</span> {pokemon.base["Sp. Attack"]}</li>
+        <li><span>S-Defense:</span> {pokemon.base["Sp. Defense"]}</li>
+        <li><span>Attack:</span> {pokemon.base.Attack}</li>
+        <li><span>Defense:</span> {pokemon.base.Defense}</li>
+        <li><span>Speed:</span> {pokemon.base.Speed}</li>
+      </ul>
     </div>
   ) : null;
 }
@@ -183,4 +193,3 @@ function PokeImage({ pokemon, number }) {
 // Pokémon-Typ: Stahl
 // Pokémon-Typ: Fee
 
-//  ---------------------------------------------------function for Imagechange
