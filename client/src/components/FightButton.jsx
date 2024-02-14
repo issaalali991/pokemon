@@ -4,7 +4,7 @@ function FightButton() {
   return (
     <div>
       <button>
-        <img src="/fight.svg" alt="" className="mb-4 w-72 h-72" />
+        <img src="/fight.svg" alt="" className="mb-4 w-96 h-11/12" />
       </button>
     </div>
   );

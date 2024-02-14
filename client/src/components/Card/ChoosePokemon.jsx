@@ -30,6 +30,7 @@ function ChoosePokemon() {
   const indexOfFirstEntry = indexOfLastEntry - itemsPerPage;
   const displayedEntries =
     (pokeList && pokeList.slice(indexOfFirstEntry, indexOfLastEntry)) || [];
+  const [filtered, setFiltered] = useState(displayedEntries&&displayedEntries);
 
   return (
     <div
@@ -72,21 +73,39 @@ function ChoosePokemon() {
           className="table-auto w-full text-center
       "
         >
-          {displayedEntries.map((pokemon) => (
-            <>
-              <tr key={pokemon.id}>
-                <td
-                  onClick={() => {
-                    setPokselected(pokemon.id - 1);
-                    console.log(pokemon.id);
-                  }}
-                  className="cursor-pointer"
-                >
-                  {pokemon.name.english}
-                </td>
-              </tr>
-            </>
-          ))}
+          <input
+            type="text"
+            placeholder="search.."
+            className=" w-1/2 p-2 rounded-lg mb-4
+        text-center"
+            onChange={(e) => {
+              console.log(e.target.value);
+              setFiltered(
+                pokeList.filter((pokemon) =>
+                  pokemon.name.english
+                    .toLowerCase()
+                    .includes(e.target.value.toLowerCase())
+                )
+              );
+              console.log(filtered);
+            }}
+          />
+          {filtered &&
+            filtered.map((pokemon) => (
+              <>
+                <tr key={pokemon.id}>
+                  <td
+                    onClick={() => {
+                      setPokselected(pokemon.id - 1);
+                      console.log(pokemon.id);
+                    }}
+                    className="cursor-pointer"
+                  >
+                    {pokemon.name.english}
+                  </td>
+                </tr>
+              </>
+            ))}
         </table>
         <ResponsivePagination
           total={totalPages}
