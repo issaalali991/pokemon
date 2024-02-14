@@ -2,29 +2,34 @@ import { useContext, useState, useEffect } from "react";
 import { DataContext } from ".././contexts/PokemonContext.jsx";
 
 function Search() {
-  const { searched, setSearched, pokeList } = useContext(DataContext);
+  const { searched, setSearched, pokeList ,pokemon,setPokemon } = useContext(DataContext);
+  const [textToSearch, setTextToSearch] = useState("");
 
-  console.log(`searched:(${searched})`);
   let found = undefined;
-  let id = undefined;
+  let id = Math.floor(Math.random() * 50)+1;
 
   found = pokeList.find(
-    (item) => item.name.english.toLowerCase() == searched.toLowerCase()
+    (item) => item.name.english.toLowerCase() === textToSearch.toLowerCase()
   );
 
   try {
     id = found.id;
+    id--;
   } catch (error) {
     console.log(error);
   }
-  console.log("id from search", id);
+  setSearched(id);
+  useEffect(() => {
+    setPokemon(id);
+  }, [searched]);
+
 
   return (
     <div className="mb-2 border border-red-500 border-r">
       <input
         type="text"
         placeholder="Search a Pokemon..."
-        onChange={(e) => setSearched(e.target.value)}
+        onChange={(e) => setTextToSearch(e.target.value)}
       />
     </div>
   );
