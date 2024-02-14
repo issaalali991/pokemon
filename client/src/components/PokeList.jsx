@@ -33,74 +33,62 @@ function PokeList() {
   // console.log("indexPok2", indexPok2);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="h-screen">
       {loading && (
         <div className="my-4">
           <BeatLoader color="#36d7b7" />
         </div>
       )}
       {!loading && (
-        <div className="text-center">
-          <h1
-            className="text-4xl font-bold mb-8 text-white  shadow
-          "
-          >
-            Pokefight
-          </h1>
-          {/* <button
-              className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+        <div className="flex flex-row justify-center items-center">
+          {/* BUTTON LEFT SIDE */}
+
+          <button
+            className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
             onClick={() => {
-              window.localStorage.clear();
-             
+              window.localStorage.clear("indexPok1");
 
-            }
-            }
-            >
-              Restart
-            </button> */}
-          <div className="flex justify-around items-center mb-8">
-            {/* Left Side Pokemon */}
+              navigate("/pokemon/1");
+            }}
+          >
+            Choose Pokemon One
+          </button>
 
-            <button
-              className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
-              onClick={() => {
-                window.localStorage.clear("indexPok1");
+          {/* POKEMON LEFT SIDE  */}
 
-                navigate("/pokemon/1");
-              }}
-            >
-              Choose Pokemon One
-            </button>
+          <Pokemon
+            number={"one"}
+            index={indexPok1 == null ? null : indexPok1}
+            selectedPokemon={selectedPokemon1}
+          />
 
-            <Pokemon
-              number={"one"}
-              index={indexPok1 == null ? null : indexPok1}
-              selectedPokemon={selectedPokemon1}
-            />
-
-            <div className="centerDiv">
-              {selectedPokemon1 && selectedPokemon2 ? (
-                <FightButton />
-              ) : (
-                <img src="./vs.png" alt="" className="mb-4 w-20 h-20" />
-              )}
-            </div>
-            {/* Right Side Pokemon */}
-            <Pokemon
-              number={"two"}
-              index={indexPok2 == null ? null : indexPok2}
-              selectedPokemon={selectedPokemon2}
-            />
-            <button
-              className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
-              onClick={() => {
-                window.localStorage.clear("indexPok2");
-                navigate("/pokemon/2");
-              }}
-            >
-              Choose Pokemon Two
-            </button>
+          <div className="centerDiv">
+            {selectedPokemon1 && selectedPokemon2 ? (
+              <FightButton />
+            ) : (
+              <img src="./vs.svg" alt="" className="mb-4 w-20 h-20" />
+            )}
           </div>
+
+          {/* POKEMON RIGHT SIDE  */}
+
+          <Pokemon
+            number={"two"}
+            index={indexPok2 == null ? null : indexPok2}
+            selectedPokemon={selectedPokemon2}
+          />
+
+          {/* BUTTO RIGHT */}
+
+          <button
+            className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+            onClick={() => {
+              window.localStorage.clear("indexPok2");
+              navigate("/pokemon/2");
+            }}
+          >
+            Choose Pokemon Two
+          </button>
         </div>
       )}
     </div>
