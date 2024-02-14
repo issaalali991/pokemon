@@ -162,7 +162,7 @@ function PokeData({ pokemon }) {
   return searched !== 0 ? (
     <div className="PokeData">
       <ul className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200 p-2">
-        <li><span>Type: </span>{pokemon.type.join(", ")}</li>
+        <li><div className="type">Type: </div>{pokemon.type.join(", ")}</li>
         <li><span>S-Attack:</span> {pokemon.base["Sp. Attack"]}</li>
         <li><span>S-Defense:</span> {pokemon.base["Sp. Defense"]}</li>
         <li><span>Attack:</span> {pokemon.base.Attack}</li>
