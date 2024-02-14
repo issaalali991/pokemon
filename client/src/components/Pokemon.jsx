@@ -51,7 +51,10 @@ export default function Pokemon({ number, selectedPokemon, index }) {
           {pokeList[index == null ? pokemon : index].name.english}
         </h3>
       </div>
-      <PokeImage pokemon={pokeList[index == null ? pokemon : index]} />
+      <PokeImage
+        pokemon={pokeList[index == null ? pokemon : index]}
+        number={number}
+      />
       <PokeData pokemon={pokeList[index == null ? pokemon : index]} />
     </div>
   );
@@ -75,6 +78,63 @@ export default function Pokemon({ number, selectedPokemon, index }) {
 // Pokémon-Typ: Unlicht
 // Pokémon-Typ: Stahl
 // Pokémon-Typ: Fee
+
+//  ---------------------------------------------------function for Imagechange
+let counter = 0;
+
+function changeImg(pokeImg, number) {
+  if (pokeImg.length == 0) {
+    return;
+  }
+
+  let img = document.getElementsByName(`img-${number}`);
+
+  try {
+    img[0].src = pokeImg[counter];
+  } catch (error) {}
+
+  counter != 3 ? counter++ : (counter = 0);
+}
+
+//  --------------------------------------------------- component PokeImage
+function PokeImage({ pokemon, number }) {
+  const [pokeImg, setPokeImg] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  setInterval(() => {
+    changeImg(pokeImg, number);
+  }, 2000);
+
+  useEffect(() => {
+    const getApiData = async () => {
+      const response = await fetch(
+        `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
+      );
+      const data = await response.json();
+      console.log(data);
+      setPokeImg([
+        data.sprites.front_default,
+        data.sprites.back_default,
+        data.sprites.front_shiny,
+        data.sprites.back_shiny,
+      ]);
+      setLoading(false);
+    };
+    getApiData();
+  }, []);
+
+  return (
+    <div className="PokeImage flex justify-center items-center flex-col">
+      {loading && <BeatLoader color="#22C55E" className="my-4" />}
+      <img
+        name={`img-${number}`}
+        src={pokeImg[counter]}
+        alt={pokemon.name.english}
+        className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
+      />
+    </div>
+  );
+}
 
 function PokeData({ pokemon }) {
   const gradientColor = `bg-gradient-to-r from-green-500 to-green-${
@@ -107,36 +167,6 @@ function PokeData({ pokemon }) {
           <li>Speed: {pokemon.base.Speed}</li>
         </ul>
       </div>
-    </div>
-  );
-}
-
-function PokeImage({ pokemon }) {
-  const [pokeImg, setPokeImg] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const getApiData = async () => {
-      const response = await fetch(
-        `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
-      );
-      const data = await response.json();
-      console.log(data);
-      setPokeImg(data.sprites.front_default);
-      setLoading(false);
-    };
-    getApiData();
-  }, []);
-
-  return (
-    <div className="PokeImage flex justify-center items-center flex-col">
-      {loading && <BeatLoader color="#22C55E" className="my-4" />}
-      <img
-        src={pokeImg}
-        alt={pokemon.name.english}
-        className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500 
-        "
-      />
     </div>
   );
 }

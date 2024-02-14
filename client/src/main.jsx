@@ -6,11 +6,11 @@ import { BrowserRouter } from "react-router-dom";
 import PokemonContextProvider from "./contexts/PokemonContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <PokemonContextProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </PokemonContextProvider>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
