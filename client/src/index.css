@@ -110,13 +110,12 @@ table th {
 display: inline-block;
  width: 0px;
  color: black;
- /* height: 20px; */
+
 
 }
 .underbar{
   height: 25px; 
   background-color: #a9b7c0; 
-  /* width: 100px; */
 }
 .bar {
   
