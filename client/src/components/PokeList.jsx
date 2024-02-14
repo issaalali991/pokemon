@@ -66,7 +66,7 @@ function PokeList() {
             {selectedPokemon1 && selectedPokemon2 ? (
               <FightButton />
             ) : (
-              <img src="./vs.svg" alt="" className="mb-4 w-20 h-20" />
+              <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
             )}
           </div>
 
