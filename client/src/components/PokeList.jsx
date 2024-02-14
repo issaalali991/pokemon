@@ -101,8 +101,6 @@ function PokeList() {
               Choose Pokemon Two
             </button>
           </div>
-
-          <hr className="my-8" />
         </div>
       )}
     </div>
