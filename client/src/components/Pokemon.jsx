@@ -4,7 +4,7 @@ import PokemonDefault from "./PokemonDefault";
 import BeatLoader from "react-spinners/BeatLoader";
 import Search from "./Search";
 
-export default function Pokemon({ number }) {
+export default function Pokemon({ number, selectedPokemon, index }) {
   const {
     pokeList,
     selectedPokemon1,
@@ -13,35 +13,28 @@ export default function Pokemon({ number }) {
     setSelectedPokemon2,
     searched,
     setSearched,
+    indexPok1,
+    setIndexPok1,
+    indexPok2,
+    setIndexPok2,
   } = useContext(DataContext);
   const pokemon = Math.floor(Math.random() * pokeList.length);
   // const pokemon = searched.id;
   const [selected, setSelected] = useState(false);
 
-  return !selected ? (
+  return !selectedPokemon ? (
     // Unselected State
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex justify-center items-center w-48 h-48 cursor-pointer">
       <PokemonDefault
         selectHandler={() => {
-          setSelected(true);
+          // setSelected(true);
           if (number === "one") {
-            console.log(selectedPokemon1);
             setSelectedPokemon1(true);
-            console.log(
-              "in Pokemon",
-              "@ selectHandler",
-              number,
-              selectedPokemon1
-            );
+            setIndexPok1(pokemon);
           } else {
             console.log(selectedPokemon2);
             setSelectedPokemon2(true);
-            console.log(
-              "in Pokemon",
-              "@ selectHandler",
-              number,
-              selectedPokemon2
-            );
+            setIndexPok2(pokemon);
           }
         }}
       />
@@ -49,18 +42,20 @@ export default function Pokemon({ number }) {
   ) : (
     // Selected Pokemon
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center w-48 h-48 ">
-        <div className="flex justify-center items-center flex-col ">
-          <Search />
+      <div className="flex justify-center items-center flex-col ">
+        <Search />
         <h3
           className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full
       "
         >
-          {pokeList[pokemon].name.english}
-          {pokeList[pokemon].name.english}
+          {pokeList[index == null ? pokemon : index].name.english}
         </h3>
       </div>
-      <PokeImage pokemon={pokeList[pokemon]} />
-      <PokeData pokemon={pokeList[pokemon]} />
+      <PokeImage
+        pokemon={pokeList[index == null ? pokemon : index]}
+        number={number}
+      />
+      <PokeData pokemon={pokeList[index == null ? pokemon : index]} />
     </div>
   );
 }
@@ -84,6 +79,62 @@ export default function Pokemon({ number }) {
 // Pokémon-Typ: Stahl
 // Pokémon-Typ: Fee
 
+//  ---------------------------------------------------function for Imagechange
+let counter = 0;
+
+function changeImg(pokeImg, number) {
+  if (pokeImg.length == 0) {
+    return;
+  }
+
+  let img = document.getElementsByName(`img-${number}`);
+
+  try {
+    img[0].src = pokeImg[counter];
+  } catch (error) {}
+
+  counter != 3 ? counter++ : (counter = 0);
+}
+
+//  --------------------------------------------------- component PokeImage
+function PokeImage({ pokemon, number }) {
+  const [pokeImg, setPokeImg] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  setInterval(() => {
+    changeImg(pokeImg, number);
+  }, 2000);
+
+  useEffect(() => {
+    const getApiData = async () => {
+      const response = await fetch(
+        `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
+      );
+      const data = await response.json();
+      console.log(data);
+      setPokeImg([
+        data.sprites.front_default,
+        data.sprites.back_default,
+        data.sprites.front_shiny,
+        data.sprites.back_shiny,
+      ]);
+      setLoading(false);
+    };
+    getApiData();
+  }, []);
+
+  return (
+    <div className="PokeImage flex justify-center items-center flex-col">
+      {loading && <BeatLoader color="#22C55E" className="my-4" />}
+      <img
+        name={`img-${number}`}
+        src={pokeImg[counter]}
+        alt={pokemon.name.english}
+        className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
+      />
+    </div>
+  );
+}
 
 function PokeData({ pokemon }) {
   const gradientColor = `bg-gradient-to-r from-green-500 to-green-${
@@ -116,36 +167,6 @@ function PokeData({ pokemon }) {
           <li>Speed: {pokemon.base.Speed}</li>
         </ul>
       </div>
-    </div>
-  );
-}
-
-function PokeImage({ pokemon }) {
-  const [pokeImg, setPokeImg] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const getApiData = async () => {
-      const response = await fetch(
-        `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
-      );
-      const data = await response.json();
-      console.log(data);
-      setPokeImg(data.sprites.front_default);
-      setLoading(false);
-    };
-    getApiData();
-  }, [pokemon.id]);
-
-  return (
-    <div className="PokeImage flex justify-center items-center flex-col">
-      {loading && <BeatLoader color="#22C55E" className="my-4" />}
-      <img
-        src={pokeImg}
-        alt={pokemon.name.english}
-        className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500 
-        "
-      />
     </div>
   );
 }

@@ -11,6 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<PokeList />} />
         <Route path="/pokemon/" element={<ChoosePokemon />} />
+        <Route path="/pokemon/:id" element={<ChoosePokemon />} />
       </Routes>
       {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
    
