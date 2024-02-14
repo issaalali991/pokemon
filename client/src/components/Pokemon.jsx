@@ -8,7 +8,6 @@ export default function Pokemon({ number, selectedPokemon, index }) {
   const {
     pokeList,
     setSelectedPokemon1,
-    selectedPokemon2,
     setSelectedPokemon2,
     setIndexPok1,
     setIndexPok2,
@@ -16,14 +15,15 @@ export default function Pokemon({ number, selectedPokemon, index }) {
     setPokemon,
     searched
   } = useContext(DataContext);
+
   const [selected, setSelected] = useState(false);
   const [, forceUpdate] = useState();
+
   useEffect(() => {
     // forceUpdate(Math.random());
     setPokemon(searched);
     index = pokemon;
 }, []);
-
   
   return !selectedPokemon ? (
     // Unselected State
@@ -64,6 +64,7 @@ export default function Pokemon({ number, selectedPokemon, index }) {
   );
 }
 
+//  ---------------------------------------------------function for Imagechange
 
  let counter = 0;
 
@@ -192,4 +193,3 @@ function PokeData({ pokemon }) {
 // Pokémon-Typ: Stahl
 // Pokémon-Typ: Fee
 
-//  ---------------------------------------------------function for Imagechange
