@@ -17,14 +17,22 @@ export default function Pokemon({ number, selectedPokemon, index }) {
     setIndexPok1,
     indexPok2,
     setIndexPok2,
+    pokemon,
+    setPokemon,
   } = useContext(DataContext);
-  const pokemon = Math.floor(Math.random() * pokeList.length);
-  // const pokemon = searched.id;
   const [selected, setSelected] = useState(false);
+  const [, forceUpdate] = useState();
+  useEffect(() => {
+    // forceUpdate(Math.random());
+    setPokemon(searched);
+    index = pokemon;
+}, []);
 
+  
   return !selectedPokemon ? (
     // Unselected State
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex justify-center items-center w-48 h-48 cursor-pointer">
+      <Search />
       <PokemonDefault
         selectHandler={() => {
           // setSelected(true);
@@ -32,7 +40,7 @@ export default function Pokemon({ number, selectedPokemon, index }) {
             setSelectedPokemon1(true);
             setIndexPok1(pokemon);
           } else {
-            console.log(selectedPokemon2);
+
             setSelectedPokemon2(true);
             setIndexPok2(pokemon);
           }
@@ -43,7 +51,7 @@ export default function Pokemon({ number, selectedPokemon, index }) {
     // Selected Pokemon
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center w-48 h-48 ">
       <div className="flex justify-center items-center flex-col ">
-        <Search />
+        
         <h3
           className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full
       "
@@ -60,29 +68,10 @@ export default function Pokemon({ number, selectedPokemon, index }) {
   );
 }
 
-// Pokémon-Typ: Normal
-// Pokémon-Typ: Pflanze
-// Pokémon-Typ: Feuer
-// Pokémon-Typ: Wasser
-// Pokémon-Typ: Elektro
-// Pokémon-Typ: Kampf
-// Pokémon-Typ: Flug
-// Pokémon-Typ: Gift
-// Pokémon-Typ: Boden
-// Pokémon-Typ: Gestein
-// Pokémon-Typ: Käfer
-// Pokémon-Typ: Eis
-// Pokémon-Typ: Psycho
-// Pokémon-Typ: Geist
-// Pokémon-Typ: Drache
-// Pokémon-Typ: Unlicht
-// Pokémon-Typ: Stahl
-// Pokémon-Typ: Fee
 
-//  ---------------------------------------------------function for Imagechange
-let counter = 0;
+ let counter = 0;
 
-function changeImg(pokeImg, number) {
+ function changeImg(pokeImg, number) {
   if (pokeImg.length == 0) {
     return;
   }
@@ -100,7 +89,8 @@ function changeImg(pokeImg, number) {
 function PokeImage({ pokemon, number }) {
   const [pokeImg, setPokeImg] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const {  searched,
+  } = useContext(DataContext);
   setInterval(() => {
     changeImg(pokeImg, number);
   }, 2000);
@@ -111,7 +101,8 @@ function PokeImage({ pokemon, number }) {
         `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
       );
       const data = await response.json();
-      console.log(data);
+
+      setPokeImg([]);
       setPokeImg([
         data.sprites.front_default,
         data.sprites.front_shiny,
@@ -123,7 +114,7 @@ function PokeImage({ pokemon, number }) {
     getApiData();
   }, []);
 
-  return (
+  return searched !== 0 ? (
     <div className="PokeImage flex justify-center items-center flex-col">
       {loading && <BeatLoader color="#22C55E" className="my-4" />}
       <img
@@ -133,10 +124,10 @@ function PokeImage({ pokemon, number }) {
         className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
       />
     </div>
-  );
-}
+  ) : null;
+ }
 
-function PokeData({ pokemon }) {
+ function PokeData({ pokemon }) {
   const gradientColor = `bg-gradient-to-r from-green-500 to-green-${
     pokemon.base.HP > 120
       ? 500
@@ -145,8 +136,9 @@ function PokeData({ pokemon }) {
       : pokemon.base.HP > 80 && pokemon.base.HP < 120
       ? 150
       : 50
-  }`;
-  return (
+     }`;
+     const { searched } = useContext(DataContext);
+  return searched !== 0 ? (
     <div className="PokeData mt-4">
       <div
         className={`bg-green-500 text-white  font-bold rounded-full h-12 flex items-center justify-center mb-4 ${gradientColor}
@@ -168,5 +160,27 @@ function PokeData({ pokemon }) {
         </ul>
       </div>
     </div>
-  );
+  ) : null;
 }
+
+
+// Pokémon-Typ: Normal
+// Pokémon-Typ: Pflanze
+// Pokémon-Typ: Feuer
+// Pokémon-Typ: Wasser
+// Pokémon-Typ: Elektro
+// Pokémon-Typ: Kampf
+// Pokémon-Typ: Flug
+// Pokémon-Typ: Gift
+// Pokémon-Typ: Boden
+// Pokémon-Typ: Gestein
+// Pokémon-Typ: Käfer
+// Pokémon-Typ: Eis
+// Pokémon-Typ: Psycho
+// Pokémon-Typ: Geist
+// Pokémon-Typ: Drache
+// Pokémon-Typ: Unlicht
+// Pokémon-Typ: Stahl
+// Pokémon-Typ: Fee
+
+//  ---------------------------------------------------function for Imagechange
