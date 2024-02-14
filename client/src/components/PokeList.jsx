@@ -22,16 +22,16 @@ function PokeList() {
   } = useContext(DataContext);
   const navigate = useNavigate();
   
-  useEffect(() => {
-    window.localStorage.getItem("indexPok1")!=null
-      ? setIndexPok1(window.localStorage.getItem("indexPok1"))
-      : setIndexPok1(null);
-    window.localStorage.getItem("indexPok2")!=null
-      ? setIndexPok2(window.localStorage.getItem("indexPok2"))
-      : setIndexPok2(null);
-  }, [selectedPokemon1, selectedPokemon2]);
-  console.log("indexPok1", indexPok1);
-  console.log("indexPok2", indexPok2);
+  // useEffect(() => {
+  //   window.localStorage.getItem("indexPok1")!=null
+  //     ? setIndexPok1(window.localStorage.getItem("indexPok1"))
+  //     : setIndexPok1(null);
+  //   window.localStorage.getItem("indexPok2")!=null
+  //     ? setIndexPok2(window.localStorage.getItem("indexPok2"))
+  //     : setIndexPok2(null);
+  // }, [selectedPokemon1, selectedPokemon2]);
+  // console.log("indexPok1", indexPok1);
+  // console.log("indexPok2", indexPok2);
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
@@ -48,24 +48,26 @@ function PokeList() {
           >
             Pokefight
           </h1>
-          <button
+          {/* <button
               className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
             onClick={() => {
               window.localStorage.clear();
-              setIndexPok1(null);
-              setIndexPok2(null);
+             
 
             }
             }
             >
               Restart
-            </button>
+            </button> */}
           <div className="flex justify-around items-center mb-8">
             {/* Left Side Pokemon */}
 
             <button
               className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
               onClick={() => {
+                window.localStorage.clear("indexPok1");
+               
+
                 navigate("/pokemon/1");
               }}
             >
@@ -73,7 +75,7 @@ function PokeList() {
             </button>
 
             <Pokemon
-            key={selectedPokemon1} 
+          
               number={"one"}
               index={indexPok1 == null ? null : indexPok1}
               selectedPokemon={selectedPokemon1}
@@ -88,7 +90,7 @@ function PokeList() {
             </div>
             {/* Right Side Pokemon */}
             <Pokemon
-            key={selectedPokemon2} 
+          
               number={"two"}
               index={indexPok2 == null ? null : indexPok2}
               selectedPokemon={selectedPokemon2}
@@ -96,6 +98,8 @@ function PokeList() {
             <button
               className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
               onClick={() => {
+                
+                window.localStorage.clear("indexPok2");
                 navigate("/pokemon/2");
               }}
             >

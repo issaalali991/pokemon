@@ -4,7 +4,7 @@ import PokemonDefault from "./PokemonDefault";
 import BeatLoader from "react-spinners/BeatLoader";
 import Search from "./Search";
 
-export default function Pokemon({ number,selectedPokemon,index }) {
+export default function Pokemon({ number, selectedPokemon, index }) {
   const {
     pokeList,
     selectedPokemon1,
@@ -21,33 +21,20 @@ export default function Pokemon({ number,selectedPokemon,index }) {
   const pokemon = Math.floor(Math.random() * pokeList.length);
   // const pokemon = searched.id;
   const [selected, setSelected] = useState(false);
-  
-  return !selectedPokemon? (
+
+  return !selectedPokemon ? (
     // Unselected State
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex justify-center items-center w-48 h-48 cursor-pointer">
       <PokemonDefault
         selectHandler={() => {
           // setSelected(true);
           if (number === "one") {
-            console.log(selectedPokemon1);
             setSelectedPokemon1(true);
             setIndexPok1(pokemon);
-            console.log(
-              "in Pokemon",
-              "@ selectHandler",
-              number,
-              selectedPokemon1
-            );
           } else {
             console.log(selectedPokemon2);
             setSelectedPokemon2(true);
             setIndexPok2(pokemon);
-            console.log(
-              "in Pokemon",
-              "@ selectHandler",
-              number,
-              selectedPokemon2
-            );
           }
         }}
       />
@@ -55,18 +42,17 @@ export default function Pokemon({ number,selectedPokemon,index }) {
   ) : (
     // Selected Pokemon
     <div className="Pokemon bg-gray-100 p-4 rounded-lg shadow-md flex flex-col justify-center items-center w-48 h-48 ">
-        <div className="flex justify-center items-center flex-col ">
-          <Search />
+      <div className="flex justify-center items-center flex-col ">
+        <Search />
         <h3
           className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full
       "
         >
-          {pokeList[index==null?pokemon:index].name.english}
-          {pokeList[index==null?pokemon:index].name.english}
+          {pokeList[index == null ? pokemon : index].name.english}
         </h3>
       </div>
-      <PokeImage pokemon={pokeList[index==null?pokemon:index]} />
-      <PokeData pokemon={pokeList[index==null?pokemon:index]} />
+      <PokeImage pokemon={pokeList[index == null ? pokemon : index]} />
+      <PokeData pokemon={pokeList[index == null ? pokemon : index]} />
     </div>
   );
 }
@@ -89,7 +75,6 @@ export default function Pokemon({ number,selectedPokemon,index }) {
 // Pokémon-Typ: Unlicht
 // Pokémon-Typ: Stahl
 // Pokémon-Typ: Fee
-
 
 function PokeData({ pokemon }) {
   const gradientColor = `bg-gradient-to-r from-green-500 to-green-${
