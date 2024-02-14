@@ -29,7 +29,8 @@ function PokemonCard({ pokemon}) {
         <img
           src={pokeImg}
           alt=""
-          className="w-80 h-80 m-0 p-0 rounded-full bg-white border-4 "
+          className="w-80 h-80 m-0 p-0 rounded-full bg-white border-4  
+          "
         />
         <div className="PokeData mt-4">
           <div
