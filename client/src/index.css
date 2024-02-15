@@ -101,3 +101,27 @@ table th {
   background-color: #04aa6d;
   color: white;
 }
+.li{
+  text-align: left;
+}
+
+.pInLi{
+  text-align: center;
+display: inline-block;
+ width: 0px;
+ color: black;
+
+
+}
+.underbar{
+  height: 25px; 
+  background-color: #a9b7c0; 
+}
+.bar {
+  
+    
+     background-color: #3498db; 
+     width: 100px;
+
+     
+   }

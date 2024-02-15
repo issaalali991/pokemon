@@ -22,15 +22,17 @@ function ChoosePokemon() {
   const { id } = useParams();
 
   const itemsPerPage = 13;
-  const totalPages = Math.ceil((pokeList && pokeList.length) / itemsPerPage);
+  // const totalPages = Math.ceil((pokeList && pokeList.length) / itemsPerPage);
 
+  const [filtered, setFiltered] = useState(pokeList);
+  // const [filteredList, setFilteredList] = useState(pokeList.slice(indexOfFirstEntry, indexOfLastEntry));
   const indexOfLastEntry = currentPage * itemsPerPage;
   const indexOfFirstEntry = indexOfLastEntry - itemsPerPage;
-  const displayedEntries =
-    (pokeList && pokeList.slice(indexOfFirstEntry, indexOfLastEntry)) || [];
-  const [filtered, setFiltered] = useState(
-    displayedEntries && displayedEntries
-  );
+  const displayedEntries = (filtered && filtered.length > 0 && filtered.slice(indexOfFirstEntry, indexOfLastEntry)) || [];
+
+  const totalPages = Math.ceil((filtered && filtered.length) / itemsPerPage);
+
+
 
   return (
     <div
@@ -78,20 +80,19 @@ function ChoosePokemon() {
             placeholder="search.."
             className=" w-1/2 p-2 rounded-lg mb-4
         text-center"
-            onChange={(e) => {
-              console.log(e.target.value);
-              setFiltered(
-                pokeList.filter((pokemon) =>
-                  pokemon.name.english
-                    .toLowerCase()
-                    .includes(e.target.value.toLowerCase())
-                )
-              );
-              console.log(filtered);
-            }}
+        onChange={(e) => {
+          setFiltered(
+            pokeList.filter((pokemon) =>
+              pokemon.name.english
+                .toLowerCase()
+                .includes(e.target.value.toLowerCase())
+            )
+          );
+          console.log(filtered); // Hier sollte filtered aktualisiert sein
+        }}
           />
-          {filtered &&
-            filtered.map((pokemon) => (
+          {displayedEntries &&
+            displayedEntries.map((pokemon) => (
               <>
                 <tr key={pokemon.id}>
                   <td

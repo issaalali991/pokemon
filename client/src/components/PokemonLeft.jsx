@@ -41,7 +41,7 @@ export default function PokemonLeft({ number,index }) {
     //  flex flex-col justify-center items-center
     <div className="Pokemon bg-gray-100">
       <div className="">
-        <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white rounded-lg p-2  w-full">
+          <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white rounded-lg p-2  w-full">
           {pokeList[index == null ? pokemon : index].name.english}
         </h3>
       </div>
@@ -161,24 +161,70 @@ function PokeData({ pokemon }) {
   return searched !== 0 ? (
     <div className="PokeData">
       <ul className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200 p-2">
-        <li>
+        <li className="li">
           <div className="type">Type: </div>
           {pokemon.type.join(", ")}
         </li>
-        <li>
-          <span>S-Attack:</span> {pokemon.base["Sp. Attack"]}
+        <li className="li">
+          <span>S-Attack:</span>{" "}
+          <span className="underbar">
+            <span className="bar">
+              <p
+                className="pInLi"
+                style={{ width: `${pokemon.base["Sp. Attack"]/2}%` }}
+              >
+                {pokemon.base["Sp. Attack"]}
+              </p>
+            </span>
+          </span>
         </li>
-        <li>
-          <span>S-Defense:</span> {pokemon.base["Sp. Defense"]}
+        <li className="li">
+          <span>S-Defense:</span>{" "}
+          <span className="underbar">
+            <span className="bar">
+              <p
+                className="pInLi"
+                style={{ width: `${pokemon.base["Sp. Defense"]/2}%` }}
+              >
+                {pokemon.base["Sp. Defense"]}
+              </p>
+            </span>
+          </span>
         </li>
-        <li>
-          <span>Attack:</span> {pokemon.base.Attack}
+        <li className="li">
+          <span>Attack:</span>{" "}
+          <span className="underbar">
+            <span className="bar">
+              <p className="pInLi" style={{ width: `${pokemon.base.Attack/2}%` }}>
+                {pokemon.base.Attack}
+              </p>
+            </span>
+          </span>
         </li>
-        <li>
-          <span>Defense:</span> {pokemon.base.Defense}
+        <li className="li">
+          <span>Defense:</span>
+          <span className="underbar">
+            {" "}
+            <span className="bar">
+              <p
+                className="pInLi"
+                style={{ width: `${pokemon.base.Defense/2}%` }}
+              >
+                {pokemon.base.Defense}
+              </p>
+            </span>
+          </span>
         </li>
-        <li>
-          <span>Speed:</span> {pokemon.base.Speed}
+        <li className="li">
+          <span>Speed:</span>
+          <span className="underbar">
+            {" "}
+            <span className="bar">
+              <p className="pInLi" style={{ width: `${pokemon.base.Speed/2}%` }}>
+                {pokemon.base.Speed}
+              </p>
+            </span>
+          </span>
         </li>
       </ul>
     </div>
