@@ -2,23 +2,14 @@ import React, { useState, useEffect, useContext } from "react";
 
 import BeatLoader from "react-spinners/BeatLoader";
 import { DataContext } from ".././contexts/PokemonContext.jsx";
-import Pokemon from "../components/Pokemon.jsx";
+import PokemonLeft from "./PokemonLeft.jsx";
+import PokemonRight from "./PokemonRight.jsx";
 import FightButton from "./FightButton.jsx";
 import { useNavigate } from "react-router-dom";
 
 function PokeList() {
-  const {
-    pokeList,
-    setPokeList,
-    loading,
-    setIsLoading,
-    selectedPokemon1,
-    selectedPokemon2,
-    indexPok1,
-    indexPok2,
-    setIndexPok1,
-    setIndexPok2,
-  } = useContext(DataContext);
+  const { loading, selectedPokemonLeft, selectedPokemonRight, indexPok1, indexPok2 } =
+    useContext(DataContext);
   const navigate = useNavigate();
 
   // useEffect(() => {
@@ -28,7 +19,7 @@ function PokeList() {
   //   window.localStorage.getItem("indexPok2")!=null
   //     ? setIndexPok2(window.localStorage.getItem("indexPok2"))
   //     : setIndexPok2(null);
-  // }, [selectedPokemon1, selectedPokemon2]);
+  // }, [selectedPokemonLeft, selectedPokemonRight]);
   // console.log("indexPok1", indexPok1);
   // console.log("indexPok2", indexPok2);
 
@@ -56,14 +47,20 @@ function PokeList() {
 
           {/* POKEMON LEFT SIDE  */}
 
-          <Pokemon
+          <PokemonLeft
+            className="cursor-pointer"
+            key={"one"}
             number={"one"}
             index={indexPok1 == null ? null : indexPok1}
-            selectedPokemon={selectedPokemon1}
+            selectedPokemon={selectedPokemonLeft}
+            onClick={() => {
+              window.localStorage.clear("indexPok1");
+              navigate("/pokemon/1");
+            }}
           />
 
           <div className="centerDiv">
-            {selectedPokemon1 && selectedPokemon2 ? (
+            {selectedPokemonLeft && selectedPokemonRight ? (
               <FightButton />
             ) : (
               <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
@@ -72,10 +69,16 @@ function PokeList() {
 
           {/* POKEMON RIGHT SIDE  */}
 
-          <Pokemon
+          <PokemonRight
+            className="cursor-pointer"
+            key={"two"}
             number={"two"}
             index={indexPok2 == null ? null : indexPok2}
-            selectedPokemon={selectedPokemon2}
+            selectedPokemon={selectedPokemonRight}
+            onClick={() => {
+              window.localStorage.clear("indexPok2");
+              navigate("/pokemon/2");
+            }}
           />
 
           {/* BUTTO RIGHT */}

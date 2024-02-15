@@ -4,16 +4,15 @@ import PokemonDefault from "./PokemonDefault";
 import BeatLoader from "react-spinners/BeatLoader";
 import Search from "./Search";
 
-export default function Pokemon({ number, selectedPokemon, index }) {
+export default function PokemonLeft({ number,index }) {
   const {
     pokeList,
-    setSelectedPokemon1,
-    setSelectedPokemon2,
+    setSelectedPokemonLeft,
+    selectedPokemonLeft,
     setIndexPok1,
-    setIndexPok2,
     pokemon,
     setPokemon,
-    searched
+    searched,
   } = useContext(DataContext);
 
   const [selected, setSelected] = useState(false);
@@ -23,24 +22,17 @@ export default function Pokemon({ number, selectedPokemon, index }) {
     // forceUpdate(Math.random());
     setPokemon(searched);
     index = pokemon;
-}, []);
-  
-  return !selectedPokemon ? (
+  }, []);
+
+  return !selectedPokemonLeft ? (
     // Unselected State
     // cursor-pointer flex justify-center items-center flex-col
     <div className="Pokemon bg-gray-100">
       <Search />
       <PokemonDefault
         selectHandler={() => {
-          // setSelected(true);
-          if (number === "one") {
-            setSelectedPokemon1(true);
-            setIndexPok1(pokemon);
-          } else {
-
-            setSelectedPokemon2(true);
-            setIndexPok2(pokemon);
-          }
+          setSelectedPokemonLeft(true);
+          setIndexPok1(pokemon);
         }}
       />
     </div>
@@ -65,9 +57,9 @@ export default function Pokemon({ number, selectedPokemon, index }) {
 
 //  ---------------------------------------------------function for Imagechange
 
- let counter = 0;
+let counterLeft = 0;
 
- function changeImg(pokeImg, number) {
+function changeImg(pokeImg, number) {
   if (pokeImg.length == 0) {
     return;
   }
@@ -75,19 +67,23 @@ export default function Pokemon({ number, selectedPokemon, index }) {
   let img = document.getElementsByName(`img-${number}`);
 
   try {
-    img[0].src = pokeImg[counter];
+    img[0].src = pokeImg[counterLeft];
   } catch (error) {}
 
-  counter < 3 ? counter++ : (counter = 0);
+  counterLeft < 3 ? counterLeft++ : (counterLeft = 0);
 }
 
 //  --------------------------------------------------- component PokeImage
 function PokeImage({ pokemon, number }) {
   const [pokeImg, setPokeImg] = useState([]);
   const [loading, setLoading] = useState(true);
-  const {  searched,
-  } = useContext(DataContext);
-  setInterval(() => {
+  const { searched } = useContext(DataContext);
+
+  let ivall = undefined;
+
+  // start image skipping
+  ivall = setInterval(() => {
+    // console.log(number, counterLeft);
     changeImg(pokeImg, number);
   }, 2000);
 
@@ -108,6 +104,11 @@ function PokeImage({ pokemon, number }) {
       setLoading(false);
     };
     getApiData();
+
+    // stop image skipping on unmount
+    return () => {
+      clearInterval(ivall);
+    };
   }, []);
 
   return searched !== 0 ? (
@@ -121,14 +122,14 @@ function PokeImage({ pokemon, number }) {
       {!loading && (
         <img
           name={`img-${number}`}
-          src={pokeImg[counter]}
+          src={pokeImg[counterLeft]}
           alt={pokemon.name.english}
           className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
         />
       )}
     </div>
   ) : null;
- }
+}
 
 //  --------------------------------------------------- component PokeHealth
 
@@ -156,7 +157,6 @@ function PokeHealth({ pokemon }) {
 //  --------------------------------------------------- component PokeData
 
 function PokeData({ pokemon }) {
-
   const { searched } = useContext(DataContext);
   return searched !== 0 ? (
     <div className="PokeData">
@@ -231,7 +231,6 @@ function PokeData({ pokemon }) {
   ) : null;
 }
 
-
 // Pokémon-Typ: Normal
 // Pokémon-Typ: Pflanze
 // Pokémon-Typ: Feuer
@@ -250,4 +249,3 @@ function PokeData({ pokemon }) {
 // Pokémon-Typ: Unlicht
 // Pokémon-Typ: Stahl
 // Pokémon-Typ: Fee
-

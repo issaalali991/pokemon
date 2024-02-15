@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import { DataContext } from ".././contexts/PokemonContext.jsx";
 
 function Search() {
-  const { searched, setSearched, pokeList ,pokemon,setPokemon } = useContext(DataContext);
+  const { searched, setSearched, pokeList ,setPokemon } = useContext(DataContext);
   const [textToSearch, setTextToSearch] = useState("");
 
   let found = undefined;
@@ -16,7 +16,7 @@ function Search() {
     id = found.id;
     id--;
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
   setSearched(id);
   useEffect(() => {
