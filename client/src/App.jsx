@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import PokeList from "./components/PokeList";
 import ChoosePokemon from "./components/Card/ChoosePokemon";
+import Figtht from "./components/Figtht";
 
 export default function App() {
   const pool = [
@@ -33,14 +34,20 @@ export default function App() {
       <Routes>
         <Route path="/" element={<PokeList />} />
         <Route path="/pokemon/" element={<ChoosePokemon />} />
-        <Route path="/pokemon/:id" element={<ChoosePokemon />} />
+        <Route
+          path="/pokemon/:id"
+          // element={<ChoosePokemon signal={signal} />}
+        />
+        <Route path="/fight" element={<Figtht />} />
       </Routes>
       <button
         className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
         onClick={() => {
           window.localStorage.clear();
         }}
-      >Restart</button>
+      >
+        Restart
+      </button>
     </div>
   );
 }
