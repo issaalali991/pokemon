@@ -7,15 +7,13 @@ export default function PokemonContextProvider({ children }) {
   const [pokeList, setPokeList] = useState(null);
   const [loading, setIsLoading] = useState(true);
   const [searched, setSearched] = useState(0);
-   let [pokemon, setPokemon] = useState(Math.floor(Math.random() * 50)+1);
+  let [pokemon, setPokemon] = useState(Math.floor(Math.random() * 50) + 1);
   // State to check if pokemons are selected
-  const [selectedPokemon1, setSelectedPokemon1] = useState(false);
-  const [selectedPokemon2, setSelectedPokemon2] = useState(false);
-//  ------ set index for selected pokemon ----
+  const [selectedPokemonLeft, setSelectedPokemonLeft] = useState(false);
+  const [selectedPokemonRight, setSelectedPokemonRight] = useState(false);
+  //  ------ set index for selected pokemon ----
   const [indexPok1, setIndexPok1] = useState(null);
   const [indexPok2, setIndexPok2] = useState(null);
-
-
 
   // Lade Daten via API in entries
   useEffect(() => {
@@ -35,7 +33,6 @@ export default function PokemonContextProvider({ children }) {
     };
     fetchData();
   }, []);
- 
 
   return (
     <DataContext.Provider
@@ -44,10 +41,10 @@ export default function PokemonContextProvider({ children }) {
         setPokeList,
         loading,
         setIsLoading,
-        selectedPokemon1,
-        setSelectedPokemon1,
-        selectedPokemon2,
-        setSelectedPokemon2,
+        selectedPokemonLeft,
+        setSelectedPokemonLeft,
+        selectedPokemonRight,
+        setSelectedPokemonRight,
         searched,
         setSearched,
         indexPok1,
@@ -56,8 +53,6 @@ export default function PokemonContextProvider({ children }) {
         setIndexPok2,
         pokemon,
         setPokemon,
-      
-      
       }}
     >
       {children}

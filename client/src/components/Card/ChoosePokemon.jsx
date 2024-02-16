@@ -9,10 +9,8 @@ import PokemonCard from "./PokemonCard";
 function ChoosePokemon() {
   const {
     pokeList,
-    selectedPokemon1,
-    setSelectedPokemon1,
-    selectedPokemon2,
-    setSelectedPokemon2,
+    setSelectedPokemonLeft,
+    setSelectedPokemonRight,
     setIndexPok1,
     setIndexPok2,
   } = useContext(DataContext);
@@ -49,15 +47,15 @@ function ChoosePokemon() {
           onClick={() => {
             // setIndex(pokselected);
             if (id === "1") {
-              setSelectedPokemon1(pokselected);
+              setSelectedPokemonLeft(pokselected);
               setIndexPok1(pokselected);
-              console.log(pokselected);
-              window.localStorage.setItem("indexPok1", pokselected);
+              // console.log(pokselected);
+              // window.localStorage.setItem("indexPok1", pokselected);
             } else {
-              setSelectedPokemon2(pokselected);
+              setSelectedPokemonRight(pokselected);
               setIndexPok2(pokselected);
-              console.log(pokselected);
-              window.localStorage.setItem("indexPok2", pokselected);
+              // console.log(pokselected);
+              // window.localStorage.setItem("indexPok2", pokselected);
             }
 
             navigate("/");
