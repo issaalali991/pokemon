@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useState } from "react";
 
 function PokemonCard({ pokemon }) {
-  const [pokeImg, setPokeImg] = useState([]);
+  const [pokeapi, setpokeApi] = useState({});
   const [loading, setLoading] = useState(true);
+  const [typePokemonIcons, setTypePokemonIcons] = useState("");
 
   useEffect(() => {
     const getApiData = async () => {
@@ -10,22 +11,26 @@ function PokemonCard({ pokemon }) {
         `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
       );
       const data = await response.json();
-      setPokeImg(data.sprites);
+      setpokeApi(data);
       setLoading(false);
+      setTypePokemonIcons(data.types.map((type) => getTypeIcon(type.type.name)));
+  
+      
     };
     getApiData();
   }, [pokemon.id]);
+  
 
   const images = useMemo(() => {
-    return pokeImg
+    return pokeapi.sprites
       ? [
-          pokeImg.front_default,
-          pokeImg.back_default,
-          pokeImg.front_shiny,
-          pokeImg.back_shiny,
+          pokeapi.sprites.front_default,
+          pokeapi.sprites.back_default,
+          pokeapi.sprites.front_shiny,
+          pokeapi.sprites.back_shiny,
         ]
       : [];
-  }, [pokeImg]);
+  }, [pokeapi]);
 
   const [index, setIndex] = useState(0);
 
@@ -38,8 +43,37 @@ function PokemonCard({ pokemon }) {
     return () => clearInterval(interval);
   }, [images]);
 
+
+
+  const getTypeIcon = (type) => {
+    
+    const typeIcons = {
+      normal: '👊',
+      fire: '🔥',
+      water: '💧',
+      electric: '⚡',
+      grass: '🌱',
+      ice: '❄️',
+      fighting: '🥊',
+      poison: '☠️',
+      ground: '🏜️',
+      flying: '🕊️',
+      psychic: '🔮',
+      bug: '🐞',
+      rock: '🪨',
+      ghost: '👻',
+      dragon: '🐉',
+      dark: '🌑',
+      steel: '🛡️',
+      fairy: '🧚',
+ 
+    };
+
+    return typeIcons[type] || '❓'; 
+  };
+
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-200 w-full h-full p-4 rounded-lg shadow-md text-center mr-36">
+    <div className=" card">
       <div className=" ">
         <div className="flex justify-center items-center flex-col ">
           <h3
@@ -51,7 +85,8 @@ function PokemonCard({ pokemon }) {
         <img
           src={images[index]}
           alt=""
-          className="w-80 h-80 m-0 p-0 rounded-full bg-white border-4"
+          className="w-80 h-80 m-0 p-0 rounded-full bg-white border-4 border-slate-500 shadow-md mx-auto
+          "
         />
         <div className="PokeData mt-4">
         <div
@@ -70,10 +105,10 @@ function PokemonCard({ pokemon }) {
           </div>
           <div>
             <ul
-              className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200
+              className="grid grid-cols-2 gap-2 text-gray-800 font-bold  data bg-white rounded-lg shadow-md p-4  w-full 
             "
             >
-              <li>Type: {pokemon.type.join(", ")}</li>
+              <li>Type:  {typePokemonIcons.length > 0 && typePokemonIcons.join(' ')}{pokemon.type.join(", ")}</li>
               <li>S-Attack: {pokemon.base["Sp. Attack"]}</li>
               <li>S-Defense: {pokemon.base["Sp. Defense"]}</li>
               <li>Attack: {pokemon.base.Attack}</li>
