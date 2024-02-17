@@ -2,15 +2,14 @@ import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../contexts/PokemonContext";
 import BeatLoader from "react-spinners/BeatLoader";
 
-export default function PokemonFightRight({ number }) {
+export default function PokemonFightR({ number }) {
   const { pokeList, indexPok2 } = useContext(DataContext);
   const pok2 = pokeList && pokeList[indexPok2];
-  console.log("pok2: " + pok2);
-
   let index = indexPok2;
 
   return (
-    <div className="Pokemon bg-gray-100">
+    <div id="PR" className="Pokemon bg-gray-100">
+      <img id="MarkR" src="./clawmark.svg" alt="" />
       <div className="">
         <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white rounded-lg p-2  w-full">
           {pokeList[index].name.english}
@@ -102,21 +101,11 @@ function PokeImage({ pokemon, number }) {
 //  --------------------------------------------------- component PokeHealth
 
 function PokeHealth({ pokemon }) {
-  const gradientColor = `bg-gradient-to-r from-green-500 to-green-${
-    pokemon.base.HP > 120
-      ? 500
-      : pokemon.base.HP > 100 && pokemon.base.HP < 120
-      ? 200
-      : pokemon.base.HP > 80 && pokemon.base.HP < 120
-      ? 150
-      : 50
-  }`;
   return (
     <div className="PokeHealth">
-      <div
-        className={`bg-green-500 text-white font-bold rounded-full h-12 flex items-center justify-center ${gradientColor}} `}
-      >
-        HP: {pokemon.base.HP}
+      <div className="HPContainer">
+        <div id="HPFillR"></div>
+        <span id="HPTextR" className="HPText">HP: {pokemon.base.HP}</span>
       </div>
     </div>
   );
