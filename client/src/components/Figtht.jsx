@@ -1,10 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import BeatLoader from "react-spinners/BeatLoader";
 import { DataContext } from ".././contexts/PokemonContext.jsx";
 import PokemonFightL from "./PokemonFightL.jsx";
 import PokemonFightR from "./PokemonFightR.jsx";
 import "./fight.css";
 import Pokemon from "../utils/classPokemon.js";
+import { useNavigate } from "react-router-dom";
 
 export default function Figtht() {
   const {
@@ -16,15 +17,17 @@ export default function Figtht() {
     selectedPokemonR,
   } = useContext(DataContext);
 
+  const navigate = useNavigate();
+
+  if (pokeList == null) {
+    console.log("navigate!!!!");
+    navigate(-1);
+  }
+
   const PokemonL = new Pokemon(pokeList, indexPok1, "L");
   const PokemonR = new Pokemon(pokeList, indexPok2, "R");
 
-  function figthAction(fillL, fillR, markL, markR, HPFillL, HPFillR) {
-    PokemonL.setMark(markL);
-    PokemonR.setMark(markR);
-    PokemonL.setHPFill(HPFillL);
-    PokemonR.setHPFill(HPFillR);
-
+  function figthAction(fillL, fillR) {
     const ivall = setInterval(() => {
       if (PokemonL.aTime < 100 && PokemonR.aTime < 100) {
         PokemonL.aTime += PokemonL.speed;
@@ -36,15 +39,17 @@ export default function Figtht() {
         if (PokemonL.aTime >= 100) {
           PokemonL.aTime = 0;
           reduceHP(PokemonR);
-          PokemonR.takeDamage(PokemonL.attack);
+          PokemonR.takeDamageFromm(PokemonL);
         }
         // R Pokemon Attacks
         if (PokemonR.aTime >= 100) {
           PokemonR.aTime = 0;
           reduceHP(PokemonL);
-          PokemonL.takeDamage(PokemonR.attack);
+          PokemonL.takeDamageFromm(PokemonR);
         }
         if (PokemonL.hp <= 0 || PokemonR.hp <= 0) {
+          document.getElementById("pImageL").src = "./grave.svg";
+          document.getElementById("pImageR").src = "./grave.svg";
           clearInterval(ivall);
         }
       }
@@ -89,16 +94,16 @@ export default function Figtht() {
             index={indexPok1 == null ? null : indexPok1}
             selectedPokemon={selectedPokemonL}
           />
-
-          <div id="ActionContainer">
-            <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
-            Attack
-            <div id="TimeContainer">
-              <div id="timebarL" className="timebar">
-                <div id="TFillL"></div>
-              </div>
-              <div id="timebarR" className="timebar">
-                <div id="TFillR"></div>
+          <div className="centerDiv">
+            <div id="ActionContainer">
+              <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
+              <div id="TimeContainer">
+                <div id="timebarL" className="timebar">
+                  <div id="TFillL"></div>
+                </div>
+                <div id="timebarR" className="timebar">
+                  <div id="TFillR"></div>
+                </div>
               </div>
             </div>
           </div>

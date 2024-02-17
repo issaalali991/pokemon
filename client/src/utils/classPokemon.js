@@ -10,12 +10,6 @@ export default class Pokemon {
             this.id = id;
 
     }
-    setMark(mark) {
-        this.mark = mark;
-    }
-    setHPFill(HPFill) {
-        this.HP = HPFill;
-    }
     triggerMark() {
         const mark = document.getElementById(`Mark${this.id}`);
 
@@ -25,36 +19,44 @@ export default class Pokemon {
             mark.style.opacity = 0;
         }
     }
-    takeDamage(attack) {
-
-        const defense = Math.floor(Math.random() * (this.defense - (this.defense / 10)) + (this.defense / 10));
-        attack = Math.floor(Math.random() * (attack- (attack/ 10)) + (attack/ 10));
-        const damage = attack - defense;
-
+    takeDamageFromm(AttkrPkmn) {
         const HPFill = document.getElementById(`HPFill${this.id}`);
         const HPText = document.getElementById(`HPText${this.id}`);
-        // console.log("id", this.id, "takes Damage:");
-        // console.log("hpBase", this.hpBase);
-        // console.log("hp", this.hp);
-        // console.log("attack", attack);
-        // console.log("defense", defense);
-        // console.log("damage", damage);
+
+        const defense = Math.floor(Math.random() * (this.defense - (this.defense / 10)) + (this.defense / 10));
+        const attack = Math.floor(Math.random() * (AttkrPkmn.attack - (AttkrPkmn.attack / 10)) + (AttkrPkmn.attack / 10));
+
+        let damage = attack - defense;
+        if (damage < 0) {
+            damage = 0;
+        }
         this.hp = this.hp - (damage);
-        // console.log("hp", this.hp);
-        // console.log("hp %", this.hp / (this.hpBase / 100));
 
         if (this.hp < 0) {
             this.hp = 0;
-            HPFill.style.width = `${this.hp / (this.hpBase / 100)}%`;
-            HPText.textContent = "HP: " + this.hp;
-        } else {
-            HPFill.style.width = `${this.hp / (this.hpBase / 100)}%`;
-            HPText.textContent = "HP: " + this.hp;
         }
 
-        // console.log(HPFill.style.width);
-    }
-    attack(target) {
+        HPFill.style.width = `${this.hp / (this.hpBase / 100)}%`;
+        HPText.textContent = `${this.hp} / ${this.hpBase}`;
 
+        const stats = document.getElementById(`stats${this.id}`);
+        const time = Date.now() + 2000;
+        document.getElementById(`ATT${this.id}`).textContent = `ATT: ${attack}`
+        document.getElementById(`DEF${this.id}`).textContent = `DEF: ${defense}`
+        document.getElementById(`DMG${this.id}`).textContent = `DMG: ${damage}`
+
+        stats.style.visibility = "visible";
+        stats.style.opacity = 0;
+
+        const itvl = setInterval(() => {
+            let time2 = Date.now();
+            if (time <= time2) {
+                clearInterval(itvl)
+                stats.style.visibility = "hidden";
+                stats.style.opacity = 1;
+            }
+        }, 1);
+
+        // console.log(HPFill.style.width);
     }
 }

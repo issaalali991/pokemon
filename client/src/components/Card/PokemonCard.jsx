@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import PokeData from "../PokeData";
 
 function PokemonCard({ pokemon }) {
   const [pokeapi, setpokeApi] = useState({});
@@ -76,9 +77,7 @@ function PokemonCard({ pokemon }) {
     <div className=" card">
       <div className=" ">
         <div className="flex justify-center items-center flex-col ">
-          <h3
-            className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full"
-          >
+          <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full">
             {pokemon.name.english}
           </h3>
         </div>
@@ -88,8 +87,9 @@ function PokemonCard({ pokemon }) {
           className="w-80 h-80 m-0 p-0 rounded-full bg-white border-4 border-slate-500 shadow-md mx-auto
           "
         />
-        <div className="PokeData mt-4">
-        <div
+        <PokeData pokemon={pokemon} typePokemonIcons={typePokemonIcons} />
+        {/* <div className="PokeData mt-4">
+          <div
             className={`bg-green-500 text-white  font-bold rounded-full h-12 flex items-center justify-center mb-4 bg-gradient-to-r from-green-500 to-green-${
               pokemon.base.HP > 120
                 ? 500
@@ -108,7 +108,11 @@ function PokemonCard({ pokemon }) {
               className="grid grid-cols-2 gap-2 text-gray-800 font-bold  data bg-white rounded-lg shadow-md p-4  w-full 
             "
             >
-              <li>Type:  {typePokemonIcons.length > 0 && typePokemonIcons.join(' ')}{pokemon.type.join(", ")}</li>
+              <li>
+                Type:{" "}
+                {typePokemonIcons.length > 0 && typePokemonIcons.join(" ")}
+                {pokemon.type.join(", ")}
+              </li>
               <li>S-Attack: {pokemon.base["Sp. Attack"]}</li>
               <li>S-Defense: {pokemon.base["Sp. Defense"]}</li>
               <li>Attack: {pokemon.base.Attack}</li>
@@ -116,7 +120,7 @@ function PokemonCard({ pokemon }) {
               <li>Speed: {pokemon.base.Speed}</li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

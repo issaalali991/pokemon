@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
-
 
 #App {
   display: flex;
   width: 100vw;
   align-items: center;
 }
-
+h1 {
+  text-align: center;
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -29,25 +30,49 @@
   flex-direction: column;
   align-items: center;
   /* gap: 1em; */
-  margin: 0;
   width: 30em;
+}
+
+.hovercl:hover {
+  background: #ffe500;
+  background: radial-gradient(circle, #ffe500 0%, #00000000 80%);
 }
 
 .Pokemon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  box-sizing: border-box;
-  gap: 1em;
+  justify-content: flex-start;
+  gap: 1.5em;
   width: 28rem;
   height: 38rem;
-  border: 6px solid black;
+  border: 6px solid #2c2c2c;
   padding: 1em;
-  /* border-radius: 10px; */
+  border-radius: 15px;
+  background-image: url(./pokeballcolor.svg);
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
+.sInput {
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: 1.2em;
+  border: 2px solid #2c2c2c;
+  outline: none;
+}
+
+
+input:focus {
+    outline:none;
+}
+
+
 .DefaultImage {
+  margin-top: 1.5rem;
   width: 15em;
   height: 15em;
   background-size: cover;
@@ -60,7 +85,7 @@
   width: 24em;
 }
 .PokeData {
-  width: 24em;
+  width: 26em;
   && {
     li {
       color: #c2410c;
@@ -73,86 +98,62 @@
   }
 }
 
-.type {
+.pdataTxt {
   color: #1e40af;
-  display: inline-block;
-  width: 3rem;
+  width: 7rem;
 }
 
-h1 {
-  text-align: center;
+.underbar {
+  position: absolute;
+  z-index: 10;
+  display: block;
+  width: 1rem;
+  height: 1.6rem;
+  background-color: #a9b7c0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #2c2c2c;
+}
+.barFill {
+  position: relative;
+  top: 0%;
+  z-index: 20;
+  display: block;
+  height: 1.6rem;
+  background-color: #3498db;
+  background: linear-gradient(
+    0deg,
+    #003457 0%,
+    #3498db 12%,
+    #3498db 88%,
+    #abddff 100%
+  );
 }
 
-table {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
+.pInLi {
+  position: relative;
+  top: -1.6em;
+  z-index: 30;
+  display: block;
   width: 100%;
-}
-
-table td,
-table th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-table tr:hover {
-  background-color: #ddd;
-}
-
-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04aa6d;
-  color: white;
-}
-.li{
-  text-align: left;
-}
-
-.pInLi{
+  height: 0em;
+  /* font-size: 1em;
+  line-height: 1em; */
+  vertical-align: center;
   text-align: center;
-display: inline-block;
- width: 0px;
- color: black;
-
-
+  color: black;
 }
-.underbar{
-  height: 25px; 
-  background-color: #a9b7c0; 
-}
-.bar {
-  
-    
-     background-color: #3498db; 
-     width: 100px;
 
-     
-   }
-.card{
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  box-sizing: border-box;
   gap: 1em;
-  width: 36rem;
+  width: 28rem;
   height: 38rem;
   border: 6px solid black;
   padding: 1em;
   border-radius: 10px;
   background-color: #f3f4f6;
-  margin-right: 12rem;
-  
-}
-.data{
-  width: 32rem;
-  margin-left: -3.3rem;
-  padding-right: 0;
-  
 }

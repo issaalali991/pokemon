@@ -28,26 +28,23 @@ export default function App() {
       <img
         src="../../public/Pokefight.svg"
         alt="Pokefight"
-        className="w-3/6 m-8"
+        className="w-2/5 m-8"
       />
 
       <Routes>
         <Route path="/" element={<PokeList />} />
         <Route path="/pokemon/" element={<ChoosePokemon />} />
-        <Route
-          path="/pokemon/:id"
-          element={<ChoosePokemon />}
-        />
+        <Route path="/pokemon/:id" element={<ChoosePokemon />} />
         <Route path="/fight" element={<Figtht />} />
       </Routes>
-      <button
+      {/* <button
         className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
         onClick={() => {
           window.localStorage.clear();
         }}
       >
         Restart
-      </button>
+      </button> */}
     </div>
   );
 }

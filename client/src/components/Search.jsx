@@ -25,8 +25,8 @@ function Search() {
 
 
   return (
-    <div className="mb-2 border border-red-500 border-r">
-      <input
+    <div className="mb-2 border border-r">
+      <input className="sInput"
         type="text"
         placeholder="Search a Pokemon..."
         onChange={(e) => setTextToSearch(e.target.value)}

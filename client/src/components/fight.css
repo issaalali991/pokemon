@@ -91,9 +91,41 @@
   z-index: 10;
   position: absolute;
   top: 25%;
-  left: 44%;
+  width: 100%;
+  text-align: center;
   color: #000;
   -webkit-filter: invert(100%);
   filter: invert(100%);
   font-weight: bold;
+}
+
+.value {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#statsR,
+#statsL {
+  position: relative;
+  /* text-align: center; */
+  top: 50%;
+  left: -40%;
+  height: 0%;
+  z-index: 40;
+  opacity: 1;
+  transition: opacity 2000ms ease-in;
+  visibility: hidden;
+}
+
+#ATTR,
+#ATTL {
+  color: #ff4400;
+}
+#DEFR,
+#DEFL {
+  color: #0044ff;
+}
+#DMGR,
+#DMGL {
+  color: #4400ff;
 }

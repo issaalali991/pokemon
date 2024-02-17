@@ -28,91 +28,85 @@ function ChoosePokemon() {
   // const [filteredList, setFilteredList] = useState(pokeList.slice(indexOfFirstEntry, indexOfLastEntry));
   const indexOfLastEntry = currentPage * itemsPerPage;
   const indexOfFirstEntry = indexOfLastEntry - itemsPerPage;
-  const displayedEntries = (filtered && filtered.length > 0 && filtered.slice(indexOfFirstEntry, indexOfLastEntry)) || [];
+  const displayedEntries =
+    (filtered &&
+      filtered.length > 0 &&
+      filtered.slice(indexOfFirstEntry, indexOfLastEntry)) ||
+    [];
 
   const totalPages = Math.ceil((filtered && filtered.length) / itemsPerPage);
 
-
-
   return (
-    <div
-      className="flex  justify-center items-center h-screen 
-"
-    >
-      {pokeList && <PokemonCard pokemon={pokeList[pokselected]} />}
+    <div className="h-screen">
+      <div className="flex justify-center items-center">
+        {pokeList && <PokemonCard pokemon={pokeList[pokselected]} />}
 
-      <div>
-        <button
-          className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
-          onClick={() => {
-            // setIndex(pokselected);
-            if (id === "1") {
-              setSelectedPokemonLeft(pokselected);
-              setIndexPok1(pokselected);
-              // console.log(pokselected);
-              // window.localStorage.setItem("indexPok1", pokselected);
-            } else {
-              setSelectedPokemonRight(pokselected);
-              setIndexPok2(pokselected);
-              // console.log(pokselected);
-              // window.localStorage.setItem("indexPok2", pokselected);
-            }
+        <div className="centerDiv">
+          <button
+            className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+            onClick={() => {
+              // setIndex(pokselected);
+              if (id === "1") {
+                setSelectedPokemonLeft(pokselected);
+                setIndexPok1(pokselected);
+                // console.log(pokselected);
+                // window.localStorage.setItem("indexPok1", pokselected);
+              } else {
+                setSelectedPokemonRight(pokselected);
+                setIndexPok2(pokselected);
+                // console.log(pokselected);
+                // window.localStorage.setItem("indexPok2", pokselected);
+              }
 
-            navigate("/");
-          }}
-        >
-          Choose
-        </button>
-      </div>
-      <div
-        className=" p-4 bg-white rounded-lg shadow-lg ml-48
-    "
-      >
-        <h1 className="text-4xl font-bold mb-8  shadow ">
-          Choose your Pokemon
-        </h1>
-        <table
-          className="table-auto w-full text-center
-      "
-        >
-          <input
-            type="text"
-            placeholder="search.."
-            className=" w-1/2 p-2 rounded-lg mb-4
-        text-center"
-        onChange={(e) => {
-          setFiltered(
-            pokeList.filter((pokemon) =>
-              pokemon.name.english
-                .toLowerCase()
-                .includes(e.target.value.toLowerCase())
-            )
-          );
-          console.log(filtered); // Hier sollte filtered aktualisiert sein
-        }}
+              navigate("/");
+            }}
+          >
+            Choose
+          </button>
+        </div>
+        <div className=" p-4 bg-white rounded-lg shadow-lg">
+          <h1 className="text-4xl font-bold mb-8  shadow ">
+            Choose your Pokemon
+          </h1>
+          <table className="table-auto w-full text-center">
+            <input
+              type="text"
+              placeholder="search.."
+              className=" w-1/2 p-2 rounded-lg mb-4 text-center"
+              onChange={(e) => {
+                setFiltered(
+                  pokeList.filter((pokemon) =>
+                    pokemon.name.english
+                      .toLowerCase()
+                      .includes(e.target.value.toLowerCase())
+                  )
+                );
+                console.log(filtered); // Hier sollte filtered aktualisiert sein
+              }}
+            />
+            {displayedEntries &&
+              displayedEntries.map((pokemon) => (
+                <>
+                  <tr key={pokemon.id}>
+                    <td
+                      onClick={() => {
+                        setPokselected(pokemon.id - 1);
+                        console.log(pokemon.id);
+                      }}
+                      className="cursor-pointer"
+                    >
+                      {pokemon.name.english}
+                    </td>
+                  </tr>
+                </>
+              ))}
+          </table>
+          <ResponsivePagination
+            total={totalPages}
+            current={currentPage}
+            onPageChange={(newPage) => setCurrentPage(newPage)}
           />
-          {displayedEntries &&
-            displayedEntries.map((pokemon) => (
-              <>
-                <tr key={pokemon.id}>
-                  <td
-                    onClick={() => {
-                      setPokselected(pokemon.id - 1);
-                      console.log(pokemon.id);
-                    }}
-                    className="cursor-pointer"
-                  >
-                    {pokemon.name.english}
-                  </td>
-                </tr>
-              </>
-            ))}
-        </table>
-        <ResponsivePagination
-          total={totalPages}
-          current={currentPage}
-          onPageChange={(newPage) => setCurrentPage(newPage)}
-        />
+        </div>
       </div>
     </div>
   );

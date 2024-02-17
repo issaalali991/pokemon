@@ -3,6 +3,7 @@ import { DataContext } from "../contexts/PokemonContext";
 import PokemonDefault from "./PokemonDefault";
 import BeatLoader from "react-spinners/BeatLoader";
 import Search from "./Search";
+import PokeData from "./PokeData";
 
 export default function PokemonRight({ number, index }) {
   const {
@@ -178,53 +179,3 @@ function PokeHealth({ pokemon }) {
     </div>
   );
 }
-
-//  --------------------------------------------------- component PokeData
-
-function PokeData({ pokemon,typePokemonIcons }) {
-  const { searched } = useContext(DataContext);
-  return searched !== 0 ? (
-    <div className="PokeData">
-      <ul className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200 p-2">
-        <li>
-          <div className="type">Type: </div>
-          {typePokemonIcons.length > 0 && typePokemonIcons.join(' ')}{pokemon.type.join(", ")}
-        </li>
-        <li>
-          <span>S-Attack:</span> {pokemon.base["Sp. Attack"]}
-        </li>
-        <li>
-          <span>S-Defense:</span> {pokemon.base["Sp. Defense"]}
-        </li>
-        <li>
-          <span>Attack:</span> {pokemon.base.Attack}
-        </li>
-        <li>
-          <span>Defense:</span> {pokemon.base.Defense}
-        </li>
-        <li>
-          <span>Speed:</span> {pokemon.base.Speed}
-        </li>
-      </ul>
-    </div>
-  ) : null;
-}
-
-// Pokémon-Typ: Normal
-// Pokémon-Typ: Pflanze
-// Pokémon-Typ: Feuer
-// Pokémon-Typ: Wasser
-// Pokémon-Typ: Elektro
-// Pokémon-Typ: Kampf
-// Pokémon-Typ: Flug
-// Pokémon-Typ: Gift
-// Pokémon-Typ: Boden
-// Pokémon-Typ: Gestein
-// Pokémon-Typ: Käfer
-// Pokémon-Typ: Eis
-// Pokémon-Typ: Psycho
-// Pokémon-Typ: Geist
-// Pokémon-Typ: Drache
-// Pokémon-Typ: Unlicht
-// Pokémon-Typ: Stahl
-// Pokémon-Typ: Fee
