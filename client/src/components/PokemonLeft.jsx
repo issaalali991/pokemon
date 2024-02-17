@@ -17,6 +17,7 @@ export default function PokemonLeft({ number,index }) {
 
   const [selected, setSelected] = useState(false);
   const [, forceUpdate] = useState();
+  const [typePokemonIcons, setTypePokemonIcons] = useState("");
 
   useEffect(() => {
     // forceUpdate(Math.random());
@@ -47,10 +48,11 @@ export default function PokemonLeft({ number,index }) {
       </div>
       <PokeImage
         pokemon={pokeList[index == null ? pokemon : index]}
-        number={number}
+        number={number} typePokemonIcons={typePokemonIcons} setTypePokemonIcons={setTypePokemonIcons}
+       
       />
       <PokeHealth pokemon={pokeList[index == null ? pokemon : index]} />
-      <PokeData pokemon={pokeList[index == null ? pokemon : index]} />
+      <PokeData pokemon={pokeList[index == null ? pokemon : index]} typePokemonIcons={typePokemonIcons}/>
     </div>
   );
 }
@@ -59,32 +61,58 @@ export default function PokemonLeft({ number,index }) {
 
 let counterLeft = 0;
 
-function changeImg(pokeImg, number) {
-  if (pokeImg.length == 0) {
+function changeImg(pokeapi, number) {
+  if (pokeapi.length == 0) {
     return;
   }
 
   let img = document.getElementsByName(`img-${number}`);
 
   try {
-    img[0].src = pokeImg[counterLeft];
+    img[0].src = pokeapi[counterLeft];
   } catch (error) {}
 
   counterLeft < 3 ? counterLeft++ : (counterLeft = 0);
 }
 
 //  --------------------------------------------------- component PokeImage
-function PokeImage({ pokemon, number }) {
-  const [pokeImg, setPokeImg] = useState([]);
+function PokeImage({ pokemon, number,typePokemonIcons, setTypePokemonIcons }) {
+  const [pokeapi, setpokeApi ] = useState({});
   const [loading, setLoading] = useState(true);
   const { searched } = useContext(DataContext);
+ 
+  const getTypeIcon = (type) => {
+    
+    const typeIcons = {
+      normal: '👊',
+      fire: '🔥',
+      water: '💧',
+      electric: '⚡',
+      grass: '🌱',
+      ice: '❄️',
+      fighting: '🥊',
+      poison: '☠️',
+      ground: '🏜️',
+      flying: '🕊️',
+      psychic: '🔮',
+      bug: '🐞',
+      rock: '🪨',
+      ghost: '👻',
+      dragon: '🐉',
+      dark: '🌑',
+      steel: '🛡️',
+      fairy: '🧚',
+ 
+    };
 
+    return typeIcons[type] || '❓'; 
+  };
   let ivall = undefined;
 
   // start image skipping
   ivall = setInterval(() => {
     // console.log(number, counterLeft);
-    changeImg(pokeImg, number);
+    changeImg(pokeapi, number);
   }, 2000);
 
   useEffect(() => {
@@ -94,14 +122,15 @@ function PokeImage({ pokemon, number }) {
       );
       const data = await response.json();
 
-      setPokeImg([]);
-      setPokeImg([
+      setpokeApi({});
+      setpokeApi([
         data.sprites.front_default,
         data.sprites.front_shiny,
         data.sprites.back_shiny,
         data.sprites.back_default,
       ]);
       setLoading(false);
+      setTypePokemonIcons(data.types.map((type) => getTypeIcon(type.type.name)));
     };
     getApiData();
 
@@ -122,7 +151,7 @@ function PokeImage({ pokemon, number }) {
       {!loading && (
         <img
           name={`img-${number}`}
-          src={pokeImg[counterLeft]}
+          src={pokeapi[counterLeft]}
           alt={pokemon.name.english}
           className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
         />
@@ -156,14 +185,16 @@ function PokeHealth({ pokemon }) {
 
 //  --------------------------------------------------- component PokeData
 
-function PokeData({ pokemon }) {
+// {typePokemonIcons.length > 0 && typePokemonIcons.join(' ')}{pokemon.type.join(", ")}
+
+function PokeData({ pokemon,typePokemonIcons}) {
   const { searched } = useContext(DataContext);
   return searched !== 0 ? (
     <div className="PokeData">
       <ul className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200 p-2">
         <li className="li">
           <div className="type">Type: </div>
-          {pokemon.type.join(", ")}
+          {typePokemonIcons.length > 0 && typePokemonIcons.join(' ')}{pokemon.type.join(", ")}
         </li>
         <li className="li">
           <span>S-Attack:</span>{" "}

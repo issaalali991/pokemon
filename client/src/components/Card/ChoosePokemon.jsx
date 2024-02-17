@@ -21,7 +21,7 @@ function ChoosePokemon() {
   // ------get id from url -----
   const { id } = useParams();
 
-  const itemsPerPage = 13;
+  const itemsPerPage = 15;
   // const totalPages = Math.ceil((pokeList && pokeList.length) / itemsPerPage);
 
   const [filtered, setFiltered] = useState(pokeList);
@@ -65,7 +65,7 @@ function ChoosePokemon() {
         </button>
       </div>
       <div
-        className="bg-gray-100 p-4 rounded-lg shadow-md text-center  w-full h-full ml-36
+        className=" p-4 bg-white rounded-lg shadow-lg ml-48
     "
       >
         <h1 className="text-4xl font-bold mb-8  shadow ">

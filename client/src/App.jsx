@@ -36,7 +36,7 @@ export default function App() {
         <Route path="/pokemon/" element={<ChoosePokemon />} />
         <Route
           path="/pokemon/:id"
-          // element={<ChoosePokemon signal={signal} />}
+          element={<ChoosePokemon />}
         />
         <Route path="/fight" element={<Figtht />} />
       </Routes>
