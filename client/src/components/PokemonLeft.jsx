@@ -3,8 +3,9 @@ import { DataContext } from "../contexts/PokemonContext";
 import PokemonDefault from "./PokemonDefault";
 import BeatLoader from "react-spinners/BeatLoader";
 import Search from "./Search";
+import PokeData from "./PokeData";
 
-export default function PokemonLeft({ number,index }) {
+export default function PokemonLeft({ number, index }) {
   const {
     pokeList,
     setSelectedPokemonLeft,
@@ -42,17 +43,21 @@ export default function PokemonLeft({ number,index }) {
     //  flex flex-col justify-center items-center
     <div className="Pokemon bg-gray-100">
       <div className="">
-          <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white rounded-lg p-2  w-full">
+        <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white rounded-lg p-2  w-full">
           {pokeList[index == null ? pokemon : index].name.english}
         </h3>
       </div>
       <PokeImage
         pokemon={pokeList[index == null ? pokemon : index]}
-        number={number} typePokemonIcons={typePokemonIcons} setTypePokemonIcons={setTypePokemonIcons}
-       
+        number={number}
+        typePokemonIcons={typePokemonIcons}
+        setTypePokemonIcons={setTypePokemonIcons}
       />
       <PokeHealth pokemon={pokeList[index == null ? pokemon : index]} />
-      <PokeData pokemon={pokeList[index == null ? pokemon : index]} typePokemonIcons={typePokemonIcons}/>
+      <PokeData
+        pokemon={pokeList[index == null ? pokemon : index]}
+        typePokemonIcons={typePokemonIcons}
+      />
     </div>
   );
 }
@@ -76,36 +81,34 @@ function changeImg(pokeapi, number) {
 }
 
 //  --------------------------------------------------- component PokeImage
-function PokeImage({ pokemon, number,typePokemonIcons, setTypePokemonIcons }) {
-  const [pokeapi, setpokeApi ] = useState({});
+function PokeImage({ pokemon, number, typePokemonIcons, setTypePokemonIcons }) {
+  const [pokeapi, setpokeApi] = useState({});
   const [loading, setLoading] = useState(true);
   const { searched } = useContext(DataContext);
- 
+
   const getTypeIcon = (type) => {
-    
     const typeIcons = {
-      normal: '👊',
-      fire: '🔥',
-      water: '💧',
-      electric: '⚡',
-      grass: '🌱',
-      ice: '❄️',
-      fighting: '🥊',
-      poison: '☠️',
-      ground: '🏜️',
-      flying: '🕊️',
-      psychic: '🔮',
-      bug: '🐞',
-      rock: '🪨',
-      ghost: '👻',
-      dragon: '🐉',
-      dark: '🌑',
-      steel: '🛡️',
-      fairy: '🧚',
- 
+      normal: "👊",
+      fire: "🔥",
+      water: "💧",
+      electric: "⚡",
+      grass: "🌱",
+      ice: "❄️",
+      fighting: "🥊",
+      poison: "☠️",
+      ground: "🏜️",
+      flying: "🕊️",
+      psychic: "🔮",
+      bug: "🐞",
+      rock: "🪨",
+      ghost: "👻",
+      dragon: "🐉",
+      dark: "🌑",
+      steel: "🛡️",
+      fairy: "🧚",
     };
 
-    return typeIcons[type] || '❓'; 
+    return typeIcons[type] || "❓";
   };
   let ivall = undefined;
 
@@ -130,7 +133,9 @@ function PokeImage({ pokemon, number,typePokemonIcons, setTypePokemonIcons }) {
         data.sprites.back_default,
       ]);
       setLoading(false);
-      setTypePokemonIcons(data.types.map((type) => getTypeIcon(type.type.name)));
+      setTypePokemonIcons(
+        data.types.map((type) => getTypeIcon(type.type.name))
+      );
     };
     getApiData();
 
@@ -182,101 +187,3 @@ function PokeHealth({ pokemon }) {
     </div>
   );
 }
-
-//  --------------------------------------------------- component PokeData
-
-// {typePokemonIcons.length > 0 && typePokemonIcons.join(' ')}{pokemon.type.join(", ")}
-
-function PokeData({ pokemon,typePokemonIcons}) {
-  const { searched } = useContext(DataContext);
-  return searched !== 0 ? (
-    <div className="PokeData">
-      <ul className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200 p-2">
-        <li className="li">
-          <div className="type">Type: </div>
-          {typePokemonIcons.length > 0 && typePokemonIcons.join(' ')}{pokemon.type.join(", ")}
-        </li>
-        <li className="li">
-          <span>S-Attack:</span>{" "}
-          <span className="underbar">
-            <span className="bar">
-              <p
-                className="pInLi"
-                style={{ width: `${pokemon.base["Sp. Attack"]/2}%` }}
-              >
-                {pokemon.base["Sp. Attack"]}
-              </p>
-            </span>
-          </span>
-        </li>
-        <li className="li">
-          <span>S-Defense:</span>{" "}
-          <span className="underbar">
-            <span className="bar">
-              <p
-                className="pInLi"
-                style={{ width: `${pokemon.base["Sp. Defense"]/2}%` }}
-              >
-                {pokemon.base["Sp. Defense"]}
-              </p>
-            </span>
-          </span>
-        </li>
-        <li className="li">
-          <span>Attack:</span>{" "}
-          <span className="underbar">
-            <span className="bar">
-              <p className="pInLi" style={{ width: `${pokemon.base.Attack/2}%` }}>
-                {pokemon.base.Attack}
-              </p>
-            </span>
-          </span>
-        </li>
-        <li className="li">
-          <span>Defense:</span>
-          <span className="underbar">
-            {" "}
-            <span className="bar">
-              <p
-                className="pInLi"
-                style={{ width: `${pokemon.base.Defense/2}%` }}
-              >
-                {pokemon.base.Defense}
-              </p>
-            </span>
-          </span>
-        </li>
-        <li className="li">
-          <span>Speed:</span>
-          <span className="underbar">
-            {" "}
-            <span className="bar">
-              <p className="pInLi" style={{ width: `${pokemon.base.Speed/2}%` }}>
-                {pokemon.base.Speed}
-              </p>
-            </span>
-          </span>
-        </li>
-      </ul>
-    </div>
-  ) : null;
-}
-
-// Pokémon-Typ: Normal
-// Pokémon-Typ: Pflanze
-// Pokémon-Typ: Feuer
-// Pokémon-Typ: Wasser
-// Pokémon-Typ: Elektro
-// Pokémon-Typ: Kampf
-// Pokémon-Typ: Flug
-// Pokémon-Typ: Gift
-// Pokémon-Typ: Boden
-// Pokémon-Typ: Gestein
-// Pokémon-Typ: Käfer
-// Pokémon-Typ: Eis
-// Pokémon-Typ: Psycho
-// Pokémon-Typ: Geist
-// Pokémon-Typ: Drache
-// Pokémon-Typ: Unlicht
-// Pokémon-Typ: Stahl
-// Pokémon-Typ: Fee

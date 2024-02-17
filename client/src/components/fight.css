@@ -1,0 +1,131 @@
+#ActionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20em;
+  height: 38em;
+  border: 5px solid #800000;
+  margin: 0 2em;
+  background-color: antiquewhite;
+  padding: 1em;
+  border-radius: 15px;
+}
+#TimeContainer {
+  display: flex;
+  /* justify-content: ; */
+  gap: 5em;
+  height: 20em;
+}
+.timebar {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 3.8em;
+  border-radius: 15px;
+  border: 3px groove #2c2c2c;
+  overflow: hidden;
+  background-color: #c2c2c2;
+  background: linear-gradient(30deg, #2c2c2c 0%, #c2c2c2 100%);
+}
+
+#TFillR,
+#TFillL {
+  display: block;
+  background-color: #0044ff;
+  background: linear-gradient(
+    -90deg,
+    #9c8d00 0%,
+    #ffe600 10%,
+    #ffe600 90%,
+    #fff064 100%
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+#PL,
+#PR {
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#MarkL,
+#MarkR {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  max-width: 100%;
+  top: 2%;
+  transition: opacity 500ms;
+  z-index: 20;
+}
+.HPContainer {
+  border-radius: 15px;
+  border: 3px groove #2c2c2c;
+  background-color: #d92c2c;
+  position: relative;
+  overflow: hidden;
+}
+#HPFillL,
+#HPFillR {
+  display: block;
+  transition: width 1000ms;
+  background-color: #00b341;
+  background: linear-gradient(
+    0deg,
+    #00752d 0%,
+    #22c55e 10%,
+    #22c55e 90%,
+    #a8ffc8 100%
+  );
+  width: 100%;
+  height: 3em;
+  z-index: 1;
+  /* border-radius: 12px; */
+}
+.HPText {
+  color: #22c55e;
+  display: block;
+  z-index: 10;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  font-weight: bold;
+}
+
+.value {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#statsR,
+#statsL {
+  position: relative;
+  /* text-align: center; */
+  top: 50%;
+  left: -40%;
+  height: 0%;
+  z-index: 40;
+  opacity: 1;
+  transition: opacity 2000ms ease-in;
+  visibility: hidden;
+}
+
+#ATTR,
+#ATTL {
+  color: #ff4400;
+}
+#DEFR,
+#DEFL {
+  color: #0044ff;
+}
+#DMGR,
+#DMGL {
+  color: #4400ff;
+}
