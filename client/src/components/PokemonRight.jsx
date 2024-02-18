@@ -31,7 +31,7 @@ export default function PokemonRight({ index }) {
       <PokemonDefault
         selectHandler={() => {
           setSelectedPokemonRight(true);
-          setIndexPok2(pokemon);
+          index==null?setIndexPok2(Math.floor(Math.random() * (pokeList && pokeList.length))):setIndexPok2(pokemon);
         }}
       />
     </div>
