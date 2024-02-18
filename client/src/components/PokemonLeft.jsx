@@ -20,8 +20,8 @@ export default function PokemonLeft({ index }) {
   const [typePokemonIcons, setTypePokemonIcons] = useState("");
 
   useEffect(() => {
-      index = pokemon;
-      setPokemon(index);
+    index = pokemon;
+    setPokemon(index);
   }, []);
 
   return !selectedPokemonLeft ? (
@@ -32,7 +32,9 @@ export default function PokemonLeft({ index }) {
       <PokemonDefault
         selectHandler={() => {
           setSelectedPokemonLeft(true);
-          setIndexPok1(pokemon);
+          index==null?setIndexPok1(Math.floor(Math.random() * (pokeList && pokeList.length))):setIndexPok1(pokemon);
+      
+       
         }}
       />
     </div>
@@ -82,10 +84,10 @@ function PokeImage({ pokemon, setTypePokemonIcons }) {
   const [loading, setLoading] = useState(true);
   const { setSprites, sprites } = useContext(DataContext);
 
-    clearInterval(intervalL);
-    intervalL = setInterval(() => {
-      changeImg(sprites);
-    }, 2000);
+  clearInterval(intervalL);
+  intervalL = setInterval(() => {
+    changeImg(sprites);
+  }, 2000);
 
   useEffect(() => {
     if (loading) {
@@ -113,7 +115,7 @@ function PokeImage({ pokemon, setTypePokemonIcons }) {
       };
 
       getApiData();
-      
+
       // stop image skipping on unmount
       return () => {
         clearInterval(intervalL);
