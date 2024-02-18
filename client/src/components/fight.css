@@ -102,18 +102,18 @@
 .value {
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 #statsR,
 #statsL {
   position: relative;
   /* text-align: center; */
-  top: 50%;
+  top: 48%;
   left: -40%;
   height: 0%;
   z-index: 40;
   opacity: 1;
-  transition: opacity 2000ms ease-in;
+  transition: opacity 2000ms ease-out;
   visibility: hidden;
 }
 

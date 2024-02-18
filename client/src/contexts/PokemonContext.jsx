@@ -7,13 +7,18 @@ export default function PokemonContextProvider({ children }) {
   const [pokeList, setPokeList] = useState(null);
   const [loading, setIsLoading] = useState(true);
   const [searched, setSearched] = useState(0);
-  let [pokemon, setPokemon] = useState(Math.floor(Math.random() * 50) + 1);
+  let [pokemon, setPokemon] = useState(0);
   // State to check if pokemons are selected
   const [selectedPokemonLeft, setSelectedPokemonLeft] = useState(false);
   const [selectedPokemonRight, setSelectedPokemonRight] = useState(false);
   //  ------ set index for selected pokemon ----
   const [indexPok1, setIndexPok1] = useState(null);
   const [indexPok2, setIndexPok2] = useState(null);
+
+  const [sprites, setSprites] = useState({
+    Left: [],
+    Right: [],
+  });
 
   // Lade Daten via API in entries
   useEffect(() => {
@@ -53,6 +58,8 @@ export default function PokemonContextProvider({ children }) {
         setIndexPok2,
         pokemon,
         setPokemon,
+        sprites,
+        setSprites,
       }}
     >
       {children}

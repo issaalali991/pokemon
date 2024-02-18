@@ -1,13 +1,14 @@
 import { useContext, useEffect } from "react";
 import BeatLoader from "react-spinners/BeatLoader";
-import { DataContext } from ".././contexts/PokemonContext.jsx";
+import { DataContext } from "../contexts/PokemonContext.jsx";
 import PokemonFightL from "./PokemonFightL.jsx";
 import PokemonFightR from "./PokemonFightR.jsx";
 import "./fight.css";
 import Pokemon from "../utils/classPokemon.js";
 import { useNavigate } from "react-router-dom";
+import { wait } from "../utils/utils.js";
 
-export default function Figtht() {
+export default function ScreenFight() {
   const {
     loading,
     pokeList,
@@ -15,6 +16,8 @@ export default function Figtht() {
     indexPok2,
     selectedPokemonL,
     selectedPokemonR,
+    setSprites,
+    sprites,
   } = useContext(DataContext);
 
   const navigate = useNavigate();
@@ -28,7 +31,31 @@ export default function Figtht() {
   const PokemonR = new Pokemon(pokeList, indexPok2, "R");
 
   function figthAction(fillL, fillR) {
-    const ivall = setInterval(() => {
+    const ival = setInterval(() => {
+      if (PokemonL.hp <= 0) {
+        clearInterval(ival);
+        setSprites({
+          Left: [
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+          ],
+          Right: sprites.Right,
+        });
+      }
+      if (PokemonR.hp <= 0) {
+        setSprites({
+          Left: sprites.Left,
+          Right: [
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+          ],
+        });
+        return;
+      }
       if (PokemonL.aTime < 100 && PokemonR.aTime < 100) {
         PokemonL.aTime += PokemonL.speed;
         PokemonR.aTime += PokemonR.speed;
@@ -39,18 +66,13 @@ export default function Figtht() {
         if (PokemonL.aTime >= 100) {
           PokemonL.aTime = 0;
           reduceHP(PokemonR);
-          PokemonR.takeDamageFromm(PokemonL);
+          PokemonR.takeDamageFromm(PokemonL, setSprites);
         }
         // R Pokemon Attacks
         if (PokemonR.aTime >= 100) {
           PokemonR.aTime = 0;
           reduceHP(PokemonL);
-          PokemonL.takeDamageFromm(PokemonR);
-        }
-        if (PokemonL.hp <= 0 || PokemonR.hp <= 0) {
-          document.getElementById("pImageL").src = "./grave.svg";
-          document.getElementById("pImageR").src = "./grave.svg";
-          clearInterval(ivall);
+          PokemonL.takeDamageFromm(PokemonR, setSprites);
         }
       }
     }, 35);
@@ -62,14 +84,6 @@ export default function Figtht() {
       pokemon.triggerMark();
     }, 300);
     // wait(1000);
-  }
-
-  function wait(ms) {
-    var start = Date.now(),
-      now = start;
-    while (now - start < ms) {
-      now = Date.now();
-    }
   }
 
   useEffect(() => {

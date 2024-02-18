@@ -16,7 +16,7 @@ function Search() {
     id = found.id;
     id--;
   } catch (error) {
-    // console.log(error);
+    console.log(error);
   }
   setSearched(id);
   useEffect(() => {

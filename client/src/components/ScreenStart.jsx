@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useContext } from "react";
 
 import BeatLoader from "react-spinners/BeatLoader";
-import { DataContext } from ".././contexts/PokemonContext.jsx";
+import { DataContext } from "../contexts/PokemonContext.jsx";
 import PokemonLeft from "./PokemonLeft.jsx";
 import PokemonRight from "./PokemonRight.jsx";
 import FightButton from "./FightButton.jsx";
 import { useNavigate } from "react-router-dom";
 
-function PokeList() {
+export default function ScreenStart() {
   const { loading, selectedPokemonLeft, selectedPokemonRight, indexPok1, indexPok2 } =
     useContext(DataContext);
   const navigate = useNavigate();
@@ -50,7 +50,6 @@ function PokeList() {
           <PokemonLeft
             className="cursor-pointer"
             key={"one"}
-            number={"one"}
             index={indexPok1 == null ? null : indexPok1}
             selectedPokemon={selectedPokemonLeft}
             onClick={() => {
@@ -72,7 +71,6 @@ function PokeList() {
           <PokemonRight
             className="cursor-pointer"
             key={"two"}
-            number={"two"}
             index={indexPok2 == null ? null : indexPok2}
             selectedPokemon={selectedPokemonRight}
             onClick={() => {
@@ -97,5 +95,3 @@ function PokeList() {
     </div>
   );
 }
-
-export default PokeList;
