@@ -13,10 +13,10 @@ export default class Pokemon {
     triggerMark() {
         const mark = document.getElementById(`Mark${this.id}`);
 
-        if (mark.style.opacity == 0) {
+        if (mark&&mark.style.opacity == 0) {
             mark.style.opacity = 1;
         } else {
-            mark.style.opacity = 0;
+             mark.style.opacity = 0;
         }
     }
     takeDamageFromm(AttkrPkmn) {
