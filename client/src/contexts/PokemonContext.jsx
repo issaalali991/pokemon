@@ -7,7 +7,7 @@ export default function PokemonContextProvider({ children }) {
   const [pokeList, setPokeList] = useState(null);
   const [loading, setIsLoading] = useState(true);
   const [searched, setSearched] = useState(0);
-  let [pokemon, setPokemon] = useState(Math.floor(Math.random() * 50) + 1);
+  let [pokemon, setPokemon] = useState(0);
   // State to check if pokemons are selected
   const [selectedPokemonLeft, setSelectedPokemonLeft] = useState(false);
   const [selectedPokemonRight, setSelectedPokemonRight] = useState(false);

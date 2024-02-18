@@ -4,7 +4,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 import PokeData from "./PokeData";
 import { getTypeIcon } from "../utils/utils";
 
-export default function PokemonFightL({ number }) {
+export default function PokemonFightL({}) {
   const { pokeList, indexPok1, sprites } = useContext(DataContext);
   let index = indexPok1;
   const [typePokemonIcons, setTypePokemonIcons] = useState("");
@@ -43,25 +43,27 @@ export default function PokemonFightL({ number }) {
 
 let imageCounterFL = 0;
 
-function changeImg(sprites, number) {
-
-  let img = document.getElementsByName(`img-${number}`);
-  img[0].src = sprites[imageCounterFL];
+function changeImg(sprites) {
+  try {
+    let img = document.getElementById("pImageFL");
+    img.src = sprites[imageCounterFL];
+  } catch (error) {
+    console.log("PFLeft-Error", error.message);
+  }
   imageCounterFL < 3 ? imageCounterFL++ : (imageCounterFL = 0);
 }
 
 //  -------------------------------------------------------- COMPONENT PokeImage
 
-function PokeImage({ pokemon, sprites, number, setTypePokemonIcons }) {
-  const [loading, setLoading] = useState(true);
-  const { searched } = useContext(DataContext);
+let intervalFightL = undefined;
 
-  console.log(sprites);
-  let intervalFightL = undefined;
+function PokeImage({ pokemon, sprites, setTypePokemonIcons }) {
+  const [loading, setLoading] = useState(true);
 
   // start image skipping
+  clearInterval(intervalFightL);
   intervalFightL = setInterval(() => {
-    changeImg(sprites, number);
+    changeImg(sprites);
   }, 2000);
 
   useEffect(() => {

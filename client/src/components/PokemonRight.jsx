@@ -18,15 +18,16 @@ export default function PokemonRight({ index }) {
   } = useContext(DataContext);
 
   const [typePokemonIcons, setTypePokemonIcons] = useState("");
+
   useEffect(() => {
-    setPokemon(searched);
     index = pokemon;
+    setPokemon(index);
   }, []);
 
   return !selectedPokemonRight ? (
     // Unselected State
     <div className="Pokemon bg-gray-100">
-      <Search />
+      {/* <Search /> */}
       <PokemonDefault
         selectHandler={() => {
           setSelectedPokemonRight(true);
@@ -63,54 +64,61 @@ let imageCounterR = 0;
 function changeImg(sprites) {
   try {
     let img = document.getElementById("pImageR");
-    img[0].src = sprites[imageCounterR];
+    img.src = sprites.Right[imageCounterR];
   } catch (error) {
-    console.log("PRight-Error", error);
+    console.log("PRight-Error", error.message);
   }
   imageCounterR < 3 ? imageCounterR++ : (imageCounterR = 0);
 }
 
 //  -------------------------------------------------------- COMPONENT PokeImage
 
-function PokeImage({ pokemon, setTypePokemonIcons }) {
-  const [loading, setLoading] = useState(true);
-  const { searched, sprites, setSprites } = useContext(DataContext);
+let intervalR = undefined;
 
-  let intervalR = undefined;
+function PokeImage({ pokemon, setTypePokemonIcons }) {
+  console.log("load Poke Image Right");
+
+  const [loading, setLoading] = useState(true);
+  const { sprites, setSprites } = useContext(DataContext);
 
   // start image skipping
-  intervalR = setInterval(() => {
-    changeImg(sprites);
-  }, 2000);
+    clearInterval(intervalR)
+    intervalR = setInterval(() => {
+      changeImg(sprites);
+    }, 2000);
 
   useEffect(() => {
-    const getApiData = async () => {
-      const response = await fetch(
-        `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
-      );
-      const data = await response.json();
+    if (loading) {
+      console.log("useEffect Right");
 
-      setSprites({
-        Left: sprites.Left,
-        Right: [
-          data.sprites.front_default,
-          data.sprites.back_default,
-          data.sprites.front_shiny,
-          data.sprites.back_shiny,
-        ],
-      });
-      setLoading(false);
-      setTypePokemonIcons(
-        data.types.map((type) => getTypeIcon(type.type.name))
-      );
-    };
+      const getApiData = async () => {
+        const response = await fetch(
+          `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
+        );
+        const data = await response.json();
 
-    getApiData();
+        setSprites({
+          Left: sprites.Left,
+          Right: [
+            data.sprites.front_default,
+            data.sprites.back_default,
+            data.sprites.front_shiny,
+            data.sprites.back_shiny,
+          ],
+        });
+        setLoading(false);
+        setTypePokemonIcons(
+          data.types.map((type) => getTypeIcon(type.type.name))
+        );
+      };
 
-    // stop image skipping on unmount
-    return () => {
-      clearInterval(intervalR);
-    };
+      getApiData();
+
+      // stop image skipping on unmount
+      return () => {
+        clearInterval(intervalR);
+      };
+    }
   }, []);
 
   return (

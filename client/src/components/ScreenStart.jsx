@@ -50,7 +50,6 @@ export default function ScreenStart() {
           <PokemonLeft
             className="cursor-pointer"
             key={"one"}
-            number={"one"}
             index={indexPok1 == null ? null : indexPok1}
             selectedPokemon={selectedPokemonLeft}
             onClick={() => {
@@ -72,7 +71,6 @@ export default function ScreenStart() {
           <PokemonRight
             className="cursor-pointer"
             key={"two"}
-            number={"two"}
             index={indexPok2 == null ? null : indexPok2}
             selectedPokemon={selectedPokemonRight}
             onClick={() => {

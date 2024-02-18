@@ -20,15 +20,15 @@ export default function PokemonLeft({ index }) {
   const [typePokemonIcons, setTypePokemonIcons] = useState("");
 
   useEffect(() => {
-    setPokemon(searched);
-    index = pokemon;
+      index = pokemon;
+      setPokemon(index);
   }, []);
 
   return !selectedPokemonLeft ? (
     // Unselected State
     // cursor-pointer flex justify-center items-center flex-col
     <div className="Pokemon bg-gray-100">
-      <Search />
+      {/* <Search /> */}
       <PokemonDefault
         selectHandler={() => {
           setSelectedPokemonLeft(true);
@@ -61,72 +61,73 @@ export default function PokemonLeft({ index }) {
 //  ---------------------------------------------------function for Imagechange
 
 let imageCounterL = 0;
-let intervalL = undefined;
+
+function changeImg(sprites) {
+  try {
+    let img = document.getElementById("pImageL");
+    img.src = sprites.Left[imageCounterL];
+  } catch (error) {
+    console.log("PLeft-Error", error.message);
+  }
+
+  imageCounterL < 3 ? imageCounterL++ : (imageCounterL = 0);
+}
 
 //  ---------------------------------------------------- COMPONENT PokeImageLeft
+let intervalL = undefined;
 
 function PokeImage({ pokemon, setTypePokemonIcons }) {
-  const [loading, setLoading] = useState(true);
-  const { searched, setSprites, sprites } = useContext(DataContext);
+  console.log("load Poke Image Left");
 
-  intervalL = setInterval(() => {
-    changeImg(sprites);
-  }, 2000);
+  const [loading, setLoading] = useState(true);
+  const { setSprites, sprites } = useContext(DataContext);
+
+    clearInterval(intervalL);
+    intervalL = setInterval(() => {
+      changeImg(sprites);
+    }, 2000);
 
   useEffect(() => {
-    clearInterval(intervalL);
-    const getApiData = async () => {
-      const response = await fetch(
-        `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
-      );
-      const data = await response.json();
+    if (loading) {
+      console.log("useEffect Left");
 
-      setSprites({
-        Left: [
-          data.sprites.front_default,
-          data.sprites.back_default,
-          data.sprites.front_shiny,
-          data.sprites.back_shiny,
-        ],
-        Right: sprites.Right,
-      });
-      setLoading(false);
-      setTypePokemonIcons(
-        data.types.map((type) => getTypeIcon(type.type.name))
-      );
-    };
+      const getApiData = async () => {
+        const response = await fetch(
+          `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
+        );
+        const data = await response.json();
 
-    getApiData();
+        setSprites({
+          Left: [
+            data.sprites.front_default,
+            data.sprites.back_default,
+            data.sprites.front_shiny,
+            data.sprites.back_shiny,
+          ],
+          Right: sprites.Right,
+        });
+        setLoading(false);
+        setTypePokemonIcons(
+          data.types.map((type) => getTypeIcon(type.type.name))
+        );
+      };
 
-    // stop image skipping on unmount
-    return () => {
-      clearInterval(intervalL);
-    };
-  }, []);
-
-  function changeImg(sprites) {
-    try {
-      let img = document.getElementById("pImageL");
-
-      wait(2000);
-      img[0].src = sprites[imageCounterL];
-    } catch (error) {
-      console.log("PLeft-Error", error);
+      getApiData();
+      
+      // stop image skipping on unmount
+      return () => {
+        clearInterval(intervalL);
+      };
     }
-
-    imageCounterL < 3 ? imageCounterL++ : (imageCounterL = 0);
-  }
+  }, []);
 
   return (
     <div className="PokeImage flex justify-center items-center flex-col">
       {loading && (
-        <div>
-          <BeatLoader
-            color="#22C55E"
-            className="my-4 flex w-60 h-52 flex-row justify-center items-center"
-          />
-          <img id="pImageL" />
-        </div>
+        <BeatLoader
+          color="#22C55E"
+          className="my-4 flex w-60 h-52 flex-row justify-center items-center"
+        />
       )}
       {!loading && (
         <img

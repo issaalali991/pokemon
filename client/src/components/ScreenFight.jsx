@@ -6,6 +6,7 @@ import PokemonFightR from "./PokemonFightR.jsx";
 import "./fight.css";
 import Pokemon from "../utils/classPokemon.js";
 import { useNavigate } from "react-router-dom";
+import { wait } from "../utils/utils.js";
 
 export default function ScreenFight() {
   const {
@@ -15,6 +16,8 @@ export default function ScreenFight() {
     indexPok2,
     selectedPokemonL,
     selectedPokemonR,
+    setSprites,
+    sprites,
   } = useContext(DataContext);
 
   const navigate = useNavigate();
@@ -28,7 +31,31 @@ export default function ScreenFight() {
   const PokemonR = new Pokemon(pokeList, indexPok2, "R");
 
   function figthAction(fillL, fillR) {
-    const ivall = setInterval(() => {
+    const ival = setInterval(() => {
+      if (PokemonL.hp <= 0) {
+        clearInterval(ival);
+        setSprites({
+          Left: [
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+          ],
+          Right: sprites.Right,
+        });
+      }
+      if (PokemonR.hp <= 0) {
+        setSprites({
+          Left: sprites.Left,
+          Right: [
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+            "../../public/grave.svg",
+          ],
+        });
+        return;
+      }
       if (PokemonL.aTime < 100 && PokemonR.aTime < 100) {
         PokemonL.aTime += PokemonL.speed;
         PokemonR.aTime += PokemonR.speed;
@@ -39,16 +66,13 @@ export default function ScreenFight() {
         if (PokemonL.aTime >= 100) {
           PokemonL.aTime = 0;
           reduceHP(PokemonR);
-          PokemonR.takeDamageFromm(PokemonL);
+          PokemonR.takeDamageFromm(PokemonL, setSprites);
         }
         // R Pokemon Attacks
         if (PokemonR.aTime >= 100) {
           PokemonR.aTime = 0;
           reduceHP(PokemonL);
-          PokemonL.takeDamageFromm(PokemonR);
-        }
-        if (PokemonL.hp <= 0 || PokemonR.hp <= 0) {
-          clearInterval(ivall);
+          PokemonL.takeDamageFromm(PokemonR, setSprites);
         }
       }
     }, 35);

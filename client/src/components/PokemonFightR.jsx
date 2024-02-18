@@ -4,7 +4,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 import PokeData from "./PokeData";
 import { getTypeIcon } from "../utils/utils";
 
-export default function PokemonFightR({ number }) {
+export default function PokemonFightR({}) {
   const { pokeList, indexPok2, sprites } = useContext(DataContext);
   let index = indexPok2;
 
@@ -47,22 +47,23 @@ let imageCounterFR = 0;
 function changeImg(sprites) {
   try {
     let img = document.getElementById("pImageFR");
-    img[0].src = sprites[imageCounterFR];
+    img.src = sprites[imageCounterFR];
   } catch (error) {
-    console.log("PFRight-Error", error);
+    console.log("PFRight-Error", error.message);
   }
   imageCounterFR < 3 ? imageCounterFR++ : (imageCounterFR = 0);
 }
 
 //  -------------------------------------------------------- COMPONENT PokeImage
 
+let intervalFightR = undefined;
+
 function PokeImage({ pokemon, sprites, setTypePokemonIcons }) {
   const [loading, setLoading] = useState(true);
-  let intervalFightR = undefined;
 
   // start image skipping
+  clearInterval(intervalFightR);
   intervalFightR = setInterval(() => {
-    // console.log(number, counterRight);
     changeImg(sprites);
   }, 2000);
 

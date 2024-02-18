@@ -24,7 +24,7 @@ export default class Pokemon {
         const HPText = document.getElementById(`HPText${this.id}`);
 
         const defense = Math.floor(Math.random() * (this.defense - (this.defense / 10)) + (this.defense / 10));
-        const attack = Math.floor(Math.random() * (AttkrPkmn.attack - (AttkrPkmn.attack / 10)) + (AttkrPkmn.attack / 10));
+        const attack = Math.floor(Math.random() * (AttkrPkmn.attack - (AttkrPkmn.attack / 5)) + (AttkrPkmn.attack / 5));
 
         let damage = attack - defense;
         if (damage < 0) {
@@ -32,9 +32,11 @@ export default class Pokemon {
         }
         this.hp = this.hp - damage;
 
+        console.log(AttkrPkmn.name, damage, "->", this.id, this.hp);
+
         if (this.hp < 0) {
             this.hp = 0;
-            document.getElementById(`pImage${this.id}`).src = "../../public/grave.svg";
+            document.getElementById(`pImageF${this.id}`).src = "../../public/grave.svg";
         }
 
         HPFill.style.width = `${this.hp / (this.hpBase / 100)}%`;
@@ -42,6 +44,7 @@ export default class Pokemon {
 
         const stats = document.getElementById(`stats${this.id}`);
         const time = Date.now() + 2000;
+
         document.getElementById(`ATT${this.id}`).textContent = `ATT: ${attack}`
         document.getElementById(`DEF${this.id}`).textContent = `DEF: ${defense}`
         document.getElementById(`DMG${this.id}`).textContent = `DMG: ${damage}`
