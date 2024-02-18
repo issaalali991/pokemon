@@ -28,7 +28,7 @@ export default function App() {
       <img
         src="../../public/Pokefight.svg"
         alt="Pokefight"
-        className="w-2/5 m-8"
+        className="pokefight"
       />
 
       <Routes>
