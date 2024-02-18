@@ -13,9 +13,13 @@ export default function ScreenFight() {
     loading,
     pokeList,
     indexPok1,
+    setIndexPok1,
     indexPok2,
+    setIndexPok2,
     selectedPokemonL,
+    setSelectedPokemonLeft,
     selectedPokemonR,
+    setSelectedPokemonRight,
     setSprites,
     sprites,
   } = useContext(DataContext);
@@ -120,6 +124,23 @@ export default function ScreenFight() {
                 </div>
               </div>
             </div>
+            <button className="bg-blue-500 text-white py-2 px-4 rounded-full mt-4" onClick={async() => 
+            {
+              setIndexPok1(null)
+              setIndexPok2(null)
+        
+              setSelectedPokemonLeft(false)
+              setSelectedPokemonRight(false)
+              setSprites({
+                Left: [],
+                Right: [],
+              });
+
+              
+              navigate('/')
+            }}
+            >Restart</button>
+
           </div>
 
           {/* POKEMON RIGHT SIDE  */}
