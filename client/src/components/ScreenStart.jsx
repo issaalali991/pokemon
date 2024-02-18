@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from "react";
-
 import BeatLoader from "react-spinners/BeatLoader";
 import { DataContext } from "../contexts/PokemonContext.jsx";
 import PokemonLeft from "./PokemonLeft.jsx";
