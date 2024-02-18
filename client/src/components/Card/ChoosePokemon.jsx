@@ -39,7 +39,7 @@ function ChoosePokemon() {
   return (
     <div className="h-screen">
       <div className="flex justify-center items-center">
-        {pokeList && <PokemonCard pokemon={pokeList[pokselected]} />}
+        {pokeList && <PokemonCard pokemon={pokeList[pokselected]} id={id}/>}
 
         <div className="centerDiv">
           <button
@@ -81,7 +81,7 @@ function ChoosePokemon() {
                       .includes(e.target.value.toLowerCase())
                   )
                 );
-                console.log(filtered); // Hier sollte filtered aktualisiert sein
+                // console.log(filtered); // Hier sollte filtered aktualisiert sein
               }}
             />
             {displayedEntries &&
@@ -91,7 +91,7 @@ function ChoosePokemon() {
                     <td
                       onClick={() => {
                         setPokselected(pokemon.id - 1);
-                        console.log(pokemon.id);
+                        // console.log(pokemon.id);
                       }}
                       className="cursor-pointer"
                     >

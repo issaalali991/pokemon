@@ -30,10 +30,11 @@ export default class Pokemon {
         if (damage < 0) {
             damage = 0;
         }
-        this.hp = this.hp - (damage);
+        this.hp = this.hp - damage;
 
         if (this.hp < 0) {
             this.hp = 0;
+            document.getElementById(`pImage${this.id}`).src = "../../public/grave.svg";
         }
 
         HPFill.style.width = `${this.hp / (this.hpBase / 100)}%`;

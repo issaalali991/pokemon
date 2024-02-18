@@ -4,13 +4,12 @@ import { DataContext } from "../contexts/PokemonContext";
 export default function PokeData({ pokemon, typePokemonIcons }) {
   const { searched } = useContext(DataContext);
 
-  return searched !== 0 ? (
+  return (
     <div className="PokeData">
       <ul className="grid grid-cols-2 gap-2 text-gray-800 font-bold rounded-lg bg-slate-200 p-2">
         <li className="row-span-3 gap-2 flex flex-col ">
-          <div className="pdataTxt gap-2 flex flex-col">Type:</div>
+          <div className="pdataTxt gap-2 flex flex-col">🇹 Type:</div>
           {typePokemonIcons.length == 0 && <div></div>}
-
           {typePokemonIcons.length == 2 && (
             <div>
               <div className="pl-6">
@@ -23,7 +22,6 @@ export default function PokeData({ pokemon, typePokemonIcons }) {
               </div>
             </div>
           )}
-
           {typePokemonIcons.length == 1 && (
             <div>
               <div className="pl-6">
@@ -35,29 +33,8 @@ export default function PokeData({ pokemon, typePokemonIcons }) {
         </li>
 
         <li>
-          <span className="pdataTxt">S-Attack:</span>
-          <span className="underbar">
-            <span
-              className="barFill"
-              style={{ width: `${pokemon.base["Sp. Attack"] / 2}%` }}
-            ></span>
-            <div className="pInLi">{pokemon.base["Sp. Attack"]}</div>
-          </span>
-        </li>
-
-        <li>
-          <span className="pdataTxt">S-Defense:</span>
-          <span className="underbar">
-            <span
-              className="barFill"
-              style={{ width: `${pokemon.base["Sp. Defense"] / 2}%` }}
-            ></span>
-            <div className="pInLi">{pokemon.base["Sp. Defense"]}</div>
-          </span>
-        </li>
-
-        <li>
-          <span className="pdataTxt">Attack:</span>
+          ⚔️
+          <span className="pdataTxt">&nbsp;Attack:</span>
           <span className="underbar">
             <span
               className="barFill"
@@ -68,7 +45,8 @@ export default function PokeData({ pokemon, typePokemonIcons }) {
         </li>
 
         <li>
-          <span className="pdataTxt">Defense:</span>
+          🛡️
+          <span className="pdataTxt">&nbsp;Defense:</span>
           <span className="underbar">
             <span
               className="barFill"
@@ -79,7 +57,8 @@ export default function PokeData({ pokemon, typePokemonIcons }) {
         </li>
 
         <li>
-          <span className="pdataTxt">Speed:</span>
+          🏁
+          <span className="pdataTxt">&nbsp;Speed:</span>
           <span className="underbar">
             <span
               className="barFill"
@@ -88,7 +67,31 @@ export default function PokeData({ pokemon, typePokemonIcons }) {
             <div className="pInLi">{pokemon.base.Speed}</div>
           </span>
         </li>
+
+        <li>
+          💥
+          <span className="pdataTxt">&nbsp;S-Attack:</span>
+          <span className="underbar">
+            <span
+              className="barFill"
+              style={{ width: `${pokemon.base["Sp. Attack"] / 2}%` }}
+            ></span>
+            <div className="pInLi">{pokemon.base["Sp. Attack"]}</div>
+          </span>
+        </li>
+
+        <li>
+          🔰
+          <span className="pdataTxt">&nbsp;S-Defense:</span>
+          <span className="underbar">
+            <span
+              className="barFill"
+              style={{ width: `${pokemon.base["Sp. Defense"] / 2}%` }}
+            ></span>
+            <div className="pInLi">{pokemon.base["Sp. Defense"]}</div>
+          </span>
+        </li>
       </ul>
     </div>
-  ) : null;
+  );
 }

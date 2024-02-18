@@ -2,10 +2,10 @@ import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../contexts/PokemonContext";
 import BeatLoader from "react-spinners/BeatLoader";
 import PokeData from "./PokeData";
+import { getTypeIcon } from "../utils/utils";
 
 export default function PokemonFightR({ number }) {
-  const { pokeList, indexPok2 } = useContext(DataContext);
-  const pok2 = pokeList && pokeList[indexPok2];
+  const { pokeList, indexPok2, sprites } = useContext(DataContext);
   let index = indexPok2;
 
   const [typePokemonIcons, setTypePokemonIcons] = useState("");
@@ -31,7 +31,7 @@ export default function PokemonFightR({ number }) {
       </div>
       <PokeImage
         pokemon={pokeList[index]}
-        number={number}
+        sprites={sprites.Right}
         setTypePokemonIcons={setTypePokemonIcons}
       />
       <PokeHealth pokemon={pokeList[index]} />
@@ -42,118 +42,28 @@ export default function PokemonFightR({ number }) {
 
 //  ---------------------------------------------------function for Imagechange
 
-let counterFR = 0;
+let imageCounterFR = 0;
 
-function changeImg(pokeImg, number) {
-  if (pokeImg.length == 0) {
-    return;
-  }
-
-  let img = document.getElementsByName(`img-${number}`);
-
+function changeImg(sprites) {
   try {
-    img[0].src = pokeImg[counterFR];
-  } catch (error) {}
-
-  counterFR < 3 ? counterFR++ : (counterFR = 0);
+    let img = document.getElementById("pImageFR");
+    img[0].src = sprites[imageCounterFR];
+  } catch (error) {
+    console.log("PFRight-Error", error);
+  }
+  imageCounterFR < 3 ? imageCounterFR++ : (imageCounterFR = 0);
 }
 
-// //  --------------------------------------------------- component PokeImage
-// function PokeImage({ pokemon, number }) {
-//   const [pokeImg, setPokeImg] = useState([]);
-//   const [loading, setLoading] = useState(true);
-//   const { searched } = useContext(DataContext);
+//  -------------------------------------------------------- COMPONENT PokeImage
 
-//   let intervall = undefined;
-
-//   // start image skipping
-//   intervall = setInterval(() => {
-//     // console.log(number, counterFR);
-//     changeImg(pokeImg, number);
-//   }, 2000);
-
-//   useEffect(() => {
-//     const getApiData = async () => {
-//       const response = await fetch(
-//         `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
-//       );
-//       const data = await response.json();
-
-//       setPokeImg([]);
-//       setPokeImg([
-//         data.sprites.front_default,
-//         data.sprites.front_shiny,
-//         data.sprites.back_shiny,
-//         data.sprites.back_default,
-//       ]);
-//       setLoading(false);
-//     };
-//     getApiData();
-
-//     // stop image skipping on unmount
-//     return () => {
-//       clearInterval(intervall);
-//     };
-//   }, []);
-
-//   return searched !== 0 ? (
-//     <div className="PokeImage flex justify-center items-center flex-col">
-//       {loading && (
-//         <BeatLoader
-//           color="#22C55E"
-//           className="my-4 flex w-60 h-52 flex-row justify-center items-center"
-//         />
-//       )}
-//       {!loading && (
-//         <img
-//           name={`img-${number}`}
-//           src={pokeImg[counterFR]}
-//           alt={pokemon.name.english}
-//           className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
-//         />
-//       )}
-//     </div>
-//   ) : null;
-// }
-
-//  --------------------------------------------------- component PokeImage
-
-let counterRight = 0;
-function PokeImage({ pokemon, number, typePokemonIcons, setTypePokemonIcons }) {
-  const [pokeapi, setpokeApi] = useState({});
+function PokeImage({ pokemon, sprites, setTypePokemonIcons }) {
   const [loading, setLoading] = useState(true);
-  const { searched } = useContext(DataContext);
-  const getTypeIcon = (type) => {
-    const typeIcons = {
-      normal: "👊",
-      fire: "🔥",
-      water: "💧",
-      electric: "⚡",
-      grass: "🌱",
-      ice: "❄️",
-      fighting: "🥊",
-      poison: "☠️",
-      ground: "🏜️",
-      flying: "🕊️",
-      psychic: "🔮",
-      bug: "🐞",
-      rock: "🪨",
-      ghost: "👻",
-      dragon: "🐉",
-      dark: "🌑",
-      steel: "🛡️",
-      fairy: "🧚",
-    };
-
-    return typeIcons[type] || "❓";
-  };
-
-  let intervall = undefined;
+  let intervalFightR = undefined;
 
   // start image skipping
-  intervall = setInterval(() => {
+  intervalFightR = setInterval(() => {
     // console.log(number, counterRight);
-    changeImg(pokeapi, number);
+    changeImg(sprites);
   }, 2000);
 
   useEffect(() => {
@@ -163,13 +73,15 @@ function PokeImage({ pokemon, number, typePokemonIcons, setTypePokemonIcons }) {
       );
       const data = await response.json();
 
-      setpokeApi([]);
-      setpokeApi([
-        data.sprites.front_default,
-        data.sprites.front_shiny,
-        data.sprites.back_shiny,
-        data.sprites.back_default,
-      ]);
+      // setSprites({
+      //   Left: sprites.Left,
+      //   Right: [
+      //     data.sprites.front_default,
+      //     data.sprites.back_default,
+      //     data.sprites.front_shiny,
+      //     data.sprites.back_shiny,
+      //   ],
+      // });
       setLoading(false);
       setTypePokemonIcons(
         data.types.map((type) => getTypeIcon(type.type.name))
@@ -179,11 +91,11 @@ function PokeImage({ pokemon, number, typePokemonIcons, setTypePokemonIcons }) {
 
     // stop image skipping on unmount
     return () => {
-      clearInterval(intervall);
+      clearInterval(intervalFightR);
     };
   }, []);
 
-  return searched !== 0 ? (
+  return (
     <div className="PokeImage flex justify-center items-center flex-col">
       {loading && (
         <BeatLoader
@@ -193,14 +105,14 @@ function PokeImage({ pokemon, number, typePokemonIcons, setTypePokemonIcons }) {
       )}
       {!loading && (
         <img
-          name={`img-${number}`}
-          src={pokeapi[counterRight]}
+          id="pImageFR"
           alt={pokemon.name.english}
+          src={sprites[imageCounterFR]}
           className="pImageR w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
         />
       )}
     </div>
-  ) : null;
+  );
 }
 
 //  --------------------------------------------------- component PokeHealth

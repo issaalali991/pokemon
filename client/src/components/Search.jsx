@@ -18,9 +18,9 @@ function Search() {
   } catch (error) {
     // console.log(error);
   }
-  setSearched(id);
+  // setSearched(id);
   useEffect(() => {
-    setPokemon(id);
+    // setPokemon(id);
   }, [searched]);
 
 

@@ -15,6 +15,11 @@ export default function PokemonContextProvider({ children }) {
   const [indexPok1, setIndexPok1] = useState(null);
   const [indexPok2, setIndexPok2] = useState(null);
 
+  const [sprites, setSprites] = useState({
+    Left: [],
+    Right: [],
+  });
+
   // Lade Daten via API in entries
   useEffect(() => {
     const fetchData = async () => {
@@ -53,6 +58,8 @@ export default function PokemonContextProvider({ children }) {
         setIndexPok2,
         pokemon,
         setPokemon,
+        sprites,
+        setSprites,
       }}
     >
       {children}

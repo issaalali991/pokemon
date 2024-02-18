@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import PokeList from "./components/PokeList";
 import ChoosePokemon from "./components/Card/ChoosePokemon";
-import Figtht from "./components/Figtht";
+import ScreenFight from "./components/ScreenFight";
+import ScreenStart from "./components/ScreenStart";
 
 export default function App() {
   const pool = [
@@ -32,10 +32,10 @@ export default function App() {
       />
 
       <Routes>
-        <Route path="/" element={<PokeList />} />
+        <Route path="/" element={<ScreenStart />} />
         <Route path="/pokemon/" element={<ChoosePokemon />} />
         <Route path="/pokemon/:id" element={<ChoosePokemon />} />
-        <Route path="/fight" element={<Figtht />} />
+        <Route path="/fight" element={<ScreenFight />} />
       </Routes>
       {/* <button
         className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"

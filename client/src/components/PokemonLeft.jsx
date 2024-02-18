@@ -4,8 +4,9 @@ import PokemonDefault from "./PokemonDefault";
 import BeatLoader from "react-spinners/BeatLoader";
 import Search from "./Search";
 import PokeData from "./PokeData";
+import { getTypeIcon, wait } from "../utils/utils";
 
-export default function PokemonLeft({ number, index }) {
+export default function PokemonLeft({ index }) {
   const {
     pokeList,
     setSelectedPokemonLeft,
@@ -16,12 +17,9 @@ export default function PokemonLeft({ number, index }) {
     searched,
   } = useContext(DataContext);
 
-  const [selected, setSelected] = useState(false);
-  const [, forceUpdate] = useState();
   const [typePokemonIcons, setTypePokemonIcons] = useState("");
 
   useEffect(() => {
-    // forceUpdate(Math.random());
     setPokemon(searched);
     index = pokemon;
   }, []);
@@ -40,7 +38,6 @@ export default function PokemonLeft({ number, index }) {
     </div>
   ) : (
     // Selected Pokemon
-    //  flex flex-col justify-center items-center
     <div className="Pokemon bg-gray-100">
       <div className="">
         <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white rounded-lg p-2  w-full">
@@ -49,7 +46,6 @@ export default function PokemonLeft({ number, index }) {
       </div>
       <PokeImage
         pokemon={pokeList[index == null ? pokemon : index]}
-        number={number}
         typePokemonIcons={typePokemonIcons}
         setTypePokemonIcons={setTypePokemonIcons}
       />
@@ -64,105 +60,84 @@ export default function PokemonLeft({ number, index }) {
 
 //  ---------------------------------------------------function for Imagechange
 
-let counterLeft = 0;
+let imageCounterL = 0;
+let intervalL = undefined;
 
-function changeImg(pokeapi, number) {
-  if (pokeapi.length == 0) {
-    return;
-  }
+//  ---------------------------------------------------- COMPONENT PokeImageLeft
 
-  let img = document.getElementsByName(`img-${number}`);
-
-  try {
-    img[0].src = pokeapi[counterLeft];
-  } catch (error) {}
-
-  counterLeft < 3 ? counterLeft++ : (counterLeft = 0);
-}
-
-//  --------------------------------------------------- component PokeImage
-function PokeImage({ pokemon, number, typePokemonIcons, setTypePokemonIcons }) {
-  const [pokeapi, setpokeApi] = useState({});
+function PokeImage({ pokemon, setTypePokemonIcons }) {
   const [loading, setLoading] = useState(true);
-  const { searched } = useContext(DataContext);
+  const { searched, setSprites, sprites } = useContext(DataContext);
 
-  const getTypeIcon = (type) => {
-    const typeIcons = {
-      normal: "👊",
-      fire: "🔥",
-      water: "💧",
-      electric: "⚡",
-      grass: "🌱",
-      ice: "❄️",
-      fighting: "🥊",
-      poison: "☠️",
-      ground: "🏜️",
-      flying: "🕊️",
-      psychic: "🔮",
-      bug: "🐞",
-      rock: "🪨",
-      ghost: "👻",
-      dragon: "🐉",
-      dark: "🌑",
-      steel: "🛡️",
-      fairy: "🧚",
-    };
-
-    return typeIcons[type] || "❓";
-  };
-  let ivall = undefined;
-
-  // start image skipping
-  ivall = setInterval(() => {
-    // console.log(number, counterLeft);
-    changeImg(pokeapi, number);
+  intervalL = setInterval(() => {
+    changeImg(sprites);
   }, 2000);
 
   useEffect(() => {
+    clearInterval(intervalL);
     const getApiData = async () => {
       const response = await fetch(
         `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`
       );
       const data = await response.json();
 
-      setpokeApi({});
-      setpokeApi([
-        data.sprites.front_default,
-        data.sprites.front_shiny,
-        data.sprites.back_shiny,
-        data.sprites.back_default,
-      ]);
+      setSprites({
+        Left: [
+          data.sprites.front_default,
+          data.sprites.back_default,
+          data.sprites.front_shiny,
+          data.sprites.back_shiny,
+        ],
+        Right: sprites.Right,
+      });
       setLoading(false);
       setTypePokemonIcons(
         data.types.map((type) => getTypeIcon(type.type.name))
       );
     };
+
     getApiData();
 
     // stop image skipping on unmount
     return () => {
-      clearInterval(ivall);
+      clearInterval(intervalL);
     };
   }, []);
 
-  return searched !== 0 ? (
+  function changeImg(sprites) {
+    try {
+      let img = document.getElementById("pImageL");
+
+      wait(2000);
+      img[0].src = sprites[imageCounterL];
+    } catch (error) {
+      console.log("PLeft-Error", error);
+    }
+
+    imageCounterL < 3 ? imageCounterL++ : (imageCounterL = 0);
+  }
+
+  return (
     <div className="PokeImage flex justify-center items-center flex-col">
       {loading && (
-        <BeatLoader
-          color="#22C55E"
-          className="my-4 flex w-60 h-52 flex-row justify-center items-center"
-        />
+        <div>
+          <BeatLoader
+            color="#22C55E"
+            className="my-4 flex w-60 h-52 flex-row justify-center items-center"
+          />
+          <img id="pImageL" />
+        </div>
       )}
       {!loading && (
         <img
-          name={`img-${number}`}
-          src={pokeapi[counterLeft]}
+          id="pImageL"
           alt={pokemon.name.english}
+          src={sprites.Left[imageCounterL]}
           className="w-60 h-60 mx-auto object-cover rounded-full border-4 border-green-500"
         />
       )}
     </div>
-  ) : null;
+  );
 }
 
 //  --------------------------------------------------- component PokeHealth

@@ -1,13 +1,13 @@
 import { useContext, useEffect } from "react";
 import BeatLoader from "react-spinners/BeatLoader";
-import { DataContext } from ".././contexts/PokemonContext.jsx";
+import { DataContext } from "../contexts/PokemonContext.jsx";
 import PokemonFightL from "./PokemonFightL.jsx";
 import PokemonFightR from "./PokemonFightR.jsx";
 import "./fight.css";
 import Pokemon from "../utils/classPokemon.js";
 import { useNavigate } from "react-router-dom";
 
-export default function Figtht() {
+export default function ScreenFight() {
   const {
     loading,
     pokeList,
@@ -48,8 +48,6 @@ export default function Figtht() {
           PokemonL.takeDamageFromm(PokemonR);
         }
         if (PokemonL.hp <= 0 || PokemonR.hp <= 0) {
-          document.getElementById("pImageL").src = "./grave.svg";
-          document.getElementById("pImageR").src = "./grave.svg";
           clearInterval(ivall);
         }
       }
@@ -62,14 +60,6 @@ export default function Figtht() {
       pokemon.triggerMark();
     }, 300);
     // wait(1000);
-  }
-
-  function wait(ms) {
-    var start = Date.now(),
-      now = start;
-    while (now - start < ms) {
-      now = Date.now();
-    }
   }
 
   useEffect(() => {
