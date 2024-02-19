@@ -13,19 +13,19 @@ function ChoosePokemon() {
     setSelectedPokemonRight,
     setIndexPok1,
     setIndexPok2,
+
+    sprites
   } = useContext(DataContext);
   const [currentPage, setCurrentPage] = useState(1);
   const [pokselected, setPokselected] = useState(1);
+  const [showPopup, setShowPopup] = useState(false); // State to control the visibility of the popup
   const navigate = useNavigate();
 
   // ------get id from url -----
   const { id } = useParams();
 
   const itemsPerPage = 15;
-  // const totalPages = Math.ceil((pokeList && pokeList.length) / itemsPerPage);
-
   const [filtered, setFiltered] = useState(pokeList);
-  // const [filteredList, setFilteredList] = useState(pokeList.slice(indexOfFirstEntry, indexOfLastEntry));
   const indexOfLastEntry = currentPage * itemsPerPage;
   const indexOfFirstEntry = indexOfLastEntry - itemsPerPage;
   const displayedEntries =
@@ -36,35 +36,40 @@ function ChoosePokemon() {
 
   const totalPages = Math.ceil((filtered && filtered.length) / itemsPerPage);
 
+  const handleChooseButtonClick = () => {
+    if (id === "1") {
+      setSelectedPokemonLeft(pokselected);
+      setIndexPok1(pokselected);
+    } else {
+      setSelectedPokemonRight(pokselected);
+      setIndexPok2(pokselected);
+    }
+
+   
+    setShowPopup(true);
+navigate("/");
+    
+  };
+
   return (
     <div className="h-screen">
       <div className="flex justify-center items-center">
-        {pokeList && <PokemonCard pokemon={pokeList[pokselected]} id={id}/>}
+        {pokeList && <PokemonCard pokemon={pokeList[pokselected]} id={id} />}
+
+       
 
         <div className="centerDiv">
           <button
             className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
-            onClick={() => {
-              // setIndex(pokselected);
-              if (id === "1") {
-                setSelectedPokemonLeft(pokselected);
-                setIndexPok1(pokselected);
-                // console.log(pokselected);
-                // window.localStorage.setItem("indexPok1", pokselected);
-              } else {
-                setSelectedPokemonRight(pokselected);
-                setIndexPok2(pokselected);
-                // console.log(pokselected);
-                // window.localStorage.setItem("indexPok2", pokselected);
-              }
-
-              navigate("/");
-            }}
+            onClick={handleChooseButtonClick}
+            id="chooseButton"
           >
+            
+          
             Choose
           </button>
         </div>
-        <div className=" p-4 bg-white rounded-lg shadow-lg">
+        <div className=" p-4 bg-white rounded-lg shadow-lg" id=" choosePokemon">
           <h1 className="text-4xl font-bold mb-8  shadow ">
             Choose your Pokemon
           </h1>
