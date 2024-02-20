@@ -65,6 +65,7 @@ export default function ScreenHighscore() {
         id="goBack"
         className="text-2xl font-bold mb-4 text-center bg-red-900 text-white   rounded-lg p-2 border-2 border-rose-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-72 mt-4"
         onClick={async () => {
+          navigate("/");
          reloadPage();
         }}
       >
