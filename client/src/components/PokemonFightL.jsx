@@ -23,8 +23,10 @@ export default function PokemonFightL({}) {
         </div>
       </div>
       <img id="MarkL" src="./clawmark.svg" alt="" />
+      <img id="VictoryL" src="./victory.svg" alt="" />
+
       <div className="">
-        <h3 className="text-2xl font-bold text-center bg-slate-500 text-white rounded-lg p-2  w-full">
+        <h3 className="text-2xl font-bold text-center bg-rose-500 text-white rounded-lg p-2  w-full">
           {pokeList[index].name.english}
         </h3>
       </div>

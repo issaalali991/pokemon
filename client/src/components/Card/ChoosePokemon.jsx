@@ -56,38 +56,32 @@ navigate("/");
       <div className="flex justify-center items-center">
         {pokeList && <PokemonCard pokemon={pokeList[pokselected]} id={id} />}
 
-       
-
         <div className="centerDiv">
           <button
-            className="text-2xl font-bold mb-4 text-center bg-slate-700 text-white   rounded-lg p-2 border-2 border-slate-500  w-40 h-20  bg-opacity-50  hover:bg-opacity-100  hover:bg-slate-500  hover:text-white  cursor-pointer w-72"
+            className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700  h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-72"
             onClick={handleChooseButtonClick}
             id="chooseButton"
           >
-            
-          
             Choose
           </button>
         </div>
         <div className=" p-4 bg-white rounded-lg shadow-lg" id=" choosePokemon">
-          <h1 className="text-4xl font-bold mb-8  shadow ">
+          <h1 className="text-4xl font-bold mb-4 shadow text-white bg-rose-500 p-2 rounded-lg">
             Choose your Pokemon
           </h1>
           <table className="table-auto w-full text-center">
             <input
               type="text"
-          
               placeholder="search.."
-              className=" w-1/2 p-2 rounded-lg mb-4 text-center shadow-lg bg-gray-100 border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-500 transition duration-500 ease-in-out hover:border-gray-500"
+              className=" w-full p-2 rounded-lg mb-4 text-center text-xl shadow-lg bg-gray-100 border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-500 transition duration-500 ease-in-out hover:border-gray-500"
               onChange={(e) => {
                 setFiltered(
                   pokeList.filter((pokemon) =>
-                    pokemon.name.english 
+                    pokemon.name.english
                       .toLowerCase()
                       .includes(e.target.value.toLowerCase())
                   )
                 );
-                
               }}
             />
             {displayedEntries &&
@@ -98,14 +92,18 @@ navigate("/");
                       onClick={() => {
                         setPokselected(pokemon.id - 1);
                         // console.log(pokemon.id);
-                        this.classList.add( "                    bg-gray-200", "transition", "duration-500", "ease-in-out");                   
-                        
-                        
+                        this.classList.add(
+                          "bg-gray-200",
+                          "transition",
+                          "duration-500",
+                          "ease-in-out"
+                        );
                       }}
-                      
-                      className="cursor-pointer hover:bg-gray-200 transition duration-500 ease-in-out p-1.5  shadow-lg  border-2 border-gray-200  hover:border-gray-500  rounded-lg  w-1/2 "
+                      className="cursor-pointer hover:bg-gray-200 transition duration-500 ease-in-out p-1.5 shadow-lg border-2 border-gray-200  hover:border-gray-500  rounded-lg  w-1/2 text-lg"
                     >
-                      {pokemon.name.english}{ " - HP="}{ pokemon.base.HP }
+                      {pokemon.name.english}
+                      {" - HP="}
+                      {pokemon.base.HP}
                     </td>
                   </tr>
                 </>

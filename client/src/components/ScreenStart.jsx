@@ -7,8 +7,13 @@ import FightButton from "./FightButton.jsx";
 import { useNavigate } from "react-router-dom";
 
 export default function ScreenStart() {
-  const { loading, selectedPokemonLeft, selectedPokemonRight, indexPok1, indexPok2 } =
-    useContext(DataContext);
+  const {
+    loading,
+    selectedPokemonLeft,
+    selectedPokemonRight,
+    indexPok1,
+    indexPok2,
+  } = useContext(DataContext);
   const navigate = useNavigate();
 
   // useEffect(() => {
@@ -31,31 +36,27 @@ export default function ScreenStart() {
       )}
       {!loading && (
         <div className="flex flex-row justify-center items-center">
-          {/* BUTTON LEFT SIDE */}
-
-          <button
-            className="text-2xl font-bold mb-4 text-center bg-slate-700 text-white   rounded-lg p-2 border-2 border-slate-500  w-40 h-20  bg-opacity-50  hover:bg-opacity-100  hover:bg-slate-500  hover:text-white  cursor-pointer w-72  mr-4"
-            onClick={() => {
-              window.localStorage.clear("indexPok1");
-
-              navigate("/pokemon/1");
-            }}
-          >
-            Choose Pokemon One
-          </button>
-
-          {/* POKEMON LEFT SIDE  */}
-
-          <PokemonLeft
-            className="cursor-pointer"
-            key={"one"}
-            index={indexPok1 == null ? null : indexPok1}
-            selectedPokemon={selectedPokemonLeft}
-            onClick={() => {
-              window.localStorage.clear("indexPok1");
-              navigate("/pokemon/1");
-            }}
-          />
+          <div className="flex flex-col items-center">
+            <button
+              className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-72  mr-4"
+              onClick={() => {
+                window.localStorage.clear("indexPok1");
+                navigate("/pokemon/1");
+              }}
+            >
+              Choose Pokemon One
+            </button>
+            <PokemonLeft
+              className="cursor-pointer"
+              key={"one"}
+              index={indexPok1 == null ? null : indexPok1}
+              selectedPokemon={selectedPokemonLeft}
+              onClick={() => {
+                window.localStorage.clear("indexPok1");
+                navigate("/pokemon/1");
+              }}
+            />
+          </div>
 
           <div className="centerDiv">
             {selectedPokemonLeft && selectedPokemonRight ? (
@@ -63,32 +64,39 @@ export default function ScreenStart() {
             ) : (
               <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
             )}
+            <button
+              id="highscoreButton"
+              className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-72 mt-4"
+              onClick={async () => {
+                navigate("/highscore");
+              }}
+            >
+              Highscores
+            </button>
           </div>
 
-          {/* POKEMON RIGHT SIDE  */}
+          <div className="flex flex-col items-center">
+            <button
+              className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-72 ml-4 "
+              onClick={() => {
+                window.localStorage.clear("indexPok2");
+                navigate("/pokemon/2");
+              }}
+            >
+              Choose Pokemon Two
+            </button>
 
-          <PokemonRight
-            className="cursor-pointer"
-            key={"two"}
-            index={indexPok2 == null ? null : indexPok2}
-            selectedPokemon={selectedPokemonRight}
-            onClick={() => {
-              window.localStorage.clear("indexPok2");
-              navigate("/pokemon/2");
-            }}
-          />
-
-          {/* BUTTO RIGHT */}
-
-          <button
-            className="text-2xl font-bold mb-4 text-center bg-slate-700 text-white   rounded-lg p-2 border-2 border-slate-500  w-40 h-20  bg-opacity-50  hover:bg-opacity-100  hover:bg-slate-500  hover:text-white  cursor-pointer w-72 ml-4 "
-            onClick={() => {
-              window.localStorage.clear("indexPok2");
-              navigate("/pokemon/2");
-            }}
-          >
-            Choose Pokemon Two
-          </button>
+            <PokemonRight
+              className="cursor-pointer"
+              key={"two"}
+              index={indexPok2 == null ? null : indexPok2}
+              selectedPokemon={selectedPokemonRight}
+              onClick={() => {
+                window.localStorage.clear("indexPok2");
+                navigate("/pokemon/2");
+              }}
+            />
+          </div>
         </div>
       )}
     </div>

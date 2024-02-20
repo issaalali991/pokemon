@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useRef } from "react";
 import BeatLoader from "react-spinners/BeatLoader";
 import { DataContext } from "../contexts/PokemonContext.jsx";
 import PokemonFightL from "./PokemonFightL.jsx";
@@ -6,6 +6,7 @@ import PokemonFightR from "./PokemonFightR.jsx";
 import "./fight.css";
 import Pokemon from "../utils/classPokemon.js";
 import { reloadPage } from "../utils/utils.js";
+import Axios from "axios";
 
 export default function ScreenFight({}) {
   const {
@@ -30,9 +31,39 @@ export default function ScreenFight({}) {
   const PokemonL = new Pokemon(pokeList, indexPok1, "L");
   const PokemonR = new Pokemon(pokeList, indexPok2, "R");
 
+  let score = {
+    name_won: "",
+    name_los: "",
+    turns: 0,
+    has_won: 0,
+  };
+
+  async function sendScore(score) {
+    const VITE_APP_API_BASE_URL = "http://localhost:3000";
+    try {
+      await Axios.post(
+        `${VITE_APP_API_BASE_URL}/pokemon/mongo`,
+        JSON.stringify(score)
+      ).then((res) => {
+        console.log(res.data);
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   function figthAction(fillL, fillR) {
+    let turns = 0;
+
     const ival = setInterval(() => {
       if (PokemonL.hp <= 0) {
+        score = {
+          name_won: PokemonR.name,
+          name_los: PokemonL.name,
+          turns: turns,
+          has_won: 1,
+        };
+        sendScore(score);
         clearInterval(ival);
         setSprites({
           Left: [
@@ -43,8 +74,18 @@ export default function ScreenFight({}) {
           ],
           Right: sprites.Right,
         });
+        document.getElementById("restartButton").style.visibility = "visible";
+        document.getElementById("VictoryR").style.opacity = 1;
+        return;
       }
       if (PokemonR.hp <= 0) {
+        score = {
+          name_won: PokemonL.name,
+          name_los: PokemonR.name,
+          turns: turns,
+          has_won: 1,
+        };
+        sendScore(score);
         setSprites({
           Left: sprites.Left,
           Right: [
@@ -54,6 +95,8 @@ export default function ScreenFight({}) {
             "../../public/grave.svg",
           ],
         });
+        document.getElementById("restartButton").style.visibility = "visible";
+        document.getElementById("VictoryL").style.opacity = 1;
         return;
       }
       if (PokemonL.aTime < 100 && PokemonR.aTime < 100) {
@@ -75,6 +118,7 @@ export default function ScreenFight({}) {
           PokemonL.takeDamageFromm(PokemonR, setSprites);
         }
       }
+      turns++;
     }, 35);
   }
 
@@ -120,7 +164,8 @@ export default function ScreenFight({}) {
               </div>
             </div>
             <button
-              className="text-2xl font-bold mb-4 text-center bg-slate-700 text-white   rounded-lg p-2 border-2 border-slate-500  w-40 h-20  bg-opacity-50  hover:bg-opacity-100  hover:bg-slate-500  hover:text-white  cursor-pointer w-72 mt-4"
+              id="restartButton"
+              className="text-2xl font-bold mb-4 text-center bg-red-900 text-white   rounded-lg p-2 border-2 border-rose-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-72 mt-4"
               onClick={async () => {
                 setIndexPok1(null);
                 setIndexPok2(null);
