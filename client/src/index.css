@@ -60,7 +60,7 @@ h1 {
   border: 6px solid #2c2c2c;
   padding: 1rem;
   border-radius: 15px;
-  background-image: url("pokemoncard.png");
+  background-image: url("pokemoncard.svg");
   /* filter: blur(8px);
   -webkit-filter: blur(8px); */
   background-repeat: no-repeat;
