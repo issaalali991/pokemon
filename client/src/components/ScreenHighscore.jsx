@@ -1,24 +1,26 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import Axios from "axios";
-import { reloadPage } from "..//utils/utils.js";
 
+import {  useEffect, useState,navigate } from "react";
+import Axios from "axios";
+import { useNavigate } from "react-router-dom";
 export default function ScreenHighscore() {
   const [loading, setIsLoading] = useState(true);
-  const [highscore, setHighscore] = useState([]);
-  const VITE_APP_API_BASE_URL = "http://localhost:3000";
+  const [highscore, setHighscore] = useState(true);
+  const navigate = useNavigate();
+  const VITE_APP_API_BASE_URL = 'http://localhost:3000';
 
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        await Axios.get(`${VITE_APP_API_BASE_URL}/pokemon/mongo`).then(
-          (res) => {
-            setHighscore(res.data);
-            setIsLoading(false);
-            console.log("High score",res.data && res.data);
-          }
-        );
+
+        await Axios.post(`${VITE_APP_API_BASE_URL}/pokemon/mongoo`).then((res) => {
+       
+          setHighscore(res.data);
+          console.log(res.data);
+          setIsLoading(false);
+        });
+
       } catch (error) {
         console.error(error);
         setIsLoading(false);
@@ -29,16 +31,35 @@ export default function ScreenHighscore() {
 
   return (
     <div id="ScreenHighscore">
-      <div id="scoreBoard">
-        {!loading &&
-          highscore&&highscore.map((score) => {
-            <div className="scoreEntry" key={score.id}>
-              <span>{score.name_one}</span>Won in
-              <span>{score.turns}</span> agains
-              <span>{score.name_los}</span>
-            </div>;
-          })}
-      </div>
+
+      <h1 className="text-4xl font-bold mb-4 text-center">Highscore</h1>
+      {loading && <p>Loading...</p>}
+      {!loading && (
+        <div>
+          <table className="table-auto w-full text-center">
+            <thead>
+              <tr>
+                <th className="px-4 py-2 
+                font-bold 
+                ">Name</th>
+                <th className="px-4 py-2">Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              {highscore&&highscore.sort((b,a ) => a.turns - b.turns).slice(0, 10).map((score) => (
+                <tr key={score._id}>
+                  <td className="cursor-pointer hover:bg-gray-200 transition duration-500 ease-in-out p-1.5 shadow-lg border-2 border-gray-200  hover:border-gray-500  rounded-lg  w-1/2 text-lg">{score.name_won}</td>
+                  <td className="cursor-pointer hover:bg-gray-200 transition duration-500 ease-in-out p-1.5 shadow-lg border-2 border-gray-200  hover:border-gray-500  rounded-lg  w-1/2 text-lg">{score.turns}</td>
+                </tr>
+              ))}
+
+           
+            </tbody>
+          </table>
+        </div>
+      )}
+
+     
 
       <button
         id="goBack"
