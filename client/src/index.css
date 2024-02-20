@@ -182,3 +182,7 @@ input:focus {
   width: 30em;
   height: 10em;
 }
+
+#highscoreButton {
+  margin-bottom: 8em;
+}

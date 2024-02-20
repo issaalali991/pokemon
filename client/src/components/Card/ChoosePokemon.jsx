@@ -14,7 +14,7 @@ function ChoosePokemon() {
     setIndexPok1,
     setIndexPok2,
 
-    sprites
+    sprites,
   } = useContext(DataContext);
   const [currentPage, setCurrentPage] = useState(1);
   const [pokselected, setPokselected] = useState(1);
@@ -45,10 +45,8 @@ function ChoosePokemon() {
       setIndexPok2(pokselected);
     }
 
-   
     setShowPopup(true);
-navigate("/");
-    
+    navigate("/");
   };
 
   return (

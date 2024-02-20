@@ -68,7 +68,7 @@
   opacity: 0;
   position: absolute;
   width: 100%;
-  top: 15%;
+  top: 40%;
   transition: opacity 1000ms;
   z-index: 50;
 }

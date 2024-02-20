@@ -58,21 +58,23 @@ export default function ScreenStart() {
             />
           </div>
 
-          <div className="centerDiv">
-            {selectedPokemonLeft && selectedPokemonRight ? (
-              <FightButton />
-            ) : (
-              <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
-            )}
+          <div className="text-center">
             <button
               id="highscoreButton"
-              className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-72 mt-4"
+              className="text-xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-14  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-48 mt-4"
               onClick={async () => {
                 navigate("/highscore");
               }}
             >
               Highscores
             </button>
+            <div className="centerDiv">
+              {selectedPokemonLeft && selectedPokemonRight ? (
+                <FightButton />
+              ) : (
+                <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
+              )}
+            </div>
           </div>
 
           <div className="flex flex-col items-center">
