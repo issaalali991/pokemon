@@ -3,6 +3,7 @@ import React from "react";
 import {  useEffect, useState,navigate } from "react";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { reloadPage } from "../utils/utils";
 export default function ScreenHighscore() {
   const [loading, setIsLoading] = useState(true);
   const [highscore, setHighscore] = useState(true);
