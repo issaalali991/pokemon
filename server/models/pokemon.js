@@ -2,15 +2,17 @@ import mongoose from 'mongoose';
 
 const pokemonSchema = new mongoose.Schema({
   name_won: {
-    type: string,
+    type: String,
   },
   name_los: {
-    type: string,
+    type: String,
   },
     turns: {
-      type: number
+      type: Number
     },
-    is_won: {
-        type: number
+    has_won: {
+        type: Number
         }
 });
+
+export default mongoose.model('pokemonMongo', pokemonSchema);
