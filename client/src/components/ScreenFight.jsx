@@ -6,9 +6,9 @@ import PokemonFightR from "./PokemonFightR.jsx";
 import "./fight.css";
 import Pokemon from "../utils/classPokemon.js";
 import { useNavigate } from "react-router-dom";
-import { wait } from "../utils/utils.js";
+import { reloadPage } from "../utils/utils.js";
 
-export default function ScreenFight() {
+export default function ScreenFight({}) {
   const {
     loading,
     pokeList,
@@ -87,7 +87,6 @@ export default function ScreenFight() {
     setTimeout(() => {
       pokemon.triggerMark();
     }, 300);
-    // wait(1000);
   }
 
   useEffect(() => {
@@ -124,23 +123,23 @@ export default function ScreenFight() {
                 </div>
               </div>
             </div>
-            <button className="bg-blue-500 text-white py-2 px-4 rounded-full mt-4" onClick={async() => 
-            {
-              setIndexPok1(null)
-              setIndexPok2(null)
-        
-              setSelectedPokemonLeft(false)
-              setSelectedPokemonRight(false)
-              setSprites({
-                Left: [],
-                Right: [],
-              });
+            <button
+              className="bg-blue-500 text-white py-2 px-4 rounded-full mt-4"
+              onClick={async () => {
+                setIndexPok1(null);
+                setIndexPok2(null);
 
-              
-              navigate('/')
-            }}
-            >Restart</button>
-
+                setSelectedPokemonLeft(false);
+                setSelectedPokemonRight(false);
+                setSprites({
+                  Left: [],
+                  Right: [],
+                });
+                reloadPage();
+              }}
+            >
+              Restart
+            </button>
           </div>
 
           {/* POKEMON RIGHT SIDE  */}

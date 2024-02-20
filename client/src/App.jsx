@@ -2,8 +2,11 @@ import { Routes, Route } from "react-router-dom";
 import ChoosePokemon from "./components/Card/ChoosePokemon";
 import ScreenFight from "./components/ScreenFight";
 import ScreenStart from "./components/ScreenStart";
+import { useState } from "react";
+import ScreenVictory from "./components/ScreenVictory";
 
 export default function App() {
+
   const pool = [
     "bg-[url('/arena0.jpg')]",
     "bg-[url('/arena1.jpg')]",
@@ -36,6 +39,7 @@ export default function App() {
         <Route path="/pokemon/" element={<ChoosePokemon />} />
         <Route path="/pokemon/:id" element={<ChoosePokemon />} />
         <Route path="/fight" element={<ScreenFight />} />
+        <Route path="/victory" element={<ScreenVictory />} />
       </Routes>
       {/* <button
         className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"

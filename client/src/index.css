@@ -57,12 +57,12 @@ h1 {
   border: 6px solid #2c2c2c;
   padding: 1rem;
   border-radius: 15px;
-  background-image: url(./pokeballcolor.svg);
+  background-image: url(./pokemoncard.png);
   /* filter: blur(8px);
   -webkit-filter: blur(8px); */
   background-repeat: no-repeat;
   background-position: 50% 15%;
-  background-size: 90%;
+  background-size: cover;
 }
 
 .sInput {
@@ -105,6 +105,13 @@ input:focus {
       min-width: 5rem;
     }
   }
+}
+#pImageL,
+#pImageR,
+#pImageFL,
+#pImageFR {
+  background: #ffffff;
+  background: radial-gradient(circle, #ffffff 0%, #ffffff00 100%);
 }
 
 .pdataTxt {
@@ -163,4 +170,11 @@ input:focus {
   padding: 1rem;
   border-radius: 10px;
   background-color: #f3f4f6;
+}
+
+#VictoryScreen {
+  background-image: url("/victory.svg");
+  display: block;
+  width: 30em;
+  height: 10em;
 }
