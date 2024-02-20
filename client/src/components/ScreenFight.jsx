@@ -5,7 +5,6 @@ import PokemonFightL from "./PokemonFightL.jsx";
 import PokemonFightR from "./PokemonFightR.jsx";
 import "./fight.css";
 import Pokemon from "../utils/classPokemon.js";
-import { useNavigate } from "react-router-dom";
 import { reloadPage } from "../utils/utils.js";
 
 export default function ScreenFight({}) {
@@ -24,11 +23,8 @@ export default function ScreenFight({}) {
     sprites,
   } = useContext(DataContext);
 
-  const navigate = useNavigate();
-
   if (pokeList == null) {
-    console.log("navigate!!!!");
-    navigate(-1);
+    reloadPage();
   }
 
   const PokemonL = new Pokemon(pokeList, indexPok1, "L");
