@@ -2,9 +2,12 @@ import pokemonMongo from "../models/pokemon.js";
 
 import pokemon from "../db/pokemon.js";
 
+
+// ---------- getAllPokemon ------------
 export const getAllPokemon = (req, res) => {
   res.json(pokemon);
 };
+
 
 export const getPokemonByID = (req, res) => {
   const id = req.params.id;
@@ -30,9 +33,11 @@ export const getPokemonInfoByID = (req, res) => {
 };
 
 
-export const getAllPokemonMongo = async (req, res,next) => {
+// ----------------getAllPokemonMongo----------------
+export const getAllPokemonMongo = async (req, res, next) => {
   try {
     const result = await pokemonMongo.find();
+    console.log(result);
     if (!result.length)
       throw new { statusCode: 404, message: "No pokemon in MongoDB found" }();
     res.status(200).json(result);

@@ -10,7 +10,7 @@ pokemonRouter.get('/', pokemonController.getAllPokemon);
 pokemonRouter.get('/:id',pokemonController.getPokemonByID);
 pokemonRouter.get('/:id/:info', pokemonController.getPokemonInfoByID);
 pokemonRouter.post('/mongo', pokemonController.addToMongo);
-pokemonRouter.get('/mongo', pokemonController.getAllPokemonMongo);
+pokemonRouter.post('/mongoo', pokemonController.getAllPokemonMongo);
 pokemonRouter.get('/mongo/:id', pokemonController.getByIDMongo);
 
 
