@@ -28,7 +28,7 @@ export default function App() {
       className={`App bg-gray-200 p-4 flex flex-col justify-center ${bgImage} bg-cover bg-center bg-no-repeat`}
     >
       <img
-        src="../../public/Pokefight.svg"
+        src="Pokefight.svg"
         className="pokefight"
       />
 
