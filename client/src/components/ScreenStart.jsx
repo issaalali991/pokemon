@@ -34,7 +34,7 @@ export default function ScreenStart() {
           {/* BUTTON LEFT SIDE */}
 
           <button
-            className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+            className="text-2xl font-bold mb-4 text-center bg-slate-700 text-white   rounded-lg p-2 border-2 border-slate-500  w-40 h-20  bg-opacity-50  hover:bg-opacity-100  hover:bg-slate-500  hover:text-white  cursor-pointer w-72  mr-4"
             onClick={() => {
               window.localStorage.clear("indexPok1");
 
@@ -81,7 +81,7 @@ export default function ScreenStart() {
           {/* BUTTO RIGHT */}
 
           <button
-            className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+            className="text-2xl font-bold mb-4 text-center bg-slate-700 text-white   rounded-lg p-2 border-2 border-slate-500  w-40 h-20  bg-opacity-50  hover:bg-opacity-100  hover:bg-slate-500  hover:text-white  cursor-pointer w-72 ml-4 "
             onClick={() => {
               window.localStorage.clear("indexPok2");
               navigate("/pokemon/2");

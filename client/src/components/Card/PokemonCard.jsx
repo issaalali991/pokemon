@@ -4,7 +4,6 @@ import { getTypeIcon } from "../../utils/utils";
 import { DataContext } from "../../contexts/PokemonContext";
 import BeatLoader from "react-spinners/BeatLoader";
 
-
 function PokemonCard({ pokemon, id }) {
   const [pokeapi, setpokeApi] = useState({});
   const [loading, setLoading] = useState(true);

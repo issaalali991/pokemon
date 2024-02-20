@@ -60,7 +60,7 @@ navigate("/");
 
         <div className="centerDiv">
           <button
-            className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+            className="text-2xl font-bold mb-4 text-center bg-slate-700 text-white   rounded-lg p-2 border-2 border-slate-500  w-40 h-20  bg-opacity-50  hover:bg-opacity-100  hover:bg-slate-500  hover:text-white  cursor-pointer w-72"
             onClick={handleChooseButtonClick}
             id="chooseButton"
           >
@@ -103,7 +103,7 @@ navigate("/");
                         
                       }}
                       
-                      className="cursor-pointer hover:bg-gray-200 transition duration-500 ease-in-out"
+                      className="cursor-pointer hover:bg-gray-200 transition duration-500 ease-in-out p-1.5  shadow-lg  border-2 border-gray-200  hover:border-gray-500  rounded-lg  w-1/2 "
                     >
                       {pokemon.name.english}{ " - HP="}{ pokemon.base.HP }
                     </td>

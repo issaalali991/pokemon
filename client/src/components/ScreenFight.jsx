@@ -120,7 +120,7 @@ export default function ScreenFight({}) {
               </div>
             </div>
             <button
-              className="bg-blue-500 text-white py-2 px-4 rounded-full mt-4"
+              className="text-2xl font-bold mb-4 text-center bg-slate-700 text-white   rounded-lg p-2 border-2 border-slate-500  w-40 h-20  bg-opacity-50  hover:bg-opacity-100  hover:bg-slate-500  hover:text-white  cursor-pointer w-72 mt-4"
               onClick={async () => {
                 setIndexPok1(null);
                 setIndexPok2(null);
