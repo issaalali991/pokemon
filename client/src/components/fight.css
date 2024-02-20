@@ -1,4 +1,5 @@
 #ActionContainer {
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +12,7 @@
   border-radius: 15px;
 }
 #TimeContainer {
+  font-size: 15px;
   display: flex;
   /* justify-content: ; */
   gap: 4em;
@@ -60,7 +62,18 @@
   transition: opacity 500ms;
   z-index: 20;
 }
+#VictoryL,
+#VictoryR {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  transition: opacity 1000ms;
+  z-index: 50;
+}
 .HPContainer {
+  font-size: 15px;
   border-radius: 15px;
   border: 3px groove #2c2c2c;
   background-color: #d92c2c;
@@ -82,7 +95,6 @@
   width: 100%;
   height: 3em;
   z-index: 1;
-  /* border-radius: 12px; */
 }
 .HPText {
   color: #22c55e;
@@ -106,7 +118,6 @@
 #statsR,
 #statsL {
   position: relative;
-  /* text-align: center; */
   top: 48%;
   left: -40%;
   height: 0%;
@@ -127,4 +138,8 @@
 #DMGR,
 #DMGL {
   color: #4400ff;
+}
+
+#restartButton{
+  visibility: hidden;
 }

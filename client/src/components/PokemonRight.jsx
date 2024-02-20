@@ -39,7 +39,7 @@ export default function PokemonRight({ index }) {
     // Selected Pokemon
     <div className="Pokemon bg-gray-100">
       <div className="">
-        <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white rounded-lg p-2  w-full">
+        <h3 className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white rounded-lg p-2  w-full">
           {pokeList[index == null ? pokemon : index].name.english}
         </h3>
       </div>

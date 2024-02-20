@@ -2,8 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import ChoosePokemon from "./components/Card/ChoosePokemon";
 import ScreenFight from "./components/ScreenFight";
 import ScreenStart from "./components/ScreenStart";
-import { useState } from "react";
-import ScreenVictory from "./components/ScreenVictory";
+import ScreenHighscore from "./components/ScreenHighscore";
 
 export default function App() {
 
@@ -30,7 +29,6 @@ export default function App() {
     >
       <img
         src="../../public/Pokefight.svg"
-        alt="Pokefight"
         className="pokefight"
       />
 
@@ -39,7 +37,7 @@ export default function App() {
         <Route path="/pokemon/" element={<ChoosePokemon />} />
         <Route path="/pokemon/:id" element={<ChoosePokemon />} />
         <Route path="/fight" element={<ScreenFight />} />
-        <Route path="/victory" element={<ScreenVictory />} />
+        <Route path="/highscore" element={<ScreenHighscore />} />
       </Routes>
       {/* <button
         className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"

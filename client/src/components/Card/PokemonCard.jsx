@@ -49,7 +49,7 @@ function PokemonCard({ pokemon, id }) {
   return (
     <div className="card">
       <div className="flex justify-center items-center flex-col ">
-        <h3 className="text-2xl font-bold mb-4 text-center bg-slate-500 text-white size-fit  rounded-lg p-2  w-full">
+        <h3 className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white size-fit  rounded-lg p-2  w-full">
           {pokemon.name.english}
         </h3>
       </div>

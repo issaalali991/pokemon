@@ -9,6 +9,9 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+body{
+  font-size: 10px;
+}
 
 #App {
   display: flex;
@@ -22,7 +25,7 @@ h1 {
   text-align: center;
 }
 .pokefight {
-  width: 60rem;
+  width: 50rem;
   margin-bottom: 2rem;
 }
 
@@ -79,7 +82,7 @@ input:focus {
 }
 
 .DefaultImage {
-  margin-top: 5.3rem;
+  margin-top: 11rem;
   width: 15rem;
   height: 15rem;
   background-size: cover;
@@ -95,6 +98,7 @@ input:focus {
   width: 24rem;
 }
 .PokeData {
+  font-size: 15px;
   width: 26rem;
   && {
     li {
