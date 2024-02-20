@@ -1,5 +1,4 @@
 import pokemonMongo from "../models/pokemon.js";
-
 import pokemon from "../db/pokemon.js";
 
 export const getAllPokemon = (req, res) => {

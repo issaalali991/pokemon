@@ -39,11 +39,13 @@ export default function ScreenFight({}) {
   };
 
   async function sendScore(score) {
+    console.log(JSON.stringify(score));
     const VITE_APP_API_BASE_URL = "http://localhost:3000";
     try {
       await Axios.post(
         `${VITE_APP_API_BASE_URL}/pokemon/mongo`,
-        JSON.stringify(score)
+        score
+        
       ).then((res) => {
         console.log(res.data);
       });
@@ -86,6 +88,7 @@ export default function ScreenFight({}) {
           has_won: 1,
         };
         sendScore(score);
+        clearInterval(ival);
         setSprites({
           Left: sprites.Left,
           Right: [
@@ -110,15 +113,16 @@ export default function ScreenFight({}) {
           PokemonL.aTime = 0;
           reduceHP(PokemonR);
           PokemonR.takeDamageFromm(PokemonL, setSprites);
+          turns++;
         }
         // R Pokemon Attacks
         if (PokemonR.aTime >= 100) {
           PokemonR.aTime = 0;
           reduceHP(PokemonL);
           PokemonL.takeDamageFromm(PokemonR, setSprites);
+          turns++;
         }
       }
-      turns++;
     }, 35);
   }
 
