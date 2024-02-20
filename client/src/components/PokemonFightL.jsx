@@ -22,7 +22,7 @@ export default function PokemonFightL({}) {
           DMG
         </div>
       </div>
-      <img id="MarkL" src="./clawmark.svg" alt="" />
+      <img id="MarkL" src="/clawmark.svg" alt="" />
       <img id="VictoryL" src="./victory.svg" alt="" />
 
       <div className="">
