@@ -6,7 +6,7 @@ export default function ScreenHighscore() {
   const [loading, setIsLoading] = useState(true);
   const [highscore, setHighscore] = useState(true);
   const navigate = useNavigate();
-  const VITE_APP_API_BASE_URL = 'http://localhost:3000';
+  const VITE_APP_API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
