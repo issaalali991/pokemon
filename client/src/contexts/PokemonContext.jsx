@@ -15,6 +15,8 @@ export default function PokemonContextProvider({ children }) {
   const [indexPok1, setIndexPok1] = useState(null);
   const [indexPok2, setIndexPok2] = useState(null);
 
+  const VITE_APP_API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
+
   const [sprites, setSprites] = useState({
     Left: [],
     Right: [],
@@ -25,9 +27,8 @@ export default function PokemonContextProvider({ children }) {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        await // Axios.get("https://pokemon-9pzm.onrender.com/pokemon").then((res) => {
-        Axios.get("http://localhost:3000/pokemon").then((res) => {
-          // console.log(res.data);
+        await Axios.get(`${VITE_APP_API_BASE_URL}/pokemon`).then((res) => {
+       
           setPokeList(res.data);
           setIsLoading(false);
         });

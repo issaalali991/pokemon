@@ -76,17 +76,18 @@ navigate("/");
           <table className="table-auto w-full text-center">
             <input
               type="text"
+          
               placeholder="search.."
-              className=" w-1/2 p-2 rounded-lg mb-4 text-center"
+              className=" w-1/2 p-2 rounded-lg mb-4 text-center shadow-lg bg-gray-100 border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-500 transition duration-500 ease-in-out hover:border-gray-500"
               onChange={(e) => {
                 setFiltered(
                   pokeList.filter((pokemon) =>
-                    pokemon.name.english
+                    pokemon.name.english 
                       .toLowerCase()
                       .includes(e.target.value.toLowerCase())
                   )
                 );
-                // console.log(filtered); // Hier sollte filtered aktualisiert sein
+                
               }}
             />
             {displayedEntries &&
@@ -97,10 +98,14 @@ navigate("/");
                       onClick={() => {
                         setPokselected(pokemon.id - 1);
                         // console.log(pokemon.id);
+                        this.classList.add( "                    bg-gray-200", "transition", "duration-500", "ease-in-out");                   
+                        
+                        
                       }}
-                      className="cursor-pointer"
+                      
+                      className="cursor-pointer hover:bg-gray-200 transition duration-500 ease-in-out"
                     >
-                      {pokemon.name.english}
+                      {pokemon.name.english}{ " - HP="}{ pokemon.base.HP }
                     </td>
                   </tr>
                 </>
