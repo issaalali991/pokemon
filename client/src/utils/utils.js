@@ -30,4 +30,9 @@ function wait(ms) {
         now = Date.now();
     }
 }
-export { getTypeIcon, wait };
+export { getTypeIcon, wait, reloadPage };
+
+
+function reloadPage(){
+ window.location.assign('/');
+}
