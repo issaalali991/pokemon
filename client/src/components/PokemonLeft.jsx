@@ -32,16 +32,20 @@ export default function PokemonLeft({ index }) {
       <PokemonDefault
         selectHandler={() => {
           setSelectedPokemonLeft(true);
-          index==null?setIndexPok1(Math.floor(Math.random() * (pokeList && pokeList.length))):setIndexPok1(pokemon);
-      
-       
+          index == null
+            ? setIndexPok1(
+                Math.floor(Math.random() * (pokeList && pokeList.length))
+              )
+            : setIndexPok1(pokemon);
         }}
       />
     </div>
   ) : (
     // Selected Pokemon
-    <div className="Pokemon bg-gray-100 
-    ">
+    <div
+      className="Pokemon bg-gray-100 
+    "
+    >
       <div className="">
         <h3 className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white rounded-lg p-2  w-full">
           {pokeList[index == null ? pokemon : index].name.english}
