@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
-body{
+body {
   font-size: 10px;
 }
 
@@ -45,8 +45,15 @@ h1 {
 }
 
 .hovercl:hover {
-  background: #ffe500;
-  background: radial-gradient(circle, #ffe500 0%, #00000000 80%);
+  /* background: #ffe500; */
+  /* background: linear-gradient( 0deg #ffe500 0%, #00000000 80%); */
+  border-radius: 15px;
+  background: linear-gradient(
+    180deg,
+    #ffe50000 0%,
+    #ffe500 40%,
+    #ffe50000 90%
+  );
 }
 
 .Pokemon {
@@ -60,7 +67,7 @@ h1 {
   border: 6px solid #2c2c2c;
   padding: 1rem;
   border-radius: 15px;
-  background-image: url(./pokemoncard.png);
+  background-image: url(./pokemoncard.jpg);
   /* filter: blur(8px);
   -webkit-filter: blur(8px); */
   background-repeat: no-repeat;
@@ -91,7 +98,7 @@ input:focus {
   cursor: pointer;
 }
 .DefaultImage:hover {
-  background-image: url("/pbfc.svg");
+  background-image: url("/favicon.svg");
 }
 
 .PokeHealth {
@@ -181,8 +188,4 @@ input:focus {
   display: block;
   width: 30em;
   height: 10em;
-}
-
-#highscoreButton {
-  margin-bottom: 8em;
 }
