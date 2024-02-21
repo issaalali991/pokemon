@@ -2,10 +2,7 @@ const pokemon = [
     {
         "id": 1,
         "name": {
-            "english": "Bulbasaur",
-            "japanese": "フシギダネ",
-            "chinese": "妙蛙种子",
-            "french": "Bulbizarre"
+            "english": "Bulbasaur"
         },
         "type": [
             "Grass",
@@ -23,10 +20,7 @@ const pokemon = [
     {
         "id": 2,
         "name": {
-            "english": "Ivysaur",
-            "japanese": "フシギソウ",
-            "chinese": "妙蛙草",
-            "french": "Herbizarre"
+            "english": "Ivysaur"
         },
         "type": [
             "Grass",
@@ -44,10 +38,7 @@ const pokemon = [
     {
         "id": 3,
         "name": {
-            "english": "Venusaur",
-            "japanese": "フシギバナ",
-            "chinese": "妙蛙花",
-            "french": "Florizarre"
+            "english": "Venusaur"
         },
         "type": [
             "Grass",
@@ -65,10 +56,7 @@ const pokemon = [
     {
         "id": 4,
         "name": {
-            "english": "Charmander",
-            "japanese": "ヒトカゲ",
-            "chinese": "小火龙",
-            "french": "Salamèche"
+            "english": "Charmander"
         },
         "type": [
             "Fire"
@@ -85,10 +73,7 @@ const pokemon = [
     {
         "id": 5,
         "name": {
-            "english": "Charmeleon",
-            "japanese": "リザード",
-            "chinese": "火恐龙",
-            "french": "Reptincel"
+            "english": "Charmeleon"
         },
         "type": [
             "Fire"
@@ -105,10 +90,7 @@ const pokemon = [
     {
         "id": 6,
         "name": {
-            "english": "Charizard",
-            "japanese": "リザードン",
-            "chinese": "喷火龙",
-            "french": "Dracaufeu"
+            "english": "Charizard"
         },
         "type": [
             "Fire",
@@ -126,10 +108,7 @@ const pokemon = [
     {
         "id": 7,
         "name": {
-            "english": "Squirtle",
-            "japanese": "ゼニガメ",
-            "chinese": "杰尼龟",
-            "french": "Carapuce"
+            "english": "Squirtle"
         },
         "type": [
             "Water"
@@ -146,10 +125,7 @@ const pokemon = [
     {
         "id": 8,
         "name": {
-            "english": "Wartortle",
-            "japanese": "カメール",
-            "chinese": "卡咪龟",
-            "french": "Carabaffe"
+            "english": "Wartortle"
         },
         "type": [
             "Water"
@@ -166,10 +142,7 @@ const pokemon = [
     {
         "id": 9,
         "name": {
-            "english": "Blastoise",
-            "japanese": "カメックス",
-            "chinese": "水箭龟",
-            "french": "Tortank"
+            "english": "Blastoise"
         },
         "type": [
             "Water"
@@ -186,10 +159,7 @@ const pokemon = [
     {
         "id": 10,
         "name": {
-            "english": "Caterpie",
-            "japanese": "キャタピー",
-            "chinese": "绿毛虫",
-            "french": "Chenipan"
+            "english": "Caterpie"
         },
         "type": [
             "Bug"
@@ -206,10 +176,7 @@ const pokemon = [
     {
         "id": 11,
         "name": {
-            "english": "Metapod",
-            "japanese": "トランセル",
-            "chinese": "铁甲蛹",
-            "french": "Chrysacier"
+            "english": "Metapod"
         },
         "type": [
             "Bug"
@@ -226,10 +193,7 @@ const pokemon = [
     {
         "id": 12,
         "name": {
-            "english": "Butterfree",
-            "japanese": "バタフリー",
-            "chinese": "巴大蝶",
-            "french": "Papilusion"
+            "english": "Butterfree"
         },
         "type": [
             "Bug",
@@ -247,10 +211,7 @@ const pokemon = [
     {
         "id": 13,
         "name": {
-            "english": "Weedle",
-            "japanese": "ビードル",
-            "chinese": "独角虫",
-            "french": "Aspicot"
+            "english": "Weedle"
         },
         "type": [
             "Bug",
@@ -268,10 +229,7 @@ const pokemon = [
     {
         "id": 14,
         "name": {
-            "english": "Kakuna",
-            "japanese": "コクーン",
-            "chinese": "铁壳蛹",
-            "french": "Coconfort"
+            "english": "Kakuna"
         },
         "type": [
             "Bug",
@@ -289,10 +247,7 @@ const pokemon = [
     {
         "id": 15,
         "name": {
-            "english": "Beedrill",
-            "japanese": "スピアー",
-            "chinese": "大针蜂",
-            "french": "Dardargnan"
+            "english": "Beedrill"
         },
         "type": [
             "Bug",
@@ -310,10 +265,7 @@ const pokemon = [
     {
         "id": 16,
         "name": {
-            "english": "Pidgey",
-            "japanese": "ポッポ",
-            "chinese": "波波",
-            "french": "Roucool"
+            "english": "Pidgey"
         },
         "type": [
             "Normal",
@@ -331,10 +283,7 @@ const pokemon = [
     {
         "id": 17,
         "name": {
-            "english": "Pidgeotto",
-            "japanese": "ピジョン",
-            "chinese": "比比鸟",
-            "french": "Roucoups"
+            "english": "Pidgeotto"
         },
         "type": [
             "Normal",
@@ -352,10 +301,7 @@ const pokemon = [
     {
         "id": 18,
         "name": {
-            "english": "Pidgeot",
-            "japanese": "ピジョット",
-            "chinese": "大比鸟",
-            "french": "Roucarnage"
+            "english": "Pidgeot"
         },
         "type": [
             "Normal",
@@ -373,10 +319,7 @@ const pokemon = [
     {
         "id": 19,
         "name": {
-            "english": "Rattata",
-            "japanese": "コラッタ",
-            "chinese": "小拉达",
-            "french": "Rattata"
+            "english": "Rattata"
         },
         "type": [
             "Normal"
@@ -393,10 +336,7 @@ const pokemon = [
     {
         "id": 20,
         "name": {
-            "english": "Raticate",
-            "japanese": "ラッタ",
-            "chinese": "拉达",
-            "french": "Rattatac"
+            "english": "Raticate"
         },
         "type": [
             "Normal"
@@ -413,10 +353,7 @@ const pokemon = [
     {
         "id": 21,
         "name": {
-            "english": "Spearow",
-            "japanese": "オニスズメ",
-            "chinese": "烈雀",
-            "french": "Piafabec"
+            "english": "Spearow"
         },
         "type": [
             "Normal",
@@ -434,10 +371,7 @@ const pokemon = [
     {
         "id": 22,
         "name": {
-            "english": "Fearow",
-            "japanese": "オニドリル",
-            "chinese": "大嘴雀",
-            "french": "Rapasdepic"
+            "english": "Fearow"
         },
         "type": [
             "Normal",
@@ -455,10 +389,7 @@ const pokemon = [
     {
         "id": 23,
         "name": {
-            "english": "Ekans",
-            "japanese": "アーボ",
-            "chinese": "阿柏蛇",
-            "french": "Abo"
+            "english": "Ekans"
         },
         "type": [
             "Poison"
@@ -475,10 +406,7 @@ const pokemon = [
     {
         "id": 24,
         "name": {
-            "english": "Arbok",
-            "japanese": "アーボック",
-            "chinese": "阿柏怪",
-            "french": "Arbok"
+            "english": "Arbok"
         },
         "type": [
             "Poison"
@@ -495,10 +423,7 @@ const pokemon = [
     {
         "id": 25,
         "name": {
-            "english": "Pikachu",
-            "japanese": "ピカチュウ",
-            "chinese": "皮卡丘",
-            "french": "Pikachu"
+            "english": "Pikachu"
         },
         "type": [
             "Electric"
@@ -515,10 +440,7 @@ const pokemon = [
     {
         "id": 26,
         "name": {
-            "english": "Raichu",
-            "japanese": "ライチュウ",
-            "chinese": "雷丘",
-            "french": "Raichu"
+            "english": "Raichu"
         },
         "type": [
             "Electric"
@@ -535,10 +457,7 @@ const pokemon = [
     {
         "id": 27,
         "name": {
-            "english": "Sandshrew",
-            "japanese": "サンド",
-            "chinese": "穿山鼠",
-            "french": "Sabelette"
+            "english": "Sandshrew"
         },
         "type": [
             "Ground"
@@ -555,10 +474,7 @@ const pokemon = [
     {
         "id": 28,
         "name": {
-            "english": "Sandslash",
-            "japanese": "サンドパン",
-            "chinese": "穿山王",
-            "french": "Sablaireau"
+            "english": "Sandslash"
         },
         "type": [
             "Ground"
@@ -575,10 +491,7 @@ const pokemon = [
     {
         "id": 29,
         "name": {
-            "english": "Nidoran♀",
-            "japanese": "ニドラン♀",
-            "chinese": "尼多兰",
-            "french": "Nidoran♀"
+            "english": "Nidoran♀"
         },
         "type": [
             "Poison"
@@ -595,10 +508,7 @@ const pokemon = [
     {
         "id": 30,
         "name": {
-            "english": "Nidorina",
-            "japanese": "ニドリーナ",
-            "chinese": "尼多娜",
-            "french": "Nidorina"
+            "english": "Nidorina"
         },
         "type": [
             "Poison"
@@ -615,10 +525,7 @@ const pokemon = [
     {
         "id": 31,
         "name": {
-            "english": "Nidoqueen",
-            "japanese": "ニドクイン",
-            "chinese": "尼多后",
-            "french": "Nidoqueen"
+            "english": "Nidoqueen"
         },
         "type": [
             "Poison",
@@ -636,10 +543,7 @@ const pokemon = [
     {
         "id": 32,
         "name": {
-            "english": "Nidoran♂",
-            "japanese": "ニドラン♂",
-            "chinese": "尼多朗",
-            "french": "Nidoran♂"
+            "english": "Nidoran♂"
         },
         "type": [
             "Poison"
@@ -656,10 +560,7 @@ const pokemon = [
     {
         "id": 33,
         "name": {
-            "english": "Nidorino",
-            "japanese": "ニドリーノ",
-            "chinese": "尼多力诺",
-            "french": "Nidorino"
+            "english": "Nidorino"
         },
         "type": [
             "Poison"
@@ -676,10 +577,7 @@ const pokemon = [
     {
         "id": 34,
         "name": {
-            "english": "Nidoking",
-            "japanese": "ニドキング",
-            "chinese": "尼多王",
-            "french": "Nidoking"
+            "english": "Nidoking"
         },
         "type": [
             "Poison",
@@ -697,10 +595,7 @@ const pokemon = [
     {
         "id": 35,
         "name": {
-            "english": "Clefairy",
-            "japanese": "ピッピ",
-            "chinese": "皮皮",
-            "french": "Mélofée"
+            "english": "Clefairy"
         },
         "type": [
             "Fairy"
@@ -717,10 +612,7 @@ const pokemon = [
     {
         "id": 36,
         "name": {
-            "english": "Clefable",
-            "japanese": "ピクシー",
-            "chinese": "皮可西",
-            "french": "Mélodelfe"
+            "english": "Clefable"
         },
         "type": [
             "Fairy"
@@ -737,10 +629,7 @@ const pokemon = [
     {
         "id": 37,
         "name": {
-            "english": "Vulpix",
-            "japanese": "ロコン",
-            "chinese": "六尾",
-            "french": "Goupix"
+            "english": "Vulpix"
         },
         "type": [
             "Fire"
@@ -757,10 +646,7 @@ const pokemon = [
     {
         "id": 38,
         "name": {
-            "english": "Ninetales",
-            "japanese": "キュウコン",
-            "chinese": "九尾",
-            "french": "Feunard"
+            "english": "Ninetales"
         },
         "type": [
             "Fire"
@@ -777,10 +663,7 @@ const pokemon = [
     {
         "id": 39,
         "name": {
-            "english": "Jigglypuff",
-            "japanese": "プリン",
-            "chinese": "胖丁",
-            "french": "Rondoudou"
+            "english": "Jigglypuff"
         },
         "type": [
             "Normal",
@@ -798,10 +681,7 @@ const pokemon = [
     {
         "id": 40,
         "name": {
-            "english": "Wigglytuff",
-            "japanese": "プクリン",
-            "chinese": "胖可丁",
-            "french": "Grodoudou"
+            "english": "Wigglytuff"
         },
         "type": [
             "Normal",
@@ -819,10 +699,7 @@ const pokemon = [
     {
         "id": 41,
         "name": {
-            "english": "Zubat",
-            "japanese": "ズバット",
-            "chinese": "超音蝠",
-            "french": "Nosferapti"
+            "english": "Zubat"
         },
         "type": [
             "Poison",
@@ -840,10 +717,7 @@ const pokemon = [
     {
         "id": 42,
         "name": {
-            "english": "Golbat",
-            "japanese": "ゴルバット",
-            "chinese": "大嘴蝠",
-            "french": "Nosferalto"
+            "english": "Golbat"
         },
         "type": [
             "Poison",
@@ -861,10 +735,7 @@ const pokemon = [
     {
         "id": 43,
         "name": {
-            "english": "Oddish",
-            "japanese": "ナゾノクサ",
-            "chinese": "走路草",
-            "french": "Mystherbe"
+            "english": "Oddish"
         },
         "type": [
             "Grass",
@@ -882,10 +753,7 @@ const pokemon = [
     {
         "id": 44,
         "name": {
-            "english": "Gloom",
-            "japanese": "クサイハナ",
-            "chinese": "臭臭花",
-            "french": "Ortide"
+            "english": "Gloom"
         },
         "type": [
             "Grass",
@@ -903,10 +771,7 @@ const pokemon = [
     {
         "id": 45,
         "name": {
-            "english": "Vileplume",
-            "japanese": "ラフレシア",
-            "chinese": "霸王花",
-            "french": "Rafflesia"
+            "english": "Vileplume"
         },
         "type": [
             "Grass",
@@ -924,10 +789,7 @@ const pokemon = [
     {
         "id": 46,
         "name": {
-            "english": "Paras",
-            "japanese": "パラス",
-            "chinese": "派拉斯",
-            "french": "Paras"
+            "english": "Paras"
         },
         "type": [
             "Bug",
@@ -945,10 +807,7 @@ const pokemon = [
     {
         "id": 47,
         "name": {
-            "english": "Parasect",
-            "japanese": "パラセクト",
-            "chinese": "派拉斯特",
-            "french": "Parasect"
+            "english": "Parasect"
         },
         "type": [
             "Bug",
@@ -966,10 +825,7 @@ const pokemon = [
     {
         "id": 48,
         "name": {
-            "english": "Venonat",
-            "japanese": "コンパン",
-            "chinese": "毛球",
-            "french": "Mimitoss"
+            "english": "Venonat"
         },
         "type": [
             "Bug",
@@ -987,10 +843,7 @@ const pokemon = [
     {
         "id": 49,
         "name": {
-            "english": "Venomoth",
-            "japanese": "モルフォン",
-            "chinese": "摩鲁蛾",
-            "french": "Aéromite"
+            "english": "Venomoth"
         },
         "type": [
             "Bug",
@@ -1008,10 +861,7 @@ const pokemon = [
     {
         "id": 50,
         "name": {
-            "english": "Diglett",
-            "japanese": "ディグダ",
-            "chinese": "地鼠",
-            "french": "Taupiqueur"
+            "english": "Diglett"
         },
         "type": [
             "Ground"
@@ -1028,10 +878,7 @@ const pokemon = [
     {
         "id": 51,
         "name": {
-            "english": "Dugtrio",
-            "japanese": "ダグトリオ",
-            "chinese": "三地鼠",
-            "french": "Triopikeur"
+            "english": "Dugtrio"
         },
         "type": [
             "Ground"
@@ -1048,10 +895,7 @@ const pokemon = [
     {
         "id": 52,
         "name": {
-            "english": "Meowth",
-            "japanese": "ニャース",
-            "chinese": "喵喵",
-            "french": "Miaouss"
+            "english": "Meowth"
         },
         "type": [
             "Normal"
@@ -1068,10 +912,7 @@ const pokemon = [
     {
         "id": 53,
         "name": {
-            "english": "Persian",
-            "japanese": "ペルシアン",
-            "chinese": "猫老大",
-            "french": "Persian"
+            "english": "Persian"
         },
         "type": [
             "Normal"
@@ -1088,10 +929,7 @@ const pokemon = [
     {
         "id": 54,
         "name": {
-            "english": "Psyduck",
-            "japanese": "コダック",
-            "chinese": "可达鸭",
-            "french": "Psykokwak"
+            "english": "Psyduck"
         },
         "type": [
             "Water"
@@ -1108,10 +946,7 @@ const pokemon = [
     {
         "id": 55,
         "name": {
-            "english": "Golduck",
-            "japanese": "ゴルダック",
-            "chinese": "哥达鸭",
-            "french": "Akwakwak"
+            "english": "Golduck"
         },
         "type": [
             "Water"
@@ -1128,10 +963,7 @@ const pokemon = [
     {
         "id": 56,
         "name": {
-            "english": "Mankey",
-            "japanese": "マンキー",
-            "chinese": "猴怪",
-            "french": "Férosinge"
+            "english": "Mankey"
         },
         "type": [
             "Fighting"
@@ -1148,10 +980,7 @@ const pokemon = [
     {
         "id": 57,
         "name": {
-            "english": "Primeape",
-            "japanese": "オコリザル",
-            "chinese": "火暴猴",
-            "french": "Colossinge"
+            "english": "Primeape"
         },
         "type": [
             "Fighting"
@@ -1168,10 +997,7 @@ const pokemon = [
     {
         "id": 58,
         "name": {
-            "english": "Growlithe",
-            "japanese": "ガーディ",
-            "chinese": "卡蒂狗",
-            "french": "Caninos"
+            "english": "Growlithe"
         },
         "type": [
             "Fire"
@@ -1188,10 +1014,7 @@ const pokemon = [
     {
         "id": 59,
         "name": {
-            "english": "Arcanine",
-            "japanese": "ウインディ",
-            "chinese": "风速狗",
-            "french": "Arcanin"
+            "english": "Arcanine"
         },
         "type": [
             "Fire"
@@ -1208,10 +1031,7 @@ const pokemon = [
     {
         "id": 60,
         "name": {
-            "english": "Poliwag",
-            "japanese": "ニョロモ",
-            "chinese": "蚊香蝌蚪",
-            "french": "Ptitard"
+            "english": "Poliwag"
         },
         "type": [
             "Water"
@@ -1228,10 +1048,7 @@ const pokemon = [
     {
         "id": 61,
         "name": {
-            "english": "Poliwhirl",
-            "japanese": "ニョロゾ",
-            "chinese": "蚊香君",
-            "french": "Têtarte"
+            "english": "Poliwhirl"
         },
         "type": [
             "Water"
@@ -1248,10 +1065,7 @@ const pokemon = [
     {
         "id": 62,
         "name": {
-            "english": "Poliwrath",
-            "japanese": "ニョロボン",
-            "chinese": "蚊香泳士",
-            "french": "Tartard"
+            "english": "Poliwrath"
         },
         "type": [
             "Water",
@@ -1269,10 +1083,7 @@ const pokemon = [
     {
         "id": 63,
         "name": {
-            "english": "Abra",
-            "japanese": "ケーシィ",
-            "chinese": "凯西",
-            "french": "Abra"
+            "english": "Abra"
         },
         "type": [
             "Psychic"
@@ -1289,10 +1100,7 @@ const pokemon = [
     {
         "id": 64,
         "name": {
-            "english": "Kadabra",
-            "japanese": "ユンゲラー",
-            "chinese": "勇基拉",
-            "french": "Kadabra"
+            "english": "Kadabra"
         },
         "type": [
             "Psychic"
@@ -1309,10 +1117,7 @@ const pokemon = [
     {
         "id": 65,
         "name": {
-            "english": "Alakazam",
-            "japanese": "フーディン",
-            "chinese": "胡地",
-            "french": "Alakazam"
+            "english": "Alakazam"
         },
         "type": [
             "Psychic"
@@ -1329,10 +1134,7 @@ const pokemon = [
     {
         "id": 66,
         "name": {
-            "english": "Machop",
-            "japanese": "ワンリキー",
-            "chinese": "腕力",
-            "french": "Machoc"
+            "english": "Machop"
         },
         "type": [
             "Fighting"
@@ -1349,10 +1151,7 @@ const pokemon = [
     {
         "id": 67,
         "name": {
-            "english": "Machoke",
-            "japanese": "ゴーリキー",
-            "chinese": "豪力",
-            "french": "Machopeur"
+            "english": "Machoke"
         },
         "type": [
             "Fighting"
@@ -1369,10 +1168,7 @@ const pokemon = [
     {
         "id": 68,
         "name": {
-            "english": "Machamp",
-            "japanese": "カイリキー",
-            "chinese": "怪力",
-            "french": "Mackogneur"
+            "english": "Machamp"
         },
         "type": [
             "Fighting"
@@ -1389,10 +1185,7 @@ const pokemon = [
     {
         "id": 69,
         "name": {
-            "english": "Bellsprout",
-            "japanese": "マダツボミ",
-            "chinese": "喇叭芽",
-            "french": "Chétiflor"
+            "english": "Bellsprout"
         },
         "type": [
             "Grass",
@@ -1410,10 +1203,7 @@ const pokemon = [
     {
         "id": 70,
         "name": {
-            "english": "Weepinbell",
-            "japanese": "ウツドン",
-            "chinese": "口呆花",
-            "french": "Boustiflor"
+            "english": "Weepinbell"
         },
         "type": [
             "Grass",
@@ -1431,10 +1221,7 @@ const pokemon = [
     {
         "id": 71,
         "name": {
-            "english": "Victreebel",
-            "japanese": "ウツボット",
-            "chinese": "大食花",
-            "french": "Empiflor"
+            "english": "Victreebel"
         },
         "type": [
             "Grass",
@@ -1452,10 +1239,7 @@ const pokemon = [
     {
         "id": 72,
         "name": {
-            "english": "Tentacool",
-            "japanese": "メノクラゲ",
-            "chinese": "玛瑙水母",
-            "french": "Tentacool"
+            "english": "Tentacool"
         },
         "type": [
             "Water",
@@ -1473,10 +1257,7 @@ const pokemon = [
     {
         "id": 73,
         "name": {
-            "english": "Tentacruel",
-            "japanese": "ドククラゲ",
-            "chinese": "毒刺水母",
-            "french": "Tentacruel"
+            "english": "Tentacruel"
         },
         "type": [
             "Water",
@@ -1494,10 +1275,7 @@ const pokemon = [
     {
         "id": 74,
         "name": {
-            "english": "Geodude",
-            "japanese": "イシツブテ",
-            "chinese": "小拳石",
-            "french": "Racaillou"
+            "english": "Geodude"
         },
         "type": [
             "Rock",
@@ -1515,10 +1293,7 @@ const pokemon = [
     {
         "id": 75,
         "name": {
-            "english": "Graveler",
-            "japanese": "ゴローン",
-            "chinese": "隆隆石",
-            "french": "Gravalanch"
+            "english": "Graveler"
         },
         "type": [
             "Rock",
@@ -1536,10 +1311,7 @@ const pokemon = [
     {
         "id": 76,
         "name": {
-            "english": "Golem",
-            "japanese": "ゴローニャ",
-            "chinese": "隆隆岩",
-            "french": "Grolem"
+            "english": "Golem"
         },
         "type": [
             "Rock",
@@ -1557,10 +1329,7 @@ const pokemon = [
     {
         "id": 77,
         "name": {
-            "english": "Ponyta",
-            "japanese": "ポニータ",
-            "chinese": "小火马",
-            "french": "Ponyta"
+            "english": "Ponyta"
         },
         "type": [
             "Fire"
@@ -1577,10 +1346,7 @@ const pokemon = [
     {
         "id": 78,
         "name": {
-            "english": "Rapidash",
-            "japanese": "ギャロップ",
-            "chinese": "烈焰马",
-            "french": "Galopa"
+            "english": "Rapidash"
         },
         "type": [
             "Fire"
@@ -1597,10 +1363,7 @@ const pokemon = [
     {
         "id": 79,
         "name": {
-            "english": "Slowpoke",
-            "japanese": "ヤドン",
-            "chinese": "呆呆兽",
-            "french": "Ramoloss"
+            "english": "Slowpoke"
         },
         "type": [
             "Water",
@@ -1618,10 +1381,7 @@ const pokemon = [
     {
         "id": 80,
         "name": {
-            "english": "Slowbro",
-            "japanese": "ヤドラン",
-            "chinese": "呆壳兽",
-            "french": "Flagadoss"
+            "english": "Slowbro"
         },
         "type": [
             "Water",
@@ -1639,10 +1399,7 @@ const pokemon = [
     {
         "id": 81,
         "name": {
-            "english": "Magnemite",
-            "japanese": "コイル",
-            "chinese": "小磁怪",
-            "french": "Magnéti"
+            "english": "Magnemite"
         },
         "type": [
             "Electric",
@@ -1660,10 +1417,7 @@ const pokemon = [
     {
         "id": 82,
         "name": {
-            "english": "Magneton",
-            "japanese": "レアコイル",
-            "chinese": "三合一磁怪",
-            "french": "Magnéton"
+            "english": "Magneton"
         },
         "type": [
             "Electric",
@@ -1681,10 +1435,7 @@ const pokemon = [
     {
         "id": 83,
         "name": {
-            "english": "Farfetch'd",
-            "japanese": "カモネギ",
-            "chinese": "大葱鸭",
-            "french": "Canarticho"
+            "english": "Farfetch'd"
         },
         "type": [
             "Normal",
@@ -1702,10 +1453,7 @@ const pokemon = [
     {
         "id": 84,
         "name": {
-            "english": "Doduo",
-            "japanese": "ドードー",
-            "chinese": "嘟嘟",
-            "french": "Doduo"
+            "english": "Doduo"
         },
         "type": [
             "Normal",
@@ -1723,10 +1471,7 @@ const pokemon = [
     {
         "id": 85,
         "name": {
-            "english": "Dodrio",
-            "japanese": "ドードリオ",
-            "chinese": "嘟嘟利",
-            "french": "Dodrio"
+            "english": "Dodrio"
         },
         "type": [
             "Normal",
@@ -1744,10 +1489,7 @@ const pokemon = [
     {
         "id": 86,
         "name": {
-            "english": "Seel",
-            "japanese": "パウワウ",
-            "chinese": "小海狮",
-            "french": "Otaria"
+            "english": "Seel"
         },
         "type": [
             "Water"
@@ -1764,10 +1506,7 @@ const pokemon = [
     {
         "id": 87,
         "name": {
-            "english": "Dewgong",
-            "japanese": "ジュゴン",
-            "chinese": "白海狮",
-            "french": "Lamantine"
+            "english": "Dewgong"
         },
         "type": [
             "Water",
@@ -1785,10 +1524,7 @@ const pokemon = [
     {
         "id": 88,
         "name": {
-            "english": "Grimer",
-            "japanese": "ベトベター",
-            "chinese": "臭泥",
-            "french": "Tadmorv"
+            "english": "Grimer"
         },
         "type": [
             "Poison"
@@ -1805,10 +1541,7 @@ const pokemon = [
     {
         "id": 89,
         "name": {
-            "english": "Muk",
-            "japanese": "ベトベトン",
-            "chinese": "臭臭泥",
-            "french": "Grotadmorv"
+            "english": "Muk"
         },
         "type": [
             "Poison"
@@ -1825,10 +1558,7 @@ const pokemon = [
     {
         "id": 90,
         "name": {
-            "english": "Shellder",
-            "japanese": "シェルダー",
-            "chinese": "大舌贝",
-            "french": "Kokiyas"
+            "english": "Shellder"
         },
         "type": [
             "Water"
@@ -1845,10 +1575,7 @@ const pokemon = [
     {
         "id": 91,
         "name": {
-            "english": "Cloyster",
-            "japanese": "パルシェン",
-            "chinese": "刺甲贝",
-            "french": "Crustabri"
+            "english": "Cloyster"
         },
         "type": [
             "Water",
@@ -1866,10 +1593,7 @@ const pokemon = [
     {
         "id": 92,
         "name": {
-            "english": "Gastly",
-            "japanese": "ゴース",
-            "chinese": "鬼斯",
-            "french": "Fantominus"
+            "english": "Gastly"
         },
         "type": [
             "Ghost",
@@ -1887,10 +1611,7 @@ const pokemon = [
     {
         "id": 93,
         "name": {
-            "english": "Haunter",
-            "japanese": "ゴースト",
-            "chinese": "鬼斯通",
-            "french": "Spectrum"
+            "english": "Haunter"
         },
         "type": [
             "Ghost",
@@ -1908,10 +1629,7 @@ const pokemon = [
     {
         "id": 94,
         "name": {
-            "english": "Gengar",
-            "japanese": "ゲンガー",
-            "chinese": "耿鬼",
-            "french": "Ectoplasma"
+            "english": "Gengar"
         },
         "type": [
             "Ghost",
@@ -1929,10 +1647,7 @@ const pokemon = [
     {
         "id": 95,
         "name": {
-            "english": "Onix",
-            "japanese": "イワーク",
-            "chinese": "大岩蛇",
-            "french": "Onix"
+            "english": "Onix"
         },
         "type": [
             "Rock",
@@ -1950,10 +1665,7 @@ const pokemon = [
     {
         "id": 96,
         "name": {
-            "english": "Drowzee",
-            "japanese": "スリープ",
-            "chinese": "催眠貘",
-            "french": "Soporifik"
+            "english": "Drowzee"
         },
         "type": [
             "Psychic"
@@ -1970,10 +1682,7 @@ const pokemon = [
     {
         "id": 97,
         "name": {
-            "english": "Hypno",
-            "japanese": "スリーパー",
-            "chinese": "引梦貘人",
-            "french": "Hypnomade"
+            "english": "Hypno"
         },
         "type": [
             "Psychic"
@@ -1990,10 +1699,7 @@ const pokemon = [
     {
         "id": 98,
         "name": {
-            "english": "Krabby",
-            "japanese": "クラブ",
-            "chinese": "大钳蟹",
-            "french": "Krabby"
+            "english": "Krabby"
         },
         "type": [
             "Water"
@@ -2010,10 +1716,7 @@ const pokemon = [
     {
         "id": 99,
         "name": {
-            "english": "Kingler",
-            "japanese": "キングラー",
-            "chinese": "巨钳蟹",
-            "french": "Krabboss"
+            "english": "Kingler"
         },
         "type": [
             "Water"
@@ -2030,10 +1733,7 @@ const pokemon = [
     {
         "id": 100,
         "name": {
-            "english": "Voltorb",
-            "japanese": "ビリリダマ",
-            "chinese": "霹雳电球",
-            "french": "Voltorbe"
+            "english": "Voltorb"
         },
         "type": [
             "Electric"
@@ -2050,10 +1750,7 @@ const pokemon = [
     {
         "id": 101,
         "name": {
-            "english": "Electrode",
-            "japanese": "マルマイン",
-            "chinese": "顽皮雷弹",
-            "french": "Électrode"
+            "english": "Electrode"
         },
         "type": [
             "Electric"
@@ -2070,10 +1767,7 @@ const pokemon = [
     {
         "id": 102,
         "name": {
-            "english": "Exeggcute",
-            "japanese": "タマタマ",
-            "chinese": "蛋蛋",
-            "french": "Noeunoeuf"
+            "english": "Exeggcute"
         },
         "type": [
             "Grass",
@@ -2091,10 +1785,7 @@ const pokemon = [
     {
         "id": 103,
         "name": {
-            "english": "Exeggutor",
-            "japanese": "ナッシー",
-            "chinese": "椰蛋树",
-            "french": "Noadkoko"
+            "english": "Exeggutor"
         },
         "type": [
             "Grass",
@@ -2112,10 +1803,7 @@ const pokemon = [
     {
         "id": 104,
         "name": {
-            "english": "Cubone",
-            "japanese": "カラカラ",
-            "chinese": "卡拉卡拉",
-            "french": "Osselait"
+            "english": "Cubone"
         },
         "type": [
             "Ground"
@@ -2132,10 +1820,7 @@ const pokemon = [
     {
         "id": 105,
         "name": {
-            "english": "Marowak",
-            "japanese": "ガラガラ",
-            "chinese": "嘎啦嘎啦",
-            "french": "Ossatueur"
+            "english": "Marowak"
         },
         "type": [
             "Ground"
@@ -2152,10 +1837,7 @@ const pokemon = [
     {
         "id": 106,
         "name": {
-            "english": "Hitmonlee",
-            "japanese": "サワムラー",
-            "chinese": "飞腿郎",
-            "french": "Kicklee"
+            "english": "Hitmonlee"
         },
         "type": [
             "Fighting"
@@ -2172,10 +1854,7 @@ const pokemon = [
     {
         "id": 107,
         "name": {
-            "english": "Hitmonchan",
-            "japanese": "エビワラー",
-            "chinese": "快拳郎",
-            "french": "Tygnon"
+            "english": "Hitmonchan"
         },
         "type": [
             "Fighting"
@@ -2192,10 +1871,7 @@ const pokemon = [
     {
         "id": 108,
         "name": {
-            "english": "Lickitung",
-            "japanese": "ベロリンガ",
-            "chinese": "大舌头",
-            "french": "Excelangue"
+            "english": "Lickitung"
         },
         "type": [
             "Normal"
@@ -2212,10 +1888,7 @@ const pokemon = [
     {
         "id": 109,
         "name": {
-            "english": "Koffing",
-            "japanese": "ドガース",
-            "chinese": "瓦斯弹",
-            "french": "Smogo"
+            "english": "Koffing"
         },
         "type": [
             "Poison"
@@ -2232,10 +1905,7 @@ const pokemon = [
     {
         "id": 110,
         "name": {
-            "english": "Weezing",
-            "japanese": "マタドガス",
-            "chinese": "双弹瓦斯",
-            "french": "Smogogo"
+            "english": "Weezing"
         },
         "type": [
             "Poison"
@@ -2252,10 +1922,7 @@ const pokemon = [
     {
         "id": 111,
         "name": {
-            "english": "Rhyhorn",
-            "japanese": "サイホーン",
-            "chinese": "独角犀牛",
-            "french": "Rhinocorne"
+            "english": "Rhyhorn"
         },
         "type": [
             "Ground",
@@ -2273,10 +1940,7 @@ const pokemon = [
     {
         "id": 112,
         "name": {
-            "english": "Rhydon",
-            "japanese": "サイドン",
-            "chinese": "钻角犀兽",
-            "french": "Rhinoféros"
+            "english": "Rhydon"
         },
         "type": [
             "Ground",
@@ -2294,10 +1958,7 @@ const pokemon = [
     {
         "id": 113,
         "name": {
-            "english": "Chansey",
-            "japanese": "ラッキー",
-            "chinese": "吉利蛋",
-            "french": "Leveinard"
+            "english": "Chansey"
         },
         "type": [
             "Normal"
@@ -2314,10 +1975,7 @@ const pokemon = [
     {
         "id": 114,
         "name": {
-            "english": "Tangela",
-            "japanese": "モンジャラ",
-            "chinese": "蔓藤怪",
-            "french": "Saquedeneu"
+            "english": "Tangela"
         },
         "type": [
             "Grass"
@@ -2334,10 +1992,7 @@ const pokemon = [
     {
         "id": 115,
         "name": {
-            "english": "Kangaskhan",
-            "japanese": "ガルーラ",
-            "chinese": "袋兽",
-            "french": "Kangourex"
+            "english": "Kangaskhan"
         },
         "type": [
             "Normal"
@@ -2354,10 +2009,7 @@ const pokemon = [
     {
         "id": 116,
         "name": {
-            "english": "Horsea",
-            "japanese": "タッツー",
-            "chinese": "墨海马",
-            "french": "Hypotrempe"
+            "english": "Horsea"
         },
         "type": [
             "Water"
@@ -2374,10 +2026,7 @@ const pokemon = [
     {
         "id": 117,
         "name": {
-            "english": "Seadra",
-            "japanese": "シードラ",
-            "chinese": "海刺龙",
-            "french": "Hypocéan"
+            "english": "Seadra"
         },
         "type": [
             "Water"
@@ -2394,10 +2043,7 @@ const pokemon = [
     {
         "id": 118,
         "name": {
-            "english": "Goldeen",
-            "japanese": "トサキント",
-            "chinese": "角金鱼",
-            "french": "Poissirène"
+            "english": "Goldeen"
         },
         "type": [
             "Water"
@@ -2414,10 +2060,7 @@ const pokemon = [
     {
         "id": 119,
         "name": {
-            "english": "Seaking",
-            "japanese": "アズマオウ",
-            "chinese": "金鱼王",
-            "french": "Poissoroy"
+            "english": "Seaking"
         },
         "type": [
             "Water"
@@ -2434,10 +2077,7 @@ const pokemon = [
     {
         "id": 120,
         "name": {
-            "english": "Staryu",
-            "japanese": "ヒトデマン",
-            "chinese": "海星星",
-            "french": "Stari"
+            "english": "Staryu"
         },
         "type": [
             "Water"
@@ -2454,10 +2094,7 @@ const pokemon = [
     {
         "id": 121,
         "name": {
-            "english": "Starmie",
-            "japanese": "スターミー",
-            "chinese": "宝石海星",
-            "french": "Staross"
+            "english": "Starmie"
         },
         "type": [
             "Water",
@@ -2475,10 +2112,7 @@ const pokemon = [
     {
         "id": 122,
         "name": {
-            "english": "Mr. Mime",
-            "japanese": "バリヤード",
-            "chinese": "魔墙人偶",
-            "french": "M. Mime"
+            "english": "Mr. Mime"
         },
         "type": [
             "Psychic",
@@ -2496,10 +2130,7 @@ const pokemon = [
     {
         "id": 123,
         "name": {
-            "english": "Scyther",
-            "japanese": "ストライク",
-            "chinese": "飞天螳螂",
-            "french": "Insécateur"
+            "english": "Scyther"
         },
         "type": [
             "Bug",
@@ -2517,10 +2148,7 @@ const pokemon = [
     {
         "id": 124,
         "name": {
-            "english": "Jynx",
-            "japanese": "ルージュラ",
-            "chinese": "迷唇姐",
-            "french": "Lippoutou"
+            "english": "Jynx"
         },
         "type": [
             "Ice",
@@ -2538,10 +2166,7 @@ const pokemon = [
     {
         "id": 125,
         "name": {
-            "english": "Electabuzz",
-            "japanese": "エレブー",
-            "chinese": "电击兽",
-            "french": "Élektek"
+            "english": "Electabuzz"
         },
         "type": [
             "Electric"
@@ -2558,10 +2183,7 @@ const pokemon = [
     {
         "id": 126,
         "name": {
-            "english": "Magmar",
-            "japanese": "ブーバー",
-            "chinese": "鸭嘴火兽",
-            "french": "Magmar"
+            "english": "Magmar"
         },
         "type": [
             "Fire"
@@ -2578,10 +2200,7 @@ const pokemon = [
     {
         "id": 127,
         "name": {
-            "english": "Pinsir",
-            "japanese": "カイロス",
-            "chinese": "凯罗斯",
-            "french": "Scarabrute"
+            "english": "Pinsir"
         },
         "type": [
             "Bug"
@@ -2598,10 +2217,7 @@ const pokemon = [
     {
         "id": 128,
         "name": {
-            "english": "Tauros",
-            "japanese": "ケンタロス",
-            "chinese": "肯泰罗",
-            "french": "Tauros"
+            "english": "Tauros"
         },
         "type": [
             "Normal"
@@ -2618,10 +2234,7 @@ const pokemon = [
     {
         "id": 129,
         "name": {
-            "english": "Magikarp",
-            "japanese": "コイキング",
-            "chinese": "鲤鱼王",
-            "french": "Magicarpe"
+            "english": "Magikarp"
         },
         "type": [
             "Water"
@@ -2638,10 +2251,7 @@ const pokemon = [
     {
         "id": 130,
         "name": {
-            "english": "Gyarados",
-            "japanese": "ギャラドス",
-            "chinese": "暴鲤龙",
-            "french": "Léviator"
+            "english": "Gyarados"
         },
         "type": [
             "Water",
@@ -2659,10 +2269,7 @@ const pokemon = [
     {
         "id": 131,
         "name": {
-            "english": "Lapras",
-            "japanese": "ラプラス",
-            "chinese": "拉普拉斯",
-            "french": "Lokhlass"
+            "english": "Lapras"
         },
         "type": [
             "Water",
@@ -2680,10 +2287,7 @@ const pokemon = [
     {
         "id": 132,
         "name": {
-            "english": "Ditto",
-            "japanese": "メタモン",
-            "chinese": "百变怪",
-            "french": "Métamorph"
+            "english": "Ditto"
         },
         "type": [
             "Normal"
@@ -2700,10 +2304,7 @@ const pokemon = [
     {
         "id": 133,
         "name": {
-            "english": "Eevee",
-            "japanese": "イーブイ",
-            "chinese": "伊布",
-            "french": "Évoli"
+            "english": "Eevee"
         },
         "type": [
             "Normal"
@@ -2720,10 +2321,7 @@ const pokemon = [
     {
         "id": 134,
         "name": {
-            "english": "Vaporeon",
-            "japanese": "シャワーズ",
-            "chinese": "水伊布",
-            "french": "Aquali"
+            "english": "Vaporeon"
         },
         "type": [
             "Water"
@@ -2740,10 +2338,7 @@ const pokemon = [
     {
         "id": 135,
         "name": {
-            "english": "Jolteon",
-            "japanese": "サンダース",
-            "chinese": "雷伊布",
-            "french": "Voltali"
+            "english": "Jolteon"
         },
         "type": [
             "Electric"
@@ -2760,10 +2355,7 @@ const pokemon = [
     {
         "id": 136,
         "name": {
-            "english": "Flareon",
-            "japanese": "ブースター",
-            "chinese": "火伊布",
-            "french": "Pyroli"
+            "english": "Flareon"
         },
         "type": [
             "Fire"
@@ -2780,10 +2372,7 @@ const pokemon = [
     {
         "id": 137,
         "name": {
-            "english": "Porygon",
-            "japanese": "ポリゴン",
-            "chinese": "多边兽",
-            "french": "Porygon"
+            "english": "Porygon"
         },
         "type": [
             "Normal"
@@ -2800,10 +2389,7 @@ const pokemon = [
     {
         "id": 138,
         "name": {
-            "english": "Omanyte",
-            "japanese": "オムナイト",
-            "chinese": "菊石兽",
-            "french": "Amonita"
+            "english": "Omanyte"
         },
         "type": [
             "Rock",
@@ -2821,10 +2407,7 @@ const pokemon = [
     {
         "id": 139,
         "name": {
-            "english": "Omastar",
-            "japanese": "オムスター",
-            "chinese": "多刺菊石兽",
-            "french": "Amonistar"
+            "english": "Omastar"
         },
         "type": [
             "Rock",
@@ -2842,10 +2425,7 @@ const pokemon = [
     {
         "id": 140,
         "name": {
-            "english": "Kabuto",
-            "japanese": "カブト",
-            "chinese": "化石盔",
-            "french": "Kabuto"
+            "english": "Kabuto"
         },
         "type": [
             "Rock",
@@ -2863,10 +2443,7 @@ const pokemon = [
     {
         "id": 141,
         "name": {
-            "english": "Kabutops",
-            "japanese": "カブトプス",
-            "chinese": "镰刀盔",
-            "french": "Kabutops"
+            "english": "Kabutops"
         },
         "type": [
             "Rock",
@@ -2884,10 +2461,7 @@ const pokemon = [
     {
         "id": 142,
         "name": {
-            "english": "Aerodactyl",
-            "japanese": "プテラ",
-            "chinese": "化石翼龙",
-            "french": "Ptéra"
+            "english": "Aerodactyl"
         },
         "type": [
             "Rock",
@@ -2905,10 +2479,7 @@ const pokemon = [
     {
         "id": 143,
         "name": {
-            "english": "Snorlax",
-            "japanese": "カビゴン",
-            "chinese": "卡比兽",
-            "french": "Ronflex"
+            "english": "Snorlax"
         },
         "type": [
             "Normal"
@@ -2925,10 +2496,7 @@ const pokemon = [
     {
         "id": 144,
         "name": {
-            "english": "Articuno",
-            "japanese": "フリーザー",
-            "chinese": "急冻鸟",
-            "french": "Artikodin"
+            "english": "Articuno"
         },
         "type": [
             "Ice",
@@ -2946,10 +2514,7 @@ const pokemon = [
     {
         "id": 145,
         "name": {
-            "english": "Zapdos",
-            "japanese": "サンダー",
-            "chinese": "闪电鸟",
-            "french": "Électhor"
+            "english": "Zapdos"
         },
         "type": [
             "Electric",
@@ -2967,10 +2532,7 @@ const pokemon = [
     {
         "id": 146,
         "name": {
-            "english": "Moltres",
-            "japanese": "ファイヤー",
-            "chinese": "火焰鸟",
-            "french": "Sulfura"
+            "english": "Moltres"
         },
         "type": [
             "Fire",
@@ -2988,10 +2550,7 @@ const pokemon = [
     {
         "id": 147,
         "name": {
-            "english": "Dratini",
-            "japanese": "ミニリュウ",
-            "chinese": "迷你龙",
-            "french": "Minidraco"
+            "english": "Dratini"
         },
         "type": [
             "Dragon"
@@ -3008,10 +2567,7 @@ const pokemon = [
     {
         "id": 148,
         "name": {
-            "english": "Dragonair",
-            "japanese": "ハクリュー",
-            "chinese": "哈克龙",
-            "french": "Draco"
+            "english": "Dragonair"
         },
         "type": [
             "Dragon"
@@ -3028,10 +2584,7 @@ const pokemon = [
     {
         "id": 149,
         "name": {
-            "english": "Dragonite",
-            "japanese": "カイリュー",
-            "chinese": "快龙",
-            "french": "Dracolosse"
+            "english": "Dragonite"
         },
         "type": [
             "Dragon",
@@ -3049,10 +2602,7 @@ const pokemon = [
     {
         "id": 150,
         "name": {
-            "english": "Mewtwo",
-            "japanese": "ミュウツー",
-            "chinese": "超梦",
-            "french": "Mewtwo"
+            "english": "Mewtwo"
         },
         "type": [
             "Psychic"
@@ -3069,10 +2619,7 @@ const pokemon = [
     {
         "id": 151,
         "name": {
-            "english": "Mew",
-            "japanese": "ミュウ",
-            "chinese": "梦幻",
-            "french": "Mew"
+            "english": "Mew"
         },
         "type": [
             "Psychic"
@@ -3089,10 +2636,7 @@ const pokemon = [
     {
         "id": 152,
         "name": {
-            "english": "Chikorita",
-            "japanese": "チコリータ",
-            "chinese": "菊草叶",
-            "french": "Germignon"
+            "english": "Chikorita"
         },
         "type": [
             "Grass"
@@ -3109,10 +2653,7 @@ const pokemon = [
     {
         "id": 153,
         "name": {
-            "english": "Bayleef",
-            "japanese": "ベイリーフ",
-            "chinese": "月桂叶",
-            "french": "Macronium"
+            "english": "Bayleef"
         },
         "type": [
             "Grass"
@@ -3129,10 +2670,7 @@ const pokemon = [
     {
         "id": 154,
         "name": {
-            "english": "Meganium",
-            "japanese": "メガニウム",
-            "chinese": "大竺葵",
-            "french": "Méganium"
+            "english": "Meganium"
         },
         "type": [
             "Grass"
@@ -3149,10 +2687,7 @@ const pokemon = [
     {
         "id": 155,
         "name": {
-            "english": "Cyndaquil",
-            "japanese": "ヒノアラシ",
-            "chinese": "火球鼠",
-            "french": "Héricendre"
+            "english": "Cyndaquil"
         },
         "type": [
             "Fire"
@@ -3169,10 +2704,7 @@ const pokemon = [
     {
         "id": 156,
         "name": {
-            "english": "Quilava",
-            "japanese": "マグマラシ",
-            "chinese": "火岩鼠",
-            "french": "Feurisson"
+            "english": "Quilava"
         },
         "type": [
             "Fire"
@@ -3189,10 +2721,7 @@ const pokemon = [
     {
         "id": 157,
         "name": {
-            "english": "Typhlosion",
-            "japanese": "バクフーン",
-            "chinese": "火暴兽",
-            "french": "Typhlosion"
+            "english": "Typhlosion"
         },
         "type": [
             "Fire"
@@ -3209,10 +2738,7 @@ const pokemon = [
     {
         "id": 158,
         "name": {
-            "english": "Totodile",
-            "japanese": "ワニノコ",
-            "chinese": "小锯鳄",
-            "french": "Kaiminus"
+            "english": "Totodile"
         },
         "type": [
             "Water"
@@ -3229,10 +2755,7 @@ const pokemon = [
     {
         "id": 159,
         "name": {
-            "english": "Croconaw",
-            "japanese": "アリゲイツ",
-            "chinese": "蓝鳄",
-            "french": "Crocrodil"
+            "english": "Croconaw"
         },
         "type": [
             "Water"
@@ -3249,10 +2772,7 @@ const pokemon = [
     {
         "id": 160,
         "name": {
-            "english": "Feraligatr",
-            "japanese": "オーダイル",
-            "chinese": "大力鳄",
-            "french": "Aligatueur"
+            "english": "Feraligatr"
         },
         "type": [
             "Water"
@@ -3269,10 +2789,7 @@ const pokemon = [
     {
         "id": 161,
         "name": {
-            "english": "Sentret",
-            "japanese": "オタチ",
-            "chinese": "尾立",
-            "french": "Fouinette"
+            "english": "Sentret"
         },
         "type": [
             "Normal"
@@ -3289,10 +2806,7 @@ const pokemon = [
     {
         "id": 162,
         "name": {
-            "english": "Furret",
-            "japanese": "オオタチ",
-            "chinese": "大尾立",
-            "french": "Fouinar"
+            "english": "Furret"
         },
         "type": [
             "Normal"
@@ -3309,10 +2823,7 @@ const pokemon = [
     {
         "id": 163,
         "name": {
-            "english": "Hoothoot",
-            "japanese": "ホーホー",
-            "chinese": "咕咕",
-            "french": "Hoothoot"
+            "english": "Hoothoot"
         },
         "type": [
             "Normal",
@@ -3330,10 +2841,7 @@ const pokemon = [
     {
         "id": 164,
         "name": {
-            "english": "Noctowl",
-            "japanese": "ヨルノズク",
-            "chinese": "猫头夜鹰",
-            "french": "Noarfang"
+            "english": "Noctowl"
         },
         "type": [
             "Normal",
@@ -3351,10 +2859,7 @@ const pokemon = [
     {
         "id": 165,
         "name": {
-            "english": "Ledyba",
-            "japanese": "レディバ",
-            "chinese": "芭瓢虫",
-            "french": "Coxy"
+            "english": "Ledyba"
         },
         "type": [
             "Bug",
@@ -3372,10 +2877,7 @@ const pokemon = [
     {
         "id": 166,
         "name": {
-            "english": "Ledian",
-            "japanese": "レディアン",
-            "chinese": "安瓢虫",
-            "french": "Coxyclaque"
+            "english": "Ledian"
         },
         "type": [
             "Bug",
@@ -3393,10 +2895,7 @@ const pokemon = [
     {
         "id": 167,
         "name": {
-            "english": "Spinarak",
-            "japanese": "イトマル",
-            "chinese": "圆丝蛛",
-            "french": "Mimigal"
+            "english": "Spinarak"
         },
         "type": [
             "Bug",
@@ -3414,10 +2913,7 @@ const pokemon = [
     {
         "id": 168,
         "name": {
-            "english": "Ariados",
-            "japanese": "アリアドス",
-            "chinese": "阿利多斯",
-            "french": "Migalos"
+            "english": "Ariados"
         },
         "type": [
             "Bug",
@@ -3435,10 +2931,7 @@ const pokemon = [
     {
         "id": 169,
         "name": {
-            "english": "Crobat",
-            "japanese": "クロバット",
-            "chinese": "叉字蝠",
-            "french": "Nostenfer"
+            "english": "Crobat"
         },
         "type": [
             "Poison",
@@ -3456,10 +2949,7 @@ const pokemon = [
     {
         "id": 170,
         "name": {
-            "english": "Chinchou",
-            "japanese": "チョンチー",
-            "chinese": "灯笼鱼",
-            "french": "Loupio"
+            "english": "Chinchou"
         },
         "type": [
             "Water",
@@ -3477,10 +2967,7 @@ const pokemon = [
     {
         "id": 171,
         "name": {
-            "english": "Lanturn",
-            "japanese": "ランターン",
-            "chinese": "电灯怪",
-            "french": "Lanturn"
+            "english": "Lanturn"
         },
         "type": [
             "Water",
@@ -3498,10 +2985,7 @@ const pokemon = [
     {
         "id": 172,
         "name": {
-            "english": "Pichu",
-            "japanese": "ピチュー",
-            "chinese": "皮丘",
-            "french": "Pichu"
+            "english": "Pichu"
         },
         "type": [
             "Electric"
@@ -3518,10 +3002,7 @@ const pokemon = [
     {
         "id": 173,
         "name": {
-            "english": "Cleffa",
-            "japanese": "ピィ",
-            "chinese": "皮宝宝",
-            "french": "Mélo"
+            "english": "Cleffa"
         },
         "type": [
             "Fairy"
@@ -3538,10 +3019,7 @@ const pokemon = [
     {
         "id": 174,
         "name": {
-            "english": "Igglybuff",
-            "japanese": "ププリン",
-            "chinese": "宝宝丁",
-            "french": "Toudoudou"
+            "english": "Igglybuff"
         },
         "type": [
             "Normal",
@@ -3559,10 +3037,7 @@ const pokemon = [
     {
         "id": 175,
         "name": {
-            "english": "Togepi",
-            "japanese": "トゲピー",
-            "chinese": "波克比",
-            "french": "Togepi"
+            "english": "Togepi"
         },
         "type": [
             "Fairy"
@@ -3579,10 +3054,7 @@ const pokemon = [
     {
         "id": 176,
         "name": {
-            "english": "Togetic",
-            "japanese": "トゲチック",
-            "chinese": "波克基古",
-            "french": "Togetic"
+            "english": "Togetic"
         },
         "type": [
             "Fairy",
@@ -3600,10 +3072,7 @@ const pokemon = [
     {
         "id": 177,
         "name": {
-            "english": "Natu",
-            "japanese": "ネイティ",
-            "chinese": "天然雀",
-            "french": "Natu"
+            "english": "Natu"
         },
         "type": [
             "Psychic",
@@ -3621,10 +3090,7 @@ const pokemon = [
     {
         "id": 178,
         "name": {
-            "english": "Xatu",
-            "japanese": "ネイティオ",
-            "chinese": "天然鸟",
-            "french": "Xatu"
+            "english": "Xatu"
         },
         "type": [
             "Psychic",
@@ -3642,10 +3108,7 @@ const pokemon = [
     {
         "id": 179,
         "name": {
-            "english": "Mareep",
-            "japanese": "メリープ",
-            "chinese": "咩利羊",
-            "french": "Wattouat"
+            "english": "Mareep"
         },
         "type": [
             "Electric"
@@ -3662,10 +3125,7 @@ const pokemon = [
     {
         "id": 180,
         "name": {
-            "english": "Flaaffy",
-            "japanese": "モココ",
-            "chinese": "茸茸羊",
-            "french": "Lainergie"
+            "english": "Flaaffy"
         },
         "type": [
             "Electric"
@@ -3682,10 +3142,7 @@ const pokemon = [
     {
         "id": 181,
         "name": {
-            "english": "Ampharos",
-            "japanese": "デンリュウ",
-            "chinese": "电龙",
-            "french": "Pharamp"
+            "english": "Ampharos"
         },
         "type": [
             "Electric"
@@ -3702,10 +3159,7 @@ const pokemon = [
     {
         "id": 182,
         "name": {
-            "english": "Bellossom",
-            "japanese": "キレイハナ",
-            "chinese": "美丽花",
-            "french": "Joliflor"
+            "english": "Bellossom"
         },
         "type": [
             "Grass"
@@ -3722,10 +3176,7 @@ const pokemon = [
     {
         "id": 183,
         "name": {
-            "english": "Marill",
-            "japanese": "マリル",
-            "chinese": "玛力露",
-            "french": "Marill"
+            "english": "Marill"
         },
         "type": [
             "Water",
@@ -3743,10 +3194,7 @@ const pokemon = [
     {
         "id": 184,
         "name": {
-            "english": "Azumarill",
-            "japanese": "マリルリ",
-            "chinese": "玛力露丽",
-            "french": "Azumarill"
+            "english": "Azumarill"
         },
         "type": [
             "Water",
@@ -3764,10 +3212,7 @@ const pokemon = [
     {
         "id": 185,
         "name": {
-            "english": "Sudowoodo",
-            "japanese": "ウソッキー",
-            "chinese": "树才怪‎",
-            "french": "Simularbre"
+            "english": "Sudowoodo"
         },
         "type": [
             "Rock"
@@ -3784,10 +3229,7 @@ const pokemon = [
     {
         "id": 186,
         "name": {
-            "english": "Politoed",
-            "japanese": "ニョロトノ",
-            "chinese": "蚊香蛙皇",
-            "french": "Tarpaud"
+            "english": "Politoed"
         },
         "type": [
             "Water"
@@ -3804,10 +3246,7 @@ const pokemon = [
     {
         "id": 187,
         "name": {
-            "english": "Hoppip",
-            "japanese": "ハネッコ",
-            "chinese": "毽子草",
-            "french": "Granivol"
+            "english": "Hoppip"
         },
         "type": [
             "Grass",
@@ -3825,10 +3264,7 @@ const pokemon = [
     {
         "id": 188,
         "name": {
-            "english": "Skiploom",
-            "japanese": "ポポッコ",
-            "chinese": "毽子花",
-            "french": "Floravol"
+            "english": "Skiploom"
         },
         "type": [
             "Grass",
@@ -3846,10 +3282,7 @@ const pokemon = [
     {
         "id": 189,
         "name": {
-            "english": "Jumpluff",
-            "japanese": "ワタッコ",
-            "chinese": "毽子棉",
-            "french": "Cotovol"
+            "english": "Jumpluff"
         },
         "type": [
             "Grass",
@@ -3867,10 +3300,7 @@ const pokemon = [
     {
         "id": 190,
         "name": {
-            "english": "Aipom",
-            "japanese": "エイパム",
-            "chinese": "长尾怪手",
-            "french": "Capumain"
+            "english": "Aipom"
         },
         "type": [
             "Normal"
@@ -3887,10 +3317,7 @@ const pokemon = [
     {
         "id": 191,
         "name": {
-            "english": "Sunkern",
-            "japanese": "ヒマナッツ",
-            "chinese": "向日种子",
-            "french": "Tournegrin"
+            "english": "Sunkern"
         },
         "type": [
             "Grass"
@@ -3907,10 +3334,7 @@ const pokemon = [
     {
         "id": 192,
         "name": {
-            "english": "Sunflora",
-            "japanese": "キマワリ",
-            "chinese": "向日花怪",
-            "french": "Héliatronc"
+            "english": "Sunflora"
         },
         "type": [
             "Grass"
@@ -3927,10 +3351,7 @@ const pokemon = [
     {
         "id": 193,
         "name": {
-            "english": "Yanma",
-            "japanese": "ヤンヤンマ",
-            "chinese": "蜻蜻蜓",
-            "french": "Yanma"
+            "english": "Yanma"
         },
         "type": [
             "Bug",
@@ -3948,10 +3369,7 @@ const pokemon = [
     {
         "id": 194,
         "name": {
-            "english": "Wooper",
-            "japanese": "ウパー",
-            "chinese": "乌波",
-            "french": "Axoloto"
+            "english": "Wooper"
         },
         "type": [
             "Water",
@@ -3969,10 +3387,7 @@ const pokemon = [
     {
         "id": 195,
         "name": {
-            "english": "Quagsire",
-            "japanese": "ヌオー",
-            "chinese": "沼王",
-            "french": "Maraiste"
+            "english": "Quagsire"
         },
         "type": [
             "Water",
@@ -3990,10 +3405,7 @@ const pokemon = [
     {
         "id": 196,
         "name": {
-            "english": "Espeon",
-            "japanese": "エーフィ",
-            "chinese": "太阳伊布",
-            "french": "Mentali"
+            "english": "Espeon"
         },
         "type": [
             "Psychic"
@@ -4010,10 +3422,7 @@ const pokemon = [
     {
         "id": 197,
         "name": {
-            "english": "Umbreon",
-            "japanese": "ブラッキー",
-            "chinese": "月亮伊布",
-            "french": "Noctali"
+            "english": "Umbreon"
         },
         "type": [
             "Dark"
@@ -4030,10 +3439,7 @@ const pokemon = [
     {
         "id": 198,
         "name": {
-            "english": "Murkrow",
-            "japanese": "ヤミカラス",
-            "chinese": "黑暗鸦",
-            "french": "Cornèbre"
+            "english": "Murkrow"
         },
         "type": [
             "Dark",
@@ -4051,10 +3457,7 @@ const pokemon = [
     {
         "id": 199,
         "name": {
-            "english": "Slowking",
-            "japanese": "ヤドキング",
-            "chinese": "呆呆王",
-            "french": "Roigada"
+            "english": "Slowking"
         },
         "type": [
             "Water",
@@ -4072,10 +3475,7 @@ const pokemon = [
     {
         "id": 200,
         "name": {
-            "english": "Misdreavus",
-            "japanese": "ムウマ",
-            "chinese": "梦妖",
-            "french": "Feuforêve"
+            "english": "Misdreavus"
         },
         "type": [
             "Ghost"
@@ -4092,10 +3492,7 @@ const pokemon = [
     {
         "id": 201,
         "name": {
-            "english": "Unown",
-            "japanese": "アンノーン",
-            "chinese": "未知图腾",
-            "french": "Zarbi"
+            "english": "Unown"
         },
         "type": [
             "Psychic"
@@ -4112,10 +3509,7 @@ const pokemon = [
     {
         "id": 202,
         "name": {
-            "english": "Wobbuffet",
-            "japanese": "ソーナンス",
-            "chinese": "果然翁",
-            "french": "Qulbutoké"
+            "english": "Wobbuffet"
         },
         "type": [
             "Psychic"
@@ -4132,10 +3526,7 @@ const pokemon = [
     {
         "id": 203,
         "name": {
-            "english": "Girafarig",
-            "japanese": "キリンリキ",
-            "chinese": "麒麟奇",
-            "french": "Girafarig"
+            "english": "Girafarig"
         },
         "type": [
             "Normal",
@@ -4153,10 +3544,7 @@ const pokemon = [
     {
         "id": 204,
         "name": {
-            "english": "Pineco",
-            "japanese": "クヌギダマ",
-            "chinese": "榛果球",
-            "french": "Pomdepik"
+            "english": "Pineco"
         },
         "type": [
             "Bug"
@@ -4173,10 +3561,7 @@ const pokemon = [
     {
         "id": 205,
         "name": {
-            "english": "Forretress",
-            "japanese": "フォレトス",
-            "chinese": "佛烈托斯",
-            "french": "Foretress"
+            "english": "Forretress"
         },
         "type": [
             "Bug",
@@ -4194,10 +3579,7 @@ const pokemon = [
     {
         "id": 206,
         "name": {
-            "english": "Dunsparce",
-            "japanese": "ノコッチ",
-            "chinese": "土龙弟弟",
-            "french": "Insolourdo"
+            "english": "Dunsparce"
         },
         "type": [
             "Normal"
@@ -4214,10 +3596,7 @@ const pokemon = [
     {
         "id": 207,
         "name": {
-            "english": "Gligar",
-            "japanese": "グライガー",
-            "chinese": "天蝎",
-            "french": "Scorplane"
+            "english": "Gligar"
         },
         "type": [
             "Ground",
@@ -4235,10 +3614,7 @@ const pokemon = [
     {
         "id": 208,
         "name": {
-            "english": "Steelix",
-            "japanese": "ハガネール",
-            "chinese": "大钢蛇",
-            "french": "Steelix"
+            "english": "Steelix"
         },
         "type": [
             "Steel",
@@ -4256,10 +3632,7 @@ const pokemon = [
     {
         "id": 209,
         "name": {
-            "english": "Snubbull",
-            "japanese": "ブルー",
-            "chinese": "布鲁",
-            "french": "Snubbull"
+            "english": "Snubbull"
         },
         "type": [
             "Fairy"
@@ -4276,10 +3649,7 @@ const pokemon = [
     {
         "id": 210,
         "name": {
-            "english": "Granbull",
-            "japanese": "グランブル",
-            "chinese": "布鲁皇",
-            "french": "Granbull"
+            "english": "Granbull"
         },
         "type": [
             "Fairy"
@@ -4296,10 +3666,7 @@ const pokemon = [
     {
         "id": 211,
         "name": {
-            "english": "Qwilfish",
-            "japanese": "ハリーセン",
-            "chinese": "千针鱼",
-            "french": "Qwilfish"
+            "english": "Qwilfish"
         },
         "type": [
             "Water",
@@ -4317,10 +3684,7 @@ const pokemon = [
     {
         "id": 212,
         "name": {
-            "english": "Scizor",
-            "japanese": "ハッサム",
-            "chinese": "巨钳螳螂",
-            "french": "Cizayox"
+            "english": "Scizor"
         },
         "type": [
             "Bug",
@@ -4338,10 +3702,7 @@ const pokemon = [
     {
         "id": 213,
         "name": {
-            "english": "Shuckle",
-            "japanese": "ツボツボ",
-            "chinese": "壶壶",
-            "french": "Caratroc"
+            "english": "Shuckle"
         },
         "type": [
             "Bug",
@@ -4359,10 +3720,7 @@ const pokemon = [
     {
         "id": 214,
         "name": {
-            "english": "Heracross",
-            "japanese": "ヘラクロス",
-            "chinese": "赫拉克罗斯",
-            "french": "Scarhino"
+            "english": "Heracross"
         },
         "type": [
             "Bug",
@@ -4380,10 +3738,7 @@ const pokemon = [
     {
         "id": 215,
         "name": {
-            "english": "Sneasel",
-            "japanese": "ニューラ",
-            "chinese": "狃拉",
-            "french": "Farfuret"
+            "english": "Sneasel"
         },
         "type": [
             "Dark",
@@ -4401,10 +3756,7 @@ const pokemon = [
     {
         "id": 216,
         "name": {
-            "english": "Teddiursa",
-            "japanese": "ヒメグマ",
-            "chinese": "熊宝宝",
-            "french": "Teddiursa"
+            "english": "Teddiursa"
         },
         "type": [
             "Normal"
@@ -4421,10 +3773,7 @@ const pokemon = [
     {
         "id": 217,
         "name": {
-            "english": "Ursaring",
-            "japanese": "リングマ",
-            "chinese": "圈圈熊",
-            "french": "Ursaring"
+            "english": "Ursaring"
         },
         "type": [
             "Normal"
@@ -4441,10 +3790,7 @@ const pokemon = [
     {
         "id": 218,
         "name": {
-            "english": "Slugma",
-            "japanese": "マグマッグ",
-            "chinese": "熔岩虫",
-            "french": "Limagma"
+            "english": "Slugma"
         },
         "type": [
             "Fire"
@@ -4461,10 +3807,7 @@ const pokemon = [
     {
         "id": 219,
         "name": {
-            "english": "Magcargo",
-            "japanese": "マグカルゴ",
-            "chinese": "熔岩蜗牛",
-            "french": "Volcaropod"
+            "english": "Magcargo"
         },
         "type": [
             "Fire",
@@ -4482,10 +3825,7 @@ const pokemon = [
     {
         "id": 220,
         "name": {
-            "english": "Swinub",
-            "japanese": "ウリムー",
-            "chinese": "小山猪",
-            "french": "Marcacrin"
+            "english": "Swinub"
         },
         "type": [
             "Ice",
@@ -4503,10 +3843,7 @@ const pokemon = [
     {
         "id": 221,
         "name": {
-            "english": "Piloswine",
-            "japanese": "イノムー",
-            "chinese": "长毛猪",
-            "french": "Cochignon"
+            "english": "Piloswine"
         },
         "type": [
             "Ice",
@@ -4524,10 +3861,7 @@ const pokemon = [
     {
         "id": 222,
         "name": {
-            "english": "Corsola",
-            "japanese": "サニーゴ",
-            "chinese": "太阳珊瑚",
-            "french": "Corayon"
+            "english": "Corsola"
         },
         "type": [
             "Water",
@@ -4545,10 +3879,7 @@ const pokemon = [
     {
         "id": 223,
         "name": {
-            "english": "Remoraid",
-            "japanese": "テッポウオ",
-            "chinese": "铁炮鱼",
-            "french": "Rémoraid"
+            "english": "Remoraid"
         },
         "type": [
             "Water"
@@ -4565,10 +3896,7 @@ const pokemon = [
     {
         "id": 224,
         "name": {
-            "english": "Octillery",
-            "japanese": "オクタン",
-            "chinese": "章鱼桶",
-            "french": "Octillery"
+            "english": "Octillery"
         },
         "type": [
             "Water"
@@ -4585,10 +3913,7 @@ const pokemon = [
     {
         "id": 225,
         "name": {
-            "english": "Delibird",
-            "japanese": "デリバード",
-            "chinese": "信使鸟",
-            "french": "Cadoizo"
+            "english": "Delibird"
         },
         "type": [
             "Ice",
@@ -4606,10 +3931,7 @@ const pokemon = [
     {
         "id": 226,
         "name": {
-            "english": "Mantine",
-            "japanese": "マンタイン",
-            "chinese": "巨翅飞鱼",
-            "french": "Démanta"
+            "english": "Mantine"
         },
         "type": [
             "Water",
@@ -4627,10 +3949,7 @@ const pokemon = [
     {
         "id": 227,
         "name": {
-            "english": "Skarmory",
-            "japanese": "エアームド",
-            "chinese": "盔甲鸟",
-            "french": "Airmure"
+            "english": "Skarmory"
         },
         "type": [
             "Steel",
@@ -4648,10 +3967,7 @@ const pokemon = [
     {
         "id": 228,
         "name": {
-            "english": "Houndour",
-            "japanese": "デルビル",
-            "chinese": "戴鲁比",
-            "french": "Malosse"
+            "english": "Houndour"
         },
         "type": [
             "Dark",
@@ -4669,10 +3985,7 @@ const pokemon = [
     {
         "id": 229,
         "name": {
-            "english": "Houndoom",
-            "japanese": "ヘルガー",
-            "chinese": "黑鲁加",
-            "french": "Démolosse"
+            "english": "Houndoom"
         },
         "type": [
             "Dark",
@@ -4690,10 +4003,7 @@ const pokemon = [
     {
         "id": 230,
         "name": {
-            "english": "Kingdra",
-            "japanese": "キングドラ",
-            "chinese": "刺龙王",
-            "french": "Hyporoi"
+            "english": "Kingdra"
         },
         "type": [
             "Water",
@@ -4711,10 +4021,7 @@ const pokemon = [
     {
         "id": 231,
         "name": {
-            "english": "Phanpy",
-            "japanese": "ゴマゾウ",
-            "chinese": "小小象",
-            "french": "Phanpy"
+            "english": "Phanpy"
         },
         "type": [
             "Ground"
@@ -4731,10 +4038,7 @@ const pokemon = [
     {
         "id": 232,
         "name": {
-            "english": "Donphan",
-            "japanese": "ドンファン",
-            "chinese": "顿甲",
-            "french": "Donphan"
+            "english": "Donphan"
         },
         "type": [
             "Ground"
@@ -4751,10 +4055,7 @@ const pokemon = [
     {
         "id": 233,
         "name": {
-            "english": "Porygon2",
-            "japanese": "ポリゴン２",
-            "chinese": "多边兽Ⅱ",
-            "french": "Porygon2"
+            "english": "Porygon2"
         },
         "type": [
             "Normal"
@@ -4771,10 +4072,7 @@ const pokemon = [
     {
         "id": 234,
         "name": {
-            "english": "Stantler",
-            "japanese": "オドシシ",
-            "chinese": "惊角鹿",
-            "french": "Cerfrousse"
+            "english": "Stantler"
         },
         "type": [
             "Normal"
@@ -4791,10 +4089,7 @@ const pokemon = [
     {
         "id": 235,
         "name": {
-            "english": "Smeargle",
-            "japanese": "ドーブル",
-            "chinese": "图图犬",
-            "french": "Queulorior"
+            "english": "Smeargle"
         },
         "type": [
             "Normal"
@@ -4811,10 +4106,7 @@ const pokemon = [
     {
         "id": 236,
         "name": {
-            "english": "Tyrogue",
-            "japanese": "バルキー",
-            "chinese": "无畏小子",
-            "french": "Debugant"
+            "english": "Tyrogue"
         },
         "type": [
             "Fighting"
@@ -4831,10 +4123,7 @@ const pokemon = [
     {
         "id": 237,
         "name": {
-            "english": "Hitmontop",
-            "japanese": "カポエラー",
-            "chinese": "战舞郎",
-            "french": "Kapoera"
+            "english": "Hitmontop"
         },
         "type": [
             "Fighting"
@@ -4851,10 +4140,7 @@ const pokemon = [
     {
         "id": 238,
         "name": {
-            "english": "Smoochum",
-            "japanese": "ムチュール",
-            "chinese": "迷唇娃",
-            "french": "Lippouti"
+            "english": "Smoochum"
         },
         "type": [
             "Ice",
@@ -4872,10 +4158,7 @@ const pokemon = [
     {
         "id": 239,
         "name": {
-            "english": "Elekid",
-            "japanese": "エレキッド",
-            "chinese": "电击怪",
-            "french": "Élekid"
+            "english": "Elekid"
         },
         "type": [
             "Electric"
@@ -4892,10 +4175,7 @@ const pokemon = [
     {
         "id": 240,
         "name": {
-            "english": "Magby",
-            "japanese": "ブビィ",
-            "chinese": "鸭嘴宝宝",
-            "french": "Magby"
+            "english": "Magby"
         },
         "type": [
             "Fire"
@@ -4912,10 +4192,7 @@ const pokemon = [
     {
         "id": 241,
         "name": {
-            "english": "Miltank",
-            "japanese": "ミルタンク",
-            "chinese": "大奶罐",
-            "french": "Écrémeuh"
+            "english": "Miltank"
         },
         "type": [
             "Normal"
@@ -4932,10 +4209,7 @@ const pokemon = [
     {
         "id": 242,
         "name": {
-            "english": "Blissey",
-            "japanese": "ハピナス",
-            "chinese": "幸福蛋",
-            "french": "Leuphorie"
+            "english": "Blissey"
         },
         "type": [
             "Normal"
@@ -4952,10 +4226,7 @@ const pokemon = [
     {
         "id": 243,
         "name": {
-            "english": "Raikou",
-            "japanese": "ライコウ",
-            "chinese": "雷公",
-            "french": "Raikou"
+            "english": "Raikou"
         },
         "type": [
             "Electric"
@@ -4972,10 +4243,7 @@ const pokemon = [
     {
         "id": 244,
         "name": {
-            "english": "Entei",
-            "japanese": "エンテイ",
-            "chinese": "炎帝",
-            "french": "Entei"
+            "english": "Entei"
         },
         "type": [
             "Fire"
@@ -4992,10 +4260,7 @@ const pokemon = [
     {
         "id": 245,
         "name": {
-            "english": "Suicune",
-            "japanese": "スイクン",
-            "chinese": "水君",
-            "french": "Suicune"
+            "english": "Suicune"
         },
         "type": [
             "Water"
@@ -5012,10 +4277,7 @@ const pokemon = [
     {
         "id": 246,
         "name": {
-            "english": "Larvitar",
-            "japanese": "ヨーギラス",
-            "chinese": "幼基拉斯",
-            "french": "Embrylex"
+            "english": "Larvitar"
         },
         "type": [
             "Rock",
@@ -5033,10 +4295,7 @@ const pokemon = [
     {
         "id": 247,
         "name": {
-            "english": "Pupitar",
-            "japanese": "サナギラス",
-            "chinese": "沙基拉斯",
-            "french": "Ymphect"
+            "english": "Pupitar"
         },
         "type": [
             "Rock",
@@ -5054,10 +4313,7 @@ const pokemon = [
     {
         "id": 248,
         "name": {
-            "english": "Tyranitar",
-            "japanese": "バンギラス",
-            "chinese": "班基拉斯",
-            "french": "Tyranocif"
+            "english": "Tyranitar"
         },
         "type": [
             "Rock",
@@ -5075,10 +4331,7 @@ const pokemon = [
     {
         "id": 249,
         "name": {
-            "english": "Lugia",
-            "japanese": "ルギア",
-            "chinese": "洛奇亚",
-            "french": "Lugia"
+            "english": "Lugia"
         },
         "type": [
             "Psychic",
@@ -5096,10 +4349,7 @@ const pokemon = [
     {
         "id": 250,
         "name": {
-            "english": "Ho-Oh",
-            "japanese": "ホウオウ",
-            "chinese": "凤王",
-            "french": "Ho-Oh"
+            "english": "Ho-Oh"
         },
         "type": [
             "Fire",
@@ -5117,10 +4367,7 @@ const pokemon = [
     {
         "id": 251,
         "name": {
-            "english": "Celebi",
-            "japanese": "セレビィ",
-            "chinese": "时拉比",
-            "french": "Celebi"
+            "english": "Celebi"
         },
         "type": [
             "Psychic",
@@ -5138,10 +4385,7 @@ const pokemon = [
     {
         "id": 252,
         "name": {
-            "english": "Treecko",
-            "japanese": "キモリ",
-            "chinese": "木守宫",
-            "french": "Arcko"
+            "english": "Treecko"
         },
         "type": [
             "Grass"
@@ -5158,10 +4402,7 @@ const pokemon = [
     {
         "id": 253,
         "name": {
-            "english": "Grovyle",
-            "japanese": "ジュプトル",
-            "chinese": "森林蜥蜴",
-            "french": "Massko"
+            "english": "Grovyle"
         },
         "type": [
             "Grass"
@@ -5178,10 +4419,7 @@ const pokemon = [
     {
         "id": 254,
         "name": {
-            "english": "Sceptile",
-            "japanese": "ジュカイン",
-            "chinese": "蜥蜴王",
-            "french": "Jungko"
+            "english": "Sceptile"
         },
         "type": [
             "Grass"
@@ -5198,10 +4436,7 @@ const pokemon = [
     {
         "id": 255,
         "name": {
-            "english": "Torchic",
-            "japanese": "アチャモ",
-            "chinese": "火稚鸡",
-            "french": "Poussifeu"
+            "english": "Torchic"
         },
         "type": [
             "Fire"
@@ -5218,10 +4453,7 @@ const pokemon = [
     {
         "id": 256,
         "name": {
-            "english": "Combusken",
-            "japanese": "ワカシャモ",
-            "chinese": "力壮鸡",
-            "french": "Galifeu"
+            "english": "Combusken"
         },
         "type": [
             "Fire",
@@ -5239,10 +4471,7 @@ const pokemon = [
     {
         "id": 257,
         "name": {
-            "english": "Blaziken",
-            "japanese": "バシャーモ",
-            "chinese": "火焰鸡",
-            "french": "Braségali"
+            "english": "Blaziken"
         },
         "type": [
             "Fire",
@@ -5260,10 +4489,7 @@ const pokemon = [
     {
         "id": 258,
         "name": {
-            "english": "Mudkip",
-            "japanese": "ミズゴロウ",
-            "chinese": "水跃鱼",
-            "french": "Gobou"
+            "english": "Mudkip"
         },
         "type": [
             "Water"
@@ -5280,10 +4506,7 @@ const pokemon = [
     {
         "id": 259,
         "name": {
-            "english": "Marshtomp",
-            "japanese": "ヌマクロー",
-            "chinese": "沼跃鱼",
-            "french": "Flobio"
+            "english": "Marshtomp"
         },
         "type": [
             "Water",
@@ -5301,10 +4524,7 @@ const pokemon = [
     {
         "id": 260,
         "name": {
-            "english": "Swampert",
-            "japanese": "ラグラージ",
-            "chinese": "巨沼怪",
-            "french": "Laggron"
+            "english": "Swampert"
         },
         "type": [
             "Water",
@@ -5322,10 +4542,7 @@ const pokemon = [
     {
         "id": 261,
         "name": {
-            "english": "Poochyena",
-            "japanese": "ポチエナ",
-            "chinese": "土狼犬",
-            "french": "Medhyèna"
+            "english": "Poochyena"
         },
         "type": [
             "Dark"
@@ -5342,10 +4559,7 @@ const pokemon = [
     {
         "id": 262,
         "name": {
-            "english": "Mightyena",
-            "japanese": "グラエナ",
-            "chinese": "大狼犬",
-            "french": "Grahyèna"
+            "english": "Mightyena"
         },
         "type": [
             "Dark"
@@ -5362,10 +4576,7 @@ const pokemon = [
     {
         "id": 263,
         "name": {
-            "english": "Zigzagoon",
-            "japanese": "ジグザグマ",
-            "chinese": "蛇纹熊",
-            "french": "Zigzaton"
+            "english": "Zigzagoon"
         },
         "type": [
             "Normal"
@@ -5382,10 +4593,7 @@ const pokemon = [
     {
         "id": 264,
         "name": {
-            "english": "Linoone",
-            "japanese": "マッスグマ",
-            "chinese": "直冲熊",
-            "french": "Linéon"
+            "english": "Linoone"
         },
         "type": [
             "Normal"
@@ -5402,10 +4610,7 @@ const pokemon = [
     {
         "id": 265,
         "name": {
-            "english": "Wurmple",
-            "japanese": "ケムッソ",
-            "chinese": "刺尾虫",
-            "french": "Chenipotte"
+            "english": "Wurmple"
         },
         "type": [
             "Bug"
@@ -5422,10 +4627,7 @@ const pokemon = [
     {
         "id": 266,
         "name": {
-            "english": "Silcoon",
-            "japanese": "カラサリス",
-            "chinese": "甲壳茧",
-            "french": "Armulys"
+            "english": "Silcoon"
         },
         "type": [
             "Bug"
@@ -5442,10 +4644,7 @@ const pokemon = [
     {
         "id": 267,
         "name": {
-            "english": "Beautifly",
-            "japanese": "アゲハント",
-            "chinese": "狩猎凤蝶",
-            "french": "Charmillon"
+            "english": "Beautifly"
         },
         "type": [
             "Bug",
@@ -5463,10 +4662,7 @@ const pokemon = [
     {
         "id": 268,
         "name": {
-            "english": "Cascoon",
-            "japanese": "マユルド",
-            "chinese": "盾甲茧",
-            "french": "Blindalys"
+            "english": "Cascoon"
         },
         "type": [
             "Bug"
@@ -5483,10 +4679,7 @@ const pokemon = [
     {
         "id": 269,
         "name": {
-            "english": "Dustox",
-            "japanese": "ドクケイル",
-            "chinese": "毒粉蛾",
-            "french": "Papinox"
+            "english": "Dustox"
         },
         "type": [
             "Bug",
@@ -5504,10 +4697,7 @@ const pokemon = [
     {
         "id": 270,
         "name": {
-            "english": "Lotad",
-            "japanese": "ハスボー",
-            "chinese": "莲叶童子",
-            "french": "Nénupiot"
+            "english": "Lotad"
         },
         "type": [
             "Water",
@@ -5525,10 +4715,7 @@ const pokemon = [
     {
         "id": 271,
         "name": {
-            "english": "Lombre",
-            "japanese": "ハスブレロ",
-            "chinese": "莲帽小童",
-            "french": "Lombre"
+            "english": "Lombre"
         },
         "type": [
             "Water",
@@ -5546,10 +4733,7 @@ const pokemon = [
     {
         "id": 272,
         "name": {
-            "english": "Ludicolo",
-            "japanese": "ルンパッパ",
-            "chinese": "乐天河童",
-            "french": "Ludicolo"
+            "english": "Ludicolo"
         },
         "type": [
             "Water",
@@ -5567,10 +4751,7 @@ const pokemon = [
     {
         "id": 273,
         "name": {
-            "english": "Seedot",
-            "japanese": "タネボー",
-            "chinese": "橡实果",
-            "french": "Grainipiot"
+            "english": "Seedot"
         },
         "type": [
             "Grass"
@@ -5587,10 +4768,7 @@ const pokemon = [
     {
         "id": 274,
         "name": {
-            "english": "Nuzleaf",
-            "japanese": "コノハナ",
-            "chinese": "长鼻叶",
-            "french": "Pifeuil"
+            "english": "Nuzleaf"
         },
         "type": [
             "Grass",
@@ -5608,10 +4786,7 @@ const pokemon = [
     {
         "id": 275,
         "name": {
-            "english": "Shiftry",
-            "japanese": "ダーテング",
-            "chinese": "狡猾天狗",
-            "french": "Tengalice"
+            "english": "Shiftry"
         },
         "type": [
             "Grass",
@@ -5629,10 +4804,7 @@ const pokemon = [
     {
         "id": 276,
         "name": {
-            "english": "Taillow",
-            "japanese": "スバメ",
-            "chinese": "傲骨燕",
-            "french": "Nirondelle"
+            "english": "Taillow"
         },
         "type": [
             "Normal",
@@ -5650,10 +4822,7 @@ const pokemon = [
     {
         "id": 277,
         "name": {
-            "english": "Swellow",
-            "japanese": "オオスバメ",
-            "chinese": "大王燕",
-            "french": "Hélédelle"
+            "english": "Swellow"
         },
         "type": [
             "Normal",
@@ -5671,10 +4840,7 @@ const pokemon = [
     {
         "id": 278,
         "name": {
-            "english": "Wingull",
-            "japanese": "キャモメ",
-            "chinese": "长翅鸥",
-            "french": "Goélise"
+            "english": "Wingull"
         },
         "type": [
             "Water",
@@ -5692,10 +4858,7 @@ const pokemon = [
     {
         "id": 279,
         "name": {
-            "english": "Pelipper",
-            "japanese": "ペリッパー",
-            "chinese": "大嘴鸥",
-            "french": "Bekipan"
+            "english": "Pelipper"
         },
         "type": [
             "Water",
@@ -5713,10 +4876,7 @@ const pokemon = [
     {
         "id": 280,
         "name": {
-            "english": "Ralts",
-            "japanese": "ラルトス",
-            "chinese": "拉鲁拉丝",
-            "french": "Tarsal"
+            "english": "Ralts"
         },
         "type": [
             "Psychic",
@@ -5734,10 +4894,7 @@ const pokemon = [
     {
         "id": 281,
         "name": {
-            "english": "Kirlia",
-            "japanese": "キルリア",
-            "chinese": "奇鲁莉安",
-            "french": "Kirlia"
+            "english": "Kirlia"
         },
         "type": [
             "Psychic",
@@ -5755,10 +4912,7 @@ const pokemon = [
     {
         "id": 282,
         "name": {
-            "english": "Gardevoir",
-            "japanese": "サーナイト",
-            "chinese": "沙奈朵",
-            "french": "Gardevoir"
+            "english": "Gardevoir"
         },
         "type": [
             "Psychic",
@@ -5776,10 +4930,7 @@ const pokemon = [
     {
         "id": 283,
         "name": {
-            "english": "Surskit",
-            "japanese": "アメタマ",
-            "chinese": "溜溜糖球",
-            "french": "Arakdo"
+            "english": "Surskit"
         },
         "type": [
             "Bug",
@@ -5797,10 +4948,7 @@ const pokemon = [
     {
         "id": 284,
         "name": {
-            "english": "Masquerain",
-            "japanese": "アメモース",
-            "chinese": "雨翅蛾",
-            "french": "Maskadra"
+            "english": "Masquerain"
         },
         "type": [
             "Bug",
@@ -5818,10 +4966,7 @@ const pokemon = [
     {
         "id": 285,
         "name": {
-            "english": "Shroomish",
-            "japanese": "キノココ",
-            "chinese": "蘑蘑菇",
-            "french": "Balignon"
+            "english": "Shroomish"
         },
         "type": [
             "Grass"
@@ -5838,10 +4983,7 @@ const pokemon = [
     {
         "id": 286,
         "name": {
-            "english": "Breloom",
-            "japanese": "キノガッサ",
-            "chinese": "斗笠菇",
-            "french": "Chapignon"
+            "english": "Breloom"
         },
         "type": [
             "Grass",
@@ -5859,10 +5001,7 @@ const pokemon = [
     {
         "id": 287,
         "name": {
-            "english": "Slakoth",
-            "japanese": "ナマケロ",
-            "chinese": "懒人獭",
-            "french": "Parecool"
+            "english": "Slakoth"
         },
         "type": [
             "Normal"
@@ -5879,10 +5018,7 @@ const pokemon = [
     {
         "id": 288,
         "name": {
-            "english": "Vigoroth",
-            "japanese": "ヤルキモノ",
-            "chinese": "过动猿",
-            "french": "Vigoroth"
+            "english": "Vigoroth"
         },
         "type": [
             "Normal"
@@ -5899,10 +5035,7 @@ const pokemon = [
     {
         "id": 289,
         "name": {
-            "english": "Slaking",
-            "japanese": "ケッキング",
-            "chinese": "请假王",
-            "french": "Monaflèmit"
+            "english": "Slaking"
         },
         "type": [
             "Normal"
@@ -5919,10 +5052,7 @@ const pokemon = [
     {
         "id": 290,
         "name": {
-            "english": "Nincada",
-            "japanese": "ツチニン",
-            "chinese": "土居忍士",
-            "french": "Ningale"
+            "english": "Nincada"
         },
         "type": [
             "Bug",
@@ -5940,10 +5070,7 @@ const pokemon = [
     {
         "id": 291,
         "name": {
-            "english": "Ninjask",
-            "japanese": "テッカニン",
-            "chinese": "铁面忍者",
-            "french": "Ninjask"
+            "english": "Ninjask"
         },
         "type": [
             "Bug",
@@ -5961,10 +5088,7 @@ const pokemon = [
     {
         "id": 292,
         "name": {
-            "english": "Shedinja",
-            "japanese": "ヌケニン",
-            "chinese": "脱壳忍者",
-            "french": "Munja"
+            "english": "Shedinja"
         },
         "type": [
             "Bug",
@@ -5982,10 +5106,7 @@ const pokemon = [
     {
         "id": 293,
         "name": {
-            "english": "Whismur",
-            "japanese": "ゴニョニョ",
-            "chinese": "咕妞妞",
-            "french": "Chuchmur"
+            "english": "Whismur"
         },
         "type": [
             "Normal"
@@ -6002,10 +5123,7 @@ const pokemon = [
     {
         "id": 294,
         "name": {
-            "english": "Loudred",
-            "japanese": "ドゴーム",
-            "chinese": "吼爆弹",
-            "french": "Ramboum"
+            "english": "Loudred"
         },
         "type": [
             "Normal"
@@ -6022,10 +5140,7 @@ const pokemon = [
     {
         "id": 295,
         "name": {
-            "english": "Exploud",
-            "japanese": "バクオング",
-            "chinese": "爆音怪",
-            "french": "Brouhabam"
+            "english": "Exploud"
         },
         "type": [
             "Normal"
@@ -6042,10 +5157,7 @@ const pokemon = [
     {
         "id": 296,
         "name": {
-            "english": "Makuhita",
-            "japanese": "マクノシタ",
-            "chinese": "幕下力士",
-            "french": "Makuhita"
+            "english": "Makuhita"
         },
         "type": [
             "Fighting"
@@ -6062,10 +5174,7 @@ const pokemon = [
     {
         "id": 297,
         "name": {
-            "english": "Hariyama",
-            "japanese": "ハリテヤマ",
-            "chinese": "铁掌力士",
-            "french": "Hariyama"
+            "english": "Hariyama"
         },
         "type": [
             "Fighting"
@@ -6082,10 +5191,7 @@ const pokemon = [
     {
         "id": 298,
         "name": {
-            "english": "Azurill",
-            "japanese": "ルリリ",
-            "chinese": "露力丽",
-            "french": "Azurill"
+            "english": "Azurill"
         },
         "type": [
             "Normal",
@@ -6103,10 +5209,7 @@ const pokemon = [
     {
         "id": 299,
         "name": {
-            "english": "Nosepass",
-            "japanese": "ノズパス",
-            "chinese": "朝北鼻",
-            "french": "Tarinor"
+            "english": "Nosepass"
         },
         "type": [
             "Rock"
@@ -6123,10 +5226,7 @@ const pokemon = [
     {
         "id": 300,
         "name": {
-            "english": "Skitty",
-            "japanese": "エネコ",
-            "chinese": "向尾喵",
-            "french": "Skitty"
+            "english": "Skitty"
         },
         "type": [
             "Normal"
@@ -6143,10 +5243,7 @@ const pokemon = [
     {
         "id": 301,
         "name": {
-            "english": "Delcatty",
-            "japanese": "エネコロロ",
-            "chinese": "优雅猫",
-            "french": "Delcatty"
+            "english": "Delcatty"
         },
         "type": [
             "Normal"
@@ -6163,10 +5260,7 @@ const pokemon = [
     {
         "id": 302,
         "name": {
-            "english": "Sableye",
-            "japanese": "ヤミラミ",
-            "chinese": "勾魂眼",
-            "french": "Ténéfix"
+            "english": "Sableye"
         },
         "type": [
             "Dark",
@@ -6184,10 +5278,7 @@ const pokemon = [
     {
         "id": 303,
         "name": {
-            "english": "Mawile",
-            "japanese": "クチート",
-            "chinese": "大嘴娃",
-            "french": "Mysdibule"
+            "english": "Mawile"
         },
         "type": [
             "Steel",
@@ -6205,10 +5296,7 @@ const pokemon = [
     {
         "id": 304,
         "name": {
-            "english": "Aron",
-            "japanese": "ココドラ",
-            "chinese": "可可多拉",
-            "french": "Galekid"
+            "english": "Aron"
         },
         "type": [
             "Steel",
@@ -6226,10 +5314,7 @@ const pokemon = [
     {
         "id": 305,
         "name": {
-            "english": "Lairon",
-            "japanese": "コドラ",
-            "chinese": "可多拉",
-            "french": "Galegon"
+            "english": "Lairon"
         },
         "type": [
             "Steel",
@@ -6247,10 +5332,7 @@ const pokemon = [
     {
         "id": 306,
         "name": {
-            "english": "Aggron",
-            "japanese": "ボスゴドラ",
-            "chinese": "波士可多拉",
-            "french": "Galeking"
+            "english": "Aggron"
         },
         "type": [
             "Steel",
@@ -6268,10 +5350,7 @@ const pokemon = [
     {
         "id": 307,
         "name": {
-            "english": "Meditite",
-            "japanese": "アサナン",
-            "chinese": "玛沙那",
-            "french": "Méditikka"
+            "english": "Meditite"
         },
         "type": [
             "Fighting",
@@ -6289,10 +5368,7 @@ const pokemon = [
     {
         "id": 308,
         "name": {
-            "english": "Medicham",
-            "japanese": "チャーレム",
-            "chinese": "恰雷姆",
-            "french": "Charmina"
+            "english": "Medicham"
         },
         "type": [
             "Fighting",
@@ -6310,10 +5386,7 @@ const pokemon = [
     {
         "id": 309,
         "name": {
-            "english": "Electrike",
-            "japanese": "ラクライ",
-            "chinese": "落雷兽",
-            "french": "Dynavolt"
+            "english": "Electrike"
         },
         "type": [
             "Electric"
@@ -6330,10 +5403,7 @@ const pokemon = [
     {
         "id": 310,
         "name": {
-            "english": "Manectric",
-            "japanese": "ライボルト",
-            "chinese": "雷电兽",
-            "french": "Élecsprint"
+            "english": "Manectric"
         },
         "type": [
             "Electric"
@@ -6350,10 +5420,7 @@ const pokemon = [
     {
         "id": 311,
         "name": {
-            "english": "Plusle",
-            "japanese": "プラスル",
-            "chinese": "正电拍拍",
-            "french": "Posipi"
+            "english": "Plusle"
         },
         "type": [
             "Electric"
@@ -6370,10 +5437,7 @@ const pokemon = [
     {
         "id": 312,
         "name": {
-            "english": "Minun",
-            "japanese": "マイナン",
-            "chinese": "负电拍拍",
-            "french": "Négapi"
+            "english": "Minun"
         },
         "type": [
             "Electric"
@@ -6390,10 +5454,7 @@ const pokemon = [
     {
         "id": 313,
         "name": {
-            "english": "Volbeat",
-            "japanese": "バルビート",
-            "chinese": "电萤虫",
-            "french": "Muciole"
+            "english": "Volbeat"
         },
         "type": [
             "Bug"
@@ -6410,10 +5471,7 @@ const pokemon = [
     {
         "id": 314,
         "name": {
-            "english": "Illumise",
-            "japanese": "イルミーゼ",
-            "chinese": "甜甜萤",
-            "french": "Lumivole"
+            "english": "Illumise"
         },
         "type": [
             "Bug"
@@ -6430,10 +5488,7 @@ const pokemon = [
     {
         "id": 315,
         "name": {
-            "english": "Roselia",
-            "japanese": "ロゼリア",
-            "chinese": "毒蔷薇",
-            "french": "Rosélia"
+            "english": "Roselia"
         },
         "type": [
             "Grass",
@@ -6451,10 +5506,7 @@ const pokemon = [
     {
         "id": 316,
         "name": {
-            "english": "Gulpin",
-            "japanese": "ゴクリン",
-            "chinese": "溶食兽",
-            "french": "Gloupti"
+            "english": "Gulpin"
         },
         "type": [
             "Poison"
@@ -6471,10 +5523,7 @@ const pokemon = [
     {
         "id": 317,
         "name": {
-            "english": "Swalot",
-            "japanese": "マルノーム",
-            "chinese": "吞食兽",
-            "french": "Avaltout"
+            "english": "Swalot"
         },
         "type": [
             "Poison"
@@ -6491,10 +5540,7 @@ const pokemon = [
     {
         "id": 318,
         "name": {
-            "english": "Carvanha",
-            "japanese": "キバニア",
-            "chinese": "利牙鱼",
-            "french": "Carvanha"
+            "english": "Carvanha"
         },
         "type": [
             "Water",
@@ -6512,10 +5558,7 @@ const pokemon = [
     {
         "id": 319,
         "name": {
-            "english": "Sharpedo",
-            "japanese": "サメハダー",
-            "chinese": "巨牙鲨",
-            "french": "Sharpedo"
+            "english": "Sharpedo"
         },
         "type": [
             "Water",
@@ -6533,10 +5576,7 @@ const pokemon = [
     {
         "id": 320,
         "name": {
-            "english": "Wailmer",
-            "japanese": "ホエルコ",
-            "chinese": "吼吼鲸",
-            "french": "Wailmer"
+            "english": "Wailmer"
         },
         "type": [
             "Water"
@@ -6553,10 +5593,7 @@ const pokemon = [
     {
         "id": 321,
         "name": {
-            "english": "Wailord",
-            "japanese": "ホエルオー",
-            "chinese": "吼鲸王",
-            "french": "Wailord"
+            "english": "Wailord"
         },
         "type": [
             "Water"
@@ -6573,10 +5610,7 @@ const pokemon = [
     {
         "id": 322,
         "name": {
-            "english": "Numel",
-            "japanese": "ドンメル",
-            "chinese": "呆火驼",
-            "french": "Chamallot"
+            "english": "Numel"
         },
         "type": [
             "Fire",
@@ -6594,10 +5628,7 @@ const pokemon = [
     {
         "id": 323,
         "name": {
-            "english": "Camerupt",
-            "japanese": "バクーダ",
-            "chinese": "喷火驼",
-            "french": "Camérupt"
+            "english": "Camerupt"
         },
         "type": [
             "Fire",
@@ -6615,10 +5646,7 @@ const pokemon = [
     {
         "id": 324,
         "name": {
-            "english": "Torkoal",
-            "japanese": "コータス",
-            "chinese": "煤炭龟",
-            "french": "Chartor"
+            "english": "Torkoal"
         },
         "type": [
             "Fire"
@@ -6635,10 +5663,7 @@ const pokemon = [
     {
         "id": 325,
         "name": {
-            "english": "Spoink",
-            "japanese": "バネブー",
-            "chinese": "跳跳猪",
-            "french": "Spoink"
+            "english": "Spoink"
         },
         "type": [
             "Psychic"
@@ -6655,10 +5680,7 @@ const pokemon = [
     {
         "id": 326,
         "name": {
-            "english": "Grumpig",
-            "japanese": "ブーピッグ",
-            "chinese": "噗噗猪",
-            "french": "Groret"
+            "english": "Grumpig"
         },
         "type": [
             "Psychic"
@@ -6675,10 +5697,7 @@ const pokemon = [
     {
         "id": 327,
         "name": {
-            "english": "Spinda",
-            "japanese": "パッチール",
-            "chinese": "晃晃斑",
-            "french": "Spinda"
+            "english": "Spinda"
         },
         "type": [
             "Normal"
@@ -6695,10 +5714,7 @@ const pokemon = [
     {
         "id": 328,
         "name": {
-            "english": "Trapinch",
-            "japanese": "ナックラー",
-            "chinese": "大颚蚁",
-            "french": "Kraknoix"
+            "english": "Trapinch"
         },
         "type": [
             "Ground"
@@ -6715,10 +5731,7 @@ const pokemon = [
     {
         "id": 329,
         "name": {
-            "english": "Vibrava",
-            "japanese": "ビブラーバ",
-            "chinese": "超音波幼虫",
-            "french": "Vibraninf"
+            "english": "Vibrava"
         },
         "type": [
             "Ground",
@@ -6736,10 +5749,7 @@ const pokemon = [
     {
         "id": 330,
         "name": {
-            "english": "Flygon",
-            "japanese": "フライゴン",
-            "chinese": "沙漠蜻蜓",
-            "french": "Libégon"
+            "english": "Flygon"
         },
         "type": [
             "Ground",
@@ -6757,10 +5767,7 @@ const pokemon = [
     {
         "id": 331,
         "name": {
-            "english": "Cacnea",
-            "japanese": "サボネア",
-            "chinese": "刺球仙人掌",
-            "french": "Cacnea"
+            "english": "Cacnea"
         },
         "type": [
             "Grass"
@@ -6777,10 +5784,7 @@ const pokemon = [
     {
         "id": 332,
         "name": {
-            "english": "Cacturne",
-            "japanese": "ノクタス",
-            "chinese": "梦歌仙人掌",
-            "french": "Cacturne"
+            "english": "Cacturne"
         },
         "type": [
             "Grass",
@@ -6798,10 +5802,7 @@ const pokemon = [
     {
         "id": 333,
         "name": {
-            "english": "Swablu",
-            "japanese": "チルット",
-            "chinese": "青绵鸟",
-            "french": "Tylton"
+            "english": "Swablu"
         },
         "type": [
             "Normal",
@@ -6819,10 +5820,7 @@ const pokemon = [
     {
         "id": 334,
         "name": {
-            "english": "Altaria",
-            "japanese": "チルタリス",
-            "chinese": "七夕青鸟",
-            "french": "Altaria"
+            "english": "Altaria"
         },
         "type": [
             "Dragon",
@@ -6840,10 +5838,7 @@ const pokemon = [
     {
         "id": 335,
         "name": {
-            "english": "Zangoose",
-            "japanese": "ザングース",
-            "chinese": "猫鼬斩",
-            "french": "Mangriff"
+            "english": "Zangoose"
         },
         "type": [
             "Normal"
@@ -6860,10 +5855,7 @@ const pokemon = [
     {
         "id": 336,
         "name": {
-            "english": "Seviper",
-            "japanese": "ハブネーク",
-            "chinese": "饭匙蛇",
-            "french": "Séviper"
+            "english": "Seviper"
         },
         "type": [
             "Poison"
@@ -6880,10 +5872,7 @@ const pokemon = [
     {
         "id": 337,
         "name": {
-            "english": "Lunatone",
-            "japanese": "ルナトーン",
-            "chinese": "月石",
-            "french": "Séléroc"
+            "english": "Lunatone"
         },
         "type": [
             "Rock",
@@ -6901,10 +5890,7 @@ const pokemon = [
     {
         "id": 338,
         "name": {
-            "english": "Solrock",
-            "japanese": "ソルロック",
-            "chinese": "太阳岩",
-            "french": "Solaroc"
+            "english": "Solrock"
         },
         "type": [
             "Rock",
@@ -6922,10 +5908,7 @@ const pokemon = [
     {
         "id": 339,
         "name": {
-            "english": "Barboach",
-            "japanese": "ドジョッチ",
-            "chinese": "泥泥鳅",
-            "french": "Barloche"
+            "english": "Barboach"
         },
         "type": [
             "Water",
@@ -6943,10 +5926,7 @@ const pokemon = [
     {
         "id": 340,
         "name": {
-            "english": "Whiscash",
-            "japanese": "ナマズン",
-            "chinese": "鲶鱼王",
-            "french": "Barbicha"
+            "english": "Whiscash"
         },
         "type": [
             "Water",
@@ -6964,10 +5944,7 @@ const pokemon = [
     {
         "id": 341,
         "name": {
-            "english": "Corphish",
-            "japanese": "ヘイガニ",
-            "chinese": "龙虾小兵",
-            "french": "Écrapince"
+            "english": "Corphish"
         },
         "type": [
             "Water"
@@ -6984,10 +5961,7 @@ const pokemon = [
     {
         "id": 342,
         "name": {
-            "english": "Crawdaunt",
-            "japanese": "シザリガー",
-            "chinese": "铁螯龙虾",
-            "french": "Colhomard"
+            "english": "Crawdaunt"
         },
         "type": [
             "Water",
@@ -7005,10 +5979,7 @@ const pokemon = [
     {
         "id": 343,
         "name": {
-            "english": "Baltoy",
-            "japanese": "ヤジロン",
-            "chinese": "天秤偶",
-            "french": "Balbuto"
+            "english": "Baltoy"
         },
         "type": [
             "Ground",
@@ -7026,10 +5997,7 @@ const pokemon = [
     {
         "id": 344,
         "name": {
-            "english": "Claydol",
-            "japanese": "ネンドール",
-            "chinese": "念力土偶",
-            "french": "Kaorine"
+            "english": "Claydol"
         },
         "type": [
             "Ground",
@@ -7047,10 +6015,7 @@ const pokemon = [
     {
         "id": 345,
         "name": {
-            "english": "Lileep",
-            "japanese": "リリーラ",
-            "chinese": "触手百合",
-            "french": "Lilia"
+            "english": "Lileep"
         },
         "type": [
             "Rock",
@@ -7068,10 +6033,7 @@ const pokemon = [
     {
         "id": 346,
         "name": {
-            "english": "Cradily",
-            "japanese": "ユレイドル",
-            "chinese": "摇篮百合",
-            "french": "Vacilys"
+            "english": "Cradily"
         },
         "type": [
             "Rock",
@@ -7089,10 +6051,7 @@ const pokemon = [
     {
         "id": 347,
         "name": {
-            "english": "Anorith",
-            "japanese": "アノプス",
-            "chinese": "太古羽虫",
-            "french": "Anorith"
+            "english": "Anorith"
         },
         "type": [
             "Rock",
@@ -7110,10 +6069,7 @@ const pokemon = [
     {
         "id": 348,
         "name": {
-            "english": "Armaldo",
-            "japanese": "アーマルド",
-            "chinese": "太古盔甲",
-            "french": "Armaldo"
+            "english": "Armaldo"
         },
         "type": [
             "Rock",
@@ -7131,10 +6087,7 @@ const pokemon = [
     {
         "id": 349,
         "name": {
-            "english": "Feebas",
-            "japanese": "ヒンバス",
-            "chinese": "丑丑鱼",
-            "french": "Barpau"
+            "english": "Feebas"
         },
         "type": [
             "Water"
@@ -7151,10 +6104,7 @@ const pokemon = [
     {
         "id": 350,
         "name": {
-            "english": "Milotic",
-            "japanese": "ミロカロス",
-            "chinese": "美纳斯",
-            "french": "Milobellus"
+            "english": "Milotic"
         },
         "type": [
             "Water"
@@ -7171,10 +6121,7 @@ const pokemon = [
     {
         "id": 351,
         "name": {
-            "english": "Castform",
-            "japanese": "ポワルン",
-            "chinese": "飘浮泡泡",
-            "french": "Morphéo"
+            "english": "Castform"
         },
         "type": [
             "Normal"
@@ -7191,10 +6138,7 @@ const pokemon = [
     {
         "id": 352,
         "name": {
-            "english": "Kecleon",
-            "japanese": "カクレオン",
-            "chinese": "变隐龙",
-            "french": "Kecleon"
+            "english": "Kecleon"
         },
         "type": [
             "Normal"
@@ -7211,10 +6155,7 @@ const pokemon = [
     {
         "id": 353,
         "name": {
-            "english": "Shuppet",
-            "japanese": "カゲボウズ",
-            "chinese": "怨影娃娃",
-            "french": "Polichombr"
+            "english": "Shuppet"
         },
         "type": [
             "Ghost"
@@ -7231,10 +6172,7 @@ const pokemon = [
     {
         "id": 354,
         "name": {
-            "english": "Banette",
-            "japanese": "ジュペッタ",
-            "chinese": "诅咒娃娃",
-            "french": "Branette"
+            "english": "Banette"
         },
         "type": [
             "Ghost"
@@ -7251,10 +6189,7 @@ const pokemon = [
     {
         "id": 355,
         "name": {
-            "english": "Duskull",
-            "japanese": "ヨマワル",
-            "chinese": "夜巡灵",
-            "french": "Skelénox"
+            "english": "Duskull"
         },
         "type": [
             "Ghost"
@@ -7271,10 +6206,7 @@ const pokemon = [
     {
         "id": 356,
         "name": {
-            "english": "Dusclops",
-            "japanese": "サマヨール",
-            "chinese": "彷徨夜灵",
-            "french": "Téraclope"
+            "english": "Dusclops"
         },
         "type": [
             "Ghost"
@@ -7291,10 +6223,7 @@ const pokemon = [
     {
         "id": 357,
         "name": {
-            "english": "Tropius",
-            "japanese": "トロピウス",
-            "chinese": "热带龙",
-            "french": "Tropius"
+            "english": "Tropius"
         },
         "type": [
             "Grass",
@@ -7312,10 +6241,7 @@ const pokemon = [
     {
         "id": 358,
         "name": {
-            "english": "Chimecho",
-            "japanese": "チリーン",
-            "chinese": "风铃铃",
-            "french": "Éoko"
+            "english": "Chimecho"
         },
         "type": [
             "Psychic"
@@ -7332,10 +6258,7 @@ const pokemon = [
     {
         "id": 359,
         "name": {
-            "english": "Absol",
-            "japanese": "アブソル",
-            "chinese": "阿勃梭鲁",
-            "french": "Absol"
+            "english": "Absol"
         },
         "type": [
             "Dark"
@@ -7352,10 +6275,7 @@ const pokemon = [
     {
         "id": 360,
         "name": {
-            "english": "Wynaut",
-            "japanese": "ソーナノ",
-            "chinese": "小果然",
-            "french": "Okéoké"
+            "english": "Wynaut"
         },
         "type": [
             "Psychic"
@@ -7372,10 +6292,7 @@ const pokemon = [
     {
         "id": 361,
         "name": {
-            "english": "Snorunt",
-            "japanese": "ユキワラシ",
-            "chinese": "雪童子",
-            "french": "Stalgamin"
+            "english": "Snorunt"
         },
         "type": [
             "Ice"
@@ -7392,10 +6309,7 @@ const pokemon = [
     {
         "id": 362,
         "name": {
-            "english": "Glalie",
-            "japanese": "オニゴーリ",
-            "chinese": "冰鬼护",
-            "french": "Oniglali"
+            "english": "Glalie"
         },
         "type": [
             "Ice"
@@ -7412,10 +6326,7 @@ const pokemon = [
     {
         "id": 363,
         "name": {
-            "english": "Spheal",
-            "japanese": "タマザラシ",
-            "chinese": "海豹球",
-            "french": "Obalie"
+            "english": "Spheal"
         },
         "type": [
             "Ice",
@@ -7433,10 +6344,7 @@ const pokemon = [
     {
         "id": 364,
         "name": {
-            "english": "Sealeo",
-            "japanese": "トドグラー",
-            "chinese": "海魔狮",
-            "french": "Phogleur"
+            "english": "Sealeo"
         },
         "type": [
             "Ice",
@@ -7454,10 +6362,7 @@ const pokemon = [
     {
         "id": 365,
         "name": {
-            "english": "Walrein",
-            "japanese": "トドゼルガ",
-            "chinese": "帝牙海狮",
-            "french": "Kaimorse"
+            "english": "Walrein"
         },
         "type": [
             "Ice",
@@ -7475,10 +6380,7 @@ const pokemon = [
     {
         "id": 366,
         "name": {
-            "english": "Clamperl",
-            "japanese": "パールル",
-            "chinese": "珍珠贝",
-            "french": "Coquiperl"
+            "english": "Clamperl"
         },
         "type": [
             "Water"
@@ -7495,10 +6397,7 @@ const pokemon = [
     {
         "id": 367,
         "name": {
-            "english": "Huntail",
-            "japanese": "ハンテール",
-            "chinese": "猎斑鱼",
-            "french": "Serpang"
+            "english": "Huntail"
         },
         "type": [
             "Water"
@@ -7515,10 +6414,7 @@ const pokemon = [
     {
         "id": 368,
         "name": {
-            "english": "Gorebyss",
-            "japanese": "サクラビス",
-            "chinese": "樱花鱼",
-            "french": "Rosabyss"
+            "english": "Gorebyss"
         },
         "type": [
             "Water"
@@ -7535,10 +6431,7 @@ const pokemon = [
     {
         "id": 369,
         "name": {
-            "english": "Relicanth",
-            "japanese": "ジーランス",
-            "chinese": "古空棘鱼",
-            "french": "Relicanth"
+            "english": "Relicanth"
         },
         "type": [
             "Water",
@@ -7556,10 +6449,7 @@ const pokemon = [
     {
         "id": 370,
         "name": {
-            "english": "Luvdisc",
-            "japanese": "ラブカス",
-            "chinese": "爱心鱼",
-            "french": "Lovdisc"
+            "english": "Luvdisc"
         },
         "type": [
             "Water"
@@ -7576,10 +6466,7 @@ const pokemon = [
     {
         "id": 371,
         "name": {
-            "english": "Bagon",
-            "japanese": "タツベイ",
-            "chinese": "宝贝龙",
-            "french": "Draby"
+            "english": "Bagon"
         },
         "type": [
             "Dragon"
@@ -7596,10 +6483,7 @@ const pokemon = [
     {
         "id": 372,
         "name": {
-            "english": "Shelgon",
-            "japanese": "コモルー",
-            "chinese": "甲壳龙",
-            "french": "Drackhaus"
+            "english": "Shelgon"
         },
         "type": [
             "Dragon"
@@ -7616,10 +6500,7 @@ const pokemon = [
     {
         "id": 373,
         "name": {
-            "english": "Salamence",
-            "japanese": "ボーマンダ",
-            "chinese": "暴飞龙",
-            "french": "Drattak"
+            "english": "Salamence"
         },
         "type": [
             "Dragon",
@@ -7637,10 +6518,7 @@ const pokemon = [
     {
         "id": 374,
         "name": {
-            "english": "Beldum",
-            "japanese": "ダンバル",
-            "chinese": "铁哑铃",
-            "french": "Terhal"
+            "english": "Beldum"
         },
         "type": [
             "Steel",
@@ -7658,10 +6536,7 @@ const pokemon = [
     {
         "id": 375,
         "name": {
-            "english": "Metang",
-            "japanese": "メタング",
-            "chinese": "金属怪",
-            "french": "Métang"
+            "english": "Metang"
         },
         "type": [
             "Steel",
@@ -7679,10 +6554,7 @@ const pokemon = [
     {
         "id": 376,
         "name": {
-            "english": "Metagross",
-            "japanese": "メタグロス",
-            "chinese": "巨金怪",
-            "french": "Métalosse"
+            "english": "Metagross"
         },
         "type": [
             "Steel",
@@ -7700,10 +6572,7 @@ const pokemon = [
     {
         "id": 377,
         "name": {
-            "english": "Regirock",
-            "japanese": "レジロック",
-            "chinese": "雷吉洛克",
-            "french": "Regirock"
+            "english": "Regirock"
         },
         "type": [
             "Rock"
@@ -7720,10 +6589,7 @@ const pokemon = [
     {
         "id": 378,
         "name": {
-            "english": "Regice",
-            "japanese": "レジアイス",
-            "chinese": "雷吉艾斯",
-            "french": "Regice"
+            "english": "Regice"
         },
         "type": [
             "Ice"
@@ -7740,10 +6606,7 @@ const pokemon = [
     {
         "id": 379,
         "name": {
-            "english": "Registeel",
-            "japanese": "レジスチル",
-            "chinese": "雷吉斯奇鲁",
-            "french": "Registeel"
+            "english": "Registeel"
         },
         "type": [
             "Steel"
@@ -7760,10 +6623,7 @@ const pokemon = [
     {
         "id": 380,
         "name": {
-            "english": "Latias",
-            "japanese": "ラティアス",
-            "chinese": "拉帝亚斯",
-            "french": "Latias"
+            "english": "Latias"
         },
         "type": [
             "Dragon",
@@ -7781,10 +6641,7 @@ const pokemon = [
     {
         "id": 381,
         "name": {
-            "english": "Latios",
-            "japanese": "ラティオス",
-            "chinese": "拉帝欧斯",
-            "french": "Latios"
+            "english": "Latios"
         },
         "type": [
             "Dragon",
@@ -7802,10 +6659,7 @@ const pokemon = [
     {
         "id": 382,
         "name": {
-            "english": "Kyogre",
-            "japanese": "カイオーガ",
-            "chinese": "盖欧卡",
-            "french": "Kyogre"
+            "english": "Kyogre"
         },
         "type": [
             "Water"
@@ -7822,10 +6676,7 @@ const pokemon = [
     {
         "id": 383,
         "name": {
-            "english": "Groudon",
-            "japanese": "グラードン",
-            "chinese": "固拉多",
-            "french": "Groudon"
+            "english": "Groudon"
         },
         "type": [
             "Ground"
@@ -7842,10 +6693,7 @@ const pokemon = [
     {
         "id": 384,
         "name": {
-            "english": "Rayquaza",
-            "japanese": "レックウザ",
-            "chinese": "烈空坐",
-            "french": "Rayquaza"
+            "english": "Rayquaza"
         },
         "type": [
             "Dragon",
@@ -7863,10 +6711,7 @@ const pokemon = [
     {
         "id": 385,
         "name": {
-            "english": "Jirachi",
-            "japanese": "ジラーチ",
-            "chinese": "基拉祈",
-            "french": "Jirachi"
+            "english": "Jirachi"
         },
         "type": [
             "Steel",
@@ -7884,10 +6729,7 @@ const pokemon = [
     {
         "id": 386,
         "name": {
-            "english": "Deoxys",
-            "japanese": "デオキシス",
-            "chinese": "代欧奇希斯",
-            "french": "Deoxys"
+            "english": "Deoxys"
         },
         "type": [
             "Psychic"
@@ -7904,10 +6746,7 @@ const pokemon = [
     {
         "id": 387,
         "name": {
-            "english": "Turtwig",
-            "japanese": "ナエトル",
-            "chinese": "草苗龟",
-            "french": "Tortipouss"
+            "english": "Turtwig"
         },
         "type": [
             "Grass"
@@ -7924,10 +6763,7 @@ const pokemon = [
     {
         "id": 388,
         "name": {
-            "english": "Grotle",
-            "japanese": "ハヤシガメ",
-            "chinese": "树林龟",
-            "french": "Boskara"
+            "english": "Grotle"
         },
         "type": [
             "Grass"
@@ -7944,10 +6780,7 @@ const pokemon = [
     {
         "id": 389,
         "name": {
-            "english": "Torterra",
-            "japanese": "ドダイトス",
-            "chinese": "土台龟",
-            "french": "Torterra"
+            "english": "Torterra"
         },
         "type": [
             "Grass",
@@ -7965,10 +6798,7 @@ const pokemon = [
     {
         "id": 390,
         "name": {
-            "english": "Chimchar",
-            "japanese": "ヒコザル",
-            "chinese": "小火焰猴",
-            "french": "Ouisticram"
+            "english": "Chimchar"
         },
         "type": [
             "Fire"
@@ -7985,10 +6815,7 @@ const pokemon = [
     {
         "id": 391,
         "name": {
-            "english": "Monferno",
-            "japanese": "モウカザル",
-            "chinese": "猛火猴",
-            "french": "Chimpenfeu"
+            "english": "Monferno"
         },
         "type": [
             "Fire",
@@ -8006,10 +6833,7 @@ const pokemon = [
     {
         "id": 392,
         "name": {
-            "english": "Infernape",
-            "japanese": "ゴウカザル",
-            "chinese": "烈焰猴",
-            "french": "Simiabraz"
+            "english": "Infernape"
         },
         "type": [
             "Fire",
@@ -8027,10 +6851,7 @@ const pokemon = [
     {
         "id": 393,
         "name": {
-            "english": "Piplup",
-            "japanese": "ポッチャマ",
-            "chinese": "波加曼",
-            "french": "Tiplouf"
+            "english": "Piplup"
         },
         "type": [
             "Water"
@@ -8047,10 +6868,7 @@ const pokemon = [
     {
         "id": 394,
         "name": {
-            "english": "Prinplup",
-            "japanese": "ポッタイシ",
-            "chinese": "波皇子",
-            "french": "Prinplouf"
+            "english": "Prinplup"
         },
         "type": [
             "Water"
@@ -8067,10 +6885,7 @@ const pokemon = [
     {
         "id": 395,
         "name": {
-            "english": "Empoleon",
-            "japanese": "エンペルト",
-            "chinese": "帝王拿波",
-            "french": "Pingoléon"
+            "english": "Empoleon"
         },
         "type": [
             "Water",
@@ -8088,10 +6903,7 @@ const pokemon = [
     {
         "id": 396,
         "name": {
-            "english": "Starly",
-            "japanese": "ムックル",
-            "chinese": "姆克儿",
-            "french": "Étourmi"
+            "english": "Starly"
         },
         "type": [
             "Normal",
@@ -8109,10 +6921,7 @@ const pokemon = [
     {
         "id": 397,
         "name": {
-            "english": "Staravia",
-            "japanese": "ムクバード",
-            "chinese": "姆克鸟",
-            "french": "Étourvol"
+            "english": "Staravia"
         },
         "type": [
             "Normal",
@@ -8130,10 +6939,7 @@ const pokemon = [
     {
         "id": 398,
         "name": {
-            "english": "Staraptor",
-            "japanese": "ムクホーク",
-            "chinese": "姆克鹰",
-            "french": "Étouraptor"
+            "english": "Staraptor"
         },
         "type": [
             "Normal",
@@ -8151,10 +6957,7 @@ const pokemon = [
     {
         "id": 399,
         "name": {
-            "english": "Bidoof",
-            "japanese": "ビッパ",
-            "chinese": "大牙狸",
-            "french": "Keunotor"
+            "english": "Bidoof"
         },
         "type": [
             "Normal"
@@ -8171,10 +6974,7 @@ const pokemon = [
     {
         "id": 400,
         "name": {
-            "english": "Bibarel",
-            "japanese": "ビーダル",
-            "chinese": "大尾狸",
-            "french": "Castorno"
+            "english": "Bibarel"
         },
         "type": [
             "Normal",
@@ -8192,10 +6992,7 @@ const pokemon = [
     {
         "id": 401,
         "name": {
-            "english": "Kricketot",
-            "japanese": "コロボーシ",
-            "chinese": "圆法师",
-            "french": "Crikzik"
+            "english": "Kricketot"
         },
         "type": [
             "Bug"
@@ -8212,10 +7009,7 @@ const pokemon = [
     {
         "id": 402,
         "name": {
-            "english": "Kricketune",
-            "japanese": "コロトック",
-            "chinese": "音箱蟀",
-            "french": "Mélokrik"
+            "english": "Kricketune"
         },
         "type": [
             "Bug"
@@ -8232,10 +7026,7 @@ const pokemon = [
     {
         "id": 403,
         "name": {
-            "english": "Shinx",
-            "japanese": "コリンク",
-            "chinese": "小猫怪",
-            "french": "Lixy"
+            "english": "Shinx"
         },
         "type": [
             "Electric"
@@ -8252,10 +7043,7 @@ const pokemon = [
     {
         "id": 404,
         "name": {
-            "english": "Luxio",
-            "japanese": "ルクシオ",
-            "chinese": "勒克猫",
-            "french": "Luxio"
+            "english": "Luxio"
         },
         "type": [
             "Electric"
@@ -8272,10 +7060,7 @@ const pokemon = [
     {
         "id": 405,
         "name": {
-            "english": "Luxray",
-            "japanese": "レントラー",
-            "chinese": "伦琴猫",
-            "french": "Luxray"
+            "english": "Luxray"
         },
         "type": [
             "Electric"
@@ -8292,10 +7077,7 @@ const pokemon = [
     {
         "id": 406,
         "name": {
-            "english": "Budew",
-            "japanese": "スボミー",
-            "chinese": "含羞苞",
-            "french": "Rozbouton"
+            "english": "Budew"
         },
         "type": [
             "Grass",
@@ -8313,10 +7095,7 @@ const pokemon = [
     {
         "id": 407,
         "name": {
-            "english": "Roserade",
-            "japanese": "ロズレイド",
-            "chinese": "罗丝雷朵",
-            "french": "Roserade"
+            "english": "Roserade"
         },
         "type": [
             "Grass",
@@ -8334,10 +7113,7 @@ const pokemon = [
     {
         "id": 408,
         "name": {
-            "english": "Cranidos",
-            "japanese": "ズガイドス",
-            "chinese": "头盖龙",
-            "french": "Kranidos"
+            "english": "Cranidos"
         },
         "type": [
             "Rock"
@@ -8354,10 +7130,7 @@ const pokemon = [
     {
         "id": 409,
         "name": {
-            "english": "Rampardos",
-            "japanese": "ラムパルド",
-            "chinese": "战槌龙",
-            "french": "Charkos"
+            "english": "Rampardos"
         },
         "type": [
             "Rock"
@@ -8374,10 +7147,7 @@ const pokemon = [
     {
         "id": 410,
         "name": {
-            "english": "Shieldon",
-            "japanese": "タテトプス",
-            "chinese": "盾甲龙",
-            "french": "Dinoclier"
+            "english": "Shieldon"
         },
         "type": [
             "Rock",
@@ -8395,10 +7165,7 @@ const pokemon = [
     {
         "id": 411,
         "name": {
-            "english": "Bastiodon",
-            "japanese": "トリデプス",
-            "chinese": "护城龙",
-            "french": "Bastiodon"
+            "english": "Bastiodon"
         },
         "type": [
             "Rock",
@@ -8416,10 +7183,7 @@ const pokemon = [
     {
         "id": 412,
         "name": {
-            "english": "Burmy",
-            "japanese": "ミノムッチ",
-            "chinese": "结草儿",
-            "french": "Cheniti"
+            "english": "Burmy"
         },
         "type": [
             "Bug"
@@ -8436,10 +7200,7 @@ const pokemon = [
     {
         "id": 413,
         "name": {
-            "english": "Wormadam",
-            "japanese": "ミノマダム",
-            "chinese": "结草贵妇",
-            "french": "Cheniselle"
+            "english": "Wormadam"
         },
         "type": [
             "Bug",
@@ -8457,10 +7218,7 @@ const pokemon = [
     {
         "id": 414,
         "name": {
-            "english": "Mothim",
-            "japanese": "ガーメイル",
-            "chinese": "绅士蛾",
-            "french": "Papilord"
+            "english": "Mothim"
         },
         "type": [
             "Bug",
@@ -8478,10 +7236,7 @@ const pokemon = [
     {
         "id": 415,
         "name": {
-            "english": "Combee",
-            "japanese": "ミツハニー",
-            "chinese": "三蜜蜂",
-            "french": "Apitrini"
+            "english": "Combee"
         },
         "type": [
             "Bug",
@@ -8499,10 +7254,7 @@ const pokemon = [
     {
         "id": 416,
         "name": {
-            "english": "Vespiquen",
-            "japanese": "ビークイン",
-            "chinese": "蜂女王",
-            "french": "Apireine"
+            "english": "Vespiquen"
         },
         "type": [
             "Bug",
@@ -8520,10 +7272,7 @@ const pokemon = [
     {
         "id": 417,
         "name": {
-            "english": "Pachirisu",
-            "japanese": "パチリス",
-            "chinese": "帕奇利兹",
-            "french": "Pachirisu"
+            "english": "Pachirisu"
         },
         "type": [
             "Electric"
@@ -8540,10 +7289,7 @@ const pokemon = [
     {
         "id": 418,
         "name": {
-            "english": "Buizel",
-            "japanese": "ブイゼル",
-            "chinese": "泳圈鼬",
-            "french": "Mustébouée"
+            "english": "Buizel"
         },
         "type": [
             "Water"
@@ -8560,10 +7306,7 @@ const pokemon = [
     {
         "id": 419,
         "name": {
-            "english": "Floatzel",
-            "japanese": "フローゼル",
-            "chinese": "浮潜鼬",
-            "french": "Mustéflott"
+            "english": "Floatzel"
         },
         "type": [
             "Water"
@@ -8580,10 +7323,7 @@ const pokemon = [
     {
         "id": 420,
         "name": {
-            "english": "Cherubi",
-            "japanese": "チェリンボ",
-            "chinese": "樱花宝",
-            "french": "Ceribou"
+            "english": "Cherubi"
         },
         "type": [
             "Grass"
@@ -8600,10 +7340,7 @@ const pokemon = [
     {
         "id": 421,
         "name": {
-            "english": "Cherrim",
-            "japanese": "チェリム",
-            "chinese": "樱花儿",
-            "french": "Ceriflor"
+            "english": "Cherrim"
         },
         "type": [
             "Grass"
@@ -8620,10 +7357,7 @@ const pokemon = [
     {
         "id": 422,
         "name": {
-            "english": "Shellos",
-            "japanese": "カラナクシ",
-            "chinese": "无壳海兔",
-            "french": "Sancoki"
+            "english": "Shellos"
         },
         "type": [
             "Water"
@@ -8640,10 +7374,7 @@ const pokemon = [
     {
         "id": 423,
         "name": {
-            "english": "Gastrodon",
-            "japanese": "トリトドン",
-            "chinese": "海兔兽",
-            "french": "Tritosor"
+            "english": "Gastrodon"
         },
         "type": [
             "Water",
@@ -8661,10 +7392,7 @@ const pokemon = [
     {
         "id": 424,
         "name": {
-            "english": "Ambipom",
-            "japanese": "エテボース",
-            "chinese": "双尾怪手",
-            "french": "Capidextre"
+            "english": "Ambipom"
         },
         "type": [
             "Normal"
@@ -8681,10 +7409,7 @@ const pokemon = [
     {
         "id": 425,
         "name": {
-            "english": "Drifloon",
-            "japanese": "フワンテ",
-            "chinese": "飘飘球",
-            "french": "Baudrive"
+            "english": "Drifloon"
         },
         "type": [
             "Ghost",
@@ -8702,10 +7427,7 @@ const pokemon = [
     {
         "id": 426,
         "name": {
-            "english": "Drifblim",
-            "japanese": "フワライド",
-            "chinese": "随风球",
-            "french": "Grodrive"
+            "english": "Drifblim"
         },
         "type": [
             "Ghost",
@@ -8723,10 +7445,7 @@ const pokemon = [
     {
         "id": 427,
         "name": {
-            "english": "Buneary",
-            "japanese": "ミミロル",
-            "chinese": "卷卷耳",
-            "french": "Laporeille"
+            "english": "Buneary"
         },
         "type": [
             "Normal"
@@ -8743,10 +7462,7 @@ const pokemon = [
     {
         "id": 428,
         "name": {
-            "english": "Lopunny",
-            "japanese": "ミミロップ",
-            "chinese": "长耳兔",
-            "french": "Lockpin"
+            "english": "Lopunny"
         },
         "type": [
             "Normal"
@@ -8763,10 +7479,7 @@ const pokemon = [
     {
         "id": 429,
         "name": {
-            "english": "Mismagius",
-            "japanese": "ムウマージ",
-            "chinese": "梦妖魔",
-            "french": "Magirêve"
+            "english": "Mismagius"
         },
         "type": [
             "Ghost"
@@ -8783,10 +7496,7 @@ const pokemon = [
     {
         "id": 430,
         "name": {
-            "english": "Honchkrow",
-            "japanese": "ドンカラス",
-            "chinese": "乌鸦头头",
-            "french": "Corboss"
+            "english": "Honchkrow"
         },
         "type": [
             "Dark",
@@ -8804,10 +7514,7 @@ const pokemon = [
     {
         "id": 431,
         "name": {
-            "english": "Glameow",
-            "japanese": "ニャルマー",
-            "chinese": "魅力喵",
-            "french": "Chaglam"
+            "english": "Glameow"
         },
         "type": [
             "Normal"
@@ -8824,10 +7531,7 @@ const pokemon = [
     {
         "id": 432,
         "name": {
-            "english": "Purugly",
-            "japanese": "ブニャット",
-            "chinese": "东施喵",
-            "french": "Chaffreux"
+            "english": "Purugly"
         },
         "type": [
             "Normal"
@@ -8844,10 +7548,7 @@ const pokemon = [
     {
         "id": 433,
         "name": {
-            "english": "Chingling",
-            "japanese": "リーシャン",
-            "chinese": "铃铛响",
-            "french": "Korillon"
+            "english": "Chingling"
         },
         "type": [
             "Psychic"
@@ -8864,10 +7565,7 @@ const pokemon = [
     {
         "id": 434,
         "name": {
-            "english": "Stunky",
-            "japanese": "スカンプー",
-            "chinese": "臭鼬噗",
-            "french": "Moufouette"
+            "english": "Stunky"
         },
         "type": [
             "Poison",
@@ -8885,10 +7583,7 @@ const pokemon = [
     {
         "id": 435,
         "name": {
-            "english": "Skuntank",
-            "japanese": "スカタンク",
-            "chinese": "坦克臭鼬",
-            "french": "Moufflair"
+            "english": "Skuntank"
         },
         "type": [
             "Poison",
@@ -8906,10 +7601,7 @@ const pokemon = [
     {
         "id": 436,
         "name": {
-            "english": "Bronzor",
-            "japanese": "ドーミラー",
-            "chinese": "铜镜怪",
-            "french": "Archéomire"
+            "english": "Bronzor"
         },
         "type": [
             "Steel",
@@ -8927,10 +7619,7 @@ const pokemon = [
     {
         "id": 437,
         "name": {
-            "english": "Bronzong",
-            "japanese": "ドータクン",
-            "chinese": "青铜钟",
-            "french": "Archéodong"
+            "english": "Bronzong"
         },
         "type": [
             "Steel",
@@ -8948,10 +7637,7 @@ const pokemon = [
     {
         "id": 438,
         "name": {
-            "english": "Bonsly",
-            "japanese": "ウソハチ",
-            "chinese": "盆才怪",
-            "french": "Manzaï"
+            "english": "Bonsly"
         },
         "type": [
             "Rock"
@@ -8968,10 +7654,7 @@ const pokemon = [
     {
         "id": 439,
         "name": {
-            "english": "Mime Jr.",
-            "japanese": "マネネ",
-            "chinese": "魔尼尼",
-            "french": "Mime Jr"
+            "english": "Mime Jr."
         },
         "type": [
             "Psychic",
@@ -8989,10 +7672,7 @@ const pokemon = [
     {
         "id": 440,
         "name": {
-            "english": "Happiny",
-            "japanese": "ピンプク",
-            "chinese": "小福蛋",
-            "french": "Ptiravi"
+            "english": "Happiny"
         },
         "type": [
             "Normal"
@@ -9009,10 +7689,7 @@ const pokemon = [
     {
         "id": 441,
         "name": {
-            "english": "Chatot",
-            "japanese": "ペラップ",
-            "chinese": "聒噪鸟",
-            "french": "Pijako"
+            "english": "Chatot"
         },
         "type": [
             "Normal",
@@ -9030,10 +7707,7 @@ const pokemon = [
     {
         "id": 442,
         "name": {
-            "english": "Spiritomb",
-            "japanese": "ミカルゲ",
-            "chinese": "花岩怪",
-            "french": "Spiritomb"
+            "english": "Spiritomb"
         },
         "type": [
             "Ghost",
@@ -9051,10 +7725,7 @@ const pokemon = [
     {
         "id": 443,
         "name": {
-            "english": "Gible",
-            "japanese": "フカマル",
-            "chinese": "圆陆鲨",
-            "french": "Griknot"
+            "english": "Gible"
         },
         "type": [
             "Dragon",
@@ -9072,10 +7743,7 @@ const pokemon = [
     {
         "id": 444,
         "name": {
-            "english": "Gabite",
-            "japanese": "ガバイト",
-            "chinese": "尖牙陆鲨",
-            "french": "Carmache"
+            "english": "Gabite"
         },
         "type": [
             "Dragon",
@@ -9093,10 +7761,7 @@ const pokemon = [
     {
         "id": 445,
         "name": {
-            "english": "Garchomp",
-            "japanese": "ガブリアス",
-            "chinese": "烈咬陆鲨",
-            "french": "Carchacrok"
+            "english": "Garchomp"
         },
         "type": [
             "Dragon",
@@ -9114,10 +7779,7 @@ const pokemon = [
     {
         "id": 446,
         "name": {
-            "english": "Munchlax",
-            "japanese": "ゴンベ",
-            "chinese": "小卡比兽",
-            "french": "Goinfrex"
+            "english": "Munchlax"
         },
         "type": [
             "Normal"
@@ -9134,10 +7796,7 @@ const pokemon = [
     {
         "id": 447,
         "name": {
-            "english": "Riolu",
-            "japanese": "リオル",
-            "chinese": "利欧路",
-            "french": "Riolu"
+            "english": "Riolu"
         },
         "type": [
             "Fighting"
@@ -9154,10 +7813,7 @@ const pokemon = [
     {
         "id": 448,
         "name": {
-            "english": "Lucario",
-            "japanese": "ルカリオ",
-            "chinese": "路卡利欧",
-            "french": "Lucario"
+            "english": "Lucario"
         },
         "type": [
             "Fighting",
@@ -9175,10 +7831,7 @@ const pokemon = [
     {
         "id": 449,
         "name": {
-            "english": "Hippopotas",
-            "japanese": "ヒポポタス",
-            "chinese": "沙河马",
-            "french": "Hippopotas"
+            "english": "Hippopotas"
         },
         "type": [
             "Ground"
@@ -9195,10 +7848,7 @@ const pokemon = [
     {
         "id": 450,
         "name": {
-            "english": "Hippowdon",
-            "japanese": "カバルドン",
-            "chinese": "河马兽",
-            "french": "Hippodocus"
+            "english": "Hippowdon"
         },
         "type": [
             "Ground"
@@ -9215,10 +7865,7 @@ const pokemon = [
     {
         "id": 451,
         "name": {
-            "english": "Skorupi",
-            "japanese": "スコルピ",
-            "chinese": "钳尾蝎",
-            "french": "Rapion"
+            "english": "Skorupi"
         },
         "type": [
             "Poison",
@@ -9236,10 +7883,7 @@ const pokemon = [
     {
         "id": 452,
         "name": {
-            "english": "Drapion",
-            "japanese": "ドラピオン",
-            "chinese": "龙王蝎",
-            "french": "Drascore"
+            "english": "Drapion"
         },
         "type": [
             "Poison",
@@ -9257,10 +7901,7 @@ const pokemon = [
     {
         "id": 453,
         "name": {
-            "english": "Croagunk",
-            "japanese": "グレッグル",
-            "chinese": "不良蛙",
-            "french": "Cradopaud"
+            "english": "Croagunk"
         },
         "type": [
             "Poison",
@@ -9278,10 +7919,7 @@ const pokemon = [
     {
         "id": 454,
         "name": {
-            "english": "Toxicroak",
-            "japanese": "ドクロッグ",
-            "chinese": "毒骷蛙",
-            "french": "Coatox"
+            "english": "Toxicroak"
         },
         "type": [
             "Poison",
@@ -9299,10 +7937,7 @@ const pokemon = [
     {
         "id": 455,
         "name": {
-            "english": "Carnivine",
-            "japanese": "マスキッパ",
-            "chinese": "尖牙笼",
-            "french": "Vortente"
+            "english": "Carnivine"
         },
         "type": [
             "Grass"
@@ -9319,10 +7954,7 @@ const pokemon = [
     {
         "id": 456,
         "name": {
-            "english": "Finneon",
-            "japanese": "ケイコウオ",
-            "chinese": "荧光鱼",
-            "french": "Écayon"
+            "english": "Finneon"
         },
         "type": [
             "Water"
@@ -9339,10 +7971,7 @@ const pokemon = [
     {
         "id": 457,
         "name": {
-            "english": "Lumineon",
-            "japanese": "ネオラント",
-            "chinese": "霓虹鱼",
-            "french": "Luminéon"
+            "english": "Lumineon"
         },
         "type": [
             "Water"
@@ -9359,10 +7988,7 @@ const pokemon = [
     {
         "id": 458,
         "name": {
-            "english": "Mantyke",
-            "japanese": "タマンタ",
-            "chinese": "小球飞鱼",
-            "french": "Babimanta"
+            "english": "Mantyke"
         },
         "type": [
             "Water",
@@ -9380,10 +8006,7 @@ const pokemon = [
     {
         "id": 459,
         "name": {
-            "english": "Snover",
-            "japanese": "ユキカブリ",
-            "chinese": "雪笠怪",
-            "french": "Blizzi"
+            "english": "Snover"
         },
         "type": [
             "Grass",
@@ -9401,10 +8024,7 @@ const pokemon = [
     {
         "id": 460,
         "name": {
-            "english": "Abomasnow",
-            "japanese": "ユキノオー",
-            "chinese": "暴雪王",
-            "french": "Blizzaroi"
+            "english": "Abomasnow"
         },
         "type": [
             "Grass",
@@ -9422,10 +8042,7 @@ const pokemon = [
     {
         "id": 461,
         "name": {
-            "english": "Weavile",
-            "japanese": "マニューラ",
-            "chinese": "玛狃拉",
-            "french": "Dimoret"
+            "english": "Weavile"
         },
         "type": [
             "Dark",
@@ -9443,10 +8060,7 @@ const pokemon = [
     {
         "id": 462,
         "name": {
-            "english": "Magnezone",
-            "japanese": "ジバコイル",
-            "chinese": "自爆磁怪",
-            "french": "Magnézone"
+            "english": "Magnezone"
         },
         "type": [
             "Electric",
@@ -9464,10 +8078,7 @@ const pokemon = [
     {
         "id": 463,
         "name": {
-            "english": "Lickilicky",
-            "japanese": "ベロベルト",
-            "chinese": "大舌舔",
-            "french": "Coudlangue"
+            "english": "Lickilicky"
         },
         "type": [
             "Normal"
@@ -9484,10 +8095,7 @@ const pokemon = [
     {
         "id": 464,
         "name": {
-            "english": "Rhyperior",
-            "japanese": "ドサイドン",
-            "chinese": "超甲狂犀",
-            "french": "Rhinastoc"
+            "english": "Rhyperior"
         },
         "type": [
             "Ground",
@@ -9505,10 +8113,7 @@ const pokemon = [
     {
         "id": 465,
         "name": {
-            "english": "Tangrowth",
-            "japanese": "モジャンボ",
-            "chinese": "巨蔓藤",
-            "french": "Bouldeneu"
+            "english": "Tangrowth"
         },
         "type": [
             "Grass"
@@ -9525,10 +8130,7 @@ const pokemon = [
     {
         "id": 466,
         "name": {
-            "english": "Electivire",
-            "japanese": "エレキブル",
-            "chinese": "电击魔兽",
-            "french": "Élekable"
+            "english": "Electivire"
         },
         "type": [
             "Electric"
@@ -9545,10 +8147,7 @@ const pokemon = [
     {
         "id": 467,
         "name": {
-            "english": "Magmortar",
-            "japanese": "ブーバーン",
-            "chinese": "鸭嘴炎兽",
-            "french": "Maganon"
+            "english": "Magmortar"
         },
         "type": [
             "Fire"
@@ -9565,10 +8164,7 @@ const pokemon = [
     {
         "id": 468,
         "name": {
-            "english": "Togekiss",
-            "japanese": "トゲキッス",
-            "chinese": "波克基斯",
-            "french": "Togekiss"
+            "english": "Togekiss"
         },
         "type": [
             "Fairy",
@@ -9586,10 +8182,7 @@ const pokemon = [
     {
         "id": 469,
         "name": {
-            "english": "Yanmega",
-            "japanese": "メガヤンマ",
-            "chinese": "远古巨蜓",
-            "french": "Yanmega"
+            "english": "Yanmega"
         },
         "type": [
             "Bug",
@@ -9607,10 +8200,7 @@ const pokemon = [
     {
         "id": 470,
         "name": {
-            "english": "Leafeon",
-            "japanese": "リーフィア",
-            "chinese": "叶伊布",
-            "french": "Phyllali"
+            "english": "Leafeon"
         },
         "type": [
             "Grass"
@@ -9627,10 +8217,7 @@ const pokemon = [
     {
         "id": 471,
         "name": {
-            "english": "Glaceon",
-            "japanese": "グレイシア",
-            "chinese": "冰伊布",
-            "french": "Givrali"
+            "english": "Glaceon"
         },
         "type": [
             "Ice"
@@ -9647,10 +8234,7 @@ const pokemon = [
     {
         "id": 472,
         "name": {
-            "english": "Gliscor",
-            "japanese": "グライオン",
-            "chinese": "天蝎王",
-            "french": "Scorvol"
+            "english": "Gliscor"
         },
         "type": [
             "Ground",
@@ -9668,10 +8252,7 @@ const pokemon = [
     {
         "id": 473,
         "name": {
-            "english": "Mamoswine",
-            "japanese": "マンムー",
-            "chinese": "象牙猪",
-            "french": "Mammochon"
+            "english": "Mamoswine"
         },
         "type": [
             "Ice",
@@ -9689,10 +8270,7 @@ const pokemon = [
     {
         "id": 474,
         "name": {
-            "english": "Porygon-Z",
-            "japanese": "ポリゴンＺ",
-            "chinese": "多边兽Ｚ",
-            "french": "Porygon-Z"
+            "english": "Porygon-Z"
         },
         "type": [
             "Normal"
@@ -9709,10 +8287,7 @@ const pokemon = [
     {
         "id": 475,
         "name": {
-            "english": "Gallade",
-            "japanese": "エルレイド",
-            "chinese": "艾路雷朵",
-            "french": "Gallame"
+            "english": "Gallade"
         },
         "type": [
             "Psychic",
@@ -9730,10 +8305,7 @@ const pokemon = [
     {
         "id": 476,
         "name": {
-            "english": "Probopass",
-            "japanese": "ダイノーズ",
-            "chinese": "大朝北鼻",
-            "french": "Tarinorme"
+            "english": "Probopass"
         },
         "type": [
             "Rock",
@@ -9751,10 +8323,7 @@ const pokemon = [
     {
         "id": 477,
         "name": {
-            "english": "Dusknoir",
-            "japanese": "ヨノワール",
-            "chinese": "黑夜魔灵",
-            "french": "Noctunoir"
+            "english": "Dusknoir"
         },
         "type": [
             "Ghost"
@@ -9771,10 +8340,7 @@ const pokemon = [
     {
         "id": 478,
         "name": {
-            "english": "Froslass",
-            "japanese": "ユキメノコ",
-            "chinese": "雪妖女",
-            "french": "Momartik"
+            "english": "Froslass"
         },
         "type": [
             "Ice",
@@ -9792,10 +8358,7 @@ const pokemon = [
     {
         "id": 479,
         "name": {
-            "english": "Rotom",
-            "japanese": "ロトム",
-            "chinese": "洛托姆",
-            "french": "Motisma"
+            "english": "Rotom"
         },
         "type": [
             "Electric",
@@ -9813,10 +8376,7 @@ const pokemon = [
     {
         "id": 480,
         "name": {
-            "english": "Uxie",
-            "japanese": "ユクシー",
-            "chinese": "由克希",
-            "french": "Créhelf"
+            "english": "Uxie"
         },
         "type": [
             "Psychic"
@@ -9833,10 +8393,7 @@ const pokemon = [
     {
         "id": 481,
         "name": {
-            "english": "Mesprit",
-            "japanese": "エムリット",
-            "chinese": "艾姆利多",
-            "french": "Créfollet"
+            "english": "Mesprit"
         },
         "type": [
             "Psychic"
@@ -9853,10 +8410,7 @@ const pokemon = [
     {
         "id": 482,
         "name": {
-            "english": "Azelf",
-            "japanese": "アグノム",
-            "chinese": "亚克诺姆",
-            "french": "Créfadet"
+            "english": "Azelf"
         },
         "type": [
             "Psychic"
@@ -9873,10 +8427,7 @@ const pokemon = [
     {
         "id": 483,
         "name": {
-            "english": "Dialga",
-            "japanese": "ディアルガ",
-            "chinese": "帝牙卢卡",
-            "french": "Dialga"
+            "english": "Dialga"
         },
         "type": [
             "Steel",
@@ -9894,10 +8445,7 @@ const pokemon = [
     {
         "id": 484,
         "name": {
-            "english": "Palkia",
-            "japanese": "パルキア",
-            "chinese": "帕路奇亚",
-            "french": "Palkia"
+            "english": "Palkia"
         },
         "type": [
             "Water",
@@ -9915,10 +8463,7 @@ const pokemon = [
     {
         "id": 485,
         "name": {
-            "english": "Heatran",
-            "japanese": "ヒードラン",
-            "chinese": "席多蓝恩",
-            "french": "Heatran"
+            "english": "Heatran"
         },
         "type": [
             "Fire",
@@ -9936,10 +8481,7 @@ const pokemon = [
     {
         "id": 486,
         "name": {
-            "english": "Regigigas",
-            "japanese": "レジギガス",
-            "chinese": "雷吉奇卡斯",
-            "french": "Regigigas"
+            "english": "Regigigas"
         },
         "type": [
             "Normal"
@@ -9956,10 +8498,7 @@ const pokemon = [
     {
         "id": 487,
         "name": {
-            "english": "Giratina",
-            "japanese": "ギラティナ",
-            "chinese": "骑拉帝纳",
-            "french": "Giratina"
+            "english": "Giratina"
         },
         "type": [
             "Ghost",
@@ -9977,10 +8516,7 @@ const pokemon = [
     {
         "id": 488,
         "name": {
-            "english": "Cresselia",
-            "japanese": "クレセリア",
-            "chinese": "克雷色利亚",
-            "french": "Cresselia"
+            "english": "Cresselia"
         },
         "type": [
             "Psychic"
@@ -9997,10 +8533,7 @@ const pokemon = [
     {
         "id": 489,
         "name": {
-            "english": "Phione",
-            "japanese": "フィオネ",
-            "chinese": "霏欧纳",
-            "french": "Phione"
+            "english": "Phione"
         },
         "type": [
             "Water"
@@ -10017,10 +8550,7 @@ const pokemon = [
     {
         "id": 490,
         "name": {
-            "english": "Manaphy",
-            "japanese": "マナフィ",
-            "chinese": "玛纳霏",
-            "french": "Manaphy"
+            "english": "Manaphy"
         },
         "type": [
             "Water"
@@ -10037,10 +8567,7 @@ const pokemon = [
     {
         "id": 491,
         "name": {
-            "english": "Darkrai",
-            "japanese": "ダークライ",
-            "chinese": "达克莱伊",
-            "french": "Darkrai"
+            "english": "Darkrai"
         },
         "type": [
             "Dark"
@@ -10057,10 +8584,7 @@ const pokemon = [
     {
         "id": 492,
         "name": {
-            "english": "Shaymin",
-            "japanese": "シェイミ",
-            "chinese": "谢米",
-            "french": "Shaymin"
+            "english": "Shaymin"
         },
         "type": [
             "Grass"
@@ -10077,10 +8601,7 @@ const pokemon = [
     {
         "id": 493,
         "name": {
-            "english": "Arceus",
-            "japanese": "アルセウス",
-            "chinese": "阿尔宙斯",
-            "french": "Arceus"
+            "english": "Arceus"
         },
         "type": [
             "Normal"
@@ -10097,10 +8618,7 @@ const pokemon = [
     {
         "id": 494,
         "name": {
-            "english": "Victini",
-            "japanese": "ビクティニ",
-            "chinese": "比克提尼",
-            "french": "Victini"
+            "english": "Victini"
         },
         "type": [
             "Psychic",
@@ -10118,10 +8636,7 @@ const pokemon = [
     {
         "id": 495,
         "name": {
-            "english": "Snivy",
-            "japanese": "ツタージャ",
-            "chinese": "藤藤蛇",
-            "french": "Vipélierre"
+            "english": "Snivy"
         },
         "type": [
             "Grass"
@@ -10138,10 +8653,7 @@ const pokemon = [
     {
         "id": 496,
         "name": {
-            "english": "Servine",
-            "japanese": "ジャノビー",
-            "chinese": "青藤蛇",
-            "french": "Lianaja"
+            "english": "Servine"
         },
         "type": [
             "Grass"
@@ -10158,10 +8670,7 @@ const pokemon = [
     {
         "id": 497,
         "name": {
-            "english": "Serperior",
-            "japanese": "ジャローダ",
-            "chinese": "君主蛇",
-            "french": "Majaspic"
+            "english": "Serperior"
         },
         "type": [
             "Grass"
@@ -10178,10 +8687,7 @@ const pokemon = [
     {
         "id": 498,
         "name": {
-            "english": "Tepig",
-            "japanese": "ポカブ",
-            "chinese": "暖暖猪",
-            "french": "Gruikui"
+            "english": "Tepig"
         },
         "type": [
             "Fire"
@@ -10198,10 +8704,7 @@ const pokemon = [
     {
         "id": 499,
         "name": {
-            "english": "Pignite",
-            "japanese": "チャオブー",
-            "chinese": "炒炒猪",
-            "french": "Grotichon"
+            "english": "Pignite"
         },
         "type": [
             "Fire",
@@ -10219,10 +8722,7 @@ const pokemon = [
     {
         "id": 500,
         "name": {
-            "english": "Emboar",
-            "japanese": "エンブオー",
-            "chinese": "炎武王",
-            "french": "Roitiflam"
+            "english": "Emboar"
         },
         "type": [
             "Fire",
@@ -10240,10 +8740,7 @@ const pokemon = [
     {
         "id": 501,
         "name": {
-            "english": "Oshawott",
-            "japanese": "ミジュマル",
-            "chinese": "水水獭",
-            "french": "Moustillon"
+            "english": "Oshawott"
         },
         "type": [
             "Water"
@@ -10260,10 +8757,7 @@ const pokemon = [
     {
         "id": 502,
         "name": {
-            "english": "Dewott",
-            "japanese": "フタチマル",
-            "chinese": "双刃丸",
-            "french": "Mateloutre"
+            "english": "Dewott"
         },
         "type": [
             "Water"
@@ -10280,10 +8774,7 @@ const pokemon = [
     {
         "id": 503,
         "name": {
-            "english": "Samurott",
-            "japanese": "ダイケンキ",
-            "chinese": "大剑鬼",
-            "french": "Clamiral"
+            "english": "Samurott"
         },
         "type": [
             "Water"
@@ -10300,10 +8791,7 @@ const pokemon = [
     {
         "id": 504,
         "name": {
-            "english": "Patrat",
-            "japanese": "ミネズミ",
-            "chinese": "探探鼠",
-            "french": "Ratentif"
+            "english": "Patrat"
         },
         "type": [
             "Normal"
@@ -10320,10 +8808,7 @@ const pokemon = [
     {
         "id": 505,
         "name": {
-            "english": "Watchog",
-            "japanese": "ミルホッグ",
-            "chinese": "步哨鼠",
-            "french": "Miradar"
+            "english": "Watchog"
         },
         "type": [
             "Normal"
@@ -10340,10 +8825,7 @@ const pokemon = [
     {
         "id": 506,
         "name": {
-            "english": "Lillipup",
-            "japanese": "ヨーテリー",
-            "chinese": "小约克",
-            "french": "Ponchiot"
+            "english": "Lillipup"
         },
         "type": [
             "Normal"
@@ -10360,10 +8842,7 @@ const pokemon = [
     {
         "id": 507,
         "name": {
-            "english": "Herdier",
-            "japanese": "ハーデリア",
-            "chinese": "哈约克",
-            "french": "Ponchien"
+            "english": "Herdier"
         },
         "type": [
             "Normal"
@@ -10380,10 +8859,7 @@ const pokemon = [
     {
         "id": 508,
         "name": {
-            "english": "Stoutland",
-            "japanese": "ムーランド",
-            "chinese": "长毛狗",
-            "french": "Mastouffe"
+            "english": "Stoutland"
         },
         "type": [
             "Normal"
@@ -10400,10 +8876,7 @@ const pokemon = [
     {
         "id": 509,
         "name": {
-            "english": "Purrloin",
-            "japanese": "チョロネコ",
-            "chinese": "扒手猫",
-            "french": "Chacripan"
+            "english": "Purrloin"
         },
         "type": [
             "Dark"
@@ -10420,10 +8893,7 @@ const pokemon = [
     {
         "id": 510,
         "name": {
-            "english": "Liepard",
-            "japanese": "レパルダス",
-            "chinese": "酷豹",
-            "french": "Léopardus"
+            "english": "Liepard"
         },
         "type": [
             "Dark"
@@ -10440,10 +8910,7 @@ const pokemon = [
     {
         "id": 511,
         "name": {
-            "english": "Pansage",
-            "japanese": "ヤナップ",
-            "chinese": "花椰猴",
-            "french": "Feuillajou"
+            "english": "Pansage"
         },
         "type": [
             "Grass"
@@ -10460,10 +8927,7 @@ const pokemon = [
     {
         "id": 512,
         "name": {
-            "english": "Simisage",
-            "japanese": "ヤナッキー",
-            "chinese": "花椰猿",
-            "french": "Feuiloutan"
+            "english": "Simisage"
         },
         "type": [
             "Grass"
@@ -10480,10 +8944,7 @@ const pokemon = [
     {
         "id": 513,
         "name": {
-            "english": "Pansear",
-            "japanese": "バオップ",
-            "chinese": "爆香猴",
-            "french": "Flamajou"
+            "english": "Pansear"
         },
         "type": [
             "Fire"
@@ -10500,10 +8961,7 @@ const pokemon = [
     {
         "id": 514,
         "name": {
-            "english": "Simisear",
-            "japanese": "バオッキー",
-            "chinese": "爆香猿",
-            "french": "Flamoutan"
+            "english": "Simisear"
         },
         "type": [
             "Fire"
@@ -10520,10 +8978,7 @@ const pokemon = [
     {
         "id": 515,
         "name": {
-            "english": "Panpour",
-            "japanese": "ヒヤップ",
-            "chinese": "冷水猴",
-            "french": "Flotajou"
+            "english": "Panpour"
         },
         "type": [
             "Water"
@@ -10540,10 +8995,7 @@ const pokemon = [
     {
         "id": 516,
         "name": {
-            "english": "Simipour",
-            "japanese": "ヒヤッキー",
-            "chinese": "冷水猿",
-            "french": "Flotoutan"
+            "english": "Simipour"
         },
         "type": [
             "Water"
@@ -10560,10 +9012,7 @@ const pokemon = [
     {
         "id": 517,
         "name": {
-            "english": "Munna",
-            "japanese": "ムンナ",
-            "chinese": "食梦梦",
-            "french": "Munna"
+            "english": "Munna"
         },
         "type": [
             "Psychic"
@@ -10580,10 +9029,7 @@ const pokemon = [
     {
         "id": 518,
         "name": {
-            "english": "Musharna",
-            "japanese": "ムシャーナ",
-            "chinese": "梦梦蚀",
-            "french": "Mushana"
+            "english": "Musharna"
         },
         "type": [
             "Psychic"
@@ -10600,10 +9046,7 @@ const pokemon = [
     {
         "id": 519,
         "name": {
-            "english": "Pidove",
-            "japanese": "マメパト",
-            "chinese": "豆豆鸽",
-            "french": "Poichigeon"
+            "english": "Pidove"
         },
         "type": [
             "Normal",
@@ -10621,10 +9064,7 @@ const pokemon = [
     {
         "id": 520,
         "name": {
-            "english": "Tranquill",
-            "japanese": "ハトーボー",
-            "chinese": "咕咕鸽",
-            "french": "Colombeau"
+            "english": "Tranquill"
         },
         "type": [
             "Normal",
@@ -10642,10 +9082,7 @@ const pokemon = [
     {
         "id": 521,
         "name": {
-            "english": "Unfezant",
-            "japanese": "ケンホロウ",
-            "chinese": "高傲雉鸡",
-            "french": "Déflaisan"
+            "english": "Unfezant"
         },
         "type": [
             "Normal",
@@ -10663,10 +9100,7 @@ const pokemon = [
     {
         "id": 522,
         "name": {
-            "english": "Blitzle",
-            "japanese": "シママ",
-            "chinese": "斑斑马",
-            "french": "Zébibron"
+            "english": "Blitzle"
         },
         "type": [
             "Electric"
@@ -10683,10 +9117,7 @@ const pokemon = [
     {
         "id": 523,
         "name": {
-            "english": "Zebstrika",
-            "japanese": "ゼブライカ",
-            "chinese": "雷电斑马",
-            "french": "Zéblitz"
+            "english": "Zebstrika"
         },
         "type": [
             "Electric"
@@ -10703,10 +9134,7 @@ const pokemon = [
     {
         "id": 524,
         "name": {
-            "english": "Roggenrola",
-            "japanese": "ダンゴロ",
-            "chinese": "石丸子",
-            "french": "Nodulithe"
+            "english": "Roggenrola"
         },
         "type": [
             "Rock"
@@ -10723,10 +9151,7 @@ const pokemon = [
     {
         "id": 525,
         "name": {
-            "english": "Boldore",
-            "japanese": "ガントル",
-            "chinese": "地幔岩",
-            "french": "Géolithe"
+            "english": "Boldore"
         },
         "type": [
             "Rock"
@@ -10743,10 +9168,7 @@ const pokemon = [
     {
         "id": 526,
         "name": {
-            "english": "Gigalith",
-            "japanese": "ギガイアス",
-            "chinese": "庞岩怪",
-            "french": "Gigalithe"
+            "english": "Gigalith"
         },
         "type": [
             "Rock"
@@ -10763,10 +9185,7 @@ const pokemon = [
     {
         "id": 527,
         "name": {
-            "english": "Woobat",
-            "japanese": "コロモリ",
-            "chinese": "滚滚蝙蝠",
-            "french": "Chovsourir"
+            "english": "Woobat"
         },
         "type": [
             "Psychic",
@@ -10784,10 +9203,7 @@ const pokemon = [
     {
         "id": 528,
         "name": {
-            "english": "Swoobat",
-            "japanese": "ココロモリ",
-            "chinese": "心蝙蝠",
-            "french": "Rhinolove"
+            "english": "Swoobat"
         },
         "type": [
             "Psychic",
@@ -10805,10 +9221,7 @@ const pokemon = [
     {
         "id": 529,
         "name": {
-            "english": "Drilbur",
-            "japanese": "モグリュー",
-            "chinese": "螺钉地鼠",
-            "french": "Rototaupe"
+            "english": "Drilbur"
         },
         "type": [
             "Ground"
@@ -10825,10 +9238,7 @@ const pokemon = [
     {
         "id": 530,
         "name": {
-            "english": "Excadrill",
-            "japanese": "ドリュウズ",
-            "chinese": "龙头地鼠",
-            "french": "Minotaupe"
+            "english": "Excadrill"
         },
         "type": [
             "Ground",
@@ -10846,10 +9256,7 @@ const pokemon = [
     {
         "id": 531,
         "name": {
-            "english": "Audino",
-            "japanese": "タブンネ",
-            "chinese": "差不多娃娃",
-            "french": "Nanméouïe"
+            "english": "Audino"
         },
         "type": [
             "Normal"
@@ -10866,10 +9273,7 @@ const pokemon = [
     {
         "id": 532,
         "name": {
-            "english": "Timburr",
-            "japanese": "ドッコラー",
-            "chinese": "搬运小匠",
-            "french": "Charpenti"
+            "english": "Timburr"
         },
         "type": [
             "Fighting"
@@ -10886,10 +9290,7 @@ const pokemon = [
     {
         "id": 533,
         "name": {
-            "english": "Gurdurr",
-            "japanese": "ドテッコツ",
-            "chinese": "铁骨土人",
-            "french": "Ouvrifier"
+            "english": "Gurdurr"
         },
         "type": [
             "Fighting"
@@ -10906,10 +9307,7 @@ const pokemon = [
     {
         "id": 534,
         "name": {
-            "english": "Conkeldurr",
-            "japanese": "ローブシン",
-            "chinese": "修建老匠",
-            "french": "Bétochef"
+            "english": "Conkeldurr"
         },
         "type": [
             "Fighting"
@@ -10926,10 +9324,7 @@ const pokemon = [
     {
         "id": 535,
         "name": {
-            "english": "Tympole",
-            "japanese": "オタマロ",
-            "chinese": "圆蝌蚪",
-            "french": "Tritonde"
+            "english": "Tympole"
         },
         "type": [
             "Water"
@@ -10946,10 +9341,7 @@ const pokemon = [
     {
         "id": 536,
         "name": {
-            "english": "Palpitoad",
-            "japanese": "ガマガル",
-            "chinese": "蓝蟾蜍",
-            "french": "Batracné"
+            "english": "Palpitoad"
         },
         "type": [
             "Water",
@@ -10967,10 +9359,7 @@ const pokemon = [
     {
         "id": 537,
         "name": {
-            "english": "Seismitoad",
-            "japanese": "ガマゲロゲ",
-            "chinese": "蟾蜍王",
-            "french": "Crapustule"
+            "english": "Seismitoad"
         },
         "type": [
             "Water",
@@ -10988,10 +9377,7 @@ const pokemon = [
     {
         "id": 538,
         "name": {
-            "english": "Throh",
-            "japanese": "ナゲキ",
-            "chinese": "投摔鬼",
-            "french": "Judokrak"
+            "english": "Throh"
         },
         "type": [
             "Fighting"
@@ -11008,10 +9394,7 @@ const pokemon = [
     {
         "id": 539,
         "name": {
-            "english": "Sawk",
-            "japanese": "ダゲキ",
-            "chinese": "打击鬼",
-            "french": "Karaclée"
+            "english": "Sawk"
         },
         "type": [
             "Fighting"
@@ -11028,10 +9411,7 @@ const pokemon = [
     {
         "id": 540,
         "name": {
-            "english": "Sewaddle",
-            "japanese": "クルミル",
-            "chinese": "虫宝包",
-            "french": "Larveyette"
+            "english": "Sewaddle"
         },
         "type": [
             "Bug",
@@ -11049,10 +9429,7 @@ const pokemon = [
     {
         "id": 541,
         "name": {
-            "english": "Swadloon",
-            "japanese": "クルマユ",
-            "chinese": "宝包茧",
-            "french": "Couverdure"
+            "english": "Swadloon"
         },
         "type": [
             "Bug",
@@ -11070,10 +9447,7 @@ const pokemon = [
     {
         "id": 542,
         "name": {
-            "english": "Leavanny",
-            "japanese": "ハハコモリ",
-            "chinese": "保姆虫",
-            "french": "Manternel"
+            "english": "Leavanny"
         },
         "type": [
             "Bug",
@@ -11091,10 +9465,7 @@ const pokemon = [
     {
         "id": 543,
         "name": {
-            "english": "Venipede",
-            "japanese": "フシデ",
-            "chinese": "百足蜈蚣",
-            "french": "Venipatte"
+            "english": "Venipede"
         },
         "type": [
             "Bug",
@@ -11112,10 +9483,7 @@ const pokemon = [
     {
         "id": 544,
         "name": {
-            "english": "Whirlipede",
-            "japanese": "ホイーガ",
-            "chinese": "车轮球",
-            "french": "Scobolide"
+            "english": "Whirlipede"
         },
         "type": [
             "Bug",
@@ -11133,10 +9501,7 @@ const pokemon = [
     {
         "id": 545,
         "name": {
-            "english": "Scolipede",
-            "japanese": "ペンドラー",
-            "chinese": "蜈蚣王",
-            "french": "Brutapode"
+            "english": "Scolipede"
         },
         "type": [
             "Bug",
@@ -11154,10 +9519,7 @@ const pokemon = [
     {
         "id": 546,
         "name": {
-            "english": "Cottonee",
-            "japanese": "モンメン",
-            "chinese": "木棉球",
-            "french": "Doudouvet"
+            "english": "Cottonee"
         },
         "type": [
             "Grass",
@@ -11175,10 +9537,7 @@ const pokemon = [
     {
         "id": 547,
         "name": {
-            "english": "Whimsicott",
-            "japanese": "エルフーン",
-            "chinese": "风妖精",
-            "french": "Farfaduvet"
+            "english": "Whimsicott"
         },
         "type": [
             "Grass",
@@ -11196,10 +9555,7 @@ const pokemon = [
     {
         "id": 548,
         "name": {
-            "english": "Petilil",
-            "japanese": "チュリネ",
-            "chinese": "百合根娃娃",
-            "french": "Chlorobule"
+            "english": "Petilil"
         },
         "type": [
             "Grass"
@@ -11216,10 +9572,7 @@ const pokemon = [
     {
         "id": 549,
         "name": {
-            "english": "Lilligant",
-            "japanese": "ドレディア",
-            "chinese": "裙儿小姐",
-            "french": "Fragilady"
+            "english": "Lilligant"
         },
         "type": [
             "Grass"
@@ -11236,10 +9589,7 @@ const pokemon = [
     {
         "id": 550,
         "name": {
-            "english": "Basculin",
-            "japanese": "バスラオ",
-            "chinese": "野蛮鲈鱼",
-            "french": "Bargantua"
+            "english": "Basculin"
         },
         "type": [
             "Water"
@@ -11256,10 +9606,7 @@ const pokemon = [
     {
         "id": 551,
         "name": {
-            "english": "Sandile",
-            "japanese": "メグロコ",
-            "chinese": "黑眼鳄",
-            "french": "Mascaïman"
+            "english": "Sandile"
         },
         "type": [
             "Ground",
@@ -11277,10 +9624,7 @@ const pokemon = [
     {
         "id": 552,
         "name": {
-            "english": "Krokorok",
-            "japanese": "ワルビル",
-            "chinese": "混混鳄",
-            "french": "Escroco"
+            "english": "Krokorok"
         },
         "type": [
             "Ground",
@@ -11298,10 +9642,7 @@ const pokemon = [
     {
         "id": 553,
         "name": {
-            "english": "Krookodile",
-            "japanese": "ワルビアル",
-            "chinese": "流氓鳄",
-            "french": "Crocorible"
+            "english": "Krookodile"
         },
         "type": [
             "Ground",
@@ -11319,10 +9660,7 @@ const pokemon = [
     {
         "id": 554,
         "name": {
-            "english": "Darumaka",
-            "japanese": "ダルマッカ",
-            "chinese": "火红不倒翁",
-            "french": "Darumarond"
+            "english": "Darumaka"
         },
         "type": [
             "Fire"
@@ -11339,10 +9677,7 @@ const pokemon = [
     {
         "id": 555,
         "name": {
-            "english": "Darmanitan",
-            "japanese": "ヒヒダルマ",
-            "chinese": "达摩狒狒",
-            "french": "Darumacho"
+            "english": "Darmanitan"
         },
         "type": [
             "Fire"
@@ -11359,10 +9694,7 @@ const pokemon = [
     {
         "id": 556,
         "name": {
-            "english": "Maractus",
-            "japanese": "マラカッチ",
-            "chinese": "沙铃仙人掌",
-            "french": "Maracachi"
+            "english": "Maractus"
         },
         "type": [
             "Grass"
@@ -11379,10 +9711,7 @@ const pokemon = [
     {
         "id": 557,
         "name": {
-            "english": "Dwebble",
-            "japanese": "イシズマイ",
-            "chinese": "石居蟹",
-            "french": "Crabicoque"
+            "english": "Dwebble"
         },
         "type": [
             "Bug",
@@ -11400,10 +9729,7 @@ const pokemon = [
     {
         "id": 558,
         "name": {
-            "english": "Crustle",
-            "japanese": "イワパレス",
-            "chinese": "岩殿居蟹",
-            "french": "Crabaraque"
+            "english": "Crustle"
         },
         "type": [
             "Bug",
@@ -11421,10 +9747,7 @@ const pokemon = [
     {
         "id": 559,
         "name": {
-            "english": "Scraggy",
-            "japanese": "ズルッグ",
-            "chinese": "滑滑小子",
-            "french": "Baggiguane"
+            "english": "Scraggy"
         },
         "type": [
             "Dark",
@@ -11442,10 +9765,7 @@ const pokemon = [
     {
         "id": 560,
         "name": {
-            "english": "Scrafty",
-            "japanese": "ズルズキン",
-            "chinese": "头巾混混",
-            "french": "Baggaïd"
+            "english": "Scrafty"
         },
         "type": [
             "Dark",
@@ -11463,10 +9783,7 @@ const pokemon = [
     {
         "id": 561,
         "name": {
-            "english": "Sigilyph",
-            "japanese": "シンボラー",
-            "chinese": "象征鸟",
-            "french": "Cryptéro"
+            "english": "Sigilyph"
         },
         "type": [
             "Psychic",
@@ -11484,10 +9801,7 @@ const pokemon = [
     {
         "id": 562,
         "name": {
-            "english": "Yamask",
-            "japanese": "デスマス",
-            "chinese": "哭哭面具",
-            "french": "Tutafeh"
+            "english": "Yamask"
         },
         "type": [
             "Ghost"
@@ -11504,10 +9818,7 @@ const pokemon = [
     {
         "id": 563,
         "name": {
-            "english": "Cofagrigus",
-            "japanese": "デスカーン",
-            "chinese": "死神棺",
-            "french": "Tutankafer"
+            "english": "Cofagrigus"
         },
         "type": [
             "Ghost"
@@ -11524,10 +9835,7 @@ const pokemon = [
     {
         "id": 564,
         "name": {
-            "english": "Tirtouga",
-            "japanese": "プロトーガ",
-            "chinese": "原盖海龟",
-            "french": "Carapagos"
+            "english": "Tirtouga"
         },
         "type": [
             "Water",
@@ -11545,10 +9853,7 @@ const pokemon = [
     {
         "id": 565,
         "name": {
-            "english": "Carracosta",
-            "japanese": "アバゴーラ",
-            "chinese": "肋骨海龟",
-            "french": "Mégapagos"
+            "english": "Carracosta"
         },
         "type": [
             "Water",
@@ -11566,10 +9871,7 @@ const pokemon = [
     {
         "id": 566,
         "name": {
-            "english": "Archen",
-            "japanese": "アーケン",
-            "chinese": "始祖小鸟",
-            "french": "Arkéapti"
+            "english": "Archen"
         },
         "type": [
             "Rock",
@@ -11587,10 +9889,7 @@ const pokemon = [
     {
         "id": 567,
         "name": {
-            "english": "Archeops",
-            "japanese": "アーケオス",
-            "chinese": "始祖大鸟",
-            "french": "Aéroptéryx"
+            "english": "Archeops"
         },
         "type": [
             "Rock",
@@ -11608,10 +9907,7 @@ const pokemon = [
     {
         "id": 568,
         "name": {
-            "english": "Trubbish",
-            "japanese": "ヤブクロン",
-            "chinese": "破破袋",
-            "french": "Miamiasme"
+            "english": "Trubbish"
         },
         "type": [
             "Poison"
@@ -11628,10 +9924,7 @@ const pokemon = [
     {
         "id": 569,
         "name": {
-            "english": "Garbodor",
-            "japanese": "ダストダス",
-            "chinese": "灰尘山",
-            "french": "Miasmax"
+            "english": "Garbodor"
         },
         "type": [
             "Poison"
@@ -11648,10 +9941,7 @@ const pokemon = [
     {
         "id": 570,
         "name": {
-            "english": "Zorua",
-            "japanese": "ゾロア",
-            "chinese": "索罗亚",
-            "french": "Zorua"
+            "english": "Zorua"
         },
         "type": [
             "Dark"
@@ -11668,10 +9958,7 @@ const pokemon = [
     {
         "id": 571,
         "name": {
-            "english": "Zoroark",
-            "japanese": "ゾロアーク",
-            "chinese": "索罗亚克",
-            "french": "Zoroark"
+            "english": "Zoroark"
         },
         "type": [
             "Dark"
@@ -11688,10 +9975,7 @@ const pokemon = [
     {
         "id": 572,
         "name": {
-            "english": "Minccino",
-            "japanese": "チラーミィ",
-            "chinese": "泡沫栗鼠",
-            "french": "Chinchidou"
+            "english": "Minccino"
         },
         "type": [
             "Normal"
@@ -11708,10 +9992,7 @@ const pokemon = [
     {
         "id": 573,
         "name": {
-            "english": "Cinccino",
-            "japanese": "チラチーノ",
-            "chinese": "奇诺栗鼠",
-            "french": "Pashmilla"
+            "english": "Cinccino"
         },
         "type": [
             "Normal"
@@ -11728,10 +10009,7 @@ const pokemon = [
     {
         "id": 574,
         "name": {
-            "english": "Gothita",
-            "japanese": "ゴチム",
-            "chinese": "哥德宝宝",
-            "french": "Scrutella"
+            "english": "Gothita"
         },
         "type": [
             "Psychic"
@@ -11748,10 +10026,7 @@ const pokemon = [
     {
         "id": 575,
         "name": {
-            "english": "Gothorita",
-            "japanese": "ゴチミル",
-            "chinese": "哥德小童",
-            "french": "Mesmérella"
+            "english": "Gothorita"
         },
         "type": [
             "Psychic"
@@ -11768,10 +10043,7 @@ const pokemon = [
     {
         "id": 576,
         "name": {
-            "english": "Gothitelle",
-            "japanese": "ゴチルゼル",
-            "chinese": "哥德小姐",
-            "french": "Sidérella"
+            "english": "Gothitelle"
         },
         "type": [
             "Psychic"
@@ -11788,10 +10060,7 @@ const pokemon = [
     {
         "id": 577,
         "name": {
-            "english": "Solosis",
-            "japanese": "ユニラン",
-            "chinese": "单卵细胞球",
-            "french": "Nucléos"
+            "english": "Solosis"
         },
         "type": [
             "Psychic"
@@ -11808,10 +10077,7 @@ const pokemon = [
     {
         "id": 578,
         "name": {
-            "english": "Duosion",
-            "japanese": "ダブラン",
-            "chinese": "双卵细胞球",
-            "french": "Méios"
+            "english": "Duosion"
         },
         "type": [
             "Psychic"
@@ -11828,10 +10094,7 @@ const pokemon = [
     {
         "id": 579,
         "name": {
-            "english": "Reuniclus",
-            "japanese": "ランクルス",
-            "chinese": "人造细胞卵",
-            "french": "Symbios"
+            "english": "Reuniclus"
         },
         "type": [
             "Psychic"
@@ -11848,10 +10111,7 @@ const pokemon = [
     {
         "id": 580,
         "name": {
-            "english": "Ducklett",
-            "japanese": "コアルヒー",
-            "chinese": "鸭宝宝",
-            "french": "Couaneton"
+            "english": "Ducklett"
         },
         "type": [
             "Water",
@@ -11869,10 +10129,7 @@ const pokemon = [
     {
         "id": 581,
         "name": {
-            "english": "Swanna",
-            "japanese": "スワンナ",
-            "chinese": "舞天鹅",
-            "french": "Lakmécygne"
+            "english": "Swanna"
         },
         "type": [
             "Water",
@@ -11890,10 +10147,7 @@ const pokemon = [
     {
         "id": 582,
         "name": {
-            "english": "Vanillite",
-            "japanese": "バニプッチ",
-            "chinese": "迷你冰",
-            "french": "Sorbébé"
+            "english": "Vanillite"
         },
         "type": [
             "Ice"
@@ -11910,10 +10164,7 @@ const pokemon = [
     {
         "id": 583,
         "name": {
-            "english": "Vanillish",
-            "japanese": "バニリッチ",
-            "chinese": "多多冰",
-            "french": "Sorboul"
+            "english": "Vanillish"
         },
         "type": [
             "Ice"
@@ -11930,10 +10181,7 @@ const pokemon = [
     {
         "id": 584,
         "name": {
-            "english": "Vanilluxe",
-            "japanese": "バイバニラ",
-            "chinese": "双倍多多冰",
-            "french": "Sorbouboul"
+            "english": "Vanilluxe"
         },
         "type": [
             "Ice"
@@ -11950,10 +10198,7 @@ const pokemon = [
     {
         "id": 585,
         "name": {
-            "english": "Deerling",
-            "japanese": "シキジカ",
-            "chinese": "四季鹿",
-            "french": "Vivaldaim"
+            "english": "Deerling"
         },
         "type": [
             "Normal",
@@ -11971,10 +10216,7 @@ const pokemon = [
     {
         "id": 586,
         "name": {
-            "english": "Sawsbuck",
-            "japanese": "メブキジカ",
-            "chinese": "萌芽鹿",
-            "french": "Haydaim"
+            "english": "Sawsbuck"
         },
         "type": [
             "Normal",
@@ -11992,10 +10234,7 @@ const pokemon = [
     {
         "id": 587,
         "name": {
-            "english": "Emolga",
-            "japanese": "エモンガ",
-            "chinese": "电飞鼠",
-            "french": "Emolga"
+            "english": "Emolga"
         },
         "type": [
             "Electric",
@@ -12013,10 +10252,7 @@ const pokemon = [
     {
         "id": 588,
         "name": {
-            "english": "Karrablast",
-            "japanese": "カブルモ",
-            "chinese": "盖盖虫",
-            "french": "Carabing"
+            "english": "Karrablast"
         },
         "type": [
             "Bug"
@@ -12033,10 +10269,7 @@ const pokemon = [
     {
         "id": 589,
         "name": {
-            "english": "Escavalier",
-            "japanese": "シュバルゴ",
-            "chinese": "骑士蜗牛",
-            "french": "Lançargot"
+            "english": "Escavalier"
         },
         "type": [
             "Bug",
@@ -12054,10 +10287,7 @@ const pokemon = [
     {
         "id": 590,
         "name": {
-            "english": "Foongus",
-            "japanese": "タマゲタケ",
-            "chinese": "哎呀球菇",
-            "french": "Trompignon"
+            "english": "Foongus"
         },
         "type": [
             "Grass",
@@ -12075,10 +10305,7 @@ const pokemon = [
     {
         "id": 591,
         "name": {
-            "english": "Amoonguss",
-            "japanese": "モロバレル",
-            "chinese": "败露球菇",
-            "french": "Gaulet"
+            "english": "Amoonguss"
         },
         "type": [
             "Grass",
@@ -12096,10 +10323,7 @@ const pokemon = [
     {
         "id": 592,
         "name": {
-            "english": "Frillish",
-            "japanese": "プルリル",
-            "chinese": "轻飘飘",
-            "french": "Viskuse"
+            "english": "Frillish"
         },
         "type": [
             "Water",
@@ -12117,10 +10341,7 @@ const pokemon = [
     {
         "id": 593,
         "name": {
-            "english": "Jellicent",
-            "japanese": "ブルンゲル",
-            "chinese": "胖嘟嘟",
-            "french": "Moyade"
+            "english": "Jellicent"
         },
         "type": [
             "Water",
@@ -12138,10 +10359,7 @@ const pokemon = [
     {
         "id": 594,
         "name": {
-            "english": "Alomomola",
-            "japanese": "ママンボウ",
-            "chinese": "保姆曼波",
-            "french": "Mamanbo"
+            "english": "Alomomola"
         },
         "type": [
             "Water"
@@ -12158,10 +10376,7 @@ const pokemon = [
     {
         "id": 595,
         "name": {
-            "english": "Joltik",
-            "japanese": "バチュル",
-            "chinese": "电电虫",
-            "french": "Statitik"
+            "english": "Joltik"
         },
         "type": [
             "Bug",
@@ -12179,10 +10394,7 @@ const pokemon = [
     {
         "id": 596,
         "name": {
-            "english": "Galvantula",
-            "japanese": "デンチュラ",
-            "chinese": "电蜘蛛",
-            "french": "Mygavolt"
+            "english": "Galvantula"
         },
         "type": [
             "Bug",
@@ -12200,10 +10412,7 @@ const pokemon = [
     {
         "id": 597,
         "name": {
-            "english": "Ferroseed",
-            "japanese": "テッシード",
-            "chinese": "种子铁球",
-            "french": "Grindur"
+            "english": "Ferroseed"
         },
         "type": [
             "Grass",
@@ -12221,10 +10430,7 @@ const pokemon = [
     {
         "id": 598,
         "name": {
-            "english": "Ferrothorn",
-            "japanese": "ナットレイ",
-            "chinese": "坚果哑铃",
-            "french": "Noacier"
+            "english": "Ferrothorn"
         },
         "type": [
             "Grass",
@@ -12242,10 +10448,7 @@ const pokemon = [
     {
         "id": 599,
         "name": {
-            "english": "Klink",
-            "japanese": "ギアル",
-            "chinese": "齿轮儿",
-            "french": "Tic"
+            "english": "Klink"
         },
         "type": [
             "Steel"
@@ -12262,10 +10465,7 @@ const pokemon = [
     {
         "id": 600,
         "name": {
-            "english": "Klang",
-            "japanese": "ギギアル",
-            "chinese": "齿轮组",
-            "french": "Clic"
+            "english": "Klang"
         },
         "type": [
             "Steel"
@@ -12282,10 +10482,7 @@ const pokemon = [
     {
         "id": 601,
         "name": {
-            "english": "Klinklang",
-            "japanese": "ギギギアル",
-            "chinese": "齿轮怪",
-            "french": "Cliticlic"
+            "english": "Klinklang"
         },
         "type": [
             "Steel"
@@ -12302,10 +10499,7 @@ const pokemon = [
     {
         "id": 602,
         "name": {
-            "english": "Tynamo",
-            "japanese": "シビシラス",
-            "chinese": "麻麻小鱼",
-            "french": "Anchwatt"
+            "english": "Tynamo"
         },
         "type": [
             "Electric"
@@ -12322,10 +10516,7 @@ const pokemon = [
     {
         "id": 603,
         "name": {
-            "english": "Eelektrik",
-            "japanese": "シビビール",
-            "chinese": "麻麻鳗",
-            "french": "Lampéroie"
+            "english": "Eelektrik"
         },
         "type": [
             "Electric"
@@ -12342,10 +10533,7 @@ const pokemon = [
     {
         "id": 604,
         "name": {
-            "english": "Eelektross",
-            "japanese": "シビルドン",
-            "chinese": "麻麻鳗鱼王",
-            "french": "Ohmassacre"
+            "english": "Eelektross"
         },
         "type": [
             "Electric"
@@ -12362,10 +10550,7 @@ const pokemon = [
     {
         "id": 605,
         "name": {
-            "english": "Elgyem",
-            "japanese": "リグレー",
-            "chinese": "小灰怪",
-            "french": "Lewsor"
+            "english": "Elgyem"
         },
         "type": [
             "Psychic"
@@ -12382,10 +10567,7 @@ const pokemon = [
     {
         "id": 606,
         "name": {
-            "english": "Beheeyem",
-            "japanese": "オーベム",
-            "chinese": "大宇怪",
-            "french": "Neitram"
+            "english": "Beheeyem"
         },
         "type": [
             "Psychic"
@@ -12402,10 +10584,7 @@ const pokemon = [
     {
         "id": 607,
         "name": {
-            "english": "Litwick",
-            "japanese": "ヒトモシ",
-            "chinese": "烛光灵",
-            "french": "Funécire"
+            "english": "Litwick"
         },
         "type": [
             "Ghost",
@@ -12423,10 +10602,7 @@ const pokemon = [
     {
         "id": 608,
         "name": {
-            "english": "Lampent",
-            "japanese": "ランプラー",
-            "chinese": "灯火幽灵",
-            "french": "Mélancolux"
+            "english": "Lampent"
         },
         "type": [
             "Ghost",
@@ -12444,10 +10620,7 @@ const pokemon = [
     {
         "id": 609,
         "name": {
-            "english": "Chandelure",
-            "japanese": "シャンデラ",
-            "chinese": "水晶灯火灵",
-            "french": "Lugulabre"
+            "english": "Chandelure"
         },
         "type": [
             "Ghost",
@@ -12465,10 +10638,7 @@ const pokemon = [
     {
         "id": 610,
         "name": {
-            "english": "Axew",
-            "japanese": "キバゴ",
-            "chinese": "牙牙",
-            "french": "Coupenotte"
+            "english": "Axew"
         },
         "type": [
             "Dragon"
@@ -12485,10 +10655,7 @@ const pokemon = [
     {
         "id": 611,
         "name": {
-            "english": "Fraxure",
-            "japanese": "オノンド",
-            "chinese": "斧牙龙",
-            "french": "Incisache"
+            "english": "Fraxure"
         },
         "type": [
             "Dragon"
@@ -12505,10 +10672,7 @@ const pokemon = [
     {
         "id": 612,
         "name": {
-            "english": "Haxorus",
-            "japanese": "オノノクス",
-            "chinese": "双斧战龙",
-            "french": "Tranchodon"
+            "english": "Haxorus"
         },
         "type": [
             "Dragon"
@@ -12525,10 +10689,7 @@ const pokemon = [
     {
         "id": 613,
         "name": {
-            "english": "Cubchoo",
-            "japanese": "クマシュン",
-            "chinese": "喷嚏熊",
-            "french": "Polarhume"
+            "english": "Cubchoo"
         },
         "type": [
             "Ice"
@@ -12545,10 +10706,7 @@ const pokemon = [
     {
         "id": 614,
         "name": {
-            "english": "Beartic",
-            "japanese": "ツンベアー",
-            "chinese": "冻原熊",
-            "french": "Polagriffe"
+            "english": "Beartic"
         },
         "type": [
             "Ice"
@@ -12565,10 +10723,7 @@ const pokemon = [
     {
         "id": 615,
         "name": {
-            "english": "Cryogonal",
-            "japanese": "フリージオ",
-            "chinese": "几何雪花",
-            "french": "Hexagel"
+            "english": "Cryogonal"
         },
         "type": [
             "Ice"
@@ -12585,10 +10740,7 @@ const pokemon = [
     {
         "id": 616,
         "name": {
-            "english": "Shelmet",
-            "japanese": "チョボマキ",
-            "chinese": "小嘴蜗",
-            "french": "Escargaume"
+            "english": "Shelmet"
         },
         "type": [
             "Bug"
@@ -12605,10 +10757,7 @@ const pokemon = [
     {
         "id": 617,
         "name": {
-            "english": "Accelgor",
-            "japanese": "アギルダー",
-            "chinese": "敏捷虫",
-            "french": "Limaspeed"
+            "english": "Accelgor"
         },
         "type": [
             "Bug"
@@ -12625,10 +10774,7 @@ const pokemon = [
     {
         "id": 618,
         "name": {
-            "english": "Stunfisk",
-            "japanese": "マッギョ",
-            "chinese": "泥巴鱼",
-            "french": "Limonde"
+            "english": "Stunfisk"
         },
         "type": [
             "Ground",
@@ -12646,10 +10792,7 @@ const pokemon = [
     {
         "id": 619,
         "name": {
-            "english": "Mienfoo",
-            "japanese": "コジョフー",
-            "chinese": "功夫鼬",
-            "french": "Kungfouine"
+            "english": "Mienfoo"
         },
         "type": [
             "Fighting"
@@ -12666,10 +10809,7 @@ const pokemon = [
     {
         "id": 620,
         "name": {
-            "english": "Mienshao",
-            "japanese": "コジョンド",
-            "chinese": "师父鼬",
-            "french": "Shaofouine"
+            "english": "Mienshao"
         },
         "type": [
             "Fighting"
@@ -12686,10 +10826,7 @@ const pokemon = [
     {
         "id": 621,
         "name": {
-            "english": "Druddigon",
-            "japanese": "クリムガン",
-            "chinese": "赤面龙",
-            "french": "Drakkarmin"
+            "english": "Druddigon"
         },
         "type": [
             "Dragon"
@@ -12706,10 +10843,7 @@ const pokemon = [
     {
         "id": 622,
         "name": {
-            "english": "Golett",
-            "japanese": "ゴビット",
-            "chinese": "泥偶小人",
-            "french": "Gringolem"
+            "english": "Golett"
         },
         "type": [
             "Ground",
@@ -12727,10 +10861,7 @@ const pokemon = [
     {
         "id": 623,
         "name": {
-            "english": "Golurk",
-            "japanese": "ゴルーグ",
-            "chinese": "泥偶巨人",
-            "french": "Golemastoc"
+            "english": "Golurk"
         },
         "type": [
             "Ground",
@@ -12748,10 +10879,7 @@ const pokemon = [
     {
         "id": 624,
         "name": {
-            "english": "Pawniard",
-            "japanese": "コマタナ",
-            "chinese": "驹刀小兵",
-            "french": "Scalpion"
+            "english": "Pawniard"
         },
         "type": [
             "Dark",
@@ -12769,10 +10897,7 @@ const pokemon = [
     {
         "id": 625,
         "name": {
-            "english": "Bisharp",
-            "japanese": "キリキザン",
-            "chinese": "劈斩司令",
-            "french": "Scalproie"
+            "english": "Bisharp"
         },
         "type": [
             "Dark",
@@ -12790,10 +10915,7 @@ const pokemon = [
     {
         "id": 626,
         "name": {
-            "english": "Bouffalant",
-            "japanese": "バッフロン",
-            "chinese": "爆炸头水牛",
-            "french": "Frison"
+            "english": "Bouffalant"
         },
         "type": [
             "Normal"
@@ -12810,10 +10932,7 @@ const pokemon = [
     {
         "id": 627,
         "name": {
-            "english": "Rufflet",
-            "japanese": "ワシボン",
-            "chinese": "毛头小鹰",
-            "french": "Furaiglon"
+            "english": "Rufflet"
         },
         "type": [
             "Normal",
@@ -12831,10 +10950,7 @@ const pokemon = [
     {
         "id": 628,
         "name": {
-            "english": "Braviary",
-            "japanese": "ウォーグル",
-            "chinese": "勇士雄鹰",
-            "french": "Gueriaigle"
+            "english": "Braviary"
         },
         "type": [
             "Normal",
@@ -12852,10 +10968,7 @@ const pokemon = [
     {
         "id": 629,
         "name": {
-            "english": "Vullaby",
-            "japanese": "バルチャイ",
-            "chinese": "秃鹰丫头",
-            "french": "Vostourno"
+            "english": "Vullaby"
         },
         "type": [
             "Dark",
@@ -12873,10 +10986,7 @@ const pokemon = [
     {
         "id": 630,
         "name": {
-            "english": "Mandibuzz",
-            "japanese": "バルジーナ",
-            "chinese": "秃鹰娜",
-            "french": "Vaututrice"
+            "english": "Mandibuzz"
         },
         "type": [
             "Dark",
@@ -12894,10 +11004,7 @@ const pokemon = [
     {
         "id": 631,
         "name": {
-            "english": "Heatmor",
-            "japanese": "クイタラン",
-            "chinese": "熔蚁兽",
-            "french": "Aflamanoir"
+            "english": "Heatmor"
         },
         "type": [
             "Fire"
@@ -12914,10 +11021,7 @@ const pokemon = [
     {
         "id": 632,
         "name": {
-            "english": "Durant",
-            "japanese": "アイアント",
-            "chinese": "铁蚁",
-            "french": "Fermite"
+            "english": "Durant"
         },
         "type": [
             "Bug",
@@ -12935,10 +11039,7 @@ const pokemon = [
     {
         "id": 633,
         "name": {
-            "english": "Deino",
-            "japanese": "モノズ",
-            "chinese": "单首龙",
-            "french": "Solochi"
+            "english": "Deino"
         },
         "type": [
             "Dark",
@@ -12956,10 +11057,7 @@ const pokemon = [
     {
         "id": 634,
         "name": {
-            "english": "Zweilous",
-            "japanese": "ジヘッド",
-            "chinese": "双首暴龙",
-            "french": "Diamat"
+            "english": "Zweilous"
         },
         "type": [
             "Dark",
@@ -12977,10 +11075,7 @@ const pokemon = [
     {
         "id": 635,
         "name": {
-            "english": "Hydreigon",
-            "japanese": "サザンドラ",
-            "chinese": "三首恶龙",
-            "french": "Trioxhydre"
+            "english": "Hydreigon"
         },
         "type": [
             "Dark",
@@ -12998,10 +11093,7 @@ const pokemon = [
     {
         "id": 636,
         "name": {
-            "english": "Larvesta",
-            "japanese": "メラルバ",
-            "chinese": "燃烧虫",
-            "french": "Pyronille"
+            "english": "Larvesta"
         },
         "type": [
             "Bug",
@@ -13019,10 +11111,7 @@ const pokemon = [
     {
         "id": 637,
         "name": {
-            "english": "Volcarona",
-            "japanese": "ウルガモス",
-            "chinese": "火神蛾",
-            "french": "Pyrax"
+            "english": "Volcarona"
         },
         "type": [
             "Bug",
@@ -13040,10 +11129,7 @@ const pokemon = [
     {
         "id": 638,
         "name": {
-            "english": "Cobalion",
-            "japanese": "コバルオン",
-            "chinese": "勾帕路翁",
-            "french": "Cobaltium"
+            "english": "Cobalion"
         },
         "type": [
             "Steel",
@@ -13061,10 +11147,7 @@ const pokemon = [
     {
         "id": 639,
         "name": {
-            "english": "Terrakion",
-            "japanese": "テラキオン",
-            "chinese": "代拉基翁",
-            "french": "Terrakium"
+            "english": "Terrakion"
         },
         "type": [
             "Rock",
@@ -13082,10 +11165,7 @@ const pokemon = [
     {
         "id": 640,
         "name": {
-            "english": "Virizion",
-            "japanese": "ビリジオン",
-            "chinese": "毕力吉翁",
-            "french": "Viridium"
+            "english": "Virizion"
         },
         "type": [
             "Grass",
@@ -13103,10 +11183,7 @@ const pokemon = [
     {
         "id": 641,
         "name": {
-            "english": "Tornadus",
-            "japanese": "トルネロス",
-            "chinese": "龙卷云",
-            "french": "Boréas"
+            "english": "Tornadus"
         },
         "type": [
             "Flying"
@@ -13123,10 +11200,7 @@ const pokemon = [
     {
         "id": 642,
         "name": {
-            "english": "Thundurus",
-            "japanese": "ボルトロス",
-            "chinese": "雷电云",
-            "french": "Fulguris"
+            "english": "Thundurus"
         },
         "type": [
             "Electric",
@@ -13144,10 +11218,7 @@ const pokemon = [
     {
         "id": 643,
         "name": {
-            "english": "Reshiram",
-            "japanese": "レシラム",
-            "chinese": "莱希拉姆",
-            "french": "Reshiram"
+            "english": "Reshiram"
         },
         "type": [
             "Dragon",
@@ -13165,10 +11236,7 @@ const pokemon = [
     {
         "id": 644,
         "name": {
-            "english": "Zekrom",
-            "japanese": "ゼクロム",
-            "chinese": "捷克罗姆",
-            "french": "Zekrom"
+            "english": "Zekrom"
         },
         "type": [
             "Dragon",
@@ -13186,10 +11254,7 @@ const pokemon = [
     {
         "id": 645,
         "name": {
-            "english": "Landorus",
-            "japanese": "ランドロス",
-            "chinese": "土地云",
-            "french": "Démétéros"
+            "english": "Landorus"
         },
         "type": [
             "Ground",
@@ -13207,10 +11272,7 @@ const pokemon = [
     {
         "id": 646,
         "name": {
-            "english": "Kyurem",
-            "japanese": "キュレム",
-            "chinese": "酋雷姆",
-            "french": "Kyurem"
+            "english": "Kyurem"
         },
         "type": [
             "Dragon",
@@ -13228,10 +11290,7 @@ const pokemon = [
     {
         "id": 647,
         "name": {
-            "english": "Keldeo",
-            "japanese": "ケルディオ",
-            "chinese": "凯路迪欧",
-            "french": "Keldeo"
+            "english": "Keldeo"
         },
         "type": [
             "Water",
@@ -13249,10 +11308,7 @@ const pokemon = [
     {
         "id": 648,
         "name": {
-            "english": "Meloetta",
-            "japanese": "メロエッタ",
-            "chinese": "美洛耶塔",
-            "french": "Meloetta"
+            "english": "Meloetta"
         },
         "type": [
             "Normal",
@@ -13270,10 +11326,7 @@ const pokemon = [
     {
         "id": 649,
         "name": {
-            "english": "Genesect",
-            "japanese": "ゲノセクト",
-            "chinese": "盖诺赛克特",
-            "french": "Genesect"
+            "english": "Genesect"
         },
         "type": [
             "Bug",
@@ -13291,10 +11344,7 @@ const pokemon = [
     {
         "id": 650,
         "name": {
-            "english": "Chespin",
-            "japanese": "ハリマロン",
-            "chinese": "哈力栗",
-            "french": "Marisson"
+            "english": "Chespin"
         },
         "type": [
             "Grass"
@@ -13311,10 +11361,7 @@ const pokemon = [
     {
         "id": 651,
         "name": {
-            "english": "Quilladin",
-            "japanese": "ハリボーグ",
-            "chinese": "胖胖哈力",
-            "french": "Boguérisse"
+            "english": "Quilladin"
         },
         "type": [
             "Grass"
@@ -13331,10 +11378,7 @@ const pokemon = [
     {
         "id": 652,
         "name": {
-            "english": "Chesnaught",
-            "japanese": "ブリガロン",
-            "chinese": "布里卡隆",
-            "french": "Blindépique"
+            "english": "Chesnaught"
         },
         "type": [
             "Grass",
@@ -13352,10 +11396,7 @@ const pokemon = [
     {
         "id": 653,
         "name": {
-            "english": "Fennekin",
-            "japanese": "フォッコ",
-            "chinese": "火狐狸",
-            "french": "Feunnec"
+            "english": "Fennekin"
         },
         "type": [
             "Fire"
@@ -13372,10 +11413,7 @@ const pokemon = [
     {
         "id": 654,
         "name": {
-            "english": "Braixen",
-            "japanese": "テールナー",
-            "chinese": "长尾火狐",
-            "french": "Roussil"
+            "english": "Braixen"
         },
         "type": [
             "Fire"
@@ -13392,10 +11430,7 @@ const pokemon = [
     {
         "id": 655,
         "name": {
-            "english": "Delphox",
-            "japanese": "マフォクシー",
-            "chinese": "妖火红狐",
-            "french": "Goupelin"
+            "english": "Delphox"
         },
         "type": [
             "Fire",
@@ -13413,10 +11448,7 @@ const pokemon = [
     {
         "id": 656,
         "name": {
-            "english": "Froakie",
-            "japanese": "ケロマツ",
-            "chinese": "呱呱泡蛙",
-            "french": "Grenousse"
+            "english": "Froakie"
         },
         "type": [
             "Water"
@@ -13433,10 +11465,7 @@ const pokemon = [
     {
         "id": 657,
         "name": {
-            "english": "Frogadier",
-            "japanese": "ゲコガシラ",
-            "chinese": "呱头蛙",
-            "french": "Croâporal"
+            "english": "Frogadier"
         },
         "type": [
             "Water"
@@ -13453,10 +11482,7 @@ const pokemon = [
     {
         "id": 658,
         "name": {
-            "english": "Greninja",
-            "japanese": "ゲッコウガ",
-            "chinese": "甲贺忍蛙",
-            "french": "Amphinobi"
+            "english": "Greninja"
         },
         "type": [
             "Water",
@@ -13474,10 +11500,7 @@ const pokemon = [
     {
         "id": 659,
         "name": {
-            "english": "Bunnelby",
-            "japanese": "ホルビー",
-            "chinese": "掘掘兔",
-            "french": "Sapereau"
+            "english": "Bunnelby"
         },
         "type": [
             "Normal"
@@ -13494,10 +11517,7 @@ const pokemon = [
     {
         "id": 660,
         "name": {
-            "english": "Diggersby",
-            "japanese": "ホルード",
-            "chinese": "掘地兔",
-            "french": "Excavarenne"
+            "english": "Diggersby"
         },
         "type": [
             "Normal",
@@ -13515,10 +11535,7 @@ const pokemon = [
     {
         "id": 661,
         "name": {
-            "english": "Fletchling",
-            "japanese": "ヤヤコマ",
-            "chinese": "小箭雀",
-            "french": "Passerouge"
+            "english": "Fletchling"
         },
         "type": [
             "Normal",
@@ -13536,10 +11553,7 @@ const pokemon = [
     {
         "id": 662,
         "name": {
-            "english": "Fletchinder",
-            "japanese": "ヒノヤコマ",
-            "chinese": "火箭雀",
-            "french": "Braisillon"
+            "english": "Fletchinder"
         },
         "type": [
             "Fire",
@@ -13557,10 +11571,7 @@ const pokemon = [
     {
         "id": 663,
         "name": {
-            "english": "Talonflame",
-            "japanese": "ファイアロー",
-            "chinese": "烈箭鹰",
-            "french": "Flambusard"
+            "english": "Talonflame"
         },
         "type": [
             "Fire",
@@ -13578,10 +11589,7 @@ const pokemon = [
     {
         "id": 664,
         "name": {
-            "english": "Scatterbug",
-            "japanese": "コフキムシ",
-            "chinese": "粉蝶虫",
-            "french": "Lépidonille"
+            "english": "Scatterbug"
         },
         "type": [
             "Bug"
@@ -13598,10 +11606,7 @@ const pokemon = [
     {
         "id": 665,
         "name": {
-            "english": "Spewpa",
-            "japanese": "コフーライ",
-            "chinese": "粉蝶蛹",
-            "french": "Pérégrain"
+            "english": "Spewpa"
         },
         "type": [
             "Bug"
@@ -13618,10 +11623,7 @@ const pokemon = [
     {
         "id": 666,
         "name": {
-            "english": "Vivillon",
-            "japanese": "ビビヨン",
-            "chinese": "彩粉蝶",
-            "french": "Prismillon"
+            "english": "Vivillon"
         },
         "type": [
             "Bug",
@@ -13639,10 +11641,7 @@ const pokemon = [
     {
         "id": 667,
         "name": {
-            "english": "Litleo",
-            "japanese": "シシコ",
-            "chinese": "小狮狮",
-            "french": "Hélionceau"
+            "english": "Litleo"
         },
         "type": [
             "Fire",
@@ -13660,10 +11659,7 @@ const pokemon = [
     {
         "id": 668,
         "name": {
-            "english": "Pyroar",
-            "japanese": "カエンジシ",
-            "chinese": "火炎狮",
-            "french": "Némélios"
+            "english": "Pyroar"
         },
         "type": [
             "Fire",
@@ -13681,10 +11677,7 @@ const pokemon = [
     {
         "id": 669,
         "name": {
-            "english": "Flabébé",
-            "japanese": "フラベベ",
-            "chinese": "花蓓蓓",
-            "french": "Flabébé"
+            "english": "Flabébé"
         },
         "type": [
             "Fairy"
@@ -13701,10 +11694,7 @@ const pokemon = [
     {
         "id": 670,
         "name": {
-            "english": "Floette",
-            "japanese": "フラエッテ",
-            "chinese": "花叶蒂",
-            "french": "FLOETTE"
+            "english": "Floette"
         },
         "type": [
             "Fairy"
@@ -13721,10 +11711,7 @@ const pokemon = [
     {
         "id": 671,
         "name": {
-            "english": "Florges",
-            "japanese": "フラージェス",
-            "chinese": "花洁夫人",
-            "french": "Florges"
+            "english": "Florges"
         },
         "type": [
             "Fairy"
@@ -13741,10 +11728,7 @@ const pokemon = [
     {
         "id": 672,
         "name": {
-            "english": "Skiddo",
-            "japanese": "メェークル",
-            "chinese": "坐骑小羊",
-            "french": "Cabriolaine"
+            "english": "Skiddo"
         },
         "type": [
             "Grass"
@@ -13761,10 +11745,7 @@ const pokemon = [
     {
         "id": 673,
         "name": {
-            "english": "Gogoat",
-            "japanese": "ゴーゴート",
-            "chinese": "坐骑山羊",
-            "french": "Chevroum"
+            "english": "Gogoat"
         },
         "type": [
             "Grass"
@@ -13781,10 +11762,7 @@ const pokemon = [
     {
         "id": 674,
         "name": {
-            "english": "Pancham",
-            "japanese": "ヤンチャム",
-            "chinese": "顽皮熊猫",
-            "french": "Pandespiègle"
+            "english": "Pancham"
         },
         "type": [
             "Fighting"
@@ -13801,10 +11779,7 @@ const pokemon = [
     {
         "id": 675,
         "name": {
-            "english": "Pangoro",
-            "japanese": "ゴロンダ",
-            "chinese": "流氓熊猫",
-            "french": "Pandarbare"
+            "english": "Pangoro"
         },
         "type": [
             "Fighting",
@@ -13822,10 +11797,7 @@ const pokemon = [
     {
         "id": 676,
         "name": {
-            "english": "Furfrou",
-            "japanese": "トリミアン",
-            "chinese": "多丽米亚",
-            "french": "Couafarel"
+            "english": "Furfrou"
         },
         "type": [
             "Normal"
@@ -13842,10 +11814,7 @@ const pokemon = [
     {
         "id": 677,
         "name": {
-            "english": "Espurr",
-            "japanese": "ニャスパー",
-            "chinese": "妙喵",
-            "french": "Psystigri"
+            "english": "Espurr"
         },
         "type": [
             "Psychic"
@@ -13862,10 +11831,7 @@ const pokemon = [
     {
         "id": 678,
         "name": {
-            "english": "Meowstic",
-            "japanese": "ニャオニクス",
-            "chinese": "超能妙喵",
-            "french": "Mistigrix"
+            "english": "Meowstic"
         },
         "type": [
             "Psychic"
@@ -13882,10 +11848,7 @@ const pokemon = [
     {
         "id": 679,
         "name": {
-            "english": "Honedge",
-            "japanese": "ヒトツキ",
-            "chinese": "独剑鞘",
-            "french": "Monorpale"
+            "english": "Honedge"
         },
         "type": [
             "Steel",
@@ -13903,10 +11866,7 @@ const pokemon = [
     {
         "id": 680,
         "name": {
-            "english": "Doublade",
-            "japanese": "ニダンギル",
-            "chinese": "双剑鞘",
-            "french": "Dimoclès"
+            "english": "Doublade"
         },
         "type": [
             "Steel",
@@ -13924,10 +11884,7 @@ const pokemon = [
     {
         "id": 681,
         "name": {
-            "english": "Aegislash",
-            "japanese": "ギルガルド",
-            "chinese": "坚盾剑怪",
-            "french": "Exagide"
+            "english": "Aegislash"
         },
         "type": [
             "Steel",
@@ -13945,10 +11902,7 @@ const pokemon = [
     {
         "id": 682,
         "name": {
-            "english": "Spritzee",
-            "japanese": "シュシュプ",
-            "chinese": "粉香香",
-            "french": "Fluvetin"
+            "english": "Spritzee"
         },
         "type": [
             "Fairy"
@@ -13965,10 +11919,7 @@ const pokemon = [
     {
         "id": 683,
         "name": {
-            "english": "Aromatisse",
-            "japanese": "フレフワン",
-            "chinese": "芳香精",
-            "french": "Cocotine"
+            "english": "Aromatisse"
         },
         "type": [
             "Fairy"
@@ -13985,10 +11936,7 @@ const pokemon = [
     {
         "id": 684,
         "name": {
-            "english": "Swirlix",
-            "japanese": "ペロッパフ",
-            "chinese": "绵绵泡芙",
-            "french": "Sucroquin"
+            "english": "Swirlix"
         },
         "type": [
             "Fairy"
@@ -14005,10 +11953,7 @@ const pokemon = [
     {
         "id": 685,
         "name": {
-            "english": "Slurpuff",
-            "japanese": "ペロリーム",
-            "chinese": "胖甜妮",
-            "french": "Cupcanaille"
+            "english": "Slurpuff"
         },
         "type": [
             "Fairy"
@@ -14025,10 +11970,7 @@ const pokemon = [
     {
         "id": 686,
         "name": {
-            "english": "Inkay",
-            "japanese": "マーイーカ",
-            "chinese": "好啦鱿",
-            "french": "Sepiatop"
+            "english": "Inkay"
         },
         "type": [
             "Dark",
@@ -14046,10 +11988,7 @@ const pokemon = [
     {
         "id": 687,
         "name": {
-            "english": "Malamar",
-            "japanese": "カラマネロ",
-            "chinese": "乌贼王",
-            "french": "Sepiatroce"
+            "english": "Malamar"
         },
         "type": [
             "Dark",
@@ -14067,10 +12006,7 @@ const pokemon = [
     {
         "id": 688,
         "name": {
-            "english": "Binacle",
-            "japanese": "カメテテ",
-            "chinese": "龟脚脚",
-            "french": "Opermine"
+            "english": "Binacle"
         },
         "type": [
             "Rock",
@@ -14088,10 +12024,7 @@ const pokemon = [
     {
         "id": 689,
         "name": {
-            "english": "Barbaracle",
-            "japanese": "ガメノデス",
-            "chinese": "龟足巨铠",
-            "french": "Golgopathe"
+            "english": "Barbaracle"
         },
         "type": [
             "Rock",
@@ -14109,10 +12042,7 @@ const pokemon = [
     {
         "id": 690,
         "name": {
-            "english": "Skrelp",
-            "japanese": "クズモー",
-            "chinese": "垃垃藻",
-            "french": "Venalgue"
+            "english": "Skrelp"
         },
         "type": [
             "Poison",
@@ -14130,10 +12060,7 @@ const pokemon = [
     {
         "id": 691,
         "name": {
-            "english": "Dragalge",
-            "japanese": "ドラミドロ",
-            "chinese": "毒藻龙",
-            "french": "Kravarech"
+            "english": "Dragalge"
         },
         "type": [
             "Poison",
@@ -14151,10 +12078,7 @@ const pokemon = [
     {
         "id": 692,
         "name": {
-            "english": "Clauncher",
-            "japanese": "ウデッポウ",
-            "chinese": "铁臂枪虾",
-            "french": "Flingouste"
+            "english": "Clauncher"
         },
         "type": [
             "Water"
@@ -14171,10 +12095,7 @@ const pokemon = [
     {
         "id": 693,
         "name": {
-            "english": "Clawitzer",
-            "japanese": "ブロスター",
-            "chinese": "钢炮臂虾",
-            "french": "Gamblast"
+            "english": "Clawitzer"
         },
         "type": [
             "Water"
@@ -14191,10 +12112,7 @@ const pokemon = [
     {
         "id": 694,
         "name": {
-            "english": "Helioptile",
-            "japanese": "エリキテル",
-            "chinese": "伞电蜥",
-            "french": "Galvaran"
+            "english": "Helioptile"
         },
         "type": [
             "Electric",
@@ -14212,10 +12130,7 @@ const pokemon = [
     {
         "id": 695,
         "name": {
-            "english": "Heliolisk",
-            "japanese": "エレザード",
-            "chinese": "光电伞蜥",
-            "french": "Iguolta"
+            "english": "Heliolisk"
         },
         "type": [
             "Electric",
@@ -14233,10 +12148,7 @@ const pokemon = [
     {
         "id": 696,
         "name": {
-            "english": "Tyrunt",
-            "japanese": "チゴラス",
-            "chinese": "宝宝暴龙",
-            "french": "Ptyranidur"
+            "english": "Tyrunt"
         },
         "type": [
             "Rock",
@@ -14254,10 +12166,7 @@ const pokemon = [
     {
         "id": 697,
         "name": {
-            "english": "Tyrantrum",
-            "japanese": "ガチゴラス",
-            "chinese": "怪颚龙",
-            "french": "Rexillius"
+            "english": "Tyrantrum"
         },
         "type": [
             "Rock",
@@ -14275,10 +12184,7 @@ const pokemon = [
     {
         "id": 698,
         "name": {
-            "english": "Amaura",
-            "japanese": "アマルス",
-            "chinese": "冰雪龙",
-            "french": "Amagara"
+            "english": "Amaura"
         },
         "type": [
             "Rock",
@@ -14296,10 +12202,7 @@ const pokemon = [
     {
         "id": 699,
         "name": {
-            "english": "Aurorus",
-            "japanese": "アマルルガ",
-            "chinese": "冰雪巨龙",
-            "french": "Dragmara"
+            "english": "Aurorus"
         },
         "type": [
             "Rock",
@@ -14317,10 +12220,7 @@ const pokemon = [
     {
         "id": 700,
         "name": {
-            "english": "Sylveon",
-            "japanese": "ニンフィア",
-            "chinese": "仙子伊布",
-            "french": "Nymphali"
+            "english": "Sylveon"
         },
         "type": [
             "Fairy"
@@ -14337,10 +12237,7 @@ const pokemon = [
     {
         "id": 701,
         "name": {
-            "english": "Hawlucha",
-            "japanese": "ルチャブル",
-            "chinese": "摔角鹰人",
-            "french": "Brutalibré"
+            "english": "Hawlucha"
         },
         "type": [
             "Fighting",
@@ -14358,10 +12255,7 @@ const pokemon = [
     {
         "id": 702,
         "name": {
-            "english": "Dedenne",
-            "japanese": "デデンネ",
-            "chinese": "咚咚鼠",
-            "french": "DEDENNE"
+            "english": "Dedenne"
         },
         "type": [
             "Electric",
@@ -14379,10 +12273,7 @@ const pokemon = [
     {
         "id": 703,
         "name": {
-            "english": "Carbink",
-            "japanese": "メレシー",
-            "chinese": "小碎钻",
-            "french": "Strassie"
+            "english": "Carbink"
         },
         "type": [
             "Rock",
@@ -14400,10 +12291,7 @@ const pokemon = [
     {
         "id": 704,
         "name": {
-            "english": "Goomy",
-            "japanese": "ヌメラ",
-            "chinese": "黏黏宝",
-            "french": "Mucuscule"
+            "english": "Goomy"
         },
         "type": [
             "Dragon"
@@ -14420,10 +12308,7 @@ const pokemon = [
     {
         "id": 705,
         "name": {
-            "english": "Sliggoo",
-            "japanese": "ヌメイル",
-            "chinese": "黏美儿",
-            "french": "Colimucus"
+            "english": "Sliggoo"
         },
         "type": [
             "Dragon"
@@ -14440,10 +12325,7 @@ const pokemon = [
     {
         "id": 706,
         "name": {
-            "english": "Goodra",
-            "japanese": "ヌメルゴン",
-            "chinese": "黏美龙",
-            "french": "Muplodocus"
+            "english": "Goodra"
         },
         "type": [
             "Dragon"
@@ -14460,10 +12342,7 @@ const pokemon = [
     {
         "id": 707,
         "name": {
-            "english": "Klefki",
-            "japanese": "クレッフィ",
-            "chinese": "钥圈儿",
-            "french": "Trousselin"
+            "english": "Klefki"
         },
         "type": [
             "Steel",
@@ -14481,10 +12360,7 @@ const pokemon = [
     {
         "id": 708,
         "name": {
-            "english": "Phantump",
-            "japanese": "ボクレー",
-            "chinese": "小木灵",
-            "french": "Brocélôme"
+            "english": "Phantump"
         },
         "type": [
             "Ghost",
@@ -14502,10 +12378,7 @@ const pokemon = [
     {
         "id": 709,
         "name": {
-            "english": "Trevenant",
-            "japanese": "オーロット",
-            "chinese": "朽木妖",
-            "french": "Desséliande"
+            "english": "Trevenant"
         },
         "type": [
             "Ghost",
@@ -14523,10 +12396,7 @@ const pokemon = [
     {
         "id": 710,
         "name": {
-            "english": "Pumpkaboo",
-            "japanese": "バケッチャ",
-            "chinese": "南瓜精",
-            "french": "Pitrouille"
+            "english": "Pumpkaboo"
         },
         "type": [
             "Ghost",
@@ -14544,10 +12414,7 @@ const pokemon = [
     {
         "id": 711,
         "name": {
-            "english": "Gourgeist",
-            "japanese": "パンプジン",
-            "chinese": "南瓜怪人",
-            "french": "Banshitrouye"
+            "english": "Gourgeist"
         },
         "type": [
             "Ghost",
@@ -14565,10 +12432,7 @@ const pokemon = [
     {
         "id": 712,
         "name": {
-            "english": "Bergmite",
-            "japanese": "カチコール",
-            "chinese": "冰宝",
-            "french": "Grelaçon"
+            "english": "Bergmite"
         },
         "type": [
             "Ice"
@@ -14585,10 +12449,7 @@ const pokemon = [
     {
         "id": 713,
         "name": {
-            "english": "Avalugg",
-            "japanese": "クレベース",
-            "chinese": "冰岩怪",
-            "french": "Séracrawl"
+            "english": "Avalugg"
         },
         "type": [
             "Ice"
@@ -14605,10 +12466,7 @@ const pokemon = [
     {
         "id": 714,
         "name": {
-            "english": "Noibat",
-            "japanese": "オンバット",
-            "chinese": "嗡蝠",
-            "french": "Sonistrelle"
+            "english": "Noibat"
         },
         "type": [
             "Flying",
@@ -14626,10 +12484,7 @@ const pokemon = [
     {
         "id": 715,
         "name": {
-            "english": "Noivern",
-            "japanese": "オンバーン",
-            "chinese": "音波龙",
-            "french": "Bruyverne"
+            "english": "Noivern"
         },
         "type": [
             "Flying",
@@ -14647,10 +12502,7 @@ const pokemon = [
     {
         "id": 716,
         "name": {
-            "english": "Xerneas",
-            "japanese": "ゼルネアス",
-            "chinese": "哲尔尼亚斯",
-            "french": "Xerneas"
+            "english": "Xerneas"
         },
         "type": [
             "Fairy"
@@ -14667,10 +12519,7 @@ const pokemon = [
     {
         "id": 717,
         "name": {
-            "english": "Yveltal",
-            "japanese": "イベルタル",
-            "chinese": "伊裴尔塔尔",
-            "french": "Yveltal"
+            "english": "Yveltal"
         },
         "type": [
             "Dark",
@@ -14688,10 +12537,7 @@ const pokemon = [
     {
         "id": 718,
         "name": {
-            "english": "Zygarde",
-            "japanese": "ジガルデ",
-            "chinese": "基格尔德",
-            "french": "Zygarde"
+            "english": "Zygarde"
         },
         "type": [
             "Dragon",
@@ -14709,10 +12555,7 @@ const pokemon = [
     {
         "id": 719,
         "name": {
-            "english": "Diancie",
-            "japanese": "ディアンシー",
-            "chinese": "蒂安希",
-            "french": "Diancie"
+            "english": "Diancie"
         },
         "type": [
             "Rock",
@@ -14730,10 +12573,7 @@ const pokemon = [
     {
         "id": 720,
         "name": {
-            "english": "Hoopa",
-            "japanese": "フーパ",
-            "chinese": "胡帕",
-            "french": "Hoopa"
+            "english": "Hoopa"
         },
         "type": [
             "Psychic",
@@ -14751,10 +12591,7 @@ const pokemon = [
     {
         "id": 721,
         "name": {
-            "english": "Volcanion",
-            "japanese": "ボルケニオン",
-            "chinese": "波尔凯尼恩",
-            "french": "Volcanion"
+            "english": "Volcanion"
         },
         "type": [
             "Fire",
@@ -14772,10 +12609,7 @@ const pokemon = [
     {
         "id": 722,
         "name": {
-            "english": "Rowlet",
-            "japanese": "モクロー",
-            "chinese": "木木枭",
-            "french": "Brindibou"
+            "english": "Rowlet"
         },
         "type": [
             "Grass",
@@ -14793,10 +12627,7 @@ const pokemon = [
     {
         "id": 723,
         "name": {
-            "english": "Dartrix",
-            "japanese": "フクスロー",
-            "chinese": "投羽枭",
-            "french": "Efflèche"
+            "english": "Dartrix"
         },
         "type": [
             "Grass",
@@ -14814,10 +12645,7 @@ const pokemon = [
     {
         "id": 724,
         "name": {
-            "english": "Decidueye",
-            "japanese": "ジュナイパー",
-            "chinese": "狙射树枭",
-            "french": "Archéduc"
+            "english": "Decidueye"
         },
         "type": [
             "Grass",
@@ -14835,10 +12663,7 @@ const pokemon = [
     {
         "id": 725,
         "name": {
-            "english": "Litten",
-            "japanese": "ニャビー",
-            "chinese": "火斑喵",
-            "french": "Flamiaou"
+            "english": "Litten"
         },
         "type": [
             "Fire"
@@ -14855,10 +12680,7 @@ const pokemon = [
     {
         "id": 726,
         "name": {
-            "english": "Torracat",
-            "japanese": "ニャヒート",
-            "chinese": "炎热喵",
-            "french": "Matoufeu"
+            "english": "Torracat"
         },
         "type": [
             "Fire"
@@ -14875,10 +12697,7 @@ const pokemon = [
     {
         "id": 727,
         "name": {
-            "english": "Incineroar",
-            "japanese": "ガオガエン",
-            "chinese": "炽焰咆哮虎",
-            "french": "Félinferno"
+            "english": "Incineroar"
         },
         "type": [
             "Fire",
@@ -14896,10 +12715,7 @@ const pokemon = [
     {
         "id": 728,
         "name": {
-            "english": "Popplio",
-            "japanese": "アシマリ",
-            "chinese": "球球海狮",
-            "french": "Otaquin"
+            "english": "Popplio"
         },
         "type": [
             "Water"
@@ -14916,10 +12732,7 @@ const pokemon = [
     {
         "id": 729,
         "name": {
-            "english": "Brionne",
-            "japanese": "オシャマリ",
-            "chinese": "花漾海狮",
-            "french": "Otarlette"
+            "english": "Brionne"
         },
         "type": [
             "Water"
@@ -14936,10 +12749,7 @@ const pokemon = [
     {
         "id": 730,
         "name": {
-            "english": "Primarina",
-            "japanese": "アシレーヌ",
-            "chinese": "西狮海壬",
-            "french": "Oratoria"
+            "english": "Primarina"
         },
         "type": [
             "Water",
@@ -14957,10 +12767,7 @@ const pokemon = [
     {
         "id": 731,
         "name": {
-            "english": "Pikipek",
-            "japanese": "ツツケラ",
-            "chinese": "小笃儿",
-            "french": "Picassaut"
+            "english": "Pikipek"
         },
         "type": [
             "Normal",
@@ -14978,10 +12785,7 @@ const pokemon = [
     {
         "id": 732,
         "name": {
-            "english": "Trumbeak",
-            "japanese": "ケララッパ",
-            "chinese": "喇叭啄鸟",
-            "french": "Piclairon"
+            "english": "Trumbeak"
         },
         "type": [
             "Normal",
@@ -14999,10 +12803,7 @@ const pokemon = [
     {
         "id": 733,
         "name": {
-            "english": "Toucannon",
-            "japanese": "ドデカバシ",
-            "chinese": "铳嘴大鸟",
-            "french": "Bazoucan"
+            "english": "Toucannon"
         },
         "type": [
             "Normal",
@@ -15020,10 +12821,7 @@ const pokemon = [
     {
         "id": 734,
         "name": {
-            "english": "Yungoos",
-            "japanese": "ヤングース",
-            "chinese": "猫鼬少",
-            "french": "Manglouton"
+            "english": "Yungoos"
         },
         "type": [
             "Normal"
@@ -15040,10 +12838,7 @@ const pokemon = [
     {
         "id": 735,
         "name": {
-            "english": "Gumshoos",
-            "japanese": "デカグース",
-            "chinese": "猫鼬探长",
-            "french": "Argouste"
+            "english": "Gumshoos"
         },
         "type": [
             "Normal"
@@ -15060,10 +12855,7 @@ const pokemon = [
     {
         "id": 736,
         "name": {
-            "english": "Grubbin",
-            "japanese": "アゴジムシ",
-            "chinese": "强颚鸡母虫",
-            "french": "Larvibule"
+            "english": "Grubbin"
         },
         "type": [
             "Bug"
@@ -15080,10 +12872,7 @@ const pokemon = [
     {
         "id": 737,
         "name": {
-            "english": "Charjabug",
-            "japanese": "デンヂムシ",
-            "chinese": "虫电宝",
-            "french": "Chrysapile"
+            "english": "Charjabug"
         },
         "type": [
             "Bug",
@@ -15101,10 +12890,7 @@ const pokemon = [
     {
         "id": 738,
         "name": {
-            "english": "Vikavolt",
-            "japanese": "クワガノン",
-            "chinese": "锹农炮虫",
-            "french": "Lucanon"
+            "english": "Vikavolt"
         },
         "type": [
             "Bug",
@@ -15122,10 +12908,7 @@ const pokemon = [
     {
         "id": 739,
         "name": {
-            "english": "Crabrawler",
-            "japanese": "マケンカニ",
-            "chinese": "好胜蟹",
-            "french": "Crabagarre"
+            "english": "Crabrawler"
         },
         "type": [
             "Fighting"
@@ -15142,10 +12925,7 @@ const pokemon = [
     {
         "id": 740,
         "name": {
-            "english": "Crabominable",
-            "japanese": "ケケンカニ",
-            "chinese": "好胜毛蟹",
-            "french": "Crabominable"
+            "english": "Crabominable"
         },
         "type": [
             "Fighting",
@@ -15163,10 +12943,7 @@ const pokemon = [
     {
         "id": 741,
         "name": {
-            "english": "Oricorio",
-            "japanese": "オドリドリ",
-            "chinese": "花舞鸟",
-            "french": "Plumeline"
+            "english": "Oricorio"
         },
         "type": [
             "Fire",
@@ -15184,10 +12961,7 @@ const pokemon = [
     {
         "id": 742,
         "name": {
-            "english": "Cutiefly",
-            "japanese": "アブリー",
-            "chinese": "萌虻",
-            "french": "Bombydou"
+            "english": "Cutiefly"
         },
         "type": [
             "Bug",
@@ -15205,10 +12979,7 @@ const pokemon = [
     {
         "id": 743,
         "name": {
-            "english": "Ribombee",
-            "japanese": "アブリボン",
-            "chinese": "蝶结萌虻",
-            "french": "Rubombelle"
+            "english": "Ribombee"
         },
         "type": [
             "Bug",
@@ -15226,10 +12997,7 @@ const pokemon = [
     {
         "id": 744,
         "name": {
-            "english": "Rockruff",
-            "japanese": "イワンコ",
-            "chinese": "岩狗狗",
-            "french": "Rocabot"
+            "english": "Rockruff"
         },
         "type": [
             "Rock"
@@ -15246,10 +13014,7 @@ const pokemon = [
     {
         "id": 745,
         "name": {
-            "english": "Lycanroc",
-            "japanese": "ルガルガン",
-            "chinese": "鬃岩狼人",
-            "french": "Lougaroc"
+            "english": "Lycanroc"
         },
         "type": [
             "Rock"
@@ -15266,10 +13031,7 @@ const pokemon = [
     {
         "id": 746,
         "name": {
-            "english": "Wishiwashi",
-            "japanese": "ヨワシ",
-            "chinese": "弱丁鱼",
-            "french": "Froussardine"
+            "english": "Wishiwashi"
         },
         "type": [
             "Water"
@@ -15286,10 +13048,7 @@ const pokemon = [
     {
         "id": 747,
         "name": {
-            "english": "Mareanie",
-            "japanese": "ヒドイデ",
-            "chinese": "好坏星",
-            "french": "Vorastérie"
+            "english": "Mareanie"
         },
         "type": [
             "Poison",
@@ -15307,10 +13066,7 @@ const pokemon = [
     {
         "id": 748,
         "name": {
-            "english": "Toxapex",
-            "japanese": "ドヒドイデ",
-            "chinese": "超坏星",
-            "french": "Prédastérie"
+            "english": "Toxapex"
         },
         "type": [
             "Poison",
@@ -15328,10 +13084,7 @@ const pokemon = [
     {
         "id": 749,
         "name": {
-            "english": "Mudbray",
-            "japanese": "ドロバンコ",
-            "chinese": "泥驴仔",
-            "french": "Tiboudet"
+            "english": "Mudbray"
         },
         "type": [
             "Ground"
@@ -15348,10 +13101,7 @@ const pokemon = [
     {
         "id": 750,
         "name": {
-            "english": "Mudsdale",
-            "japanese": "バンバドロ",
-            "chinese": "重泥挽马",
-            "french": "Bourrinos"
+            "english": "Mudsdale"
         },
         "type": [
             "Ground"
@@ -15368,10 +13118,7 @@ const pokemon = [
     {
         "id": 751,
         "name": {
-            "english": "Dewpider",
-            "japanese": "シズクモ",
-            "chinese": "滴蛛",
-            "french": "Araqua"
+            "english": "Dewpider"
         },
         "type": [
             "Water",
@@ -15389,10 +13136,7 @@ const pokemon = [
     {
         "id": 752,
         "name": {
-            "english": "Araquanid",
-            "japanese": "オニシズクモ",
-            "chinese": "滴蛛霸",
-            "french": "Tarenbulle"
+            "english": "Araquanid"
         },
         "type": [
             "Water",
@@ -15410,10 +13154,7 @@ const pokemon = [
     {
         "id": 753,
         "name": {
-            "english": "Fomantis",
-            "japanese": "カリキリ",
-            "chinese": "伪螳草",
-            "french": "Mimantis"
+            "english": "Fomantis"
         },
         "type": [
             "Grass"
@@ -15430,10 +13171,7 @@ const pokemon = [
     {
         "id": 754,
         "name": {
-            "english": "Lurantis",
-            "japanese": "ラランテス",
-            "chinese": "兰螳花",
-            "french": "Floramantis"
+            "english": "Lurantis"
         },
         "type": [
             "Grass"
@@ -15450,10 +13188,7 @@ const pokemon = [
     {
         "id": 755,
         "name": {
-            "english": "Morelull",
-            "japanese": "ネマシュ",
-            "chinese": "睡睡菇",
-            "french": "Spododo"
+            "english": "Morelull"
         },
         "type": [
             "Grass",
@@ -15471,10 +13206,7 @@ const pokemon = [
     {
         "id": 756,
         "name": {
-            "english": "Shiinotic",
-            "japanese": "マシェード",
-            "chinese": "灯罩夜菇",
-            "french": "Lampignon"
+            "english": "Shiinotic"
         },
         "type": [
             "Grass",
@@ -15492,10 +13224,7 @@ const pokemon = [
     {
         "id": 757,
         "name": {
-            "english": "Salandit",
-            "japanese": "ヤトウモリ",
-            "chinese": "夜盗火蜥",
-            "french": "Tritox"
+            "english": "Salandit"
         },
         "type": [
             "Poison",
@@ -15513,10 +13242,7 @@ const pokemon = [
     {
         "id": 758,
         "name": {
-            "english": "Salazzle",
-            "japanese": "エンニュート",
-            "chinese": "焰后蜥",
-            "french": "Malamandre"
+            "english": "Salazzle"
         },
         "type": [
             "Poison",
@@ -15534,10 +13260,7 @@ const pokemon = [
     {
         "id": 759,
         "name": {
-            "english": "Stufful",
-            "japanese": "ヌイコグマ",
-            "chinese": "童偶熊",
-            "french": "Nounourson"
+            "english": "Stufful"
         },
         "type": [
             "Normal",
@@ -15555,10 +13278,7 @@ const pokemon = [
     {
         "id": 760,
         "name": {
-            "english": "Bewear",
-            "japanese": "キテルグマ",
-            "chinese": "穿着熊",
-            "french": "Chelours"
+            "english": "Bewear"
         },
         "type": [
             "Normal",
@@ -15576,10 +13296,7 @@ const pokemon = [
     {
         "id": 761,
         "name": {
-            "english": "Bounsweet",
-            "japanese": "アマカジ",
-            "chinese": "甜竹竹",
-            "french": "Croquine"
+            "english": "Bounsweet"
         },
         "type": [
             "Grass"
@@ -15596,10 +13313,7 @@ const pokemon = [
     {
         "id": 762,
         "name": {
-            "english": "Steenee",
-            "japanese": "アママイコ",
-            "chinese": "甜舞妮",
-            "french": "Candine"
+            "english": "Steenee"
         },
         "type": [
             "Grass"
@@ -15616,10 +13330,7 @@ const pokemon = [
     {
         "id": 763,
         "name": {
-            "english": "Tsareena",
-            "japanese": "アマージョ",
-            "chinese": "甜冷美后",
-            "french": "Sucreine"
+            "english": "Tsareena"
         },
         "type": [
             "Grass"
@@ -15636,10 +13347,7 @@ const pokemon = [
     {
         "id": 764,
         "name": {
-            "english": "Comfey",
-            "japanese": "キュワワー",
-            "chinese": "花疗环环",
-            "french": "Guérilande"
+            "english": "Comfey"
         },
         "type": [
             "Fairy"
@@ -15656,10 +13364,7 @@ const pokemon = [
     {
         "id": 765,
         "name": {
-            "english": "Oranguru",
-            "japanese": "ヤレユータン",
-            "chinese": "智挥猩",
-            "french": "Gouroutan"
+            "english": "Oranguru"
         },
         "type": [
             "Normal",
@@ -15677,10 +13382,7 @@ const pokemon = [
     {
         "id": 766,
         "name": {
-            "english": "Passimian",
-            "japanese": "ナゲツケサル",
-            "chinese": "投掷猴",
-            "french": "Quartermac"
+            "english": "Passimian"
         },
         "type": [
             "Fighting"
@@ -15697,10 +13399,7 @@ const pokemon = [
     {
         "id": 767,
         "name": {
-            "english": "Wimpod",
-            "japanese": "コソクムシ",
-            "chinese": "胆小虫",
-            "french": "Sovkipou"
+            "english": "Wimpod"
         },
         "type": [
             "Bug",
@@ -15718,10 +13417,7 @@ const pokemon = [
     {
         "id": 768,
         "name": {
-            "english": "Golisopod",
-            "japanese": "グソクムシャ",
-            "chinese": "具甲武者",
-            "french": "Sarmuraï"
+            "english": "Golisopod"
         },
         "type": [
             "Bug",
@@ -15739,10 +13435,7 @@ const pokemon = [
     {
         "id": 769,
         "name": {
-            "english": "Sandygast",
-            "japanese": "スナバァ",
-            "chinese": "沙丘娃",
-            "french": "Bacabouh"
+            "english": "Sandygast"
         },
         "type": [
             "Ghost",
@@ -15760,10 +13453,7 @@ const pokemon = [
     {
         "id": 770,
         "name": {
-            "english": "Palossand",
-            "japanese": "シロデスナ",
-            "chinese": "噬沙堡爷",
-            "french": "Trépassable"
+            "english": "Palossand"
         },
         "type": [
             "Ghost",
@@ -15781,10 +13471,7 @@ const pokemon = [
     {
         "id": 771,
         "name": {
-            "english": "Pyukumuku",
-            "japanese": "ナマコブシ",
-            "chinese": "拳海参",
-            "french": "Concombaffe"
+            "english": "Pyukumuku"
         },
         "type": [
             "Water"
@@ -15801,10 +13488,7 @@ const pokemon = [
     {
         "id": 772,
         "name": {
-            "english": "Type: Null",
-            "japanese": "タイプ：ヌル",
-            "chinese": "属性：空",
-            "french": "Silvallié"
+            "english": "Type: Null"
         },
         "type": [
             "Normal"
@@ -15821,10 +13505,7 @@ const pokemon = [
     {
         "id": 773,
         "name": {
-            "english": "Silvally",
-            "japanese": "シルヴァディ",
-            "chinese": "银伴战兽",
-            "french": "Météno"
+            "english": "Silvally"
         },
         "type": [
             "Normal"
@@ -15841,10 +13522,7 @@ const pokemon = [
     {
         "id": 774,
         "name": {
-            "english": "Minior",
-            "japanese": "メテノ",
-            "chinese": "小陨星",
-            "french": "Dodoala"
+            "english": "Minior"
         },
         "type": [
             "Rock",
@@ -15862,10 +13540,7 @@ const pokemon = [
     {
         "id": 775,
         "name": {
-            "english": "Komala",
-            "japanese": "ネッコアラ",
-            "chinese": "树枕尾熊",
-            "french": "Boumata"
+            "english": "Komala"
         },
         "type": [
             "Normal"
@@ -15882,10 +13557,7 @@ const pokemon = [
     {
         "id": 776,
         "name": {
-            "english": "Turtonator",
-            "japanese": "バクガメス",
-            "chinese": "爆焰龟兽",
-            "french": "Togedemaru"
+            "english": "Turtonator"
         },
         "type": [
             "Fire",
@@ -15903,10 +13575,7 @@ const pokemon = [
     {
         "id": 777,
         "name": {
-            "english": "Togedemaru",
-            "japanese": "トゲデマル",
-            "chinese": "托戈德玛尔",
-            "french": "Mimiqui"
+            "english": "Togedemaru"
         },
         "type": [
             "Electric",
@@ -15924,10 +13593,7 @@ const pokemon = [
     {
         "id": 778,
         "name": {
-            "english": "Mimikyu",
-            "japanese": "ミミッキュ",
-            "chinese": "谜拟Ｑ",
-            "french": "Denticrisse"
+            "english": "Mimikyu"
         },
         "type": [
             "Ghost",
@@ -15945,10 +13611,7 @@ const pokemon = [
     {
         "id": 779,
         "name": {
-            "english": "Bruxish",
-            "japanese": "ハギギシリ",
-            "chinese": "磨牙彩皮鱼",
-            "french": "Draïeul"
+            "english": "Bruxish"
         },
         "type": [
             "Water",
@@ -15966,10 +13629,7 @@ const pokemon = [
     {
         "id": 780,
         "name": {
-            "english": "Drampa",
-            "japanese": "ジジーロン",
-            "chinese": "老翁龙",
-            "french": "Sinistrail"
+            "english": "Drampa"
         },
         "type": [
             "Normal",
@@ -15987,10 +13647,7 @@ const pokemon = [
     {
         "id": 781,
         "name": {
-            "english": "Dhelmise",
-            "japanese": "ダダリン",
-            "chinese": "破破舵轮",
-            "french": "Bébécaille"
+            "english": "Dhelmise"
         },
         "type": [
             "Ghost",
@@ -16008,10 +13665,7 @@ const pokemon = [
     {
         "id": 782,
         "name": {
-            "english": "Jangmo-o",
-            "japanese": "ジャラコ",
-            "chinese": "心鳞宝",
-            "french": "Écaïd"
+            "english": "Jangmo-o"
         },
         "type": [
             "Dragon"
@@ -16028,10 +13682,7 @@ const pokemon = [
     {
         "id": 783,
         "name": {
-            "english": "Hakamo-o",
-            "japanese": "ジャランゴ",
-            "chinese": "鳞甲龙",
-            "french": "Ékaïser"
+            "english": "Hakamo-o"
         },
         "type": [
             "Dragon",
@@ -16049,10 +13700,7 @@ const pokemon = [
     {
         "id": 784,
         "name": {
-            "english": "Kommo-o",
-            "japanese": "ジャラランガ",
-            "chinese": "杖尾鳞甲龙",
-            "french": "Tokorico"
+            "english": "Kommo-o"
         },
         "type": [
             "Dragon",
@@ -16070,10 +13718,7 @@ const pokemon = [
     {
         "id": 785,
         "name": {
-            "english": "Tapu Koko",
-            "japanese": "カプ・コケコ",
-            "chinese": "卡璞・鸣鸣",
-            "french": "Tokopiyon"
+            "english": "Tapu Koko"
         },
         "type": [
             "Electric",
@@ -16091,10 +13736,7 @@ const pokemon = [
     {
         "id": 786,
         "name": {
-            "english": "Tapu Lele",
-            "japanese": "カプ・テテフ",
-            "chinese": "卡璞・蝶蝶",
-            "french": "Tokotoro"
+            "english": "Tapu Lele"
         },
         "type": [
             "Psychic",
@@ -16112,10 +13754,7 @@ const pokemon = [
     {
         "id": 787,
         "name": {
-            "english": "Tapu Bulu",
-            "japanese": "カプ・ブルル",
-            "chinese": "卡璞・哞哞",
-            "french": "Tokopisco"
+            "english": "Tapu Bulu"
         },
         "type": [
             "Grass",
@@ -16133,10 +13772,7 @@ const pokemon = [
     {
         "id": 788,
         "name": {
-            "english": "Tapu Fini",
-            "japanese": "カプ・レヒレ",
-            "chinese": "卡璞・鳍鳍",
-            "french": "Cosmog"
+            "english": "Tapu Fini"
         },
         "type": [
             "Water",
@@ -16154,10 +13790,7 @@ const pokemon = [
     {
         "id": 789,
         "name": {
-            "english": "Cosmog",
-            "japanese": "コスモッグ",
-            "chinese": "科斯莫古",
-            "french": "Cosmovum"
+            "english": "Cosmog"
         },
         "type": [
             "Psychic"
@@ -16174,10 +13807,7 @@ const pokemon = [
     {
         "id": 790,
         "name": {
-            "english": "Cosmoem",
-            "japanese": "コスモウム",
-            "chinese": "科斯莫姆",
-            "french": "Solgaleo"
+            "english": "Cosmoem"
         },
         "type": [
             "Psychic"
@@ -16194,10 +13824,7 @@ const pokemon = [
     {
         "id": 791,
         "name": {
-            "english": "Solgaleo",
-            "japanese": "ソルガレオ",
-            "chinese": "索尔迦雷欧",
-            "french": "Lunala"
+            "english": "Solgaleo"
         },
         "type": [
             "Psychic",
@@ -16215,10 +13842,7 @@ const pokemon = [
     {
         "id": 792,
         "name": {
-            "english": "Lunala",
-            "japanese": "ルナアーラ",
-            "chinese": "露奈雅拉",
-            "french": "Zéroïd"
+            "english": "Lunala"
         },
         "type": [
             "Psychic",
@@ -16236,10 +13860,7 @@ const pokemon = [
     {
         "id": 793,
         "name": {
-            "english": "Nihilego",
-            "japanese": "ウツロイド",
-            "chinese": "虚吾伊德",
-            "french": "Mouscoto"
+            "english": "Nihilego"
         },
         "type": [
             "Rock",
@@ -16257,10 +13878,7 @@ const pokemon = [
     {
         "id": 794,
         "name": {
-            "english": "Buzzwole",
-            "japanese": "マッシブーン",
-            "chinese": "爆肌蚊",
-            "french": "Cancrelove"
+            "english": "Buzzwole"
         },
         "type": [
             "Bug",
@@ -16278,10 +13896,7 @@ const pokemon = [
     {
         "id": 795,
         "name": {
-            "english": "Pheromosa",
-            "japanese": "フェローチェ",
-            "chinese": "费洛美螂",
-            "french": "Câblifère"
+            "english": "Pheromosa"
         },
         "type": [
             "Bug",
@@ -16299,10 +13914,7 @@ const pokemon = [
     {
         "id": 796,
         "name": {
-            "english": "Xurkitree",
-            "japanese": "デンジュモク",
-            "chinese": "电束木",
-            "french": "Bamboiselle"
+            "english": "Xurkitree"
         },
         "type": [
             "Electric"
@@ -16319,10 +13931,7 @@ const pokemon = [
     {
         "id": 797,
         "name": {
-            "english": "Celesteela",
-            "japanese": "テッカグヤ",
-            "chinese": "铁火辉夜",
-            "french": "Katagami"
+            "english": "Celesteela"
         },
         "type": [
             "Steel",
@@ -16340,10 +13949,7 @@ const pokemon = [
     {
         "id": 798,
         "name": {
-            "english": "Kartana",
-            "japanese": "カミツルギ",
-            "chinese": "纸御剑",
-            "french": "Engloutyran"
+            "english": "Kartana"
         },
         "type": [
             "Grass",
@@ -16361,10 +13967,7 @@ const pokemon = [
     {
         "id": 799,
         "name": {
-            "english": "Guzzlord",
-            "japanese": "アクジキング",
-            "chinese": "恶食大王",
-            "french": "Necrozma"
+            "english": "Guzzlord"
         },
         "type": [
             "Dark",
@@ -16382,10 +13985,7 @@ const pokemon = [
     {
         "id": 800,
         "name": {
-            "english": "Necrozma",
-            "japanese": "ネクロズマ",
-            "chinese": "奈克洛兹玛",
-            "french": "Magearna"
+            "english": "Necrozma"
         },
         "type": [
             "Psychic"
@@ -16402,10 +14002,7 @@ const pokemon = [
     {
         "id": 801,
         "name": {
-            "english": "Magearna",
-            "japanese": "マギアナ",
-            "chinese": "玛机雅娜",
-            "french": "Marshadow"
+            "english": "Magearna"
         },
         "type": [
             "Steel",
@@ -16423,10 +14020,7 @@ const pokemon = [
     {
         "id": 802,
         "name": {
-            "english": "Marshadow",
-            "japanese": "マーシャドー",
-            "chinese": "玛夏多",
-            "french": "Vémini"
+            "english": "Marshadow"
         },
         "type": [
             "Fighting",
@@ -16444,10 +14038,7 @@ const pokemon = [
     {
         "id": 803,
         "name": {
-            "english": "Poipole",
-            "japanese": "ベベノム",
-            "chinese": "毒贝比",
-            "french": "Mandrillon"
+            "english": "Poipole"
         },
         "type": [
             "Poison"
@@ -16464,10 +14055,7 @@ const pokemon = [
     {
         "id": 804,
         "name": {
-            "english": "Naganadel",
-            "japanese": "アーゴヨン",
-            "chinese": "四颚针龙",
-            "french": "Ama-Ama"
+            "english": "Naganadel"
         },
         "type": [
             "Poison",
@@ -16485,10 +14073,7 @@ const pokemon = [
     {
         "id": 805,
         "name": {
-            "english": "Stakataka",
-            "japanese": "ツンデツンデ",
-            "chinese": "垒磊石",
-            "french": "Pierroteknik"
+            "english": "Stakataka"
         },
         "type": [
             "Rock",
@@ -16506,10 +14091,7 @@ const pokemon = [
     {
         "id": 806,
         "name": {
-            "english": "Blacephalon",
-            "japanese": "ズガドーン",
-            "chinese": "砰头小丑",
-            "french": "Zeraora"
+            "english": "Blacephalon"
         },
         "type": [
             "Fire",
@@ -16527,10 +14109,7 @@ const pokemon = [
     {
         "id": 807,
         "name": {
-            "english": "Zeraora",
-            "japanese": "ゼラオラ",
-            "chinese": "捷拉奥拉",
-            "french": "Meltan"
+            "english": "Zeraora"
         },
         "type": [
             "Electric"
@@ -16547,10 +14126,7 @@ const pokemon = [
     {
         "id": 808,
         "name": {
-            "english": "Meltan",
-            "japanese": "メルタン",
-            "chinese": "美录坦",
-            "french": "Melmetal"
+            "english": "Meltan"
         },
         "type": [
             "Steel"
@@ -16567,10 +14143,7 @@ const pokemon = [
     {
         "id": 809,
         "name": {
-            "english": "Melmetal",
-            "japanese": "メルメタル",
-            "chinese": "美录梅塔",
-            "french": ""
+            "english": "Melmetal"
         },
         "type": [
             "Steel"

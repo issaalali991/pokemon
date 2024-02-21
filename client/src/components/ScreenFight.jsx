@@ -69,10 +69,10 @@ export default function ScreenFight({}) {
         clearInterval(ival);
         setSprites({
           Left: [
-            "../../public/grave.svg",
-            "../../public/grave.svg",
-            "../../public/grave.svg",
-            "../../public/grave.svg",
+            "./grave.svg",
+            "./grave.svg",
+            "./grave.svg",
+            "./grave.svg",
           ],
           Right: sprites.Right,
         });
@@ -92,10 +92,10 @@ export default function ScreenFight({}) {
         setSprites({
           Left: sprites.Left,
           Right: [
-            "../../public/grave.svg",
-            "../../public/grave.svg",
-            "../../public/grave.svg",
-            "../../public/grave.svg",
+            "./grave.svg",
+            "./grave.svg",
+            "./grave.svg",
+            "./grave.svg",
           ],
         });
         document.getElementById("restartButton").style.visibility = "visible";

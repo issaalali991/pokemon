@@ -36,7 +36,7 @@ export default class Pokemon {
 
         if (this.hp < 0) {
             this.hp = 0;
-            document.getElementById(`pImageF${this.id}`).src = "../../public/grave.svg";
+            document.getElementById(`pImageF${this.id}`).src = "./grave.svg";
         }
 
         HPFill.style.width = `${this.hp / (this.hpBase / 100)}%`;

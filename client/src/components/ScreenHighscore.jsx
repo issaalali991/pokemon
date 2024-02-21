@@ -34,9 +34,9 @@ export default function ScreenHighscore() {
       {loading && <p>Loading...</p>}
       {!loading && (
         <div>
-          <table className="table-auto w-full text-center">
+          <table className="table-auto w-full text-center bg-green-300">
             <thead>
-              <tr>
+              <tr className="text-xl">
                 <th
                   className="px-4 py-2 
                 font-bold 

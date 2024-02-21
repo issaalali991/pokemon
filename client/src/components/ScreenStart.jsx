@@ -35,10 +35,10 @@ export default function ScreenStart() {
         </div>
       )}
       {!loading && (
-        <div className="flex flex-row justify-center items-center">
-          <div className="flex flex-col items-center">
+        <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-row items-center justify-center">
             <button
-              className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-72  mr-4"
+              className="text-2xl font-bold mb-4 text-center bg-blue-500 text-white   rounded-lg p-2 border-2 border-blue-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-blue-500  hover:text-white  cursor-pointer w-72  mr-4"
               onClick={() => {
                 window.localStorage.clear("indexPok1");
                 navigate("/pokemon/1");
@@ -46,6 +46,29 @@ export default function ScreenStart() {
             >
               Choose Pokemon One
             </button>
+
+            <button
+              id="highscoreButton"
+              className="text-xl font-bold text-center bg-green-600 text-white rounded-lg p-2 border-2 border-grebg-green-600 ml-52 mr-52 h-14 bg-opacity-70 hover:bg-opacity-100 hover:bg-green-600 hover:text-white cursor-pointer w-48"
+              onClick={async () => {
+                navigate("/highscore");
+              }}
+            >
+              Highscores
+            </button>
+
+            <button
+              className="text-2xl font-bold mb-4 text-center bg-blue-500 text-white   rounded-lg p-2 border-2 border-blue-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-blue-500  hover:text-white  cursor-pointer w-72 ml-4 "
+              onClick={() => {
+                window.localStorage.clear("indexPok2");
+                navigate("/pokemon/2");
+              }}
+            >
+              Choose Pokemon Two
+            </button>
+          </div>
+
+          <div className="flex flex-row items-center justify-center">
             <PokemonLeft
               className="cursor-pointer"
               key={"one"}
@@ -56,40 +79,14 @@ export default function ScreenStart() {
                 navigate("/pokemon/1");
               }}
             />
-          </div>
 
-          <div className="text-center  w-1/3 h-1/3
-          ">
-            
             <div className="centerDiv">
               {selectedPokemonLeft && selectedPokemonRight ? (
                 <FightButton />
               ) : (
                 <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
               )}
-            
-              <button
-              id="highscoreButton"
-              className="text-xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-14  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-48 mt-32"
-              onClick={async () => {
-                navigate("/highscore");
-              }}
-            >
-              Highscores
-            </button>
             </div>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <button
-              className="text-2xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-20  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-72 ml-4 "
-              onClick={() => {
-                window.localStorage.clear("indexPok2");
-                navigate("/pokemon/2");
-              }}
-            >
-              Choose Pokemon Two
-            </button>
 
             <PokemonRight
               className="cursor-pointer"
