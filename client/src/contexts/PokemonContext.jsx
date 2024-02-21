@@ -15,8 +15,8 @@ export default function PokemonContextProvider({ children }) {
   const [indexPok1, setIndexPok1] = useState(null);
   const [indexPok2, setIndexPok2] = useState(null);
 
-  // const VITE_APP_API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
-  const VITE_APP_API_BASE_URL = 'http://localhost:3000';
+  const VITE_APP_API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
+  // const VITE_APP_API_BASE_URL = 'http://localhost:3000';
 
   const [sprites, setSprites] = useState({
     Left: [],

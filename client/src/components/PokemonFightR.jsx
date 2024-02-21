@@ -23,7 +23,7 @@ export default function PokemonFightR({}) {
           DMG
         </div>
       </div>
-      <img id="MarkR" src="./clawmark.svg" alt="" />
+      <img id="MarkR" src="/clawmark.svg" alt="" />
       <img id="VictoryR" src="./victory.svg" alt="" />
       <div className="">
         <h3 className="text-2xl font-bold text-center bg-rose-500 text-white rounded-lg p-2  w-full">
