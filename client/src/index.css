@@ -48,12 +48,7 @@ h1 {
   /* background: #ffe500; */
   /* background: linear-gradient( 0deg #ffe500 0%, #00000000 80%); */
   border-radius: 15px;
-  background: linear-gradient(
-    180deg,
-    #ffe50000 0%,
-    #ffe500 40%,
-    #ffe50000 90%
-  );
+  background: linear-gradient(180deg, #ffe50000 0%, #ffe500 40%, #ffe50000 90%);
 }
 
 .Pokemon {
@@ -95,11 +90,11 @@ input:focus {
   background-size: cover;
   background-repeat: none;
   background-image: url("./pokeball.svg");
-  background-image: url("./pokeball.svg");
+
   cursor: pointer;
 }
 .DefaultImage:hover {
-  background-image: url("./pbfc.svg");
+  background-image: url("./favicon.svg");
 }
 
 .PokeHealth {
