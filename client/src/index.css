@@ -94,7 +94,7 @@ input:focus {
   cursor: pointer;
 }
 .DefaultImage:hover {
-  background-image: url("../public/favicon.svg");
+  background-image: url("../public/pokeballc.svg");
 }
 
 .PokeHealth {
