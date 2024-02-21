@@ -83,7 +83,7 @@ input:focus {
   outline: none;
 }
 
-.DefaultImage {
+#DefaultImage {
   margin-top: 11rem;
   width: 15rem;
   height: 15rem;
