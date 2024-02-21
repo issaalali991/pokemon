@@ -67,7 +67,7 @@ h1 {
   border: 6px solid #2c2c2c;
   padding: 1rem;
   border-radius: 15px;
-  background-image: url(./pokemoncard.jpg);
+  background-image: url("./pokemoncard.jpg");
   /* filter: blur(8px);
   -webkit-filter: blur(8px); */
   background-repeat: no-repeat;
@@ -94,11 +94,11 @@ input:focus {
   height: 15rem;
   background-size: cover;
   background-repeat: none;
-  background-image: url("/pokeball.svg");
+  background-image: url("./pokeball.svg");
   cursor: pointer;
 }
 .DefaultImage:hover {
-  background-image: url("/favicon.svg");
+  background-image: url("./favicon.svg");
 }
 
 .PokeHealth {
