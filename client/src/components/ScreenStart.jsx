@@ -84,7 +84,7 @@ export default function ScreenStart() {
               {selectedPokemonLeft && selectedPokemonRight ? (
                 <FightButton />
               ) : (
-                <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
+                <img src="vs.svg" alt="" className="mb-4 w-40 h-40" />
               )}
             </div>
 
