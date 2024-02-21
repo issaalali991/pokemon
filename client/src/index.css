@@ -89,7 +89,7 @@ input:focus {
   height: 15rem;
   background-size: cover;
   background-repeat: none;
-  background-image: url("./pokeball.svg");
+  background-image: url("pokeball.svg");
 
   cursor: pointer;
 }
