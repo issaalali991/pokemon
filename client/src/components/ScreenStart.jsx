@@ -58,7 +58,8 @@ export default function ScreenStart() {
             />
           </div>
 
-          <div className="text-center">
+          <div className="text-center  w-1/3 h-1/3
+          ">
             
             <div className="centerDiv">
               {selectedPokemonLeft && selectedPokemonRight ? (
@@ -66,9 +67,10 @@ export default function ScreenStart() {
               ) : (
                 <img src="./vs.svg" alt="" className="mb-4 w-40 h-40" />
               )}
+            
               <button
               id="highscoreButton"
-              className="text-xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-14  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-48 mt-4"
+              className="text-xl font-bold mb-4 text-center bg-rose-500 text-white   rounded-lg p-2 border-2 border-rose-700 h-14  bg-opacity-70  hover:bg-opacity-100  hover:bg-rose-500  hover:text-white  cursor-pointer w-48 mt-32"
               onClick={async () => {
                 navigate("/highscore");
               }}

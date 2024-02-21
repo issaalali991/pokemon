@@ -87,11 +87,11 @@ input:focus {
   height: 15rem;
   background-size: cover;
   background-repeat: none;
-  background-image: url("/pokeball.svg");
+  background-image: url("./pokeball.svg");
   cursor: pointer;
 }
 .DefaultImage:hover {
-  background-image: url("/pbfc.svg");
+  background-image: url("./pbfc.svg");
 }
 
 .PokeHealth {
@@ -177,7 +177,7 @@ input:focus {
 }
 
 #VictoryScreen {
-  background-image: url("/victory.svg");
+  background-image: url("./victory.svg");
   display: block;
   width: 30em;
   height: 10em;
