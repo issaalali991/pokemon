@@ -3,7 +3,6 @@ import ChoosePokemon from "./components/Card/ChoosePokemon";
 import ScreenFight from "./components/ScreenFight";
 import ScreenStart from "./components/ScreenStart";
 import ScreenHighscore from "./components/ScreenHighscore";
-import "../public/pokemoncard.svg";
 
 export default function App() {
 
