@@ -4,9 +4,10 @@ Pokemon is a application built using the MERN stack (MongoDB, Express.js, React.
 
 ## Collaborators
 
-- [Issaalali991](https://github.com/issaalali991)
+
 - [Johanas](https://github.com/workingj)
 - [Faramarz](https://github.com/f-karamizadeh)
+- [Issaalali991](https://github.com/issaalali991)
 
 ## Deployment
 
