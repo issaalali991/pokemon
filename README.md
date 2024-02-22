@@ -1,6 +1,6 @@
 # FundMyCode
 
-FundMyCode is a application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This project was created during the Teamwork of the WBS Coding School Web and App Development Bootcamp on February 20, 2024.
+Pokemon is a application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This project was created during the Teamwork of the WBS Coding School Web and App Development Bootcamp on February 20, 2024.
 
 ## Collaborators
 
