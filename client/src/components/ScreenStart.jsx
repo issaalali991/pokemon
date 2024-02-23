@@ -5,6 +5,7 @@ import PokemonLeft from "./PokemonLeft.jsx";
 import PokemonRight from "./PokemonRight.jsx";
 import FightButton from "./FightButton.jsx";
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer.jsx";
 
 export default function ScreenStart() {
   const {
@@ -101,6 +102,7 @@ export default function ScreenStart() {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 }
